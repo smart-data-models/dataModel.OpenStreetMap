@@ -20,7 +20,6 @@
     "https://es.wikipedia.org/wiki/Pe%C3%B1alara"
   ],
   "@context": [
-    "https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMNatural/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+    "https://smart-data-models.github.io/dataModel.OpenStreetMap/context.jsonld"
   ]
 }

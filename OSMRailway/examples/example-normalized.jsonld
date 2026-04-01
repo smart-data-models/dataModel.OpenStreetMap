@@ -99,7 +99,6 @@
         ]
     },
     "@context": [
-        "https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMRailway/context.jsonld",
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+        "https://smart-data-models.github.io/dataModel.OpenStreetMap/context.jsonld"
     ]
 }

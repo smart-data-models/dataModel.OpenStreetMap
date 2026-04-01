@@ -34,7 +34,6 @@
     "https://www.openstreetmap.org/way/107532891"
   ],
   "@context": [
-    "https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMCycleRoute/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+    "https://smart-data-models.github.io/dataModel.OpenStreetMap/context.jsonld"
   ]
 }
