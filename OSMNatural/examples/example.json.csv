@@ -1,0 +1,2 @@
+"id_", "type_", "osmId_", "osmType_", "osmLastModified_", "name_", "naturalType_", "elevation_", "location__type_", "location__coordinates__0_", "location__coordinates__1_", "source_", "seeAlso__0_", "seeAlso__1_"
+"urn:ngsi-ld:OSMNatural:node:88990011", "OSMNatural", "88990011", "node", "2021-05-18T16:45:00Z", "Pico de Peñalara", "peak", "2428.0", "Point", "-3.9551", "40.8504", "https://www.openstreetmap.org", "https://www.openstreetmap.org/node/88990011", "https://es.wikipedia.org/wiki/Pe%C3%B1alara"
