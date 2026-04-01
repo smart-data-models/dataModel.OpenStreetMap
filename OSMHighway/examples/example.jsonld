@@ -37,6 +37,6 @@
     "https://www.openstreetmap.org/way/5837156"
   ],
   "@context": [
-    "https://smart-data-models.github.io/dataModel.OpenStreetMap/context.jsonld"
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"
   ]
 }

@@ -20,6 +20,6 @@
     "https://es.wikipedia.org/wiki/Pe%C3%B1alara"
   ],
   "@context": [
-    "https://smart-data-models.github.io/dataModel.OpenStreetMap/context.jsonld"
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"
   ]
 }
