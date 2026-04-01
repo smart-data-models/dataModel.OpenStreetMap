@@ -1,0 +1,552 @@
+OSMHighway:
+  description: A road or path element from OpenStreetMap tagged with the highway key. Represents all types of roads, from motorways to footpaths, as defined by the OSM highway taxonomy.
+  properties:
+    access:
+      description: General access restriction for the road
+      enum:
+        - 'yes'
+        - 'no'
+        - private
+        - permissive
+        - destination
+        - delivery
+        - customers
+        - designated
+      type: string
+      x-ngsi:
+        model: https://wiki.openstreetmap.org/wiki/Key:access
+        type: Property
+    address:
+      description: The mailing address
+      properties:
+        addressCountry:
+          description: The country. For example, Spain
+          type: string
+          x-ngsi:
+            model: https://schema.org/addressCountry
+            type: Property
+        addressLocality:
+          description: The locality in which the street address is, and which is in the region
+          type: string
+          x-ngsi:
+            model: https://schema.org/addressLocality
+            type: Property
+        addressRegion:
+          description: The region in which the locality is, and which is in the country
+          type: string
+          x-ngsi:
+            model: https://schema.org/addressRegion
+            type: Property
+        district:
+          description: A district is a type of administrative division that, in some countries, is managed by the local government
+          type: string
+          x-ngsi:
+            type: Property
+        postOfficeBoxNumber:
+          description: The post office box number for PO box addresses. For example, 03578
+          type: string
+          x-ngsi:
+            model: https://schema.org/postOfficeBoxNumber
+            type: Property
+        postalCode:
+          description: The postal code. For example, 24004
+          type: string
+          x-ngsi:
+            model: https://schema.org/https://schema.org/postalCode
+            type: Property
+        streetAddress:
+          description: The street address
+          type: string
+          x-ngsi:
+            model: https://schema.org/streetAddress
+            type: Property
+        streetNr:
+          description: Number identifying a specific property on a public street
+          type: string
+          x-ngsi:
+            type: Property
+      type: object
+      x-ngsi:
+        model: https://schema.org/address
+        type: Property
+    alternateName:
+      description: An alternative name for this item
+      type: string
+      x-ngsi:
+        type: Property
+    areaServed:
+      description: The geographic area where a service or offered item is provided
+      type: string
+      x-ngsi:
+        model: https://schema.org/Text
+        type: Property
+    bridge:
+      description: Indicates whether this road segment runs over a bridge
+      type: boolean
+      x-ngsi:
+        model: https://wiki.openstreetmap.org/wiki/Key:bridge
+        type: Property
+    cyclewayPresent:
+      description: Indicates whether a dedicated cycle lane is present alongside this road
+      type: boolean
+      x-ngsi:
+        model: https://wiki.openstreetmap.org/wiki/Key:cycleway
+        type: Property
+    dataProvider:
+      description: A sequence of characters identifying the provider of the harmonised data entity
+      type: string
+      x-ngsi:
+        type: Property
+    dateCreated:
+      description: Entity creation timestamp. This will usually be allocated by the storage platform
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    dateModified:
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    description:
+      description: A description of this item
+      type: string
+      x-ngsi:
+        type: Property
+    highwayType:
+      description: The OSM highway tag value that classifies the type of road or path. Enum:'motorway, trunk, primary, secondary, tertiary, unclassified, residential, service, living_street, pedestrian, track, footway, cycleway, path, motorway_link, trunk_link, primary_link, secondary_link, tertiary_link, road, busway, bus_guideway, construction, proposed'
+      enum:
+        - motorway
+        - trunk
+        - primary
+        - secondary
+        - tertiary
+        - unclassified
+        - residential
+        - service
+        - living_street
+        - pedestrian
+        - track
+        - footway
+        - cycleway
+        - path
+        - motorway_link
+        - trunk_link
+        - primary_link
+        - secondary_link
+        - tertiary_link
+        - road
+        - busway
+        - bus_guideway
+        - construction
+        - proposed
+      type: string
+      x-ngsi:
+        model: https://wiki.openstreetmap.org/wiki/Key:highway
+        type: Property
+    id:
+      anyOf:
+        - description: Identifier format of any NGSI entity
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+          x-ngsi:
+            type: Property
+        - description: Identifier format of any NGSI entity
+          format: uri
+          type: string
+          x-ngsi:
+            type: Property
+      description: Unique identifier of the entity
+      x-ngsi:
+        type: Relationship
+    inclinePercent:
+      description: Slope of the road expressed as a percentage. Positive values indicate uphill
+      type: number
+      x-ngsi:
+        model: https://wiki.openstreetmap.org/wiki/Key:incline
+        type: Property
+        units: '%'
+    lanes:
+      description: Total number of traffic lanes in both directions
+      minimum: 1
+      type: number
+      x-ngsi:
+        model: https://wiki.openstreetmap.org/wiki/Key:lanes
+        type: Property
+    layer:
+      description: Vertical layer relative to other features at the same location, used to indicate overlapping ways
+      type: number
+      x-ngsi:
+        model: https://wiki.openstreetmap.org/wiki/Key:layer
+        type: Property
+    lit:
+      description: Indicates whether the road is illuminated by street lighting
+      type: boolean
+      x-ngsi:
+        model: https://wiki.openstreetmap.org/wiki/Key:lit
+        type: Property
+    location:
+      description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon
+      oneOf:
+        - description: Geojson reference to the item. Point
+          properties:
+            bbox:
+              description: BBox of the  Point
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the Point
+              items:
+                type: number
+              minItems: 2
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - Point
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON Point
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. LineString
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the LineString
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              minItems: 2
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - LineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON LineString
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. Polygon
+          properties:
+            bbox:
+              description: BBox coordinates of the Polygon
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the Polygon
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 4
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - Polygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON Polygon
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiPoint
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the MulitPoint
+              items:
+                items:
+                  type: number
+                minItems: 2
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiPoint
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiPoint
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiLineString
+          properties:
+            bbox:
+              description: BBox coordinates of the LineString
+              items:
+                type: number
+              minItems: 4
+              type: array
+              x-ngsi:
+                type: Property
+            coordinates:
+              description: Coordinates of the MultiLineString
+              items:
+                items:
+                  items:
+                    type: number
+                  minItems: 2
+                  type: array
+                minItems: 2
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiLineString
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiLineString
+          type: object
+          x-ngsi:
+            type: GeoProperty
+        - description: Geojson reference to the item. MultiLineString
+          properties:
+            bbox:
+              items:
+                type: number
+              minItems: 4
+              type: array
+            coordinates:
+              description: Coordinates of the MultiPolygon
+              items:
+                items:
+                  items:
+                    items:
+                      type: number
+                    minItems: 2
+                    type: array
+                  minItems: 4
+                  type: array
+                type: array
+              type: array
+              x-ngsi:
+                type: Property
+            type:
+              enum:
+                - MultiPolygon
+              type: string
+          required:
+            - type
+            - coordinates
+          title: GeoJSON MultiPolygon
+          type: object
+          x-ngsi:
+            type: GeoProperty
+      x-ngsi:
+        type: GeoProperty
+    maxSpeed:
+      description: Maximum permitted speed in kilometres per hour
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://wiki.openstreetmap.org/wiki/Key:maxspeed
+        type: Property
+        units: Km/h
+    name:
+      description: The name of this item
+      type: string
+      x-ngsi:
+        type: Property
+    oneway:
+      description: Indicates whether the road is one-way for motor vehicles
+      type: boolean
+      x-ngsi:
+        model: https://wiki.openstreetmap.org/wiki/Key:oneway
+        type: Property
+    operator:
+      description: Name of the entity responsible for the operation or maintenance of this road
+      type: string
+      x-ngsi:
+        model: https://wiki.openstreetmap.org/wiki/Key:operator
+        type: Property
+    osmId:
+      description: The original OpenStreetMap element integer identifier
+      type: number
+      x-ngsi:
+        model: https://wiki.openstreetmap.org/wiki/Elements
+        type: Property
+    osmLastModified:
+      description: Timestamp of the last modification of the OSM element.
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    osmType:
+      description: The type of the original OpenStreetMap element
+      enum:
+        - node
+        - way
+        - relation
+      type: string
+      x-ngsi:
+        model: https://wiki.openstreetmap.org/wiki/Elements
+        type: Property
+    owner:
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
+      items:
+        anyOf:
+          - description: Identifier format of any NGSI entity
+            maxLength: 256
+            minLength: 1
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+            type: string
+            x-ngsi:
+              type: Property
+          - description: Identifier format of any NGSI entity
+            format: uri
+            type: string
+            x-ngsi:
+              type: Property
+        description: Unique identifier of the entity
+        x-ngsi:
+          type: Relationship
+      type: array
+      x-ngsi:
+        type: Property
+    ref:
+      description: Official road reference number or code (e.g. A-3, M-30)
+      type: string
+      x-ngsi:
+        model: https://wiki.openstreetmap.org/wiki/Key:ref
+        type: Property
+    seeAlso:
+      description: List of URIs pointing to additional resources about this item (e.g. Wikidata, Wikipedia).
+      oneOf:
+        - items:
+            format: uri
+            type: string
+          minItems: 1
+          type: array
+        - format: uri
+          type: string
+      x-ngsi:
+        type: Property
+    sidewalk:
+      description: Indicates the presence and side of a sidewalk alongside the road
+      enum:
+        - both
+        - left
+        - right
+        - none
+        - separate
+      type: string
+      x-ngsi:
+        model: https://wiki.openstreetmap.org/wiki/Key:sidewalk
+        type: Property
+    source:
+      description: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object
+      type: string
+      x-ngsi:
+        type: Property
+    surface:
+      description: Physical surface material of the road
+      enum:
+        - asphalt
+        - concrete
+        - gravel
+        - dirt
+        - paving_stones
+        - cobblestone
+        - unpaved
+        - grass
+        - compacted
+        - fine_gravel
+        - sand
+        - ground
+        - metal
+        - wood
+        - pebblestone
+        - mud
+        - ice
+        - salt
+      type: string
+      x-ngsi:
+        model: https://wiki.openstreetmap.org/wiki/Key:surface
+        type: Property
+    tunnel:
+      description: Indicates whether this road segment runs through a tunnel
+      type: boolean
+      x-ngsi:
+        model: https://wiki.openstreetmap.org/wiki/Key:tunnel
+        type: Property
+    type:
+      description: NGSI Entity type. It has to be OSMHighway
+      enum:
+        - OSMHighway
+      type: string
+      x-ngsi:
+        type: Property
+    widthMeters:
+      description: Physical width of the road in metres
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://wiki.openstreetmap.org/wiki/Key:width
+        type: Property
+        units: m
+  required:
+    - id
+    - type
+    - location
+    - osmId
+    - osmType
+    - highwayType
+  type: object
+  x-derived-from: https://wiki.openstreetmap.org/wiki/Key:highway
+  x-disclaimer: Redistribution and use in source and binary forms...
+  x-license-url: https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMHighway/LICENSE.md
+  x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMHighway/schema.json
+  x-model-tags: OSM OpenStreetMap Transportation
+  x-version: 0.0.1
