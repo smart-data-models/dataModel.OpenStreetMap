@@ -1,0 +1,10 @@
+description: This is a compilation list of all CONTRIBUTORS across different objects (data models) alphabetically ordered. All fields are non mandatory
+contributors:
+-
+ name: OpenStreetMap contributors
+ surname:
+ mail:
+ organization: OpenStreetMap
+ project:
+ comments: "This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors."
+ year: 2026
