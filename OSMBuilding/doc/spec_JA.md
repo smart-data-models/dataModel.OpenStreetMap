@@ -14,13 +14,13 @@
 
 ## プロパティのリスト  
 
-<sup><sub>[*] 属性に型がない場合は、複数の型または異なる形式/パターンを持つ可能性があるためです。</sub></sup>  
+<sup><sub>[*] 属性に型がない場合は、複数の型や異なるフォーマット/パターンを持つ可能性があるためです。</sub></sup>  
 - `access[string]`: 建物への一般的なアクセス制限。モデル: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: schema.org の PostalAddress に従って構造化された建物の住所。  	- `addressCity[string]`: 市区町村。OSM: addr:city    
 	- `addressCountry[string]`: ISO 3166-1 alpha-2 国コード。OSM: addr:country    
 	- `houseNumber[string]`: 番地または建物番号。OSM: addr:housenumber    
 	- `postalCode[string]`: 郵便番号。OSM: addr:postcode    
 	- `streetAddress[string]`: 通り名。OSM: addr:street    
-- `alternateName[string]`: この項目の別名  - `amenity[string]`: 建物の主要なアメニティ機能（例：病院、学校）。モデル: [https://wiki.openstreetmap.org/wiki/Key:amenity](https://wiki.openstreetmap.org/wiki/Key:amenity)- `areaServed[string]`: サービスまたは提供品が提供される地理的エリア。モデル: [https://schema.org/Text](https://schema.org/Text)- `buildingColour[string]`: CSS カラー名または 16 進コードで表されるメインファサードの色。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:colour](https://wiki.openstreetmap.org/wiki/Key:building:colour)- `buildingHeight[number]`: 地上から最高点までの建物の総高さ（メートル単位）。モデル: [https://wiki.openstreetmap.org/wiki/Key:height](https://wiki.openstreetmap.org/wiki/Key:height)- `buildingLevels[number]`: 建物の地上階数。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:levels](https://wiki.openstreetmap.org/wiki/Key:building:levels)- `buildingLevelsUnderground[number]`: 建物の地下階数。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:levels:underground](https://wiki.openstreetmap.org/wiki/Key:building:levels:underground)- `buildingMaterial[string]`: 建物の主要な構造材またはファサード材。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:material](https://wiki.openstreetmap.org/wiki/Key:building:material)- `buildingType[string]`: 建物のタイプまたは機能を分類する OSM building タグの値。Enum:'yes, residential, apartments, house, detached, bungalow, cabin, dormitory, hotel, commercial, office, industrial, warehouse, retail, supermarket, school, university, hospital, church, cathedral, mosque, synagogue, civic, government, public, transportation, train_station, stadium, garage, shed, greenhouse, service, ruins'。モデル: [https://wiki.openstreetmap.org/wiki/Key:building](https://wiki.openstreetmap.org/wiki/Key:building)- `dataProvider[string]`: 統合されたデータエンティティのプロバイダーを識別する文字列  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終更新タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description[string]`: この項目の説明  - `flats[number]`: 建物内の個別の住戸の総数。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:flats](https://wiki.openstreetmap.org/wiki/Key:building:flats)- `id[*]`: エンティティの一意の識別子  - `location[*]`: 項目への Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、または MultiPolygon のいずれかです。  - `minHeight[number]`: 地上からの建物の土台の高さ（メートル単位）。斜面上の建物や高架構造物に使用されます。モデル: [https://wiki.openstreetmap.org/wiki/Key:min_height](https://wiki.openstreetmap.org/wiki/Key:min_height)- `name[string]`: この項目の名前  - `openingHours[string]`: OSM の opening_hours 構文による、建物またはその主要機能の営業時間。モデル: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: 建物を運営または管理するエンティティの名前。モデル: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: 元の OpenStreetMap 要素の整数識別子。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM 要素の最終更新タイムスタンプ。  - `osmType[string]`: 元の OpenStreetMap 要素のタイプ。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: オーナーの一意の ID を参照する JSON エンコードされた文字列のリスト  - `roofColour[string]`: CSS カラー名または 16 進コードで表される屋根の色。モデル: [https://wiki.openstreetmap.org/wiki/Key:roof:colour](https://wiki.openstreetmap.org/wiki/Key:roof:colour)- `roofMaterial[string]`: 屋根表面の主要な材料。モデル: [https://wiki.openstreetmap.org/wiki/Key:roof:material](https://wiki.openstreetmap.org/wiki/Key:roof:material)- `roofShape[string]`: 屋根の形状。Enum:'flat, gabled, hipped, half-hipped, pyramidal, gambrel, mansard, dome, skillion, round, saltbox, onion, cone'。モデル: [https://wiki.openstreetmap.org/wiki/Key:roof:shape](https://wiki.openstreetmap.org/wiki/Key:roof:shape)- `seeAlso[*]`: この項目に関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースを URL として示す文字列。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへの URL であることが推奨されます。  - `startDate[string]`: 建物の建設年または日付。自由形式の日付または年の値。モデル: [https://wiki.openstreetmap.org/wiki/Key:start_date](https://wiki.openstreetmap.org/wiki/Key:start_date)- `type[string]`: NGSI エンティティタイプ。OSMBuilding である必要があります。  - `wheelchair[string]`: 建物の車椅子アクセシビリティのレベル。モデル: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
+- `alternateName[string]`: この項目の別名  - `amenity[string]`: 建物の主要なアメニティ機能（例：病院、学校）。モデル: [https://wiki.openstreetmap.org/wiki/Key:amenity](https://wiki.openstreetmap.org/wiki/Key:amenity)- `areaServed[string]`: サービスまたは提供品が提供される地理的エリア。モデル: [https://schema.org/Text](https://schema.org/Text)- `buildingColour[string]`: CSS カラー名または 16 進コードで表されるメインファサードの色。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:colour](https://wiki.openstreetmap.org/wiki/Key:building:colour)- `buildingHeight[number]`: 地上から最高点までの建物の総高さ（メートル単位）。モデル: [https://wiki.openstreetmap.org/wiki/Key:height](https://wiki.openstreetmap.org/wiki/Key:height)- `buildingLevels[number]`: 建物の地上階数。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:levels](https://wiki.openstreetmap.org/wiki/Key:building:levels)- `buildingLevelsUnderground[number]`: 建物の地下階数。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:levels:underground](https://wiki.openstreetmap.org/wiki/Key:building:levels:underground)- `buildingMaterial[string]`: 建物の主要な構造材またはファサード材。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:material](https://wiki.openstreetmap.org/wiki/Key:building:material)- `buildingType[string]`: 建物のタイプまたは機能を分類する OSM building タグの値。Enum: 'yes, residential, apartments, house, detached, bungalow, cabin, dormitory, hotel, commercial, office, industrial, warehouse, retail, supermarket, school, university, hospital, church, cathedral, mosque, synagogue, civic, government, public, transportation, train_station, stadium, garage, shed, greenhouse, service, ruins'。モデル: [https://wiki.openstreetmap.org/wiki/Key:building](https://wiki.openstreetmap.org/wiki/Key:building)- `dataProvider[string]`: 統合されたデータエンティティの提供者を識別する文字列  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終更新タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description[string]`: この項目の説明  - `flats[number]`: 建物内の個別の住戸の総数。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:flats](https://wiki.openstreetmap.org/wiki/Key:building:flats)- `id[*]`: エンティティの一意の識別子  - `location[*]`: 項目への Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon のいずれかです。  - `minHeight[number]`: 地上からの建物の基礎の高さ（メートル単位）。斜面上の建物や高架構造物に使用されます。モデル: [https://wiki.openstreetmap.org/wiki/Key:min_height](https://wiki.openstreetmap.org/wiki/Key:min_height)- `name[string]`: この項目の名前  - `openingHours[string]`: OSM の opening_hours 構文による建物の開館時間またはその主要な機能。モデル: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: 建物を運営または管理するエンティティの名前。モデル: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: 元の OpenStreetMap 要素の整数識別子。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM 要素の最終更新タイムスタンプ。  - `osmType[string]`: 元の OpenStreetMap 要素のタイプ。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: オーナーの一意の ID を参照する JSON エンコードされた文字列のリスト  - `roofColour[string]`: CSS カラー名または 16 進コードで表される屋根の色。モデル: [https://wiki.openstreetmap.org/wiki/Key:roof:colour](https://wiki.openstreetmap.org/wiki/Key:roof:colour)- `roofMaterial[string]`: 屋根表面の主要な材料。モデル: [https://wiki.openstreetmap.org/wiki/Key:roof:material](https://wiki.openstreetmap.org/wiki/Key:roof:material)- `roofShape[string]`: 屋根の形状。Enum: 'flat, gabled, hipped, half-hipped, pyramidal, gambrel, mansard, dome, skillion, round, saltbox, onion, cone'。モデル: [https://wiki.openstreetmap.org/wiki/Key:roof:shape](https://wiki.openstreetmap.org/wiki/Key:roof:shape)- `seeAlso[*]`: この項目に関する追加リソースを指す URI のリスト。  - `source[string]`: エンティティデータの元のソースを URL として示す文字列。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへの URL であることが推奨されます。  - `startDate[string]`: 建物の建設年または日付。自由形式の日付または年の値。モデル: [https://wiki.openstreetmap.org/wiki/Key:start_date](https://wiki.openstreetmap.org/wiki/Key:start_date)- `type[string]`: NGSI エンティティタイプ。OSMBuilding である必要があります。  - `wheelchair[string]`: 建物の車椅子アクセシビリティのレベル。モデル: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `buildingType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
@@ -28,7 +28,7 @@
 <!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
-アルファベット順（詳細はクリック）  
+アルファベット順（クリックで詳細表示）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>yaml の詳細</strong></summary>    
@@ -610,7 +610,7 @@ OSMBuilding:
 <!-- 80-Examples -->  
 ## ペイロードの例    
 #### OSMBuilding NGSI-v2 キー値の例    
-キー値として JSON 形式の OSMBuilding の例を示します。これは、`options=keyValues` を使用した場合の NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、キー値として JSON 形式の OSMBuilding の例です。これは、`options=keyValues` を使用する場合の NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>例を表示/非表示</strong></summary>    
 ```json  
 {  
@@ -676,7 +676,7 @@ OSMBuilding:
 ```  
 </details>  
 #### OSMBuilding NGSI-v2 正規化例    
-正規化された JSON 形式の OSMBuilding の例を示します。これは、オプションを使用しない場合の NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化された JSON 形式の OSMBuilding の例です。これは、オプションを使用しない場合の NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>例を表示/非表示</strong></summary>    
 ```json  
 {  
@@ -811,7 +811,7 @@ OSMBuilding:
 ```  
 </details>  
 #### OSMBuilding NGSI-LD キー値の例    
-キー値として JSON-LD 形式の OSMBuilding の例を示します。これは、`options=keyValues` を使用した場合の NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、キー値として JSON-LD 形式の OSMBuilding の例です。これは、`options=keyValues` を使用する場合の NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>例を表示/非表示</strong></summary>    
 ```json  
 {  
@@ -880,7 +880,7 @@ OSMBuilding:
 ```  
 </details>  
 #### OSMBuilding NGSI-LD 正規化例    
-正規化された JSON-LD 形式の OSMBuilding の例を示します。これは、オプションを使用しない場合の NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化された JSON-LD 形式の OSMBuilding の例です。これは、オプションを使用しない場合の NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>例を表示/非表示</strong></summary>    
 ```json  
 {  
