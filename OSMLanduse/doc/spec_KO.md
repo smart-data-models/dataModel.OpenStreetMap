@@ -7,7 +7,7 @@
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
 <!-- /15-License -->
 <!-- 20-Description -->
-전역 설명: **OpenStreetMap의 토지 이용 영역으로 landuse=*. 태그가 지정되어 있습니다. 영역의 주요 인간 목적 또는 용도를 설명합니다.**
+전역 설명: **OpenStreetMap에서 landuse=*.로 태그가 지정된 토지 이용 지역. 지역의 주요 인간 목적 또는 용도를 설명합니다.**
 버전: 0.0.1
 <!-- /20-Description -->
 <!-- 30-PropertiesList -->
@@ -15,23 +15,23 @@
 ## 속성 목록
 
 <sup><sub>[*] 속성에 유형이 없는 경우 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다.</sub></sup>
-- `address[object]`: 우편 주소. 모델: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예: 스페인. 모델: [https://schema.org/addressCountry](https://schema.org/addressCountry)
-	- `addressLocality[string]`: 지역 내에 있는 지역의 지역. 모델: [https://schema.org/addressLocality](https://schema.org/addressLocality)
-	- `addressRegion[string]`: 국가 내에 있는 지역의 지역. 모델: [https://schema.org/addressRegion](https://schema.org/addressRegion)
+- `address[object]`: 우편 주소. 모델: [https://schema.org/address](https://schema.org/address) - `addressCountry[string]`: 국가. 예: 스페인. 모델: [https://schema.org/addressCountry](https://schema.org/addressCountry)
+	- `addressLocality[string]`: 지역에 있는 지역의 지역. 모델: [https://schema.org/addressLocality](https://schema.org/addressLocality)
+	- `addressRegion[string]`: 국가에 있는 지역에 있는 지역. 모델: [https://schema.org/addressRegion](https://schema.org/addressRegion)
 	- `district[string]`: 일부 국가에서는 지방 정부에서 관리하는 행정 구역의 한 유형입니다.
 	- `postOfficeBoxNumber[string]`: PO 박스 주소의 우체국 사서함 번호. 예: 03578. 모델: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
 	- `postalCode[string]`: 우편 번호. 예: 24004. 모델: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
 	- `streetAddress[string]`: 거리 주소. 모델: [https://schema.org/streetAddress](https://schema.org/streetAddress)
-	- `streetNr[string]`: 공공 거리의 특정 속지를 식별하는 번호
-- `alternateName[string]`: 이 항목에 대한 대체 이름 - `areaServed[string]`: 서비스 또는 제공되는 항목이 제공되는 지리적 영역. 모델: [https://schema.org/Text](https://schema.org/Text)- `crop[string]`: landuse=farmland인 경우 경작되는 작물. 모델: [https://wiki.openstreetmap.org/wiki/Key:crop](https://wiki.openstreetmap.org/wiki/Key:crop)- `dataProvider[string]`: 통합된 데이터 엔티티의 제공자를 식별하는 문자 시퀀스 - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 일반적으로 스토리지 플랫폼에서 할당합니다. - `dateModified[date-time]`: 엔티티 마지막 수정 타임스탬프. 일반적으로 스토리지 플랫폼에서 할당합니다. - `description[string]`: 이 항목에 대한 설명 - `id[*]`: 엔티티의 고유 식별자 - `landuseType[string]`: 토지의 주요 인간 용도를 분류하는 OSM 토지 이용 태그. 열거형: '상업, 건설, 교육, 산업, 주거, 소매, 농지, 숲, 초원, 과수원, ...'. 모델: [https://wiki.openstreetmap.org/wiki/Key:landuse](https://wiki.openstreetmap.org/wiki/Key:landuse)- `location[*]`: 항목에 대한 Geojson 참조. Point, LineString, Polygon, MultiPoint, MultiLineString 또는 MultiPolygon일 수 있습니다. - `name[string]`: 이 항목의 이름 - `operator[string]`: 영역을 운영하거나 관리하는 엔티티의 이름 - `osmId[number]`: 원본 OpenStreetMap 요소의 정수 식별자 - `osmLastModified[date-time]`: 마지막 수정 타임스탬프 - `osmType[string]`: 원본 OSM 요소의 유형 - `owner[array]`: 소유자의 고유 ID를 참조하는 JSON으로 인코딩된 문자 시퀀스가 포함된 목록 - `seeAlso[*]`: 추가 리소스를 가리키는 URI 목록 - `source[string]`: 엔티티 데이터의 원본 출처를 URL로 제공하는 문자 시퀀스. 소스 제공자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 권장합니다. - `trees[string]`: landuse=forest 또는 orchard인 경우 재배되는 나무의 유형. 모델: [https://wiki.openstreetmap.org/wiki/Key:trees](https://wiki.openstreetmap.org/wiki/Key:trees)- `type[string]`: NGSI 엔티티 유형. OSMLanduse여야 합니다. <!-- /30-PropertiesList -->
+	- `streetNr[string]`: 공공 거리의 특정 속성을 식별하는 번호
+- `alternateName[string]`: 이 항목의 대체 이름 - `areaServed[string]`: 서비스 또는 제공되는 항목이 제공되는 지리적 영역. 모델: [https://schema.org/Text](https://schema.org/Text) - `crop[string]`: landuse=farmland인 경우 토지에서 재배되는 작물. 모델: [https://wiki.openstreetmap.org/wiki/Key:crop](https://wiki.openstreetmap.org/wiki/Key:crop) - `dataProvider[string]`: 조화된 데이터 엔티티의 제공자를 식별하는 문자 시퀀스 - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 일반적으로 스토리지 플랫폼에서 할당됩니다. - `dateModified[date-time]`: 엔티티 마지막 수정 타임스탬프. 일반적으로 스토리지 플랫폼에서 할당됩니다. - `description[string]`: 이 항목에 대한 설명 - `id[*]`: 엔티티의 고유 식별자 - `landuseType[string]`: 토지의 주요 인간 용도를 분류하는 OSM 토지 이용 태그. 열거형: '상업, 건설, 교육, 산업, 주거, 소매, 농지, 숲, 초원, 과수원, ...'. 모델: [https://wiki.openstreetmap.org/wiki/Key:landuse](https://wiki.openstreetmap.org/wiki/Key:landuse) - `location[*]`: 항목에 대한 Geojson 참조. Point, LineString, Polygon, MultiPoint, MultiLineString 또는 MultiPolygon일 수 있습니다. - `name[string]`: 이 항목의 이름 - `operator[string]`: 영역을 운영하거나 관리하는 엔티티의 이름 - `osmId[number]`: 원본 OpenStreetMap 요소 정수 식별자 - `osmLastModified[date-time]`: 마지막 수정 타임스탬프 - `osmType[string]`: 원본 OSM 요소의 유형 - `owner[array]`: 소유자의 고유 ID를 참조하는 JSON으로 인코딩된 문자 시퀀스가 포함된 목록 - `seeAlso[*]`: 추가 리소스를 가리키는 URI 목록 - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스. 소스 제공자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 권장합니다. - `trees[string]`: landuse=forest 또는 orchard인 경우 재배되는 나무의 유형. 모델: [https://wiki.openstreetmap.org/wiki/Key:trees](https://wiki.openstreetmap.org/wiki/Key:trees) - `type[string]`: NGSI 엔티티 유형. OSMLanduse여야 합니다. <!-- /30-PropertiesList -->
 <!-- 35-RequiredProperties -->
 필수 속성
 - `id` - `landuseType` - `location` - `osmId` - `osmType` - `type` <!-- /35-RequiredProperties -->
 <!-- 40-NotesYaml -->
 <!-- /40-NotesYaml -->
 <!-- 50-DataModelHeader -->
-## 속성의 데이터 모델 설명
-알파벳순 정렬 (자세히 보려면 클릭)
+## 데이터 모델 속성 설명
+알파벳순으로 정렬(자세히 보려면 클릭)
 <!-- /50-DataModelHeader -->
 <!-- 60-ModelYaml -->
 <details><summary><strong>전체 yaml 세부 정보</strong></summary>
@@ -483,7 +483,7 @@ OSMLanduse:
 <!-- 80-Examples -->
 ## 예시 페이로드
 #### OSMLanduse NGSI-v2 키-값 예시
-다음은 키-값 형식의 OSMLanduse JSON 예시입니다. 이는 `options=keyValues`를 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.
+다음은 키-값 형식의 OSMLanduse JSON 형식 예시입니다. 이는 `options=keyValues`를 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.
 <details><summary><strong>예시 표시/숨기기</strong></summary>
 ```json  
 {  
@@ -529,7 +529,7 @@ OSMLanduse:
 ```
 </details>
 #### OSMLanduse NGSI-v2 정규화 예시
-다음은 정규화된 OSMLanduse JSON 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.
+다음은 정규화된 OSMLanduse JSON 형식 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.
 <details><summary><strong>예시 표시/숨기기</strong></summary>
 ```json  
 {  
@@ -648,7 +648,7 @@ OSMLanduse:
 ```
 </details>
 #### OSMLanduse NGSI-LD 정규화 예시
-다음은 정규화된 OSMLanduse JSON-LD 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.
+다음은 정규화된 OSMLanduse JSON-LD 형식 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.
 <details><summary><strong>예시 표시/숨기기</strong></summary>
 ```json  
 {  
