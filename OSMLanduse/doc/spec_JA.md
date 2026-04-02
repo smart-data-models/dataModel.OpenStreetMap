@@ -15,23 +15,23 @@ version: 0.0.1
 ## プロパティのリスト
 
 <sup><sub>[*] 属性にタイプがない場合は、複数のタイプまたは異なる形式/パターンを持つ可能性があることを意味します</sub></sup>
-- `address[object]`: 郵便住所。 モデル: [https://schema.org/address](https://schema.org/address) - `addressCountry[string]`: 国。 例: スペイン。 モデル: [https://schema.org/addressCountry](https://schema.org/addressCountry)
-	- `addressLocality[string]`: 住所がある地域で、国にある地域。 モデル: [https://schema.org/addressLocality](https://schema.org/addressLocality)
-	- `addressRegion[string]`: 国にある地域にある地域。 モデル: [https://schema.org/addressRegion](https://schema.org/addressRegion)
-	- `district[string]`: 一部の国では地方自治体によって管理されている行政区分のタイプである地区
-	- `postOfficeBoxNumber[string]`: 私書箱住所の私書箱番号。 例: 03578。 モデル: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
-	- `postalCode[string]`: 郵便番号。 例: 24004。 モデル: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
-	- `streetAddress[string]`: 通りの住所。 モデル: [https://schema.org/streetAddress](https://schema.org/streetAddress)
-	- `streetNr[string]`: 公共の通りにある特定のプロパティを識別する番号
-- `alternateName[string]`: このアイテムの別名 - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的エリア。 モデル: [https://schema.org/Text](https://schema.org/Text) - `crop[string]`: landuse=farmland の場合の土地で栽培される作物。 モデル: [https://wiki.openstreetmap.org/wiki/Key:crop](https://wiki.openstreetmap.org/wiki/Key:crop) - `dataProvider[string]`: ハーモナイズされたデータエンティティのプロバイダーを識別する文字のシーケンス - `dateCreated[date-time]`: エンティティ作成タイムスタンプ。 これは通常、ストレージプラットフォームによって割り当てられます - `dateModified[date-time]`: エンティティの最後の変更のタイムスタンプ。 これは通常、ストレージプラットフォームによって割り当てられます - `description[string]`: このアイテムの説明 - `id[*]`: エンティティの一意の識別子 - `landuseType[string]`: 土地の主な人間の利用を分類する OSM の landuse タグ。 Enum: 'commercial, construction, education, industrial, residential, retail, farmland, forest, meadow, orchard, ...'。 モデル: [https://wiki.openstreetmap.org/wiki/Key:landuse](https://wiki.openstreetmap.org/wiki/Key:landuse) - `location[*]`: アイテムへの Geojson 参照。 Point、LineString、Polygon、MultiPoint、MultiLineString、または MultiPolygon のいずれかになります - `name[string]`: このアイテムの名前 - `operator[string]`: エリアを運営または管理するエンティティの名前 - `osmId[number]`: 元の OpenStreetMap 要素の整数識別子 - `osmLastModified[date-time]`: 最後の変更のタイムスタンプ - `osmType[string]`: 元の OSM 要素のタイプ - `owner[array]`: 所有者のユニーク ID を参照する JSON エンコードされた文字シーケンスを含むリスト - `seeAlso[*]`: 追加のリソースを指す URI のリスト - `source[string]`: エンティティデータの元のソースを URL として示す文字シーケンス。 ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへの URL を推奨します - `trees[string]`: landuse=forest または orchard の場合の樹木のタイプ。 モデル: [https://wiki.openstreetmap.org/wiki/Key:trees](https://wiki.openstreetmap.org/wiki/Key:trees) - `type[string]`: NGSI エンティティタイプ。 OSMLanduse である必要があります <!-- /30-PropertiesList -->
+- `address[object]`: 郵便住所。モデル: [https://schema.org/address](https://schema.org/address) - `addressCountry[string]`: 国。例: スペイン。モデル: [https://schema.org/addressCountry](https://schema.org/addressCountry)
+	- `addressLocality[string]`: 住所がある地域で、国にある市町村。モデル: [https://schema.org/addressLocality](https://schema.org/addressLocality)
+	- `addressRegion[string]`: 市町村がある地域で、国にある州。モデル: [https://schema.org/addressRegion](https://schema.org/addressRegion)
+	- `district[string]`: いくつかの国では地方自治体によって管理されている行政区分のタイプである地区
+	- `postOfficeBoxNumber[string]`: 私書箱住所の私書箱番号。例: 03578。モデル: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
+	- `postalCode[string]`: 郵便番号。例: 24004。モデル: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
+	- `streetAddress[string]`: 住所。モデル: [https://schema.org/streetAddress](https://schema.org/streetAddress)
+	- `streetNr[string]`: 公道上の特定のプロパティを識別する番号
+- `alternateName[string]`: このアイテムの別名 - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的エリア。モデル: [https://schema.org/Text](https://schema.org/Text) - `crop[string]`: landuse=farmland の場合の土地で栽培される作物。モデル: [https://wiki.openstreetmap.org/wiki/Key:crop](https://wiki.openstreetmap.org/wiki/Key:crop) - `dataProvider[string]`: ハーモナイズされたデータエンティティのプロバイダーを識別する文字のシーケンス - `dateCreated[date-time]`: エンティティ作成タイムスタンプ。通常はストレージプラットフォームによって割り当てられます - `dateModified[date-time]`: エンティティの最終変更タイムスタンプ。通常はストレージプラットフォームによって割り当てられます - `description[string]`: このアイテムの説明 - `id[*]`: エンティティの一意の識別子 - `landuseType[string]`: 土地の主な人間の利用を分類する OSM の landuse タグ。Enum: 'commercial, construction, education, industrial, residential, retail, farmland, forest, meadow, orchard, ...'。モデル: [https://wiki.openstreetmap.org/wiki/Key:landuse](https://wiki.openstreetmap.org/wiki/Key:landuse) - `location[*]`: アイテムへの Geojson 参照。Point, LineString, Polygon, MultiPoint, MultiLineString または MultiPolygon が可能です - `name[string]`: このアイテムの名前 - `operator[string]`: エリアを運営または管理するエンティティの名前 - `osmId[number]`: 元の OpenStreetMap 要素の整数識別子 - `osmLastModified[date-time]`: 最終変更のタイムスタンプ - `osmType[string]`: 元の OSM 要素のタイプ - `owner[array]`: 所有者のユニーク ID を参照する JSON エンコードされた文字シーケンスを含むリスト - `seeAlso[*]`: 追加リソースを指す URI のリスト - `source[string]`: エンティティデータの元のソースを URL として示す文字シーケンス。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへの URL を推奨します - `trees[string]`: landuse=forest または orchard の場合の樹木のタイプ。モデル: [https://wiki.openstreetmap.org/wiki/Key:trees](https://wiki.openstreetmap.org/wiki/Key:trees) - `type[string]`: NGSI エンティティタイプ。OSMLanduse である必要があります <!-- /30-PropertiesList -->
 <!-- 35-RequiredProperties -->
 必須プロパティ
 - `id` - `landuseType` - `location` - `osmId` - `osmType` - `type` <!-- /35-RequiredProperties -->
 <!-- 40-NotesYaml -->
 <!-- /40-NotesYaml -->
 <!-- 50-DataModelHeader -->
-## データモデルの説明（プロパティ）
-アルファベット順（詳細をクリック）
+## データモデルの説明
+アルファベット順（詳細はこちらをクリック）
 <!-- /50-DataModelHeader -->
 <!-- 60-ModelYaml -->
 <details><summary><strong>完全な yaml 詳細</strong></summary>
@@ -482,8 +482,9 @@ OSMLanduse:
 <!-- /70-MiddleNotes -->
 <!-- 80-Examples -->
 ## サンプルペイロード
-#### OSMLanduse NGSI-v2 キー値ペアの例
-以下は、キー値ペア形式の OSMLanduse の JSON 形式の例です。これは、`options=keyValues` を使用する場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。
+
+#### OSMLanduse NGSI-v2 キー値の例
+以下は、キー値形式の OSMLanduse の JSON 形式の例です。これは、`options=keyValues` を使用する場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。
 <details><summary><strong>例を表示/非表示</strong></summary>
 ```json  
 {  
@@ -529,7 +530,7 @@ OSMLanduse:
 ```
 </details>
 #### OSMLanduse NGSI-v2 正規化された例
-以下は、正規化された形式の OSMLanduse の JSON 形式の例です。これは、オプションを使用しない場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。
+以下は、正規化された OSMLanduse の JSON 形式の例です。これは、オプションを使用しない場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。
 <details><summary><strong>例を表示/非表示</strong></summary>
 ```json  
 {  
@@ -598,8 +599,8 @@ OSMLanduse:
 }  
 ```
 </details>
-#### OSMLanduse NGSI-LD キー値ペアの例
-以下は、キー値ペア形式の OSMLanduse の JSON-LD 形式の例です。これは、`options=keyValues` を使用する場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。
+#### OSMLanduse NGSI-LD キー値の例
+以下は、キー値形式の OSMLanduse の JSON-LD 形式の例です。これは、`options=keyValues` を使用する場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。
 <details><summary><strong>例を表示/非表示</strong></summary>
 ```json  
 {  
@@ -648,7 +649,7 @@ OSMLanduse:
 ```
 </details>
 #### OSMLanduse NGSI-LD 正規化された例
-以下は、正規化された形式の OSMLanduse の JSON-LD 形式の例です。これは、オプションを使用しない場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。
+以下は、正規化された OSMLanduse の JSON-LD 形式の例です。これは、オプションを使用しない場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。
 <details><summary><strong>例を表示/非表示</strong></summary>
 ```json  
 {  
@@ -726,7 +727,7 @@ OSMLanduse:
 <!-- 90-FooterNotes -->
 <!-- /90-FooterNotes -->
 <!-- 95-Units -->
-単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/) を参照してください。
+単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/) を参照してください。
 <!-- /95-Units -->
 <!-- 97-LastFooter -->
 ---
