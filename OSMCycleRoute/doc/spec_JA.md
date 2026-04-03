@@ -1,40 +1,81 @@
-<!-- 10-Header -->  
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entity: OSMCycleRoute  
-=====================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMCycleRoute/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Global description: **OpenStreetMapの専用サイクリングインフラ要素。自転車道、共有自転車レーン、および道路上のhighway=cyclewayまたはcycleway=*でタグ付けされた自転車ルートを表します。**  
-version: 0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
+<!-- 10-Header -->
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+Entity: OSMCycleRoute
+=====================
+<!-- /10-Header -->
+<!-- 15-License -->
+[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMCycleRoute/LICENSE.md)
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
+<!-- /15-License -->
+<!-- 20-Description -->
 
-## プロパティのリスト  
+Global description: **OpenStreetMapから提供される専用の自転車インフラ要素。cycleway=* タグが付けられた自転車専用道路、共有自転車レーン、自転車ルートなどを表します。**
+version: 0.0.1
+<!-- /20-Description -->
+<!-- 30-PropertiesList -->
 
-<sup><sub>[*] 属性に型がない場合、それは複数の型、または異なる形式/パターンを持つ可能性があるためです</sub></sup>  
-- `access[string]`: このルートのサイクリストに適用されるアクセス制限。 Model: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: 郵送先住所。 Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例：スペイン。 Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: 番地が存在し、かつ地域内にある場所。 Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: 場所が存在し、かつ国内にある地域。 Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: 区画とは、一部の国で地方自治体によって管理される行政区画の一種です    
-	- `postOfficeBoxNumber[string]`: 私書箱の住所の私書箱番号。例：03578。 Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: 郵便番号。例：24004。 Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: 番地。 Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]`: 公道上の特定の物件を識別する番号    
-- `alternateName[string]`: このアイテムの別名  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的領域。 Model: [https://schema.org/Text](https://schema.org/Text)- `cyclewayType[string]`: サイクリングインフラの分類。列挙型：'lane, track, opposite, opposite_lane, shared_busway, path, separate, shared'。 Model: [https://wiki.openstreetmap.org/wiki/Key:cycleway](https://wiki.openstreetmap.org/wiki/Key:cycleway)- `dataProvider[string]`: 調和されたデータエンティティのプロバイダーを識別する一連の文字  - `dateCreated[date-time]`: エンティティ作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます  - `dateModified[date-time]`: エンティティの最終変更タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意の識別子  - `lit[boolean]`: 自転車ルートに街灯があるかどうかを示します。 Model: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、またはMultiPolygonのいずれかです  - `maxSpeed[number]`: 時速キロメートル単位の最大許容速度。 Model: [https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed)- `name[string]`: このアイテムの名前  - `ncnRef[string]`: ナショナルサイクルネットワークルート参照番号。 Model: [https://wiki.openstreetmap.org/wiki/Key:ncn_ref](https://wiki.openstreetmap.org/wiki/Key:ncn_ref)- `oneway[boolean]`: 自転車ルートがサイクリストにとって一方通行であるかどうかを示します。 Model: [https://wiki.openstreetmap.org/wiki/Key:oneway](https://wiki.openstreetmap.org/wiki/Key:oneway)- `operator[string]`: この自転車ルートの維持管理を担当するエンティティの名前。 Model: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: 元のOpenStreetMap要素の整数識別子。 Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM要素の最終変更タイムスタンプ。  - `osmType[string]`: 元のOpenStreetMap要素のタイプ。 Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字シーケンスを含むリスト  - `rcnRef[string]`: 地域サイクルネットワークルート参照番号。 Model: [https://wiki.openstreetmap.org/wiki/Key:rcn_ref](https://wiki.openstreetmap.org/wiki/Key:rcn_ref)- `seeAlso[*]`: このアイテムに関する追加リソースを指すURIのリスト。  - `segregated[boolean]`: サイクリングインフラが歩行者の利用から物理的に分離されているかどうかを示します。 Model: [https://wiki.openstreetmap.org/wiki/Key:segregated](https://wiki.openstreetmap.org/wiki/Key:segregated)- `source[string]`: エンティティデータの元のソースをURLとして示す一連の文字。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへのURLであることが推奨されます  - `surface[string]`: 自転車道の物理的な路面素材。 Model: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `type[string]`: NGSIエンティティタイプ。OSMCycleRouteである必要があります  - `widthMeters[number]`: 自転車道の幅（メートル単位）。 Model: [https://wiki.openstreetmap.org/wiki/Key:width](https://wiki.openstreetmap.org/wiki/Key:width)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-必須プロパティ  
-- `cyclewayType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-NotesYaml -->  
-<!-- /40-NotesYaml -->  
-<!-- 50-DataModelHeader -->  
-## プロパティのデータモデルの説明  
-アルファベット順（詳細はこちらをクリック）  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
-<details><summary><strong>完全なYAML詳細</strong></summary>    
+## プロパティの一覧
+
+<sup><sub>[*] 属性に型が指定されていない場合は、複数の型や異なる形式/パターンを取り得るためです</sub></sup>
+- `access[string]`: このルートにおける自転車利用者に適用されるアクセス制限。モデル: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)
+- `address[object]`: 郵便住所。モデル: [https://schema.org/address](https://schema.org/address)
+	- `addressCountry[string]`: 国。例: スペイン。モデル: [https://schema.org/addressCountry](https://schema.org/addressCountry)
+	- `addressLocality[string]`: 街路住所が存在する地方。モデル: [https://schema.org/addressLocality](https://schema.org/addressLocality)
+	- `addressRegion[string]`: 地方が属する国。モデル: [https://schema.org/addressRegion](https://schema.org/addressRegion)
+	- `district[string]`: 地区は、一部の国で地方自治体によって管理される行政区画の一種です
+	- `postOfficeBoxNumber[string]`: 郵便ポストの郵便番号宛ての場合の私書箱番号。例: 03578。モデル: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
+	- `postalCode[string]`: 郵便番号。例: 24004。モデル: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
+	- `streetAddress[string]`: 街路住所。モデル: [https://schema.org/streetAddress](https://schema.org/streetAddress)
+	- `streetNr[string]`: 公道上の特定の物件を識別する番号
+- `alternateName[string]`: この項目の別名
+- `areaServed[string]`: サービスや提供されるアイテムが利用可能な地理的エリア。モデル: [https://schema.org/Text](https://schema.org/Text)
+- `cyclewayType[string]`: 自転車インフラの分類。Enum: 'lane, track, opposite, opposite_lane, shared_busway, path, separate, shared'。モデル: [https://wiki.openstreetmap.org/wiki/Key:cycleway](https://wiki.openstreetmap.org/wiki/Key:cycleway)
+- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する文字列のシーケンス
+- `dateCreated[date-time]`: エンティティ作成タイムスタンプ。通常、ストレージプラットフォームによって割り当てられます
+- `dateModified[date-time]`: エンティティの最終更新タイムスタンプ。通常、ストレージプラットフォームによって割り当てられます
+- `description[string]`: この項目の説明
+- `id[*]`: エンティティの一意の識別子
+- `lit[boolean]`: 自転車ルートに街灯が設置されているかどうかを示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)
+- `location[*]`: 当該アイテムへのジオJSON参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかを指定できます
+- `maxSpeed[number]`: 時速キロメートル単位で許可される最高速度。モデル: [https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed)
+- `name[string]`: この項目の名称
+- `ncnRef[string]`: 全国サイクルネットワークルートの参照番号。モデル: [https://wiki.openstreetmap.org/wiki/Key:ncn_ref](https://wiki.openstreetmap.org/wiki/Key:ncn_ref)
+- `oneway[boolean]`: 自転車ルートが自転車にとって一方通行かどうかを示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:oneway](https://wiki.openstreetmap.org/wiki/Key:oneway)
+- `operator[string]`: この自転車ルートの維持管理を行う責任を持つエンティティの名称。モデル: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)
+- `osmId[number]`: 元のOpenStreetMap要素の整数ID。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)
+- `osmLastModified[date-time]`: OSM要素の最終更新タイムスタンプ
+- `osmType[string]`: 元のOpenStreetMap要素の型。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)
+- `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列のシーケンスを含むリスト
+- `rcnRef[string]`: 地域サイクルネットワークルートの参照番号。モデル: [https://wiki.openstreetmap.org/wiki/Key:rcn_ref](https://wiki.openstreetmap.org/wiki/Key:rcn_ref)
+- `seeAlso[*]`: この項目に関する追加リソースへのURIのリスト
+- `segregated[boolean]`: 自転車インフラが歩行者利用から物理的に分離されているかどうかを示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:segregated](https://wiki.openstreetmap.org/wiki/Key:segregated)
+- `source[string]`: エンティティデータの元のソースURLとしての文字列。ソース提供者の完全修飾ドメイン名、またはソースオブジェクトへのURLを推奨します
+- `surface[string]`: 自転車専用道路の物理的な表面素材。モデル: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)
+- `type[string]`: NGSIエンティティ型。OSMCycleRouteである必要があります
+- `widthMeters[number]`: 自転車専用道路の幅（メートル単位）。モデル: [https://wiki.openstreetmap.org/wiki/Key:width](https://wiki.openstreetmap.org/wiki/Key:width)
+<!-- /30-PropertiesList -->
+
+<!-- 35-RequiredProperties -->
+
+Required properties
+- `cyclewayType`
+- `id`
+- `location`
+- `osmId`
+- `osmType`
+- `type`
+<!-- /35-RequiredProperties -->
+
+<!-- 40-NotesYaml -->
+<!-- /40-NotesYaml -->
+<!-- 50-DataModelHeader -->
+
+## プロパティのデータモデル説明
+
+アルファベット順（詳細についてはクリック）
+<!-- /50-DataModelHeader -->
+<!-- 60-ModelYaml -->
+<details><summary><strong>完全なYAMLの詳細</strong></summary>
 ```yaml  
 OSMCycleRoute:    
   description: A dedicated cycling infrastructure element from OpenStreetMap. Represents cycle paths, shared cycle lanes, and bike routes tagged with highway=cycleway or cycleway=* on road ways.    
@@ -527,16 +568,18 @@ OSMCycleRoute:
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMCycleRoute/schema.json    
   x-model-tags: OSM OpenStreetMap Transportation Cycling    
   x-version: 0.0.1    
-```  
-</details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ペイロードの例    
-#### OSMCycleRoute NGSI-v2 キーバリューの例    
-これは、キーバリュー形式のJSONで表されたOSMCycleRouteの例です。`options=keyValues`を使用する場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+```
+</details>
+<!-- /60-ModelYaml -->
+<!-- 70-MiddleNotes -->
+<!-- /70-MiddleNotes -->
+<!-- 80-Examples -->
+
+## 例のペイロード
+
+#### OSMCycleRoute NGSI-v2 キー値形式の例
+これはNGSI-v2で`options=keyValues`を使用した際に個別エンティティのコンテキストデータを返す、キー値形式のJSONによるOSMCycleRouteの例です。
+<details><summary><strong>例を表示/非表示</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMCycleRoute:way:107532891",  
@@ -574,11 +617,12 @@ OSMCycleRoute:
     "https://www.openstreetmap.org/way/107532891"  
   ]  
 }  
-```  
-</details>  
-#### OSMCycleRoute NGSI-v2 正規化された例    
-これは、正規化されたJSON形式で表されたOSMCycleRouteの例です。オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+```
+</details>
+
+#### OSMCycleRoute NGSI-v2 正規化形式の例
+これはオプションを使用しないNGSI-v2で個別エンティティのコンテキストデータを返す、正規化形式のJSONによるOSMCycleRouteの例です。
+<details><summary><strong>例を表示/非表示</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMCycleRoute:way:107532891",  
@@ -664,11 +708,12 @@ OSMCycleRoute:
     ]  
   }  
 }  
-```  
-</details>  
-#### OSMCycleRoute NGSI-LD キーバリューの例    
-これは、キーバリュー形式のJSON-LDで表されたOSMCycleRouteの例です。`options=keyValues`を使用する場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+```
+</details>
+
+#### OSMCycleRoute NGSI-LD キー値形式の例
+これはNGSI-LDで`options=keyValues`を使用した際に個別エンティティのコンテキストデータを返す、キー値形式のJSON-LDによるOSMCycleRouteの例です。
+<details><summary><strong>例を表示/非表示</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMCycleRoute:way:107532891",  
@@ -709,11 +754,12 @@ OSMCycleRoute:
     "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
   ]  
 }  
-```  
-</details>  
-#### OSMCycleRoute NGSI-LD 正規化された例    
-これは、正規化されたJSON-LD形式で表されたOSMCycleRouteの例です。オプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+```
+</details>
+
+#### OSMCycleRoute NGSI-LD 正規化形式の例
+これはオプションを使用しないNGSI-LDで個別エンティティのコンテキストデータを返す、正規化形式のJSON-LDによるOSMCycleRouteの例です。
+<details><summary><strong>例を表示/非表示</strong></summary>
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMCycleRoute:way:107532891",  
@@ -800,13 +846,17 @@ OSMCycleRoute:
         "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
     ]  
 }  
-```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-大きさの単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
----  
+```
+</details>
+<!-- /80-Examples -->
+
+<!-- 90-FooterNotes -->
+<!-- /90-FooterNotes -->
+<!-- 95-Units -->
+
+単位付きの数値の取り扱いについては[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください
+<!-- /95-Units -->
+<!-- 97-LastFooter -->
+
+---
 [Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
