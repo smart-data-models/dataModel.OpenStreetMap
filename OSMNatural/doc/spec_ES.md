@@ -8,27 +8,26 @@ Entidad: OSMNatural
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
 <!-- /15-License -->
 <!-- 20-Description -->
-
-Descripción global: **Característica natural de OpenStreetMap etiquetada con natural=*. Describe características geográficas como masas de agua, bosques, matorrales, picos, playas, etc.**
+Descripción global: **Una característica natural de OpenStreetMap etiquetada con natural=*. Describe características geográficas como masas de agua, bosques, matorrales, picos, playas, etc.**
 versión: 0.0.1
 <!-- /20-Description -->
 <!-- 30-PropertiesList -->
 
 ## Lista de propiedades
 
-<sup><sub>[*] Si no hay un tipo en un atributo es porque podría tener varios tipos o diferentes formatos/patrones</sub></sup>
+<sup><sub>[*] Si no existe un tipo en un atributo, es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>
 - `address[object]`: La dirección postal. Modelo: [https://schema.org/address](https://schema.org/address)
 	- `addressCountry[string]`: El país. Por ejemplo, España. Modelo: [https://schema.org/addressCountry](https://schema.org/addressCountry)
 	- `addressLocality[string]`: La localidad en la que se encuentra la dirección postal y que está en la región. Modelo: [https://schema.org/addressLocality](https://schema.org/addressLocality)
 	- `addressRegion[string]`: La región en la que se encuentra la localidad y que está en el país. Modelo: [https://schema.org/addressRegion](https://schema.org/addressRegion)
 	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, está gestionado por el gobierno local
-	- `postOfficeBoxNumber[string]`: El número de apartado postal para direcciones de apartado. Por ejemplo, 03578. Modelo: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
+	- `postOfficeBoxNumber[string]`: El número de apartado postal para direcciones de buzón. Por ejemplo, 03578. Modelo: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
 	- `postalCode[string]`: El código postal. Por ejemplo, 24004. Modelo: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
-	- `streetAddress[string]`: La dirección postal. Modelo: [https://schema.org/streetAddress](https://schema.org/streetAddress)
+	- `streetAddress[string]`: La dirección de la calle. Modelo: [https://schema.org/streetAddress](https://schema.org/streetAddress)
 	- `streetNr[string]`: Número que identifica una propiedad específica en una calle pública
 - `alternateName[string]`: Un nombre alternativo para este elemento
-- `areaServed[string]`: La zona geográfica donde se ofrece un servicio o artículo. Modelo: [https://schema.org/Text](https://schema.org/Text)
-- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada
+- `areaServed[string]`: La zona geográfica donde se ofrece un servicio o un artículo. Modelo: [https://schema.org/Text](https://schema.org/Text)
+- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizados
 - `dateCreated[date-time]`: Marca de tiempo de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento
 - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento
 - `description[string]`: Una descripción de este elemento
@@ -44,12 +43,11 @@ versión: 0.0.1
 - `osmType[string]`: El tipo del elemento original de OSM
 - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios
 - `seeAlso[*]`: Lista de URIs que apuntan a recursos adicionales
-- `source[string]`: Una secuencia de caracteres que proporciona la fuente original de los datos de la entidad como URL. Se recomienda que sea el nombre de dominio completo del proveedor de la fuente o la URL del objeto fuente
+- `source[string]`: Una secuencia de caracteres que proporciona la fuente original de los datos de la entidad como URL. Se recomienda que sea el nombre de dominio completo del proveedor de la fuente o la URL del objeto de origen
 - `type[string]`: Tipo de entidad NGSI. Debe ser OSMNatural
 - `water[string]`: Tipo de masa de agua si natural=water (por ejemplo, lago, embalse, río, estanque). Modelo: [https://wiki.openstreetmap.org/wiki/Key:water](https://wiki.openstreetmap.org/wiki/Key:water)
 - `wetland[string]`: Tipo de humedal si natural=wetland (por ejemplo, pantano, turbera, marisma). Modelo: [https://wiki.openstreetmap.org/wiki/Key:wetland](https://wiki.openstreetmap.org/wiki/Key:wetland)
 <!-- /30-PropertiesList -->
-
 <!-- 35-RequiredProperties -->
 
 Propiedades requeridas
@@ -60,12 +58,11 @@ Propiedades requeridas
 - `osmType`
 - `type`
 <!-- /35-RequiredProperties -->
-
 <!-- 40-NotesYaml -->
 <!-- /40-NotesYaml -->
 <!-- 50-DataModelHeader -->
 
-## Descripción del modelo de datos de propiedades
+## Descripción del modelo de datos de las propiedades
 Ordenadas alfabéticamente (haga clic para ver detalles)
 <!-- /50-DataModelHeader -->
 <!-- 60-ModelYaml -->
@@ -544,7 +541,7 @@ OSMNatural:
 
 ## Ejemplos de carga útil
 
-#### Ejemplo de OSMNatural en NGSI-v2 clave-valor
+#### Ejemplo de OSMNatural en clave-valor NGSI-v2
 Aquí hay un ejemplo de un OSMNatural en formato JSON como clave-valor. Es compatible con NGSI-v2 al usar `options=keyValues` y devuelve los datos de contexto de una entidad individual.
 <details><summary><strong>mostrar/ocultar ejemplo</strong></summary>
 ```json  
@@ -573,8 +570,8 @@ Aquí hay un ejemplo de un OSMNatural en formato JSON como clave-valor. Es compa
 ```
 </details>
 
-#### Ejemplo de OSMNatural en NGSI-v2 normalizado
-Aquí hay un ejemplo de un OSMNatural en formato JSON normalizado. Es compatible con NGSI-v2 cuando no se usan opciones y devuelve los datos de contexto de una entidad individual.
+#### Ejemplo normalizado de OSMNatural NGSI-v2
+Aquí hay un ejemplo de un OSMNatural en formato JSON como normalizado. Es compatible con NGSI-v2 cuando no se usan opciones y devuelve los datos de contexto de una entidad individual.
 <details><summary><strong>mostrar/ocultar ejemplo</strong></summary>
 ```json  
 {  
@@ -635,7 +632,7 @@ Aquí hay un ejemplo de un OSMNatural en formato JSON normalizado. Es compatible
 ```
 </details>
 
-#### Ejemplo de OSMNatural en NGSI-LD clave-valor
+#### Ejemplo de OSMNatural en clave-valor NGSI-LD
 Aquí hay un ejemplo de un OSMNatural en formato JSON-LD como clave-valor. Es compatible con NGSI-LD al usar `options=keyValues` y devuelve los datos de contexto de una entidad individual.
 <details><summary><strong>mostrar/ocultar ejemplo</strong></summary>
 ```json  
@@ -667,8 +664,8 @@ Aquí hay un ejemplo de un OSMNatural en formato JSON-LD como clave-valor. Es co
 ```
 </details>
 
-#### Ejemplo de OSMNatural en NGSI-LD normalizado
-Aquí hay un ejemplo de un OSMNatural en formato JSON-LD normalizado. Es compatible con NGSI-LD cuando no se usan opciones y devuelve los datos de contexto de una entidad individual.
+#### Ejemplo normalizado de OSMNatural NGSI-LD
+Aquí hay un ejemplo de un OSMNatural en formato JSON-LD como normalizado. Es compatible con NGSI-LD cuando no se usan opciones y devuelve los datos de contexto de una entidad individual.
 <details><summary><strong>mostrar/ocultar ejemplo</strong></summary>
 ```json  
 {  
@@ -729,7 +726,6 @@ Aquí hay un ejemplo de un OSMNatural en formato JSON-LD normalizado. Es compati
 }  
 ```
 </details><!-- /80-Examples -->
-
 <!-- 90-FooterNotes -->
 <!-- /90-FooterNotes -->
 <!-- 95-Units -->
