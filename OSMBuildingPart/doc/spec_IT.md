@@ -1,40 +1,77 @@
-<!-- 10-Header -->  
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entità: OSMBuildingPart  
-=======================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMBuildingPart/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Descrizione globale: **Una parte o sezione di un edificio di OpenStreetMap etichettata con building:part=*. Utilizzata per rappresentare edifici con altezze, forme del tetto o materiali variabili tra diverse sezioni, consentendo la visualizzazione 3D degli edifici (standard Simple 3D Buildings).**  
-versione: 0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
+<!-- 10-Header -->
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+Entità: OSMBuildingPart
+=======================<!-- /10-Header -->
+<!-- 15-License -->
+[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMBuildingPart/LICENSE.md)
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
+<!-- /15-License -->
+<!-- 20-Description -->
 
-## Elenco delle proprietà  
+Descrizione globale: **Una parte o sezione di un edificio proveniente da OpenStreetMap contrassegnata con building:part=*. Viene utilizzata per rappresentare edifici con altezze, forme del tetto o materiali diversi nelle varie sezioni, consentendo la visualizzazione 3D degli edifici (standard Simple 3D Buildings).**
+version: 0.0.1
+<!-- /20-Description -->
+<!-- 30-PropertiesList -->
 
-<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o formati/pattern differenti</sub></sup>  
-- `address[object]`: L'indirizzo postale. Modello: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Il paese. Ad esempio, Spagna. Modello: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: La località in cui si trova l'indirizzo civico, e che si trova nella regione. Modello: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: La regione in cui si trova la località, e che si trova nel paese. Modello: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale    
-	- `postOfficeBoxNumber[string]`: Il numero della casella postale per gli indirizzi di casella postale. Ad esempio, 03578. Modello: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: Il codice postale. Ad esempio, 24004. Modello: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: L'indirizzo civico. Modello: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica    
-- `alternateName[string]`: Un nome alternativo per questo elemento  - `areaServed[string]`: L'area geografica in cui viene fornito un servizio o un elemento offerto. Modello: [https://schema.org/Text](https://schema.org/Text)- `buildingColour[string]`: Colore della facciata di questa parte dell'edificio, espresso come nome di colore CSS o codice esadecimale. Modello: [https://wiki.openstreetmap.org/wiki/Key:building:colour](https://wiki.openstreetmap.org/wiki/Key:building:colour)- `buildingHeight[number]`: Altezza totale di questa parte dell'edificio in metri. Modello: [https://wiki.openstreetmap.org/wiki/Key:height](https://wiki.openstreetmap.org/wiki/Key:height)- `buildingLevels[number]`: Numero di piani fuori terra in questa parte dell'edificio. Modello: [https://wiki.openstreetmap.org/wiki/Key:building:levels](https://wiki.openstreetmap.org/wiki/Key:building:levels)- `buildingMaterial[string]`: Materiale primario della facciata o strutturale di questa parte dell'edificio. Modello: [https://wiki.openstreetmap.org/wiki/Key:building:material](https://wiki.openstreetmap.org/wiki/Key:building:material)- `buildingPartType[string]`: Il valore del tag OSM building:part. Tipicamente 'yes' o un'etichetta di tipo specifico per la sezione architettonica. Modello: [https://wiki.openstreetmap.org/wiki/Key:building:part](https://wiki.openstreetmap.org/wiki/Key:building:part)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Questo sarà solitamente assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Questo sarà solitamente assegnato dalla piattaforma di archiviazione  - `description[string]`: Una descrizione di questo elemento  - `id[*]`: Identificatore unico dell'entità  - `location[*]`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `minHeight[number]`: Altezza dal suolo alla quale inizia questa parte dell'edificio, in metri. Utilizzata per sporgenze e sezioni elevate. Modello: [https://wiki.openstreetmap.org/wiki/Key:min_height](https://wiki.openstreetmap.org/wiki/Key:min_height)- `minLevel[number]`: Livello del piano al quale inizia questa parte dell'edificio. Utilizzato per la mappatura interna. Modello: [https://wiki.openstreetmap.org/wiki/Key:min_level](https://wiki.openstreetmap.org/wiki/Key:min_level)- `name[string]`: Il nome di questo elemento  - `osmId[number]`: L'identificatore intero dell'elemento OpenStreetMap originale. Modello: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: Timestamp dell'ultima modifica dell'elemento OSM.  - `osmType[string]`: Il tipo dell'elemento OpenStreetMap originale. Modello: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: Una lista contenente una sequenza di caratteri codificata in JSON che fa riferimento agli ID unici del/dei proprietario/i  - `refBuilding[uri]`: Riferimento URI all'entità genitore OSMBuilding a cui appartiene questa parte.  - `roofColour[string]`: Colore del tetto su questa parte, espresso come nome di colore CSS o codice esadecimale. Modello: [https://wiki.openstreetmap.org/wiki/Key:roof:colour](https://wiki.openstreetmap.org/wiki/Key:roof:colour)- `roofMaterial[string]`: Materiale primario della superficie del tetto su questa parte. Modello: [https://wiki.openstreetmap.org/wiki/Key:roof:material](https://wiki.openstreetmap.org/wiki/Key:roof:material)- `roofShape[string]`: Forma del tetto su questa parte dell'edificio. Enum:'flat, gabled, hipped, half-hipped, pyramidal, gambrel, mansard, dome, skillion, round, saltbox, onion, cone'. Modello: [https://wiki.openstreetmap.org/wiki/Key:roof:shape](https://wiki.openstreetmap.org/wiki/Key:roof:shape)- `seeAlso[*]`: Elenco di URI che puntano a risorse aggiuntive su questo elemento.  - `source[string]`: Una sequenza di caratteri che fornisce la fonte originale dei dati dell'entità come URL. Si raccomanda di utilizzare il nome di dominio completamente qualificato del fornitore della fonte, o l'URL dell'oggetto fonte  - `type[string]`: Tipo di entità NGSI. Deve essere OSMBuildingPart  <!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Proprietà richieste  
-- `buildingPartType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-NotesYaml -->  
-<!-- /40-NotesYaml -->  
-<!-- 50-DataModelHeader -->  
-## Descrizione del modello di dati delle proprietà  
-Ordinate alfabeticamente (clicca per i dettagli)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
-<details><summary><strong>dettagli yaml completi</strong></summary>    
+## Elenco delle proprietà
+
+<sup><sub>[*] Se in un attributo non è presente un tipo, significa che può avere diversi tipi o formati/modelli diversi</sub></sup>
+- `address[object]`: L'indirizzo postale. Modello: [https://schema.org/address](https://schema.org/address)
+	- `addressCountry[string]`: Il paese. Ad esempio, Spagna. Modello: [https://schema.org/addressCountry](https://schema.org/addressCountry)
+	- `addressLocality[string]`: La località in cui si trova l'indirizzo stradale, all'interno della regione. Modello: [https://schema.org/addressLocality](https://schema.org/addressLocality)
+	- `addressRegion[string]`: La regione in cui si trova la località, all'interno del paese. Modello: [https://schema.org/addressRegion](https://schema.org/addressRegion)
+	- `district[string]`: Un distretto è un tipo di divisione amministrativa che, in alcuni paesi, è gestita dal governo locale
+	- `postOfficeBoxNumber[string]`: Il numero di casella postale per indirizzi con casella postale. Ad esempio, 03578. Modello: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
+	- `postalCode[string]`: Il codice postale. Ad esempio, 24004. Modello: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
+	- `streetAddress[string]`: L'indirizzo stradale. Modello: [https://schema.org/streetAddress](https://schema.org/streetAddress)
+	- `streetNr[string]`: Numero che identifica una proprietà specifica su una strada pubblica
+- `alternateName[string]`: Un nome alternativo per questo elemento
+- `areaServed[string]`: L'area geografica in cui viene fornito un servizio o un articolo offerto. Modello: [https://schema.org/Text](https://schema.org/Text)
+- `buildingColour[string]`: Colore della facciata di questa parte dell'edificio, espresso come nome di colore CSS o codice esadecimale. Modello: [https://wiki.openstreetmap.org/wiki/Key:building:colour](https://wiki.openstreetmap.org/wiki/Key:building:colour)
+- `buildingHeight[number]`: Altezza totale di questa parte dell'edificio in metri. Modello: [https://wiki.openstreetmap.org/wiki/Key:height](https://wiki.openstreetmap.org/wiki/Key:height)
+- `buildingLevels[number]`: Numero di piani sopra il livello del suolo in questa parte dell'edificio. Modello: [https://wiki.openstreetmap.org/wiki/Key:building:levels](https://wiki.openstreetmap.org/wiki/Key:building:levels)
+- `buildingMaterial[string]`: Materiale principale della facciata o struttura di questa parte dell'edificio. Modello: [https://wiki.openstreetmap.org/wiki/Key:building:material](https://wiki.openstreetmap.org/wiki/Key:building:material)
+- `buildingPartType[string]`: Il valore del tag OSM building:part. Tipicamente 'yes' o un'etichetta specifica per la sezione architettonica. Modello: [https://wiki.openstreetmap.org/wiki/Key:building:part](https://wiki.openstreetmap.org/wiki/Key:building:part)
+- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità dati armonizzata
+- `dateCreated[date-time]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione
+- `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione
+- `description[string]`: Una descrizione di questo elemento
+- `id[*]`: Identificatore univoco dell'entità
+- `location[*]`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon
+- `minHeight[number]`: Altezza dal suolo a cui inizia questa parte dell'edificio, in metri. Utilizzato per sporgenze e sezioni rialzate. Modello: [https://wiki.openstreetmap.org/wiki/Key:min_height](https://wiki.openstreetmap.org/wiki/Key:min_height)
+- `minLevel[number]`: Livello del piano a cui inizia questa parte dell'edificio. Utilizzato per la mappatura indoor. Modello: [https://wiki.openstreetmap.org/wiki/Key:min_level](https://wiki.openstreetmap.org/wiki/Key:min_level)
+- `name[string]`: Il nome di questo elemento
+- `osmId[number]`: L'identificatore intero originale dell'elemento OpenStreetMap. Modello: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)
+- `osmLastModified[date-time]`: Timestamp dell'ultima modifica dell'elemento OSM
+- `osmType[string]`: Il tipo dell'elemento originale OpenStreetMap. Modello: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)
+- `owner[array]`: Un elenco contenente una sequenza JSON codificata di caratteri che fa riferimento agli ID univoci del/dei proprietario/i
+- `refBuilding[uri]`: Riferimento URI all'entità OSMBuilding genitore a cui questa parte appartiene
+- `roofColour[string]`: Colore del tetto di questa parte, espresso come nome di colore CSS o codice esadecimale. Modello: [https://wiki.openstreetmap.org/wiki/Key:roof:colour](https://wiki.openstreetmap.org/wiki/Key:roof:colour)
+- `roofMaterial[string]`: Materiale principale della superficie del tetto di questa parte. Modello: [https://wiki.openstreetmap.org/wiki/Key:roof:material](https://wiki.openstreetmap.org/wiki/Key:roof:material)
+- `roofShape[string]`: Forma del tetto di questa parte dell'edificio. Enum: 'piatto, a due falde, a padiglione, a falde ridotte, piramidale, a mansarda olandese, a mansarda, a cupola, a shed, arrotondato, a forma di capanna, a cipolla, conica'. Modello: [https://wiki.openstreetmap.org/wiki/Key:roof:shape](https://wiki.openstreetmap.org/wiki/Key:roof:shape)
+- `seeAlso[*]`: Elenco di URI che puntano a risorse aggiuntive su questo elemento
+- `source[string]`: Una sequenza di caratteri che fornisce la fonte originale dei dati dell'entità come URL. Consigliato sia il nome di dominio completo del fornitore della fonte o l'URL dell'oggetto sorgente
+- `type[string]`: Tipo di entità NGSI. Deve essere OSMBuildingPart
+<!-- /30-PropertiesList -->
+<!-- 35-RequiredProperties -->
+
+Proprietà obbligatorie
+- `buildingPartType`
+- `id`
+- `location`
+- `osmId`
+- `osmType`
+- `type`
+<!-- /35-RequiredProperties -->
+<!-- 40-NotesYaml -->
+<!-- /40-NotesYaml -->
+<!-- 50-DataModelHeader -->
+
+## Descrizione del modello dati delle proprietà
+Ordinate alfabeticamente (clicca per i dettagli)
+<!-- /50-DataModelHeader -->
+<!-- 60-ModelYaml -->
+<details><summary><strong>dettagli yaml completi</strong></summary>
 ```yaml  
 OSMBuildingPart:    
   description: A part or section of a building from OpenStreetMap tagged with building:part=*. Used to represent buildings with varying heights, roof shapes, or materials across different sections, enabling 3D building visualisation (Simple 3D Buildings standard).    
@@ -513,16 +550,17 @@ OSMBuildingPart:
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMBuildingPart/schema.json    
   x-model-tags: OSM OpenStreetMap Buildings 3D    
   x-version: 0.0.1    
-```  
-</details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Esempi di payload    
-#### Esempio di valori chiave NGSI-v2 di OSMBuildingPart    
-Ecco un esempio di OSMBuildingPart in formato JSON come valori chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-<details><summary><strong>mostra/nascondi esempio</strong></summary>    
+```
+</details>
+<!-- /60-ModelYaml -->
+<!-- 70-MiddleNotes -->
+<!-- /70-MiddleNotes -->
+<!-- 80-Examples -->
+
+## Esempi di payload
+#### Esempio di OSMBuildingPart NGSI-v2 in formato chiave-valore
+Ecco un esempio di OSMBuildingPart in formato JSON come chiave-valore. È compatibile con NGSI-v2 quando si utilizza `options=keyValues` e restituisce i dati contestuali di un'entità singola.
+<details><summary><strong>mostra/nascondi esempio</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMBuildingPart:way:305981241",  
@@ -571,11 +609,11 @@ Ecco un esempio di OSMBuildingPart in formato JSON come valori chiave. Questo è
     "https://www.openstreetmap.org/way/305981241"  
   ]  
 }  
-```  
-</details>  
-#### Esempio normalizzato NGSI-v2 di OSMBuildingPart    
-Ecco un esempio di OSMBuildingPart in formato JSON come normalizzato. Questo è compatibile con NGSI-v2 quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
-<details><summary><strong>mostra/nascondi esempio</strong></summary>    
+```
+</details>
+#### Esempio di OSMBuildingPart NGSI-v2 normalizzato
+Ecco un esempio di OSMBuildingPart in formato JSON normalizzato. È compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati contestuali di un'entità singola.
+<details><summary><strong>mostra/nascondi esempio</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMBuildingPart:way:305981241",  
@@ -681,11 +719,11 @@ Ecco un esempio di OSMBuildingPart in formato JSON come normalizzato. Questo è 
     ]  
   }  
 }  
-```  
-</details>  
-#### Esempio di valori chiave NGSI-LD di OSMBuildingPart    
-Ecco un esempio di OSMBuildingPart in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-<details><summary><strong>mostra/nascondi esempio</strong></summary>    
+```
+</details>
+#### Esempio di OSMBuildingPart NGSI-LD in formato chiave-valore
+Ecco un esempio di OSMBuildingPart in formato JSON-LD come chiave-valore. È compatibile con NGSI-LD quando si utilizza `options=keyValues` e restituisce i dati contestuali di un'entità singola.
+<details><summary><strong>mostra/nascondi esempio</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMBuildingPart:way:305981241",  
@@ -737,11 +775,11 @@ Ecco un esempio di OSMBuildingPart in formato JSON-LD come valori chiave. Questo
     "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
   ]  
 }  
-```  
-</details>  
-#### Esempio normalizzato NGSI-LD di OSMBuildingPart    
-Ecco un esempio di OSMBuildingPart in formato JSON-LD come normalizzato. Questo è compatibile con NGSI-LD quando non si usano opzioni e restituisce i dati di contesto di una singola entità.  
-<details><summary><strong>mostra/nascondi esempio</strong></summary>    
+```
+</details>
+#### Esempio di OSMBuildingPart NGSI-LD normalizzato
+Ecco un esempio di OSMBuildingPart in formato JSON-LD normalizzato. È compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati contestuali di un'entità singola.
+<details><summary><strong>mostra/nascondi esempio</strong></summary>
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMBuildingPart:way:305981241",  
@@ -843,13 +881,14 @@ Ecco un esempio di OSMBuildingPart in formato JSON-LD come normalizzato. Questo 
         "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
     ]  
 }  
-```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-Vedi [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di misura  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
----  
+```
+</details><!-- /80-Examples -->
+<!-- 90-FooterNotes -->
+<!-- /90-FooterNotes -->
+<!-- 95-Units -->
+
+Consulta [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per sapere come gestire le unità di misura
+<!-- /95-Units -->
+<!-- 97-LastFooter -->
+---
 [Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
