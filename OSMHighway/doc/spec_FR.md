@@ -1,41 +1,41 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entité : OSMHighway  
-==================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMHighway/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Description globale : **Un élément de route ou de chemin d'OpenStreetMap étiqueté avec la clé highway. Représente tous les types de routes, des autoroutes aux sentiers, tels que définis par la taxonomie des routes d'OSM.**  
-version: 0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
+Entité : OSMHighway  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMHighway/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Description globale : **Un élément de route ou de chemin issu d'OpenStreetMap et étiqueté avec la clé highway. Représente tous les types de routes, des autoroutes aux chemins piétons, tels que définis par la taxonomie des routes OSM.**  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## Liste des propriétés  
+## Liste des propriétés  
 
-<sup><sub>[*] Si un attribut n'a pas de type, c'est qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>  
-- `access[string]`: Restriction d'accès générale pour la route  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: L'adresse postale  . Modèle : [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Le pays. Par exemple, l'Espagne  . Modèle : [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: La localité où se trouve l'adresse et qui est dans la région  . Modèle : [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: La région où se trouve la localité et qui est dans le pays  . Modèle : [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local    
-	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Modèle : [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Modèle : [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: L'adresse de la rue  . Modèle : [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]`: Numéro identifiant une propriété spécifique sur une voie publique    
-- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article est fourni  . Modèle : [https://schema.org/Text](https://schema.org/Text)- `bridge[boolean]`: Indique si ce segment de route passe sur un pont  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:bridge](https://wiki.openstreetmap.org/wiki/Key:bridge)- `cyclewayPresent[boolean]`: Indique si une piste cyclable dédiée est présente le long de cette route  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:cycleway](https://wiki.openstreetmap.org/wiki/Key:cycleway)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage  - `dateModified[date-time]`: Horodatage de la dernière modification de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage  - `description[string]`: Une description de cet élément  - `highwayType[string]`: La valeur de l'étiquette OSM highway qui classifie le type de route ou de chemin. Enum:'motorway, trunk, primary, secondary, tertiary, unclassified, residential, service, living_street, pedestrian, track, footway, cycleway, path, motorway_link, trunk_link, primary_link, secondary_link, tertiary_link, road, busway, bus_guideway, construction, proposed'  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:highway](https://wiki.openstreetmap.org/wiki/Key:highway)- `id[*]`: Identifiant unique de l'entité  - `inclinePercent[number]`: Pente de la route exprimée en pourcentage. Les valeurs positives indiquent une montée  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:incline](https://wiki.openstreetmap.org/wiki/Key:incline)- `lanes[number]`: Nombre total de voies de circulation dans les deux sens  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:lanes](https://wiki.openstreetmap.org/wiki/Key:lanes)- `layer[number]`: Couche verticale relative à d'autres éléments au même emplacement, utilisée pour indiquer des voies qui se chevauchent  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:layer](https://wiki.openstreetmap.org/wiki/Key:layer)- `lit[boolean]`: Indique si la route est éclairée par l'éclairage public  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir de Point, LineString, Polygon, MultiPoint, MultiLineString ou MultiPolygon  - `maxSpeed[number]`: Vitesse maximale autorisée en kilomètres par heure  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed)- `name[string]`: Le nom de cet élément  - `oneway[boolean]`: Indique si la route est à sens unique pour les véhicules à moteur  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:oneway](https://wiki.openstreetmap.org/wiki/Key:oneway)- `operator[string]`: Nom de l'entité responsable de l'exploitation ou de l'entretien de cette route  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: L'identifiant entier de l'élément OpenStreetMap original  . Modèle : [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: Horodatage de la dernière modification de l'élément OSM.  - `osmType[string]`: Le type de l'élément OpenStreetMap original  . Modèle : [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: Une liste contenant une séquence de caractères encodée en JSON référençant les identifiants uniques du ou des propriétaires  - `ref[string]`: Numéro ou code de référence officiel de la route (par exemple, A-3, M-30)  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)- `seeAlso[*]`: Liste d'URIs pointant vers des ressources supplémentaires concernant cet élément (par exemple, Wikidata, Wikipedia).  - `sidewalk[string]`: Indique la présence et le côté d'un trottoir le long de la route  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:sidewalk](https://wiki.openstreetmap.org/wiki/Key:sidewalk)- `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur de la source, ou l'URL de l'objet source  - `surface[string]`: Matériau de la surface physique de la route  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `tunnel[boolean]`: Indique si ce segment de route passe par un tunnel  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:tunnel](https://wiki.openstreetmap.org/wiki/Key:tunnel)- `type[string]`: Type d'entité NGSI. Il doit s'agir de OSMHighway  - `widthMeters[number]`: Largeur physique de la route en mètres  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:width](https://wiki.openstreetmap.org/wiki/Key:width)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Propriétés requises  
-- `highwayType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-NotesYaml -->  
-<!-- /40-NotesYaml -->  
-<!-- 50-DataModelHeader -->  
-## Description du modèle de données des propriétés  
-Trié par ordre alphabétique (cliquez pour les détails)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
-<details><summary><strong>détails complets yaml</strong></summary>    
-```yaml  
+<sup><sub>[*] Si il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modes</sub></sup>  
+- `access[string]` : Restriction d'accès générale pour la route  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]` : L'adresse postale  . Modèle : [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]` : Le pays. Par exemple, l'Espagne  . Modèle : [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]` : La localité dans laquelle se trouve l'adresse de la rue, et qui se trouve dans la région  . Modèle : [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]` : La région dans laquelle se trouve la localité, et qui se trouve dans le pays  . Modèle : [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]` : Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local    
+	- `postOfficeBoxNumber[string]` : Le numéro de boîte postale pour les adresses de boîte postale. Par exemple, 03578  . Modèle : [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]` : Le code postal. Par exemple, 24004  . Modèle : [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]` : L'adresse de la rue  . Modèle : [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]` : Numéro identifiant une propriété spécifique sur une rue publique    
+- `alternateName[string]` : Un nom alternatif pour cet élément  - `areaServed[string]` : La zone géographique où un service ou un élément proposé est fourni  . Modèle : [https://schema.org/Text](https://schema.org/Text)- `bridge[boolean]` : Indique si ce segment de route passe sur un pont  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:bridge](https://wiki.openstreetmap.org/wiki/Key:bridge)- `cyclewayPresent[boolean]` : Indique si une voie cyclable dédiée est présente le long de cette route  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:cycleway](https://wiki.openstreetmap.org/wiki/Key:cycleway)- `dataProvider[string]` : Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisée  - `dateCreated[date-time]` : Horodatage de la création de l'entité. Cela sera généralement alloué par la plate-forme de stockage  - `dateModified[date-time]` : Horodatage de la dernière modification de l'entité. Cela sera généralement alloué par la plate-forme de stockage  - `description[string]` : Une description de cet élément  - `highwayType[string]` : La valeur de l'étiquette OSM highway qui classe le type de route ou de chemin. Enum:'autoroute, route principale, route secondaire, route tertiaire, route non classée, route résidentielle, service, rue vivante, piéton, piste, chemin piéton, piste cyclable, chemin, lien d'autoroute, lien de route principale, lien de route secondaire, lien de route tertiaire, route, voie de bus, voie de guidage de bus, construction, proposition'  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:highway](https://wiki.openstreetmap.org/wiki/Key:highway)- `id[*]` : Identifiant unique de l'entité  - `inclinePercent[number]` : Pente de la route exprimée en pourcentage. Les valeurs positives indiquent une montée  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:incline](https://wiki.openstreetmap.org/wiki/Key:incline)- `lanes[number]` : Nombre total de voies de circulation dans les deux sens  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:lanes](https://wiki.openstreetmap.org/wiki/Key:lanes)- `layer[number]` : Couche verticale relative aux autres fonctionnalités au même emplacement, utilisée pour indiquer les voies qui se chevauchent  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:layer](https://wiki.openstreetmap.org/wiki/Key:layer)- `lit[boolean]` : Indique si la route est éclairée par des feux de rue  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]` : Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un multipoint, d'un multiligne ou d'un multipolygone  - `maxSpeed[number]` : Vitesse maximale autorisée en kilomètres par heure  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed)- `name[string]` : Le nom de cet élément  - `oneway[boolean]` : Indique si la route est à sens unique pour les véhicules à moteur  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:oneway](https://wiki.openstreetmap.org/wiki/Key:oneway)- `operator[string]` : Nom de l'entité responsable de l'exploitation ou de la maintenance de cette route  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]` : L'identifiant entier d'origine de l'élément OpenStreetMap  . Modèle : [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]` : Horodatage de la dernière modification de l'élément OSM.  - `osmType[string]` : Le type de l'élément OpenStreetMap d'origine  . Modèle : [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]` : Une liste contenant une séquence de caractères codés en JSON référençant les identifiants uniques des propriétaires  - `ref[string]` : Numéro de référence ou code de route officiel (par exemple, A-3, M-30)  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)- `seeAlso[*]` : Liste d'URI pointant vers des ressources supplémentaires sur cet élément (par exemple, Wikidata, Wikipedia).  - `sidewalk[string]` : Indique la présence et le côté d'un trottoir le long de la route  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:sidewalk](https://wiki.openstreetmap.org/wiki/Key:sidewalk)- `source[string]` : Une séquence de caractères donnant la source d'origine des données de l'entité sous la forme d'une URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source  - `surface[string]` : Matériau de surface physique de la route  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `tunnel[boolean]` : Indique si ce segment de route passe par un tunnel  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:tunnel](https://wiki.openstreetmap.org/wiki/Key:tunnel)- `type[string]` : Type d'entité NGSI. Il doit s'agir d'OSMHighway  - `widthMeters[number]` : Largeur physique de la route en mètres  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:width](https://wiki.openstreetmap.org/wiki/Key:width)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+Propriétés requises  
+- `highwayType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+<!-- /40-NotesYaml -->  
+<!-- 50-DataModelHeader -->  
+## Description du modèle de données des propriétés  
+Classées par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
+<details><summary><strong> détails yaml complets</strong></summary>    
+```yaml  
 OSMHighway:    
   description: A road or path element from OpenStreetMap tagged with the highway key. Represents all types of roads, from motorways to footpaths, as defined by the OSM highway taxonomy.    
   properties:    
@@ -590,15 +590,15 @@ OSMHighway:
   x-version: 0.0.1    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Exemples de charges utiles    
-#### Exemple de valeurs-clés OSMHighway NGSI-v2    
-Voici un exemple de OSMHighway au format JSON en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
-<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
-```json  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Exemples de charges utiles    
+#### Exemple de clés-valeurs OSMHighway NGSI-v2    
+Voici un exemple d'OSMHighway au format JSON en tant que clés-valeurs. Cela est compatible avec NGSI-v2 lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>montrer/cacher l'exemple</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMHighway:way:5837156",  
   "type": "OSMHighway",  
@@ -640,10 +640,10 @@ Voici un exemple de OSMHighway au format JSON en tant que valeurs-clés. Ceci es
 }  
 ```  
 </details>  
-#### Exemple normalisé OSMHighway NGSI-v2    
-Voici un exemple de OSMHighway au format JSON en tant que normalisé. Ceci est compatible avec NGSI-v2 lorsque les options ne sont pas utilisées et renvoie les données de contexte d'une entité individuelle.  
-<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
-```json  
+#### Exemple normalisé OSMHighway NGSI-v2    
+Voici un exemple d'OSMHighway au format JSON en tant que normalisé. Cela est compatible avec NGSI-v2 lorsqu'aucune option n'est utilisée et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>montrer/cacher l'exemple</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMHighway:way:5837156",  
   "type": "OSMHighway",  
@@ -748,10 +748,10 @@ Voici un exemple de OSMHighway au format JSON en tant que normalisé. Ceci est c
 }  
 ```  
 </details>  
-#### Exemple de valeurs-clés OSMHighway NGSI-LD    
-Voici un exemple de OSMHighway au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
-<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
-```json  
+#### Exemple de clés-valeurs OSMHighway NGSI-LD    
+Voici un exemple d'OSMHighway au format JSON-LD en tant que clés-valeurs. Cela est compatible avec NGSI-LD lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>montrer/cacher l'exemple</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMHighway:way:5837156",  
   "type": "OSMHighway",  
@@ -796,10 +796,10 @@ Voici un exemple de OSMHighway au format JSON-LD en tant que valeurs-clés. Ceci
 }  
 ```  
 </details>  
-#### Exemple normalisé OSMHighway NGSI-LD    
-Voici un exemple de OSMHighway au format JSON-LD en tant que normalisé. Ceci est compatible avec NGSI-LD lorsque les options ne sont pas utilisées et renvoie les données de contexte d'une entité individuelle.  
-<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
-```json  
+#### Exemple normalisé OSMHighway NGSI-LD    
+Voici un exemple d'OSMHighway au format JSON-LD en tant que normalisé. Cela est compatible avec NGSI-LD lorsqu'aucune option n'est utilisée et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>montrer/cacher l'exemple</strong></summary>    
+```json  
 {  
     "id": "urn:ngsi-ld:OSMHighway:way:5837156",  
     "type": "OSMHighway",  
@@ -899,12 +899,12 @@ Voici un exemple de OSMHighway au format JSON-LD en tant que normalisé. Ceci es
     ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de gérer les unités de grandeur  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de gérer les unités de magnitude  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
