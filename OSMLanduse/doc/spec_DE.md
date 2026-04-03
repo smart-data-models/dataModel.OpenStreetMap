@@ -1,37 +1,70 @@
 <!-- 10-Header -->
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
-Entität: OSMLanduse
-==================<!-- /10-Header -->
+Entity: OSMLanduse
+==================
+<!-- /10-Header -->
 <!-- 15-License -->
 [Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMLanduse/LICENSE.md)
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
 <!-- /15-License -->
 <!-- 20-Description -->
-Globale Beschreibung: **Eine Landnutzungsfläche aus OpenStreetMap, die mit landuse=* getaggt ist. Beschreibt den primären menschlichen Zweck oder die Nutzung einer Landfläche**
+
+Globale Beschreibung: **Ein Gebiet mit einer von OpenStreetMap vergebenen Flächennutzung, das mit landuse=* getaggt ist. Beschreibt den primären menschlichen Zweck oder die Nutzung eines Gebiets**
+
 version: 0.0.1
 <!-- /20-Description -->
 <!-- 30-PropertiesList -->
 
 ## Liste der Eigenschaften
 
-<sup><sub>[*] Wenn kein Typ in einem Attribut vorhanden ist, liegt es daran, dass es mehrere Typen oder verschiedene Formate/Muster haben könnte</sub></sup>
-- `address[object]`: Die Postanschrift. Modell: [https://schema.org/address](https://schema.org/address) - `addressCountry[string]`: Das Land. Zum Beispiel Spanien. Modell: [https://schema.org/addressCountry](https://schema.org/addressCountry)
-	- `addressLocality[string]`: Der Ort, an dem sich die Straßenadresse befindet und der sich in der Region befindet. Modell: [https://schema.org/addressLocality](https://schema.org/addressLocality)
-	- `addressRegion[string]`: Die Region, in der sich der Ort befindet und die sich im Land befindet. Modell: [https://schema.org/addressRegion](https://schema.org/addressRegion)
-	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.
-	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel 03578. Modell: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
-	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel 24004. Modell: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
+<sup><sub>[*] Wenn in einem Attribut kein Typ angegeben ist, kann dies mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>
+- `address[object]`: Die Postadresse. Modell: [https://schema.org/address](https://schema.org/address)
+	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien. Modell: [https://schema.org/addressCountry](https://schema.org/addressCountry)
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Straßenadresse befindet und die in der Region liegt. Modell: [https://schema.org/addressLocality](https://schema.org/addressLocality)
+	- `addressRegion[string]`: Die Region, in der sich die Ortschaft befindet und die im Land liegt. Modell: [https://schema.org/addressRegion](https://schema.org/addressRegion)
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578. Modell: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004. Modell: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
 	- `streetAddress[string]`: Die Straßenadresse. Modell: [https://schema.org/streetAddress](https://schema.org/streetAddress)
-	- `streetNr[string]`: Nummer, die eine bestimmte Immobilie an einer öffentlichen Straße identifiziert.
-- `alternateName[string]`: Ein alternativer Name für diesen Eintrag. - `areaServed[string]`: Das geografische Gebiet, in dem ein Dienst oder ein angebotener Artikel bereitgestellt wird. Modell: [https://schema.org/Text](https://schema.org/Text) - `crop[string]`: Die auf dem Land angebaute Kulturpflanze, wenn landuse=farmland. Modell: [https://wiki.openstreetmap.org/wiki/Key:crop](https://wiki.openstreetmap.org/wiki/Key:crop) - `dataProvider[string]`: Eine Zeichenkette, die den Anbieter der harmonisierten Dateneinheit identifiziert. - `dateCreated[date-time]`: Zeitstempel der Erstellung der Entität. Dieser wird normalerweise von der Speicherplattform zugewiesen. - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird normalerweise von der Speicherplattform zugewiesen. - `description[string]`: Eine Beschreibung dieses Eintrags. - `id[*]`: Eindeutiger Identifikator der Entität. - `landuseType[string]`: Der OSM-Landuse-Tag, der die primäre menschliche Nutzung des Landes klassifiziert. Enum: 'commercial, construction, education, industrial, residential, retail, farmland, forest, meadow, orchard, ...'. Modell: [https://wiki.openstreetmap.org/wiki/Key:landuse](https://wiki.openstreetmap.org/wiki/Key:landuse) - `location[*]`: Geojson-Referenz auf den Eintrag. Es kann Point, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein. - `name[string]`: Der Name dieses Eintrags. - `operator[string]`: Name des Betreibers oder Verwalters des Gebiets. - `osmId[number]`: Die ursprüngliche ganzzahlige Kennung des OpenStreetMap-Elements. - `osmLastModified[date-time]`: Zeitstempel der letzten Änderung. - `osmType[string]`: Der Typ des ursprünglichen OSM-Elements. - `owner[array]`: Eine Liste, die eine JSON-kodierte Zeichenkette mit den eindeutigen IDs des/der Eigentümer(s) enthält. - `seeAlso[*]`: Liste von URIs, die auf zusätzliche Ressourcen verweisen. - `source[string]`: Eine Zeichenkette, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den vollständig qualifizierten Domänennamen des Anbieters oder die URL zum Quellobjekt zu verwenden. - `trees[string]`: Der Typ der angebauten Bäume, wenn landuse=forest oder orchard. Modell: [https://wiki.openstreetmap.org/wiki/Key:trees](https://wiki.openstreetmap.org/wiki/Key:trees) - `type[string]`: NGSI-Entitätstyp. Es muss OSMLanduse sein. <!-- /30-PropertiesList -->
+	- `streetNr[string]`: Nummer zur Identifizierung eines bestimmten Grundstücks an einer öffentlichen Straße
+- `alternateName[string]`: Ein alternativer Name für dieses Element
+- `areaServed[string]`: Das geografische Gebiet, in dem ein Service oder ein angebotenes Produkt bereitgestellt wird. Modell: [https://schema.org/Text](https://schema.org/Text)
+- `crop[string]`: Die auf dem Land angebaute Nutzpflanze, falls landuse=farmland. Modell: [https://wiki.openstreetmap.org/wiki/Key:crop](https://wiki.openstreetmap.org/wiki/Key:crop)
+- `dataProvider[string]`: Eine Zeichenfolge, die den Anbieter der harmonisierten Datenentität identifiziert
+- `dateCreated[date-time]`: Zeitstempel der Erstellung dieser Entität. Dieser wird normalerweise von der Speicherplattform zugewiesen
+- `dateModified[date-time]`: Zeitstempel der letzten Änderung dieser Entität. Dieser wird normalerweise von der Speicherplattform zugewiesen
+- `description[string]`: Eine Beschreibung dieses Elements
+- `id[*]`: Eindeutiger Bezeichner der Entität
+- `landuseType[string]`: Das OSM-Landnutzungs-Tag, das die primäre menschliche Nutzung des Landes klassifiziert. Enum: 'commercial, construction, education, industrial, residential, retail, farmland, forest, meadow, orchard, ...'. Modell: [https://wiki.openstreetmap.org/wiki/Key:landuse](https://wiki.openstreetmap.org/wiki/Key:landuse)
+- `location[*]`: Geojson-Verweis auf das Element. Kann Point, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein
+- `name[string]`: Der Name dieses Elements
+- `operator[string]`: Name der Entität, die das Gebiet betreibt oder verwaltet
+- `osmId[number]`: Die ursprüngliche OpenStreetMap-Element-Ganzzahlkennung
+- `osmLastModified[date-time]`: Zeitstempel der letzten Änderung
+- `osmType[string]`: Der Typ des ursprünglichen OSM-Elements
+- `owner[array]`: Eine Liste, die eine JSON-codierte Zeichenfolge enthält, die auf die eindeutigen IDs der Besitzer verweist
+- `seeAlso[*]`: Liste von URIs, die auf zusätzliche Ressourcen verweisen
+- `source[string]`: Eine Zeichenfolge, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen ist die vollqualifizierte Domäne des Anbieters oder die URL zum Quellobjekt
+- `trees[string]`: Die Art der angebauten Bäume, falls landuse=forest oder orchard. Modell: [https://wiki.openstreetmap.org/wiki/Key:trees](https://wiki.openstreetmap.org/wiki/Key:trees)
+- `type[string]`: NGSI-Entitätstyp. Muss OSMLanduse sein
+<!-- /30-PropertiesList -->
 <!-- 35-RequiredProperties -->
+
 Erforderliche Eigenschaften
-- `id` - `landuseType` - `location` - `osmId` - `osmType` - `type` <!-- /35-RequiredProperties -->
+- `id`
+- `landuseType`
+- `location`
+- `osmId`
+- `osmType`
+- `type`
+<!-- /35-RequiredProperties -->
 <!-- 40-NotesYaml -->
 <!-- /40-NotesYaml -->
 <!-- 50-DataModelHeader -->
-## Datenmodellbeschreibung der Eigenschaften
-Alphabetisch sortiert (zum Details anklicken)
+
+## Beschreibung des Datenmodells der Eigenschaften
+
+Alphabetisch sortiert (zum Anzeigen der Details anklicken)
 <!-- /50-DataModelHeader -->
 <!-- 60-ModelYaml -->
 <details><summary><strong>vollständige YAML-Details</strong></summary>
@@ -481,9 +514,11 @@ OSMLanduse:
 <!-- 70-MiddleNotes -->
 <!-- /70-MiddleNotes -->
 <!-- 80-Examples -->
+
 ## Beispiel-Payloads
-#### OSMLanduse NGSI-v2 Schlüssel-Werte-Beispiel
-Hier ist ein Beispiel für eine OSMLanduse im JSON-Format als Schlüssel-Werte-Paare. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird, und gibt die Kontextdaten einer einzelnen Entität zurück.
+#### OSMLanduse NGSI-v2 Schlüssel-Wert-Beispiel
+Hier ist ein Beispiel für ein OSMLanduse im JSON-Format als Schlüssel-Wert-Paar. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und gibt die Kontextdaten einer einzelnen Entität zurück.
+
 <details><summary><strong>Beispiel ein-/ausblenden</strong></summary>
 ```json  
 {  
@@ -529,7 +564,8 @@ Hier ist ein Beispiel für eine OSMLanduse im JSON-Format als Schlüssel-Werte-P
 ```
 </details>
 #### OSMLanduse NGSI-v2 normalisiertes Beispiel
-Hier ist ein Beispiel für eine OSMLanduse im JSON-Format als normalisierte Werte. Dies ist mit NGSI-v2 kompatibel, wenn keine Optionen verwendet werden, und gibt die Kontextdaten einer einzelnen Entität zurück.
+Hier ist ein Beispiel für ein OSMLanduse im JSON-Format als normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und gibt die Kontextdaten einer einzelnen Entität zurück.
+
 <details><summary><strong>Beispiel ein-/ausblenden</strong></summary>
 ```json  
 {  
@@ -598,8 +634,9 @@ Hier ist ein Beispiel für eine OSMLanduse im JSON-Format als normalisierte Wert
 }  
 ```
 </details>
-#### OSMLanduse NGSI-LD Schlüssel-Werte-Beispiel
-Hier ist ein Beispiel für eine OSMLanduse im JSON-LD-Format als Schlüssel-Werte-Paare. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird, und gibt die Kontextdaten einer einzelnen Entität zurück.
+#### OSMLanduse NGSI-LD Schlüssel-Wert-Beispiel
+Hier ist ein Beispiel für ein OSMLanduse im JSON-LD-Format als Schlüssel-Wert-Paar. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und gibt die Kontextdaten einer einzelnen Entität zurück.
+
 <details><summary><strong>Beispiel ein-/ausblenden</strong></summary>
 ```json  
 {  
@@ -648,7 +685,8 @@ Hier ist ein Beispiel für eine OSMLanduse im JSON-LD-Format als Schlüssel-Wert
 ```
 </details>
 #### OSMLanduse NGSI-LD normalisiertes Beispiel
-Hier ist ein Beispiel für eine OSMLanduse im JSON-LD-Format als normalisierte Werte. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und gibt die Kontextdaten einer einzelnen Entität zurück.
+Hier ist ein Beispiel für ein OSMLanduse im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und gibt die Kontextdaten einer einzelnen Entität zurück.
+
 <details><summary><strong>Beispiel ein-/ausblenden</strong></summary>
 ```json  
 {  
@@ -726,7 +764,8 @@ Hier ist ein Beispiel für eine OSMLanduse im JSON-LD-Format als normalisierte W
 <!-- 90-FooterNotes -->
 <!-- /90-FooterNotes -->
 <!-- 95-Units -->
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/) für eine Antwort, wie mit Einheiten umzugehen ist.
+
+Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort darauf zu erhalten, wie mit Maßeinheiten umgegangen werden soll
 <!-- /95-Units -->
 <!-- 97-LastFooter -->
 ---
