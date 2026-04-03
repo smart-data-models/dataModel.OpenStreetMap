@@ -1,40 +1,84 @@
-<!-- 10-Header -->  
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティ: OSMHighway  
-==================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMHighway/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-グローバルな説明: **OpenStreetMapのhighwayキーでタグ付けされた道路または経路要素。OSMのhighway分類で定義されている、高速道路から歩道まですべての種類の道路を表します。**  
-version: 0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
+<!-- 10-Header -->
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+Entity: OSMHighway
+==================
+<!-- /10-Header -->
+<!-- 15-License -->
+[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMHighway/LICENSE.md)
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
+<!-- /15-License -->
+<!-- 20-Description -->
 
-## プロパティのリスト  
+Global description: **OpenStreetMap（OSM）において highway キーでタグ付けされた道路または経路要素。OSM の highway 分類体系に基づき、高速道路から歩道までのあらゆる種類の道路や経路を表す。**
 
-<sup><sub>[*] 属性に型がない場合、それは複数の型または異なる形式/パターンを持つ可能性があるためです</sub></sup>  
-- `access[string]`: 道路への一般的なアクセス制限。モデル: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: 郵送先住所。モデル: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例：スペイン。モデル: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: 住所がある地域内の場所。モデル: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: その場所がある国の中の地域。モデル: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: 地区は、一部の国で地方自治体によって管理される行政区画の一種です    
-	- `postOfficeBoxNumber[string]`: 私書箱の住所の私書箱番号。例：03578。モデル: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: 郵便番号。例：24004。モデル: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: 番地。モデル: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]`: 公道上の特定の物件を識別する番号    
-- `alternateName[string]`: このアイテムの別名  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的領域。モデル: [https://schema.org/Text](https://schema.org/Text)- `bridge[boolean]`: この道路区間が橋の上を通っているかどうかを示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:bridge](https://wiki.openstreetmap.org/wiki/Key:bridge)- `cyclewayPresent[boolean]`: この道路に沿って専用の自転車レーンがあるかどうかを示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:cycleway](https://wiki.openstreetmap.org/wiki/Key:cycleway)- `dataProvider[string]`: 調和されたデータエンティティのプロバイダーを識別する一連の文字  - `dateCreated[date-time]`: エンティティ作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます  - `dateModified[date-time]`: エンティティの最終変更タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます  - `description[string]`: このアイテムの説明  - `highwayType[string]`: 道路または経路のタイプを分類するOSM highwayタグの値。列挙型:'motorway, trunk, primary, secondary, tertiary, unclassified, residential, service, living_street, pedestrian, track, footway, cycleway, path, motorway_link, trunk_link, primary_link, secondary_link, tertiary_link, road, busway, bus_guideway, construction, proposed'。モデル: [https://wiki.openstreetmap.org/wiki/Key:highway](https://wiki.openstreetmap.org/wiki/Key:highway)- `id[*]`: エンティティの一意の識別子  - `inclinePercent[number]`: 道路の勾配をパーセンテージで表現したもの。正の値は上り坂を示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:incline](https://wiki.openstreetmap.org/wiki/Key:incline)- `lanes[number]`: 両方向の総車線数。モデル: [https://wiki.openstreetmap.org/wiki/Key:lanes](https://wiki.openstreetmap.org/wiki/Key:lanes)- `layer[number]`: 同じ場所にある他のフィーチャに対する垂直レイヤーで、重複する経路を示すために使用されます。モデル: [https://wiki.openstreetmap.org/wiki/Key:layer](https://wiki.openstreetmap.org/wiki/Key:layer)- `lit[boolean]`: 道路が街灯で照らされているかどうかを示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、またはMultiPolygonのいずれかです  - `maxSpeed[number]`: 1時間あたりの最大許容速度（キロメートル）。モデル: [https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed)- `name[string]`: このアイテムの名前  - `oneway[boolean]`: 道路が自動車の一方通行であるかどうかを示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:oneway](https://wiki.openstreetmap.org/wiki/Key:oneway)- `operator[string]`: この道路の運用または維持管理を担当するエンティティの名前。モデル: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: 元のOpenStreetMap要素の整数識別子。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM要素の最終変更タイムスタンプ。  - `osmType[string]`: 元のOpenStreetMap要素のタイプ。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた一連の文字を含むリスト  - `ref[string]`: 公式の道路参照番号またはコード（例：A-3、M-30）。モデル: [https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)- `seeAlso[*]`: このアイテムに関する追加リソース（例：Wikidata、Wikipedia）を指すURIのリスト。  - `sidewalk[string]`: 道路に沿った歩道の有無と側方を示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:sidewalk](https://wiki.openstreetmap.org/wiki/Key:sidewalk)- `source[string]`: エンティティデータの元のソースをURLとして示す一連の文字。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへのURLであることが推奨されます  - `surface[string]`: 道路の物理的な路面材料。モデル: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `tunnel[boolean]`: この道路区間がトンネルを通っているかどうかを示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:tunnel](https://wiki.openstreetmap.org/wiki/Key:tunnel)- `type[string]`: NGSIエンティティタイプ。OSMHighwayである必要があります  - `widthMeters[number]`: 道路の物理的な幅（メートル）。モデル: [https://wiki.openstreetmap.org/wiki/Key:width](https://wiki.openstreetmap.org/wiki/Key:width)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-必須プロパティ  
-- `highwayType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-NotesYaml -->  
-<!-- /40-NotesYaml -->  
-<!-- 50-DataModelHeader -->  
-## プロパティのデータモデルの説明  
-アルファベット順（詳細はこちらをクリック）  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
-<details><summary><strong>完全なYAML詳細</strong></summary>    
+version: 0.0.1
+<!-- /20-Description -->
+<!-- 30-PropertiesList -->
+
+## プロパティ一覧
+
+<sup><sub>[*] 属性に型が存在しない場合、複数の型や異なる形式/パターンを取り得るため</sub></sup>
+- `access[string]`: 道路の一般的なアクセス制限。モデル: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)
+- `address[object]`: 郵便住所。モデル: [https://schema.org/address](https://schema.org/address)
+	- `addressCountry[string]`: 国名。例: スペイン。モデル: [https://schema.org/addressCountry](https://schema.org/addressCountry)
+	- `addressLocality[string]`: 通りの住所が存在する地方自治体（地域内）。モデル: [https://schema.org/addressLocality](https://schema.org/addressLocality)
+	- `addressRegion[string]`: 地方自治体が存在する国の地域。モデル: [https://schema.org/addressRegion](https://schema.org/addressRegion)
+	- `district[string]`: 地区。一部の国では地方自治体によって管理される行政区画の一種
+	- `postOfficeBoxNumber[string]`: 郵便ポストの宛先となる私書箱番号。例: 03578。モデル: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
+	- `postalCode[string]`: 郵便番号。例: 24004。モデル: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
+	- `streetAddress[string]`: 通りの住所。モデル: [https://schema.org/streetAddress](https://schema.org/streetAddress)
+	- `streetNr[string]`: 公共の道路上にある特定の不動産を識別する番号
+- `alternateName[string]`: この項目の別名
+- `areaServed[string]`: サービスや提供されるアイテムが存在する地理的エリア。モデル: [https://schema.org/Text](https://schema.org/Text)
+- `bridge[boolean]`: この道路セグメントが橋の上を走っているかどうかを示す。モデル: [https://wiki.openstreetmap.org/wiki/Key:bridge](https://wiki.openstreetmap.org/wiki/Key:bridge)
+- `cyclewayPresent[boolean]`: この道路に専用の自転車レーンが隣接しているかどうかを示す。モデル: [https://wiki.openstreetmap.org/wiki/Key:cycleway](https://wiki.openstreetmap.org/wiki/Key:cycleway)
+- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する文字列シーケンス
+- `dateCreated[date-time]`: エンティティ作成時のタイムスタンプ。通常はストレージプラットフォームによって割り当てられる
+- `dateModified[date-time]`: エンティティの最終更新時刻。通常はストレージプラットフォームによって割り当てられる
+- `description[string]`: この項目の説明
+- `highwayType[string]`: 道路や経路の種類を分類する OSM highway タグ値。Enum: 'motorway, trunk, primary, secondary, tertiary, unclassified, residential, service, living_street, pedestrian, track, footway, cycleway, path, motorway_link, trunk_link, primary_link, secondary_link, tertiary_link, road, busway, bus_guideway, construction, proposed'。モデル: [https://wiki.openstreetmap.org/wiki/Key:highway](https://wiki.openstreetmap.org/wiki/Key:highway)
+- `id[*]`: エンティティの一意識別子
+- `inclinePercent[number]`: パーセンテージで表される道路の勾配。正の値は上り坂を示す。モデル: [https://wiki.openstreetmap.org/wiki/Key:incline](https://wiki.openstreetmap.org/wiki/Key:incline)
+- `lanes[number]`: 双方向の交通車線の総数。モデル: [https://wiki.openstreetmap.org/wiki/Key:lanes](https://wiki.openstreetmap.org/wiki/Key:lanes)
+- `layer[number]`: 同じ場所にある他の機能との相対的な垂直レイヤー。重なり合う経路を示すために使用される。モデル: [https://wiki.openstreetmap.org/wiki/Key:layer](https://wiki.openstreetmap.org/wiki/Key:layer)
+- `lit[boolean]`: 道路が街灯によって照明されているかどうかを示す。モデル: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)
+- `location[*]`: この項目への Geojson リファレンス。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれかを指定可能
+- `maxSpeed[number]`: 時速キロメートル単位での最高許容速度。モデル: [https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed)
+- `name[string]`: この項目の名称
+- `oneway[boolean]`: 道路が自動車に対して一方通行かどうかを示す。モデル: [https://wiki.openstreetmap.org/wiki/Key:oneway](https://wiki.openstreetmap.org/wiki/Key:oneway)
+- `operator[string]`: この道路の運用または維持を担当するエンティティの名称。モデル: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)
+- `osmId[number]`: 元の OpenStreetMap 要素の整数 ID。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)
+- `osmLastModified[date-time]`: OpenStreetMap 要素の最終更新時刻
+- `osmType[string]`: 元の OpenStreetMap 要素の種類。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)
+- `owner[array]`: 所有者の一意 ID を参照する JSON エンコードされた文字列シーケンスを含むリスト
+- `ref[string]`: 公式の道路参照番号またはコード（例: A-3、M-30）。モデル: [https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)
+- `seeAlso[*]`: この項目に関する追加リソース（例: Wikidata、Wikipedia）への URI リスト
+- `sidewalk[string]`: 道路に隣接する歩道の存在と側面を示す。モデル: [https://wiki.openstreetmap.org/wiki/Key:sidewalk](https://wiki.openstreetmap.org/wiki/Key:sidewalk)
+- `source[string]`: エンティティデータの元のソースを URL として示す文字列シーケンス。ソース提供者の完全修飾ドメイン名またはソースオブジェクトへの URL を推奨
+- `surface[string]`: 道路の物理的な表面素材。モデル: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)
+- `tunnel[boolean]`: この道路セグメントがトンネル内を走っているかどうかを示す。モデル: [https://wiki.openstreetmap.org/wiki/Key:tunnel](https://wiki.openstreetmap.org/wiki/Key:tunnel)
+- `type[string]`: NGSI エンティティタイプ。値は OSMHighway である必要がある
+- `widthMeters[number]`: メートル単位での道路の物理的な幅。モデル: [https://wiki.openstreetmap.org/wiki/Key:width](https://wiki.openstreetmap.org/wiki/Key:width)
+<!-- /30-PropertiesList -->
+<!-- 35-RequiredProperties -->
+
+必須プロパティ
+- `highwayType`
+- `id`
+- `location`
+- `osmId`
+- `osmType`
+- `type`
+<!-- /35-RequiredProperties -->
+<!-- 40-NotesYaml -->
+<!-- /40-NotesYaml -->
+<!-- 50-DataModelHeader -->
+
+## プロパティのデータモデル説明
+アルファベット順（詳細についてはクリック）
+<!-- /50-DataModelHeader -->
+<!-- 60-ModelYaml -->
+<details><summary><strong>完全な YAML の詳細</strong></summary>
 ```yaml  
 OSMHighway:    
   description: A road or path element from OpenStreetMap tagged with the highway key. Represents all types of roads, from motorways to footpaths, as defined by the OSM highway taxonomy.    
@@ -588,16 +632,17 @@ OSMHighway:
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMHighway/schema.json    
   x-model-tags: OSM OpenStreetMap Transportation    
   x-version: 0.0.1    
-```  
-</details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ペイロードの例    
-#### OSMHighway NGSI-v2 キーバリューの例    
-以下は、キーバリュー形式のJSONで記述されたOSMHighwayの例です。`options=keyValues`を使用する場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+```
+</details>
+<!-- /60-ModelYaml -->
+<!-- 70-MiddleNotes -->
+<!-- /70-MiddleNotes -->
+<!-- 80-Examples -->
+
+## 例のペイロード
+#### OSMHighway NGSI-v2 キー値形式の例
+以下は、キー値形式の JSON による OSMHighway の例です。これは NGSI-v2 で `options=keyValues` を使用する際に互換性があり、個別エンティティのコンテキストデータを返します。
+<details><summary><strong>例の表示/非表示</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMHighway:way:5837156",  
@@ -638,11 +683,12 @@ OSMHighway:
     "https://www.openstreetmap.org/way/5837156"  
   ]  
 }  
-```  
-</details>  
-#### OSMHighway NGSI-v2 正規化された例    
-以下は、正規化されたJSON形式で記述されたOSMHighwayの例です。オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+```
+</details>
+
+#### OSMHighway NGSI-v2 正規化形式の例
+以下は、正規化形式の JSON による OSMHighway の例です。これは NGSI-v2 でオプションを使用しない際に互換性があり、個別エンティティのコンテキストデータを返します。
+<details><summary><strong>例の表示/非表示</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMHighway:way:5837156",  
@@ -746,11 +792,12 @@ OSMHighway:
     ]  
   }  
 }  
-```  
-</details>  
-#### OSMHighway NGSI-LD キーバリューの例    
-以下は、キーバリュー形式のJSON-LDで記述されたOSMHighwayの例です。`options=keyValues`を使用する場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+```
+</details>
+
+#### OSMHighway NGSI-LD キー値形式の例
+以下は、JSON-LD 形式のキー値形式による OSMHighway の例です。これは NGSI-LD で `options=keyValues` を使用する際に互換性があり、個別エンティティのコンテキストデータを返します。
+<details><summary><strong>例の表示/非表示</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMHighway:way:5837156",  
@@ -794,11 +841,12 @@ OSMHighway:
     "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
   ]  
 }  
-```  
-</details>  
-#### OSMHighway NGSI-LD 正規化された例    
-以下は、正規化されたJSON-LD形式で記述されたOSMHighwayの例です。オプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+```
+</details>
+
+#### OSMHighway NGSI-LD 正規化形式の例
+以下は、JSON-LD 形式の正規化による OSMHighway の例です。これは NGSI-LD でオプションを使用しない際に互換性があり、個別エンティティのコンテキストデータを返します。
+<details><summary><strong>例の表示/非表示</strong></summary>
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMHighway:way:5837156",  
@@ -898,13 +946,15 @@ OSMHighway:
         "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
     ]  
 }  
-```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-大きさの単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
----  
+```
+</details><!-- /80-Examples -->
+<!-- 90-FooterNotes -->
+<!-- /90-FooterNotes -->
+<!-- 95-Units -->
+
+[FAQ 10](https://smartdatamodels.org/index.php/faqs/) 単位の扱いに関する詳細は <NT_82/> を参照してください。
+<!-- /95-Units -->
+<!-- 97-LastFooter -->
+
+---
 [Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
