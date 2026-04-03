@@ -1,71 +1,40 @@
-<!-- 10-Header -->
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
-Entité : OSMNatural
-==================<!-- /10-Header -->
-<!-- 15-License -->
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMNatural/LICENSE.md)
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
-<!-- /15-License -->
-<!-- 20-Description -->
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : OSMNatural  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMNatural/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Description globale : **Une caractéristique naturelle d'OpenStreetMap taguée avec natural=*. Décrit des caractéristiques géographiques telles que des plans d'eau, des bois, des broussailles, des pics, des plages, etc.**  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-Description globale : **Une caractéristique naturelle d'OpenStreetMap marquée avec natural=*. Décrit des caractéristiques géographiques telles que des étendues d'eau, des forêts, des broussailles, des sommets, des plages, etc.** version : 0.0.1
-<!-- /20-Description -->
-<!-- 30-PropertiesList -->
+## Liste des propriétés  
 
-## Liste des propriétés
-
-<sup><sub>[*] Si un type n'est pas indiqué dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>
-- `address[object]` : L'adresse postale. Modèle : [https://schema.org/address](https://schema.org/address)
-	- `addressCountry[string]` : Le pays. Par exemple, Espagne. Modèle : [https://schema.org/addressCountry](https://schema.org/addressCountry)
-	- `addressLocality[string]` : La localité dans laquelle se trouve l'adresse, et qui est dans la région. Modèle : [https://schema.org/addressLocality](https://schema.org/addressLocality)
-	- `addressRegion[string]` : La région dans laquelle se trouve la localité, et qui est dans le pays. Modèle : [https://schema.org/addressRegion](https://schema.org/addressRegion)
-	- `district[string]` : Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local
-	- `postOfficeBoxNumber[string]` : Le numéro de boîte postale pour les adresses en boîte postale. Par exemple, 03578. Modèle : [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
-	- `postalCode[string]` : Le code postal. Par exemple, 24004. Modèle : [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
-	- `streetAddress[string]` : L'adresse de rue. Modèle : [https://schema.org/streetAddress](https://schema.org/streetAddress)
-	- `streetNr[string]` : Numéro identifiant une propriété spécifique sur une voie publique
-- `alternateName[string]` : Un nom alternatif pour cet élément
-- `areaServed[string]` : La zone géographique où un service ou un article proposé est fourni. Modèle : [https://schema.org/Text](https://schema.org/Text)
-- `dataProvider[string]` : Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées
-- `dateCreated[date-time]` : Horodatage de création de l'entité. Celui-ci est généralement attribué par la plateforme de stockage
-- `dateModified[date-time]` : Horodatage de la dernière modification de l'entité. Celui-ci est généralement attribué par la plateforme de stockage
-- `description[string]` : Une description de cet élément
-- `elevation[number]` : Altitude (ele) de l'élément en mètres au-dessus du niveau de la mer, généralement pour les sommets. Modèle : [https://wiki.openstreetmap.org/wiki/Key:ele](https://wiki.openstreetmap.org/wiki/Key:ele)
-- `id[*]` : Identifiant unique de l'entité
-- `leafCycle[string]` : Le cycle foliaire des arbres ou des forêts. Modèle : [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle](https://wiki.openstreetmap.org/wiki/Key:leaf_cycle)
-- `leafType[string]` : Le type de feuille des arbres ou des forêts. Modèle : [https://wiki.openstreetmap.org/wiki/Key:leaf_type](https://wiki.openstreetmap.org/wiki/Key:leaf_type)
-- `location[*]` : Référence GeoJSON de l'élément. Peut être Point, LineString, Polygon, MultiPoint, MultiLineString ou MultiPolygon
-- `name[string]` : Le nom de cet élément
-- `naturalType[string]` : Le tag OSM natural classant la caractéristique géologique ou physique. Enum : 'water, wood, tree, scrub, heath, grassland, peak, ridge, bare_rock, sand, beach, coastline, spring, cave_entrance, wetland...'. Modèle : [https://wiki.openstreetmap.org/wiki/Key:natural](https://wiki.openstreetmap.org/wiki/Key:natural)
-- `osmId[number]` : L'identifiant entier de l'élément OpenStreetMap d'origine
-- `osmLastModified[date-time]` : Horodatage de la dernière modification
-- `osmType[string]` : Le type de l'élément OSM d'origine
-- `owner[array]` : Une liste contenant une séquence de caractères encodée en JSON référençant les identifiants uniques du ou des propriétaire(s)
-- `seeAlso[*]` : Liste d'URIs pointant vers des ressources supplémentaires
-- `source[string]` : Une séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Recommandé d'être le nom de domaine entièrement qualifié du fournisseur de la source, ou l'URL vers l'objet source
-- `type[string]` : Type d'entité NGSI. Doit être OSMNatural
-- `water[string]` : Type de plan d'eau si natural=water (par exemple, lac, réservoir, rivière, étang). Modèle : [https://wiki.openstreetmap.org/wiki/Key:water](https://wiki.openstreetmap.org/wiki/Key:water)
-- `wetland[string]` : Type de zone humide si natural=wetland (par exemple, marais, tourbière, marécage). Modèle : [https://wiki.openstreetmap.org/wiki/Key:wetland](https://wiki.openstreetmap.org/wiki/Key:wetland)
-<!-- /30-PropertiesList -->
-<!-- 35-RequiredProperties -->
-
-Propriétés requises
-- `id`
-- `location`
-- `naturalType`
-- `osmId`
-- `osmType`
-- `type`
-<!-- /35-RequiredProperties -->
-<!-- 40-NotesYaml -->
-<!-- /40-NotesYaml -->
-<!-- 50-DataModelHeader -->
-
-## Description du modèle de données des propriétés
-Classées par ordre alphabétique (cliquez pour plus de détails)
-<!-- /50-DataModelHeader -->
-<!-- 60-ModelYaml -->
-<details><summary><strong>détails complets en yaml</strong></summary>
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est qu'il peut en avoir plusieurs ou différents formats/modèles</sub></sup>  
+- `address[object]` : L'adresse postale. Modèle : [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]` : Le pays. Par exemple, Espagne. Modèle : [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]` : La localité dans laquelle se trouve l'adresse de rue, et qui se trouve dans la région. Modèle : [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]` : La région dans laquelle se trouve la localité, et qui se trouve dans le pays. Modèle : [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]` : Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local.    
+	- `postOfficeBoxNumber[string]` : Le numéro de boîte postale pour les adresses en boîte postale. Par exemple, 03578. Modèle : [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]` : Le code postal. Par exemple, 24004. Modèle : [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]` : L'adresse de rue. Modèle : [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]` : Numéro identifiant une propriété spécifique sur une rue publique.    
+- `alternateName[string]` : Un nom alternatif pour cet élément. - `areaServed[string]` : La zone géographique où un service ou un article offert est fourni. Modèle : [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]` : Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisée. - `dateCreated[date-time]` : Horodatage de création de l'entité. Ceci sera généralement attribué par la plateforme de stockage. - `dateModified[date-time]` : Horodatage de la dernière modification de l'entité. Ceci sera généralement attribué par la plateforme de stockage. - `description[string]` : Une description de cet élément. - `elevation[number]` : Élévation (ele) de la caractéristique en mètres au-dessus du niveau de la mer, généralement pour les pics. Modèle : [https://wiki.openstreetmap.org/wiki/Key:ele](https://wiki.openstreetmap.org/wiki/Key:ele)- `id[*]` : Identifiant unique de l'entité. - `leafCycle[string]` : Le cycle foliaire des arbres ou des bois. Modèle : [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle](https://wiki.openstreetmap.org/wiki/Key:leaf_cycle)- `leafType[string]` : Le type de feuillage des arbres ou des bois. Modèle : [https://wiki.openstreetmap.org/wiki/Key:leaf_type](https://wiki.openstreetmap.org/wiki/Key:leaf_type)- `location[*]` : Référence Geojson à l'élément. Il peut s'agir de Point, LineString, Polygon, MultiPoint, MultiLineString ou MultiPolygon. - `name[string]` : Le nom de cet élément. - `naturalType[string]` : Le tag OSM natural classant la caractéristique géologique ou physique. Enum : 'water, wood, tree, scrub, heath, grassland, peak, ridge, bare_rock, sand, beach, coastline, spring, cave_entrance, wetland...' Modèle : [https://wiki.openstreetmap.org/wiki/Key:natural](https://wiki.openstreetmap.org/wiki/Key:natural)- `osmId[number]` : L'identifiant entier original de l'élément OpenStreetMap. - `osmLastModified[date-time]` : Horodatage de la dernière modification. - `osmType[string]` : Le type de l'élément OSM original. - `owner[array]` : Une liste contenant une séquence de caractères encodée en JSON faisant référence aux identifiants uniques du ou des propriétaires. - `seeAlso[*]` : Liste des URI pointant vers des ressources supplémentaires. - `source[string]` : Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé que ce soit le nom de domaine complet du fournisseur source, ou l'URL de l'objet source. - `type[string]` : Type d'entité NGSI. Il doit s'agir de OSMNatural. - `water[string]` : Type de plan d'eau si natural=water (par exemple, lac, réservoir, rivière, étang). Modèle : [https://wiki.openstreetmap.org/wiki/Key:water](https://wiki.openstreetmap.org/wiki/Key:water)- `wetland[string]` : Type de zone humide si natural=wetland (par exemple, marais, tourbière, marécage). Modèle : [https://wiki.openstreetmap.org/wiki/Key:wetland](https://wiki.openstreetmap.org/wiki/Key:wetland)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+Propriétés requises  
+- `id` - `location` - `naturalType` - `osmId` - `osmType` - `type` <!-- /35-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+<!-- /40-NotesYaml -->  
+<!-- 50-DataModelHeader -->  
+## Description du modèle de données des propriétés  
+Trié par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
+<details><summary><strong>détails complets en yaml</strong></summary>    
 ```yaml  
 OSMNatural:    
   description: A natural feature from OpenStreetMap tagged with natural=*. Describes geographical features such as water bodies, woods, scrub, peaks, beaches, etc    
@@ -531,17 +500,16 @@ OSMNatural:
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMNatural/schema.json    
   x-model-tags: OSM OpenStreetMap Environment Natural    
   x-version: 0.0.1    
-```
-</details>
-<!-- /60-ModelYaml -->
-<!-- 70-MiddleNotes -->
-<!-- /70-MiddleNotes -->
-<!-- 80-Examples -->
-
-## Exemples de charge utile
-#### Exemple de OSMNatural en format clé-valeur NGSI-v2
-Voici un exemple de OSMNatural au format JSON en tant que clé-valeur. Celui-ci est compatible avec NGSI-v2 lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.
-<details><summary><strong>afficher/masquer l'exemple</strong></summary>
+```  
+</details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Exemples de charges utiles    
+#### Exemple de valeurs clés NGSI-v2 OSMNatural    
+Voici un exemple d'OSMNatural au format JSON sous forme de paires clé-valeur. Ceci est compatible avec NGSI-v2 lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMNatural:node:88990011",  
@@ -565,11 +533,11 @@ Voici un exemple de OSMNatural au format JSON en tant que clé-valeur. Celui-ci 
     "https://es.wikipedia.org/wiki/Pe%C3%B1alara"  
   ]  
 }  
-```
-</details>
-#### Exemple normalisé de OSMNatural en NGSI-v2
-Voici un exemple de OSMNatural au format JSON en version normalisée. Celui-ci est compatible avec NGSI-v2 sans utiliser d'options et renvoie les données de contexte d'une entité individuelle.
-<details><summary><strong>afficher/masquer l'exemple</strong></summary>
+```  
+</details>  
+#### Exemple normalisé NGSI-v2 OSMNatural    
+Voici un exemple d'OSMNatural au format JSON sous forme normalisée. Ceci est compatible avec NGSI-v2 lorsque les options ne sont pas utilisées et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMNatural:node:88990011",  
@@ -626,11 +594,11 @@ Voici un exemple de OSMNatural au format JSON en version normalisée. Celui-ci e
     ]  
   }  
 }  
-```
-</details>
-#### Exemple de OSMNatural en format clé-valeur NGSI-LD
-Voici un exemple de OSMNatural au format JSON-LD en tant que clé-valeur. Celui-ci est compatible avec NGSI-LD lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.
-<details><summary><strong>afficher/masquer l'exemple</strong></summary>
+```  
+</details>  
+#### Exemple de valeurs clés NGSI-LD OSMNatural    
+Voici un exemple d'OSMNatural au format JSON-LD sous forme de paires clé-valeur. Ceci est compatible avec NGSI-LD lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMNatural:node:88990011",  
@@ -657,11 +625,11 @@ Voici un exemple de OSMNatural au format JSON-LD en tant que clé-valeur. Celui-
     "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
   ]  
 }  
-```
-</details>
-#### Exemple normalisé de OSMNatural en NGSI-LD
-Voici un exemple de OSMNatural au format JSON-LD en version normalisée. Celui-ci est compatible avec NGSI-LD sans utiliser d'options et renvoie les données de contexte d'une entité individuelle.
-<details><summary><strong>afficher/masquer l'exemple</strong></summary>
+```  
+</details>  
+#### Exemple normalisé NGSI-LD OSMNatural    
+Voici un exemple d'OSMNatural au format JSON-LD sous forme normalisée. Ceci est compatible avec NGSI-LD lorsque les options ne sont pas utilisées et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMNatural:node:88990011",  
@@ -719,14 +687,15 @@ Voici un exemple de OSMNatural au format JSON-LD en version normalisée. Celui-c
         "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
     ]  
 }  
-```
-</details><!-- /80-Examples -->
-<!-- 90-FooterNotes -->
-<!-- /90-FooterNotes -->
-<!-- 95-Units -->
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
 
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour savoir comment gérer les unités de mesure
-<!-- /95-Units -->
-<!-- 97-LastFooter -->
----
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+--- FIN DU DOCUMENT ---
