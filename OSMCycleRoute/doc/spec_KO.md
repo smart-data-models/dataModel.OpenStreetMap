@@ -1,40 +1,95 @@
 <!-- 10-Header -->  
+ 
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+ 
 엔티티: OSMCycleRoute  
-=====================<!-- /10-Header -->  
+===================== 
+<!-- /10-Header -->  
+ 
 <!-- 15-License -->  
+ 
 [Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMCycleRoute/LICENSE.md)  
+ 
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
+ 
 <!-- 20-Description -->  
-전역 설명: **OpenStreetMap의 전용 자전거 인프라 요소. 도로에 highway=cycleway 또는 cycleway=* 태그가 지정된 자전거 도로, 공유 자전거 차선 및 자전거 경로를 나타냅니다.**  
+ 
+전역 설명: **오픈스트리트맵에서 전용 자전거 인프라 요소입니다. 자전거 도로, 공유 자전거 차선, 자전거 도로에 태그된 자전거 경로를 나타냅니다.**  
 버전: 0.0.1  
 <!-- /20-Description -->  
+ 
 <!-- 30-PropertiesList -->  
+ 
 
 ## 속성 목록  
 
-<sup><sub>[*] 속성에 유형이 없는 경우 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다</sub></sup>  
-- `access[string]`: 이 경로의 자전거 이용자에게 적용되는 통행 제한 . 모델: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: 우편 주소 . 모델: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예를 들어, 스페인 . 모델: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: 도로 주소가 있는 지역 내의 지역 . 모델: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: 지역이 있는 국가 내의 지역 . 모델: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: 구역은 일부 국가에서 지방 정부가 관리하는 행정 구역의 한 유형입니다    
-	- `postOfficeBoxNumber[string]`: 사서함 주소의 우체국 사서함 번호. 예를 들어, 03578 . 모델: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: 우편 번호. 예를 들어, 24004 . 모델: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: 도로 주소 . 모델: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]`: 공공 도로의 특정 속성을 식별하는 번호    
-- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공되는 항목이 제공되는 지리적 영역 . 모델: [https://schema.org/Text](https://schema.org/Text)- `cyclewayType[string]`: 자전거 인프라 분류. Enum:'lane, track, opposite, opposite_lane, shared_busway, path, separate, shared' . 모델: [https://wiki.openstreetmap.org/wiki/Key:cycleway](https://wiki.openstreetmap.org/wiki/Key:cycleway)- `dataProvider[string]`: 조화된 데이터 엔티티의 제공자를 식별하는 문자열  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 일반적으로 저장 플랫폼에 의해 할당됩니다  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프. 일반적으로 저장 플랫폼에 의해 할당됩니다  - `description[string]`: 이 항목에 대한 설명  - `id[*]`: 엔티티의 고유 식별자  - `lit[boolean]`: 자전거 경로에 가로등이 있는지 여부를 나타냅니다 . 모델: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: 항목에 대한 Geojson 참조. Point, LineString, Polygon, MultiPoint, MultiLineString 또는 MultiPolygon이 될 수 있습니다  - `maxSpeed[number]`: 시간당 킬로미터로 표시되는 최대 허용 속도 . 모델: [https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed)- `name[string]`: 이 항목의 이름  - `ncnRef[string]`: 전국 자전거 네트워크 경로 참조 번호 . 모델: [https://wiki.openstreetmap.org/wiki/Key:ncn_ref](https://wiki.openstreetmap.org/wiki/Key:ncn_ref)- `oneway[boolean]`: 자전거 경로가 자전거 이용자에게 일방통행인지 여부를 나타냅니다 . 모델: [https://wiki.openstreetmap.org/wiki/Key:oneway](https://wiki.openstreetmap.org/wiki/Key:oneway)- `operator[string]`: 이 자전거 경로 유지보수를 담당하는 엔티티의 이름 . 모델: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: 원래 OpenStreetMap 요소 정수 식별자 . 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM 요소의 마지막 수정 타임스탬프.  - `osmType[string]`: 원래 OpenStreetMap 요소의 유형 . 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩 문자 시퀀스를 포함하는 목록  - `rcnRef[string]`: 지역 자전거 네트워크 경로 참조 번호 . 모델: [https://wiki.openstreetmap.org/wiki/Key:rcn_ref](https://wiki.openstreetmap.org/wiki/Key:rcn_ref)- `seeAlso[*]`: 이 항목에 대한 추가 리소스를 가리키는 URI 목록.  - `segregated[boolean]`: 자전거 인프라가 보행자 사용과 물리적으로 분리되어 있는지 여부를 나타냅니다 . 모델: [https://wiki.openstreetmap.org/wiki/Key:segregated](https://wiki.openstreetmap.org/wiki/Key:segregated)- `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자열. 소스 제공자의 정규화된 도메인 이름 또는 소스 객체의 URL을 사용하는 것이 좋습니다  - `surface[string]`: 자전거 도로의 물리적 표면 재료 . 모델: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `type[string]`: NGSI 엔티티 유형. OSMCycleRoute여야 합니다  - `widthMeters[number]`: 자전거 도로의 너비(미터) . 모델: [https://wiki.openstreetmap.org/wiki/Key:width](https://wiki.openstreetmap.org/wiki/Key:width)<!-- /30-PropertiesList -->  
+ 
+<sup><sub>[*] 속성에 유형이 없으면 여러 유형이나 다른 형식/패턴을 가질 수 있습니다</sub></sup>  
+- `access[string]`: 이 경로에 대한 자전거 운행 제한입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access) 
+- `address[object]`: 우편 주소입니다. 모델: [https://schema.org/address](https://schema.org/address) 
+	- `addressCountry[string]`: 국가입니다. 예: 스페인. 모델: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 지역입니다. 모델: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 국가에 속한 지역입니다. 모델: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 일부 국가에서 지자체가 관리하는 행정 구역 유형입니다. 
+	- `postOfficeBoxNumber[string]`: 우체국 우편함 번호입니다. 예: 03578. 모델: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 우편 번호입니다. 예: 24004. 모델: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 도로 주소입니다. 모델: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 공공 도로上的 특정 속성에 대한 고유 번호입니다. 
+- `alternateName[string]`: 이 항목의 대체 이름입니다. 
+- `areaServed[string]`: 서비스 또는 제공 항목이 제공되는 지리적 영역입니다. 모델: [https://schema.org/Text](https://schema.org/Text) 
+- `cyclewayType[string]`: 자전거 인프라의 분류입니다. 열거형: '차선, 트랙, 반대, 반대_차선, 공유_버스_차선, 경로, 별도, 공유'입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:cycleway](https://wiki.openstreetmap.org/wiki/Key:cycleway) 
+- `dataProvider[string]`: 조화된 데이터 엔티티 제공者的 일련의 문자입니다. 
+- `dateCreated[date-time]`: 엔티티 생성 타임스탬프입니다. 이는 일반적으로 저장 플랫폼에 의해 할당됩니다. 
+- `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 저장 플랫폼에 의해 할당됩니다. 
+- `description[string]`: 이 항목에 대한 설명입니다. 
+- `id[*]`: 엔티티의 고유 식별자입니다. 
+- `lit[boolean]`: 자전거 도로에 가로등이 있는지 여부입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit) 
+- `location[*]`: 항목에 대한 Geojson 참조입니다. 점, 선, 다각형, 다중 점, 다중 선, 다중 다각형 중 하나일 수 있습니다. 
+- `maxSpeed[number]`: 허용되는 최대 속도(킬로미터/시간)입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed) 
+- `name[string]`: 이 항목의 이름입니다. 
+- `ncnRef[string]`: 국가 자전거 네트워크 경로 참조 번호입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:ncn_ref](https://wiki.openstreetmap.org/wiki/Key:ncn_ref) 
+- `oneway[boolean]`: 자전거 도로가 자전거를 위한 일방통행인지 여부입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:oneway](https://wiki.openstreetmap.org/wiki/Key:oneway) 
+- `operator[string]`: 이 자전거 도로를 유지 관리하는 엔티티의 이름입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator) 
+- `osmId[number]`: 원래 오픈스트리트맵 요소의 정수 식별자입니다. 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements) 
+- `osmLastModified[date-time]`: 오픈스트리트맵 요소의 마지막 수정 타임스탬프입니다. 
+- `osmType[string]`: 원래 오픈스트리트맵 요소의 유형입니다. 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements) 
+- `owner[array]`: 소유자(들)의 고유 ID를 참조하는 JSON으로 인코딩된 일련의 문자를 포함하는 목록입니다. 
+- `rcnRef[string]`: 지역 자전거 네트워크 경로 참조 번호입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:rcn_ref](https://wiki.openstreetmap.org/wiki/Key:rcn_ref) 
+- `seeAlso[*]`: 이 항목에 대한 추가 리소스를 가리키는 URI 목록입니다. 
+- `segregated[boolean]`: 자전거 인프라가 보행자용으로 물리적으로 분리되어 있는지 여부입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:segregated](https://wiki.openstreetmap.org/wiki/Key:segregated) 
+- `source[string]`: 엔티티 데이터의 원래 출처를 URL로 제공하는 일련의 문자입니다. 출처 제공자의 완전한 도메인 이름이나 출처 개체의 URL을 사용하는 것이 좋습니다. 
+- `surface[string]`: 자전거 도로의 물리적 표면 재료입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface) 
+- `type[string]`: NGSI 엔티티 유형입니다. OSMCycleRoute이어야 합니다. 
+- `widthMeters[number]`: 자전거 도로의 너비(미터)입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:width](https://wiki.openstreetmap.org/wiki/Key:width) 
+<!-- /30-PropertiesList -->  
+ 
 <!-- 35-RequiredProperties -->  
+ 
 필수 속성  
-- `cyclewayType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
+- `cyclewayType`  
+- `id`  
+- `location`  
+- `osmId`  
+- `osmType`  
+- `type`  
+<!-- /35-RequiredProperties -->  
+ 
 <!-- 40-NotesYaml -->  
+ 
 <!-- /40-NotesYaml -->  
+ 
 <!-- 50-DataModelHeader -->  
-## 속성의 데이터 모델 설명  
-알파벳순 정렬 (자세한 내용은 클릭)  
+ 
+## 속성에 대한 데이터 모델 설명  
+ 
+사전순으로 정렬됨(클릭하여 자세한 정보 확인)  
 <!-- /50-DataModelHeader -->  
+ 
 <!-- 60-ModelYaml -->  
-<details><summary><strong>전체 YAML 세부 정보</strong></summary>    
+ 
+<details><summary><strong>전체 yaml 세부 정보</strong></summary>    
+ 
 ```yaml  
 OSMCycleRoute:    
   description: A dedicated cycling infrastructure element from OpenStreetMap. Represents cycle paths, shared cycle lanes, and bike routes tagged with highway=cycleway or cycleway=* on road ways.    
@@ -529,14 +584,22 @@ OSMCycleRoute:
   x-version: 0.0.1    
 ```  
 </details>    
+ 
 <!-- /60-ModelYaml -->  
+ 
 <!-- 70-MiddleNotes -->  
+ 
 <!-- /70-MiddleNotes -->  
+ 
 <!-- 80-Examples -->  
-## 페이로드 예시    
-#### OSMCycleRoute NGSI-v2 키-값 예시    
-다음은 키-값 형식의 JSON OSMCycleRoute 예시입니다. 이는 `options=keyValues`를 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>예시 표시/숨기기</strong></summary>    
+ 
+## 예제 페이로드    
+ 
+#### OSMCycleRoute NGSI-v2 키-값 예제    
+ 
+이것은 NGSI-v2와 호환되는 JSON 형식의 OSMCycleRoute 예제입니다. `options=keyValues`을 사용하여 개별 엔티티의 컨텍스트 데이터를 반환할 때 호환됩니다.  
+<details><summary><strong>예제 표시/숨기기</strong></summary>    
+ 
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMCycleRoute:way:107532891",  
@@ -576,9 +639,12 @@ OSMCycleRoute:
 }  
 ```  
 </details>  
-#### OSMCycleRoute NGSI-v2 정규화된 예시    
-다음은 정규화된 JSON 형식의 OSMCycleRoute 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>예시 표시/숨기기</strong></summary>    
+ 
+#### OSMCycleRoute NGSI-v2 정규화된 예제    
+ 
+이것은 NGSI-v2와 호환되는 JSON 형식의 OSMCycleRoute 예제입니다. 옵션을 사용하지 않을 때 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>예제 표시/숨기기</strong></summary>    
+ 
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMCycleRoute:way:107532891",  
@@ -666,9 +732,12 @@ OSMCycleRoute:
 }  
 ```  
 </details>  
-#### OSMCycleRoute NGSI-LD 키-값 예시    
-다음은 키-값 형식의 JSON-LD OSMCycleRoute 예시입니다. 이는 `options=keyValues`를 사용할 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>예시 표시/숨기기</strong></summary>    
+ 
+#### OSMCycleRoute NGSI-LD 키-값 예제    
+ 
+이것은 NGSI-LD와 호환되는 JSON-LD 형식의 OSMCycleRoute 예제입니다. `options=keyValues`을 사용하여 개별 엔티티의 컨텍스트 데이터를 반환할 때 호환됩니다.  
+<details><summary><strong>예제 표시/숨기기</strong></summary>    
+ 
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMCycleRoute:way:107532891",  
@@ -711,9 +780,12 @@ OSMCycleRoute:
 }  
 ```  
 </details>  
-#### OSMCycleRoute NGSI-LD 정규화된 예시    
-다음은 정규화된 JSON-LD 형식의 OSMCycleRoute 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>예시 표시/숨기기</strong></summary>    
+ 
+#### OSMCycleRoute NGSI-LD 정규화된 예제    
+ 
+이것은 NGSI-LD와 호환되는 JSON-LD 형식의 OSMCycleRoute 예제입니다. 옵션을 사용하지 않을 때 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>예제 표시/숨기기</strong></summary>    
+ 
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMCycleRoute:way:107532891",  
@@ -802,11 +874,18 @@ OSMCycleRoute:
 }  
 ```  
 </details><!-- /80-Examples -->  
+ 
 <!-- 90-FooterNotes -->  
+ 
 <!-- /90-FooterNotes -->  
+ 
 <!-- 95-Units -->  
-크기 단위를 처리하는 방법에 대한 답변은 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)를 참조하십시오  
+ 
+크기 단위에 대한 처리 방법에 대한 답변을 얻으려면 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)를 참조하십시오.  
 <!-- /95-Units -->  
+ 
 <!-- 97-LastFooter -->  
+ 
 ---  
+ 
 [Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
