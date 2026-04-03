@@ -1,40 +1,96 @@
 <!-- 10-Header -->  
+ 
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+ 
 Entité : OSMCycleRoute  
-=====================<!-- /10-Header -->  
+===================== 
+<!-- /10-Header -->  
+ 
 <!-- 15-License -->  
+ 
 [Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMCycleRoute/LICENSE.md)  
+ 
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
+ 
 <!-- 20-Description -->  
-Description globale : **Un élément d'infrastructure cyclable dédié d'OpenStreetMap. Représente les pistes cyclables, les voies cyclables partagées et les itinéraires cyclables balisés avec highway=cycleway ou cycleway=* sur les voies routières.**  
-version: 0.0.1  
+ 
+Description globale : **Un élément d'infrastructure cyclable dédié à partir d'OpenStreetMap. Représente les pistes cyclables, les voies cyclables partagées et les itinéraires cyclables étiquetés avec highway=cycleway ou cycleway=* sur les routes.**  
+ 
+version : 0.0.1  
 <!-- /20-Description -->  
+ 
 <!-- 30-PropertiesList -->  
+ 
 
+ 
 ## Liste des propriétés  
-
-<sup><sub>[*] Si un attribut n'a pas de type, c'est qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>  
-- `access[string]`: Restriction d'accès s'appliquant aux cyclistes sur cet itinéraire . Modèle : [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: L'adresse postale . Modèle : [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Le pays. Par exemple, l'Espagne . Modèle : [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: La localité où se trouve l'adresse, et qui est dans la région . Modèle : [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: La région où se trouve la localité, et qui est dans le pays . Modèle : [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local    
-	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578 . Modèle : [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: Le code postal. Par exemple, 24004 . Modèle : [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: L'adresse de la rue . Modèle : [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]`: Numéro identifiant une propriété spécifique sur une voie publique    
-- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article est fourni . Modèle : [https://schema.org/Text](https://schema.org/Text)- `cyclewayType[string]`: Classification de l'infrastructure cyclable. Enum:'lane, track, opposite, opposite_lane, shared_busway, path, separate, shared' . Modèle : [https://wiki.openstreetmap.org/wiki/Key:cycleway](https://wiki.openstreetmap.org/wiki/Key:cycleway)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisée  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Ceci sera généralement alloué par la plateforme de stockage  - `dateModified[date-time]`: Horodatage de la dernière modification de l'entité. Ceci sera généralement alloué par la plateforme de stockage  - `description[string]`: Une description de cet élément  - `id[*]`: Identifiant unique de l'entité  - `lit[boolean]`: Indique si la piste cyclable est éclairée . Modèle : [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir de Point, LineString, Polygon, MultiPoint, MultiLineString ou MultiPolygon  - `maxSpeed[number]`: Vitesse maximale autorisée en kilomètres par heure . Modèle : [https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed)- `name[string]`: Le nom de cet élément  - `ncnRef[string]`: Numéro de référence de l'itinéraire du Réseau Cyclable National . Modèle : [https://wiki.openstreetmap.org/wiki/Key:ncn_ref](https://wiki.openstreetmap.org/wiki/Key:ncn_ref)- `oneway[boolean]`: Indique si la piste cyclable est à sens unique pour les cyclistes . Modèle : [https://wiki.openstreetmap.org/wiki/Key:oneway](https://wiki.openstreetmap.org/wiki/Key:oneway)- `operator[string]`: Nom de l'entité responsable de l'entretien de cette piste cyclable . Modèle : [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: L'identifiant entier de l'élément OpenStreetMap original . Modèle : [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: Horodatage de la dernière modification de l'élément OSM.  - `osmType[string]`: Le type de l'élément OpenStreetMap original . Modèle : [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: Une liste contenant une séquence de caractères encodée en JSON référençant les identifiants uniques du ou des propriétaires  - `rcnRef[string]`: Numéro de référence de l'itinéraire du Réseau Cyclable Régional . Modèle : [https://wiki.openstreetmap.org/wiki/Key:rcn_ref](https://wiki.openstreetmap.org/wiki/Key:rcn_ref)- `seeAlso[*]`: Liste d'URIs pointant vers des ressources additionnelles concernant cet élément.  - `segregated[boolean]`: Indique si l'infrastructure cyclable est physiquement séparée de l'usage piétonnier . Modèle : [https://wiki.openstreetmap.org/wiki/Key:segregated](https://wiki.openstreetmap.org/wiki/Key:segregated)- `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur de la source, ou l'URL de l'objet source  - `surface[string]`: Matériau de surface physique de la piste cyclable . Modèle : [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `type[string]`: Type d'entité NGSI. Il doit être OSMCycleRoute  - `widthMeters[number]`: Largeur de la piste cyclable en mètres . Modèle : [https://wiki.openstreetmap.org/wiki/Key:width](https://wiki.openstreetmap.org/wiki/Key:width)<!-- /30-PropertiesList -->  
+ 
+<sup><sub>[*] Si il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modes</sub></sup>  
+- `access[string]` : Restriction d'accès applicable aux cyclistes sur cette route. Modèle : [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access) 
+- `address[object]` : L'adresse postale. Modèle : [https://schema.org/address](https://schema.org/address) 
+    - `addressCountry[string]` : Le pays. Par exemple, Espagne. Modèle : [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+    - `addressLocality[string]` : La localité dans laquelle se trouve l'adresse de la rue, et qui se trouve dans la région. Modèle : [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+    - `addressRegion[string]` : La région dans laquelle se trouve la localité, et qui se trouve dans le pays. Modèle : [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+    - `district[string]` : Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local    
+    - `postOfficeBoxNumber[string]` : Le numéro de boîte postale pour les adresses de boîte postale. Par exemple, 03578. Modèle : [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+    - `postalCode[string]` : Le code postal. Par exemple, 24004. Modèle : [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+    - `streetAddress[string]` : L'adresse de la rue. Modèle : [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+    - `streetNr[string]` : Numéro identifiant une propriété spécifique sur une rue publique    
+- `alternateName[string]` : Un nom alternatif pour cet élément   
+- `areaServed[string]` : La zone géographique où un service ou un élément proposé est fourni. Modèle : [https://schema.org/Text](https://schema.org/Text) 
+- `cyclewayType[string]` : Classification de l'infrastructure cyclable. Enum:'lane, track, opposite, opposite_lane, shared_busway, path, separate, shared'. Modèle : [https://wiki.openstreetmap.org/wiki/Key:cycleway](https://wiki.openstreetmap.org/wiki/Key:cycleway) 
+- `dataProvider[string]` : Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisée   
+- `dateCreated[date-time]` : Horodatage de la création de l'entité. Cela sera généralement alloué par la plate-forme de stockage   
+- `dateModified[date-time]` : Horodatage de la dernière modification de l'entité. Cela sera généralement alloué par la plate-forme de stockage   
+- `description[string]` : Une description de cet élément   
+- `id[*]` : Identifiant unique de l'entité   
+- `lit[boolean]` : Indique si la route cyclable a un éclairage public. Modèle : [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit) 
+- `location[*]` : Référence Geojson à l'élément. Il peut s'agir d'un Point, LineString, Polygon, MultiPoint, MultiLineString ou MultiPolygon   
+- `maxSpeed[number]` : Vitesse maximale autorisée en kilomètres par heure. Modèle : [https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed) 
+- `name[string]` : Le nom de cet élément   
+- `ncnRef[string]` : Numéro de référence de la route du Réseau cyclable national. Modèle : [https://wiki.openstreetmap.org/wiki/Key:ncn_ref](https://wiki.openstreetmap.org/wiki/Key:ncn_ref) 
+- `oneway[boolean]` : Indique si la route cyclable est à sens unique pour les cyclistes. Modèle : [https://wiki.openstreetmap.org/wiki/Key:oneway](https://wiki.openstreetmap.org/wiki/Key:oneway) 
+- `operator[string]` : Nom de l'entité responsable de la maintenance de cette route cyclable. Modèle : [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator) 
+- `osmId[number]` : L'identifiant entier de l'élément OpenStreetMap d'origine. Modèle : [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements) 
+- `osmLastModified[date-time]` : Horodatage de la dernière modification de l'élément OSM.   
+- `osmType[string]` : Le type de l'élément OpenStreetMap d'origine. Modèle : [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements) 
+- `owner[array]` : Une liste contenant une séquence de caractères codés en JSON référençant les identifiants uniques des propriétaires   
+- `rcnRef[string]` : Numéro de référence de la route du Réseau cyclable régional. Modèle : [https://wiki.openstreetmap.org/wiki/Key:rcn_ref](https://wiki.openstreetmap.org/wiki/Key:rcn_ref) 
+- `seeAlso[*]` : Liste d'URI pointant vers des ressources supplémentaires sur cet élément.   
+- `segregated[boolean]` : Indique si l'infrastructure cyclable est physiquement séparée de l'utilisation piétonnière. Modèle : [https://wiki.openstreetmap.org/wiki/Key:segregated](https://wiki.openstreetmap.org/wiki/Key:segregated) 
+- `source[string]` : Une séquence de caractères donnant la source d'origine des données de l'entité sous la forme d'une URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source   
+- `surface[string]` : Matériau de surface physique de la piste cyclable. Modèle : [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface) 
+- `type[string]` : Type d'entité NGSI. Il doit s'agir d'OSMCycleRoute   
+- `widthMeters[number]` : Largeur de la piste cyclable en mètres. Modèle : [https://wiki.openstreetmap.org/wiki/Key:width](https://wiki.openstreetmap.org/wiki/Key:width) 
+<!-- /30-PropertiesList -->  
+ 
 <!-- 35-RequiredProperties -->  
+ 
 Propriétés requises  
-- `cyclewayType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
+- `cyclewayType`   
+- `id`   
+- `location`   
+- `osmId`   
+- `osmType`   
+- `type`   
+<!-- /35-RequiredProperties -->  
+ 
 <!-- 40-NotesYaml -->  
+ 
 <!-- /40-NotesYaml -->  
+ 
 <!-- 50-DataModelHeader -->  
+ 
 ## Description du modèle de données des propriétés  
-Trié par ordre alphabétique (cliquez pour les détails)  
+ 
+Classé par ordre alphabétique (cliquez pour plus de détails)  
 <!-- /50-DataModelHeader -->  
+ 
 <!-- 60-ModelYaml -->  
-<details><summary><strong>détails complets yaml</strong></summary>    
+ 
+<details><summary><strong>détails yaml complets</strong></summary>    
+ 
 ```yaml  
 OSMCycleRoute:    
   description: A dedicated cycling infrastructure element from OpenStreetMap. Represents cycle paths, shared cycle lanes, and bike routes tagged with highway=cycleway or cycleway=* on road ways.    
@@ -529,14 +585,22 @@ OSMCycleRoute:
   x-version: 0.0.1    
 ```  
 </details>    
+ 
 <!-- /60-ModelYaml -->  
+ 
 <!-- 70-MiddleNotes -->  
+ 
 <!-- /70-MiddleNotes -->  
+ 
 <!-- 80-Examples -->  
+ 
 ## Exemples de charges utiles    
-#### Exemple OSMCycleRoute NGSI-v2 clé-valeurs    
-Voici un exemple d'OSMCycleRoute au format JSON en tant que clé-valeurs. Ceci est compatible avec NGSI-v2 lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+ 
+#### Exemple de clés-valeurs OSMCycleRoute NGSI-v2    
+ 
+Voici un exemple d'OSMCycleRoute au format JSON en clés-valeurs. Cela est compatible avec NGSI-v2 lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
 <details><summary><strong>afficher/masquer l'exemple</strong></summary>    
+ 
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMCycleRoute:way:107532891",  
@@ -576,9 +640,12 @@ Voici un exemple d'OSMCycleRoute au format JSON en tant que clé-valeurs. Ceci e
 }  
 ```  
 </details>  
-#### Exemple OSMCycleRoute NGSI-v2 normalisé    
-Voici un exemple d'OSMCycleRoute au format JSON en tant que normalisé. Ceci est compatible avec NGSI-v2 sans utiliser d'options et renvoie les données de contexte d'une entité individuelle.  
+ 
+#### Exemple normalisé OSMCycleRoute NGSI-v2    
+ 
+Voici un exemple d'OSMCycleRoute au format JSON en tant que normalisé. Cela est compatible avec NGSI-v2 lorsqu'aucune option n'est utilisée et renvoie les données de contexte d'une entité individuelle.  
 <details><summary><strong>afficher/masquer l'exemple</strong></summary>    
+ 
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMCycleRoute:way:107532891",  
@@ -666,9 +733,12 @@ Voici un exemple d'OSMCycleRoute au format JSON en tant que normalisé. Ceci est
 }  
 ```  
 </details>  
-#### Exemple OSMCycleRoute NGSI-LD clé-valeurs    
-Voici un exemple d'OSMCycleRoute au format JSON-LD en tant que clé-valeurs. Ceci est compatible avec NGSI-LD lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+ 
+#### Exemple de clés-valeurs OSMCycleRoute NGSI-LD    
+ 
+Voici un exemple d'OSMCycleRoute au format JSON-LD en clés-valeurs. Cela est compatible avec NGSI-LD lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
 <details><summary><strong>afficher/masquer l'exemple</strong></summary>    
+ 
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMCycleRoute:way:107532891",  
@@ -711,9 +781,12 @@ Voici un exemple d'OSMCycleRoute au format JSON-LD en tant que clé-valeurs. Cec
 }  
 ```  
 </details>  
-#### Exemple OSMCycleRoute NGSI-LD normalisé    
-Voici un exemple d'OSMCycleRoute au format JSON-LD en tant que normalisé. Ceci est compatible avec NGSI-LD sans utiliser d'options et renvoie les données de contexte d'une entité individuelle.  
+ 
+#### Exemple normalisé OSMCycleRoute NGSI-LD    
+ 
+Voici un exemple d'OSMCycleRoute au format JSON-LD en tant que normalisé. Cela est compatible avec NGSI-LD lorsqu'aucune option n'est utilisée et renvoie les données de contexte d'une entité individuelle.  
 <details><summary><strong>afficher/masquer l'exemple</strong></summary>    
+ 
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMCycleRoute:way:107532891",  
@@ -802,11 +875,18 @@ Voici un exemple d'OSMCycleRoute au format JSON-LD en tant que normalisé. Ceci 
 }  
 ```  
 </details><!-- /80-Examples -->  
+ 
 <!-- 90-FooterNotes -->  
+ 
 <!-- /90-FooterNotes -->  
+ 
 <!-- 95-Units -->  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de gérer les unités de grandeur  
+ 
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude  
 <!-- /95-Units -->  
+ 
 <!-- 97-LastFooter -->  
+ 
 ---  
+ 
 [Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
