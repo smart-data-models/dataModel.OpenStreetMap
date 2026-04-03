@@ -1,80 +1,41 @@
-<!-- 10-Header -->
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
-Entity: OSMParkingArea
-======================
-<!-- /10-Header -->
-<!-- 15-License -->
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMParkingArea/LICENSE.md)
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
-<!-- /15-License -->
-<!-- 20-Description -->
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: OSMParkingArea  
+======================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMParkingArea/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな説明: **オープンストリートマップでアメニティ=parkingとタグ付けされた車両の駐車エリアまたは施設。表面駐車場、多層ガレージ、地下施設、その他の組織化された駐車エリアを表します。**  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-Global description: **OpenStreetMapで amenity=parking とタグ付けされた車両駐車場または駐車施設。地表駐車場、立体駐車場、地下駐車場、その他の組織化された駐車スペースを表します。**
-version: 0.0.1
-<!-- /20-Description -->
-<!-- 30-PropertiesList -->
+## プロパティの一覧  
 
-## プロパティ一覧
-
-<sup><sub>[*] 属性に型が指定されていない場合は、複数の型や異なる形式/パターンを取りうるためです</sub></sup>
-- `access[string]`: 駐車施設へのアクセス制限。モデル: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)
-- `address[object]`: 郵便住所。モデル: [https://schema.org/address](https://schema.org/address)
-	- `addressCountry[string]`: 国。例: スペイン。モデル: [https://schema.org/addressCountry](https://schema.org/addressCountry)
-	- `addressLocality[string]`: 街路住所が所在する地域。モデル: [https://schema.org/addressLocality](https://schema.org/addressLocality)
-	- `addressRegion[string]`: 地域が所在する国。モデル: [https://schema.org/addressRegion](https://schema.org/addressRegion)
-	- `district[string]`: 地区。一部の国では地方自治体によって管理される行政区画の一種です
-	- `postOfficeBoxNumber[string]`: 郵便ポストの郵便番号宛の場合の私書箱番号。例: 03578。モデル: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
-	- `postalCode[string]`: 郵便番号。例: 24004。モデル: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
-	- `streetAddress[string]`: 街路住所。モデル: [https://schema.org/streetAddress](https://schema.org/streetAddress)
-	- `streetNr[string]`: 公共の街路にある特定の不動産を識別する番号
-- `alternateName[string]`: この項目の別名
-- `areaServed[string]`: サービスや提供されるアイテムが利用可能な地理的エリア。モデル: [https://schema.org/Text](https://schema.org/Text)
-- `capacity[number]`: 利用可能な駐車スペースの総数。モデル: [https://wiki.openstreetmap.org/wiki/Key:capacity](https://wiki.openstreetmap.org/wiki/Key:capacity)
-- `capacityDisabled[number]`: 指定障害者用駐車スペースの数。モデル: [https://wiki.openstreetmap.org/wiki/Key:capacity:disabled](https://wiki.openstreetmap.org/wiki/Key:capacity:disabled)
-- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する文字列のシーケンス
-- `dateCreated[date-time]`: エンティティ作成タイムスタンプ。通常はストレージプラットフォームによって割り当てられます
-- `dateModified[date-time]`: エンティティの最終更新タイムスタンプ。通常はストレージプラットフォームによって割り当てられます
-- `description[string]`: この項目の説明
-- `fee[boolean]`: 駐車に料金がかかるかどうかを示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:fee](https://wiki.openstreetmap.org/wiki/Key:fee)
-- `id[*]`: エンティティの一意識別子
-- `lit[boolean]`: 駐車場が夜間に照明されているかどうかを示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)
-- `location[*]`: この項目へのジオJSON参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです
-- `maxStay[string]`: 最大許容駐車時間（例: '2h'、'1 day'）。モデル: [https://wiki.openstreetmap.org/wiki/Key:maxstay](https://wiki.openstreetmap.org/wiki/Key:maxstay)
-- `name[string]`: この項目の名前
-- `openingHours[string]`: OSMのopening_hours構文による駐車施設の営業時間。モデル: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)
-- `operator[string]`: 駐車施設を運営または管理するエンティティの名前。モデル: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)
-- `osmId[number]`: 元のOpenStreetMap要素の整数ID。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)
-- `osmLastModified[date-time]`: OSM要素の最終更新タイムスタンプ
-- `osmType[string]`: 元のOpenStreetMap要素の種類。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)
-- `owner[array]`: 所有者の一意IDを参照するJSONエンコードされた文字列のリスト
-- `parkingType[string]`: 駐車施設の物理的な種類またはレイアウト。Enum: 'surface（地表）', 'multi-storey（立体）', 'underground（地下）', 'street_side（路側）', 'rooftop（屋上）', 'sheds（シェッド）', 'carports（カーポート）', 'garage_boxes（ガレージボックス）', 'lane（車線）'。モデル: [https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking)
-- `seeAlso[*]`: この項目に関する追加リソースへのURIのリスト
-- `source[string]`: エンティティデータの元のソースURLとしての文字列シーケンス。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへのURLが推奨されます
-- `surface[string]`: 駐車場の舗装素材。モデル: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)
-- `type[string]`: NGSIエンティティタイプ。OSMParkingAreaである必要があります
-- `wheelchair[string]`: 車椅子アクセス可能な駐車スペースの利用可能性。モデル: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)
-<!-- /30-PropertiesList -->
-<!-- 35-RequiredProperties -->
-
-必須プロパティ
-- `id`
-- `location`
-- `osmId`
-- `osmType`
-- `parkingType`
-- `type`
-<!-- /35-RequiredProperties -->
-<!-- 40-NotesYaml -->
-<!-- /40-NotesYaml -->
-<!-- 50-DataModelHeader -->
-
-## プロパティのデータモデル説明
-
-アルファベット順（詳細についてはクリック）
-<!-- /50-DataModelHeader -->
-<!-- 60-ModelYaml -->
-<details><summary><strong>完全なYAMLの詳細</strong></summary>
-```yaml  
+<sup><sub>[*] 属性に型がない場合は、複数の型または異なる形式/パターンを持つ可能性があるためです</sub></sup>  
+- `access[string]`: 駐車施設へのアクセス制限  . モデル: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: 郵送先住所  . モデル: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例: スペイン  . モデル: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 通り住所が存在する、地域内の自治体  . モデル: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 自治体が存在する、国内の地域  . モデル: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 一部の国では、地方自治体によって管理される行政区画の種類    
+	- `postOfficeBoxNumber[string]`: POボックス住所のポストオフィスボックス番号。例: 03578  . モデル: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例: 24004  . モデル: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 通り住所  . モデル: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 公共の通りで特定の物件を識別する番号    
+- `alternateName[string]`: このアイテムの別名  - `areaServed[string]`: サービスまたは提供されたアイテムが提供される地理的なエリア  . モデル: [https://schema.org/Text](https://schema.org/Text)- `capacity[number]`: 利用可能な駐車スペースの総数  . モデル: [https://wiki.openstreetmap.org/wiki/Key:capacity](https://wiki.openstreetmap.org/wiki/Key:capacity)- `capacityDisabled[number]`: 指定された障害者用駐車スペースの数  . モデル: [https://wiki.openstreetmap.org/wiki/Key:capacity:disabled](https://wiki.openstreetmap.org/wiki/Key:capacity:disabled)- `dataProvider[string]`: ハーモナイズされたデータエンティティの提供者を識別する文字シーケンス  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。このタイムスタンプは通常、ストレージプラットフォームによって割り当てられます  - `dateModified[date-time]`: エンティティの最後の変更のタイムスタンプ。このタイムスタンプは通常、ストレージプラットフォームによって割り当てられます  - `description[string]`: このアイテムの説明  - `fee[boolean]`: 駐車料金がかかるかどうかを示します  . モデル: [https://wiki.openstreetmap.org/wiki/Key:fee](https://wiki.openstreetmap.org/wiki/Key:fee)- `id[*]`: エンティティの一意の識別子  - `lit[boolean]`: 駐車エリアが夜に照らされているかどうかを示します  . モデル: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: アイテムへのGeojson参照。ポイント、ラインストリング、ポリゴン、複数ポイント、複数ラインストリング、または複数ポリゴンになります  - `maxStay[string]`: 最大許可駐車時間（例: '2時間', '1日'）  . モデル: [https://wiki.openstreetmap.org/wiki/Key:maxstay](https://wiki.openstreetmap.org/wiki/Key:maxstay)- `name[string]`: このアイテムの名前  - `openingHours[string]`: OSMの開催時間構文による駐車施設の営業時間  . モデル: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: 駐車施設を運営または管理するエンティティの名前  . モデル: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: 元のOpenStreetMap要素の整数識別子  . モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM要素の最後の変更のタイムスタンプ。  - `osmType[string]`: 元のOpenStreetMap要素の種類  . モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字シーケンスを含むリスト  - `parkingType[string]`: 駐車施設の物理的な種類またはレイアウト。列挙:'表面、多層、地下、通り側、屋上、シェッド、カーポート、ガレージボックス、レーン'  . モデル: [https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking)- `seeAlso[*]`: このアイテムについての追加のリソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLとして提供する文字シーケンス。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへのURLであることをお勧めします  - `surface[string]`: 駐車エリアの表面材料  . モデル: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `type[string]`: NGSIエンティティの種類。これはOSMParkingAreaでなければなりません  - `wheelchair[string]`: 車椅子対応駐車スペースの可用性  . モデル: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必須プロパティ  
+- `id`  - `location`  - `osmId`  - `osmType`  - `parkingType`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+<!-- /40-NotesYaml -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル説明  
+アルファベット順に並べ替え（詳細をクリック）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
+<details><summary><strong>フルYAMLの詳細</strong></summary>    
+```yaml  
 OSMParkingArea:    
   description: A vehicle parking area or facility from OpenStreetMap tagged with amenity=parking. Represents surface car parks, multi-storey garages, underground facilities, and other organised parking areas.    
   properties:    
@@ -565,19 +526,17 @@ OSMParkingArea:
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMParkingArea/schema.json    
   x-model-tags: OSM OpenStreetMap Transportation Parking    
   x-version: 0.0.1    
-```
-</details>
-<!-- /60-ModelYaml -->
-<!-- 70-MiddleNotes -->
-<!-- /70-MiddleNotes -->
-<!-- 80-Examples -->
-
-## 例のペイロード
-
-#### OSMParkingArea NGSI-v2 キー値形式の例
-これはNGSI-v2で`options=keyValues`を使用した際に個別エンティティのコンテキストデータを返す、キー値形式のJSONによるOSMParkingAreaの例です。
-<details><summary><strong>例を表示/非表示</strong></summary>
-```json  
+```  
+</details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## ペイロードの例    
+#### OSMParkingArea NGSI-v2 キー値の例    
+OSMParkingAreaのJSON形式のキー値の例です。これは、`options=keyValues`を使用して個々のエンティティのコンテキストデータを返す場合に、NGSI-v2と互換性があります。  
+<details><summary><strong>例の表示/非表示</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMParkingArea:way:34517828",  
   "type": "OSMParkingArea",  
@@ -626,13 +585,12 @@ OSMParkingArea:
     "https://www.openstreetmap.org/way/34517828"  
   ]  
 }  
-```
-</details>
-
-#### OSMParkingArea NGSI-v2 標準形式の例
-これはオプションを使用しないNGSI-v2で個別エンティティのコンテキストデータを返す、標準形式のJSONによるOSMParkingAreaの例です。
-<details><summary><strong>例を表示/非表示</strong></summary>
-```json  
+```  
+</details>  
+#### OSMParkingArea NGSI-v2 正規化された例    
+OSMParkingAreaのJSON形式の正規化された例です。これは、オプションを使用しない場合に、個々のエンティティのコンテキストデータを返す場合に、NGSI-v2と互換性があります。  
+<details><summary><strong>例の表示/非表示</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMParkingArea:way:34517828",  
   "type": "OSMParkingArea",  
@@ -729,13 +687,12 @@ OSMParkingArea:
     ]  
   }  
 }  
-```
-</details>
-
-#### OSMParkingArea NGSI-LD キー値形式の例
-これはNGSI-LDで`options=keyValues`を使用した際に個別エンティティのコンテキストデータを返す、キー値形式のJSON-LDによるOSMParkingAreaの例です。
-<details><summary><strong>例を表示/非表示</strong></summary>
-```json  
+```  
+</details>  
+#### OSMParkingArea NGSI-LD キー値の例    
+OSMParkingAreaのJSON-LD形式のキー値の例です。これは、`options=keyValues`を使用して個々のエンティティのコンテキストデータを返す場合に、NGSI-LDと互換性があります。  
+<details><summary><strong>例の表示/非表示</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMParkingArea:way:34517828",  
   "type": "OSMParkingArea",  
@@ -787,13 +744,12 @@ OSMParkingArea:
     "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
   ]  
 }  
-```
-</details>
-
-#### OSMParkingArea NGSI-LD 標準形式の例
-これはオプションを使用しないNGSI-LDで個別エンティティのコンテキストデータを返す、標準形式のJSON-LDによるOSMParkingAreaの例です。
-<details><summary><strong>例を表示/非表示</strong></summary>
-```json  
+```  
+</details>  
+#### OSMParkingArea NGSI-LD 正規化された例    
+OSMParkingAreaのJSON-LD形式の正規化された例です。これは、オプションを使用しない場合に、個々のエンティティのコンテキストデータを返す場合に、NGSI-LDと互換性があります。  
+<details><summary><strong>例の表示/非表示</strong></summary>    
+```json  
 {  
     "id": "urn:ngsi-ld:OSMParkingArea:way:34517828",  
     "type": "OSMParkingArea",  
@@ -896,14 +852,13 @@ OSMParkingArea:
         "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
     ]  
 }  
-```
-</details><!-- /80-Examples -->
-<!-- 90-FooterNotes -->
-<!-- /90-FooterNotes -->
-<!-- 95-Units -->
-
-[FAQ 10](https://smartdatamodels.org/index.php/faqs/) 単位の扱いに関する回答についてはこちらを参照してください
-<!-- /95-Units -->
-<!-- 97-LastFooter -->
----
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照して、数量の単位をどのように扱うかについての回答を得てください  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
