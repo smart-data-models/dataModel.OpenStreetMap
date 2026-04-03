@@ -1,40 +1,69 @@
-<!-- 10-Header -->  
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entité : OSMLanduse  
-==================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMLanduse/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Description globale : **Une zone d'utilisation du sol d'OpenStreetMap étiquetée avec landuse=*. Décrit le but humain principal ou l'utilisation d'une zone de terre**  
-version : 0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
+<!-- 10-Header -->
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+Entité : OSMLanduse
+==================<!-- /10-Header -->
+<!-- 15-License -->
+[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMLanduse/LICENSE.md)
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
+<!-- /15-License -->
+<!-- 20-Description -->
 
-## Liste des propriétés  
+Description globale : **Une zone d'utilisation des sols issue d'OpenStreetMap marquée avec landuse=*. Décrit l'usage principal ou l'affectation humaine d'une zone de terrain**<!-- /20-Description -->
+<!-- 30-PropertiesList -->
 
-<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>  
-- `address[object]` : L'adresse postale. Modèle : [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]` : Le pays. Par exemple, Espagne. Modèle : [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]` : La localité dans laquelle se trouve l'adresse de rue, et qui se trouve dans la région. Modèle : [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]` : La région dans laquelle se trouve la localité, et qui se trouve dans le pays. Modèle : [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]` : Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local.    
-	- `postOfficeBoxNumber[string]` : Le numéro de boîte postale pour les adresses de boîte postale. Par exemple, 03578. Modèle : [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]` : Le code postal. Par exemple, 24004. Modèle : [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]` : L'adresse de rue. Modèle : [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]` : Numéro identifiant une propriété spécifique sur une rue publique.    
-- `alternateName[string]` : Un nom alternatif pour cet élément. - `areaServed[string]` : La zone géographique où un service ou un article proposé est fourni. Modèle : [https://schema.org/Text](https://schema.org/Text) - `crop[string]` : La culture cultivée sur la terre si landuse=farmland. Modèle : [https://wiki.openstreetmap.org/wiki/Key:crop](https://wiki.openstreetmap.org/wiki/Key:crop) - `dataProvider[string]` : Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisée. - `dateCreated[date-time]` : Horodatage de création de l'entité. Ceci sera généralement attribué par la plateforme de stockage. - `dateModified[date-time]` : Horodatage de la dernière modification de l'entité. Ceci sera généralement attribué par la plateforme de stockage. - `description[string]` : Une description de cet élément. - `id[*]` : Identifiant unique de l'entité. - `landuseType[string]` : Le tag landuse d'OSM classifiant l'utilisation humaine principale de la terre. Enum : 'commercial, construction, éducation, industriel, résidentiel, vente au détail, terres agricoles, forêt, prairie, verger, ...'. Modèle : [https://wiki.openstreetmap.org/wiki/Key:landuse](https://wiki.openstreetmap.org/wiki/Key:landuse) - `location[*]` : Référence Geojson à l'élément. Il peut s'agir de Point, LineString, Polygon, MultiPoint, MultiLineString ou MultiPolygon. - `name[string]` : Le nom de cet élément. - `operator[string]` : Nom de l'entité exploitant ou gérant la zone. - `osmId[number]` : L'identifiant entier original de l'élément OpenStreetMap. - `osmLastModified[date-time]` : Horodatage de la dernière modification. - `osmType[string]` : Le type de l'élément OSM original. - `owner[array]` : Une liste contenant une séquence de caractères encodée en JSON faisant référence aux identifiants uniques du ou des propriétaires. - `seeAlso[*]` : Liste des URI pointant vers des ressources supplémentaires. - `source[string]` : Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé que ce soit le nom de domaine complet du fournisseur source, ou l'URL de l'objet source. - `trees[string]` : Le type d'arbres cultivés si landuse=forest ou orchard. Modèle : [https://wiki.openstreetmap.org/wiki/Key:trees](https://wiki.openstreetmap.org/wiki/Key:trees) - `type[string]` : Type d'entité NGSI. Il doit s'agir de OSMLanduse. <!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Propriétés requises  
-- `id` - `landuseType` - `location` - `osmId` - `osmType` - `type` <!-- /35-RequiredProperties -->  
-<!-- 40-NotesYaml -->  
-<!-- /40-NotesYaml -->  
-<!-- 50-DataModelHeader -->  
-## Description du modèle de données des propriétés  
-Trié par ordre alphabétique (cliquez pour les détails)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
-<details><summary><strong>détails complets en yaml</strong></summary>    
+## Liste des propriétés
+
+<sup><sub>[*] Si un type n'est pas indiqué dans un attribut, c'est qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>
+- `address[object]` : L'adresse postale. Modèle : [https://schema.org/address](https://schema.org/address)
+	- `addressCountry[string]` : Le pays. Par exemple, Espagne. Modèle : [https://schema.org/addressCountry](https://schema.org/addressCountry)
+	- `addressLocality[string]` : La localité dans laquelle se trouve l'adresse, et qui est située dans la région. Modèle : [https://schema.org/addressLocality](https://schema.org/addressLocality)
+	- `addressRegion[string]` : La région dans laquelle se trouve la localité, et qui est située dans le pays. Modèle : [https://schema.org/addressRegion](https://schema.org/addressRegion)
+	- `district[string]` : Un district est un type de division administrative qui, dans certains pays, est géré par les autorités locales
+	- `postOfficeBoxNumber[string]` : Le numéro de boîte postale pour les adresses en boîte postale. Par exemple, 03578. Modèle : [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
+	- `postalCode[string]` : Le code postal. Par exemple, 24004. Modèle : [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
+	- `streetAddress[string]` : L'adresse de rue. Modèle : [https://schema.org/streetAddress](https://schema.org/streetAddress)
+	- `streetNr[string]` : Numéro identifiant une propriété spécifique sur une voie publique
+- `alternateName[string]` : Un nom alternatif pour cet élément
+- `areaServed[string]` : La zone géographique où un service ou un article proposé est fourni. Modèle : [https://schema.org/Text](https://schema.org/Text)
+- `crop[string]` : La culture cultivée sur le terrain si landuse=farmland. Modèle : [https://wiki.openstreetmap.org/wiki/Key:crop](https://wiki.openstreetmap.org/wiki/Key:crop)
+- `dataProvider[string]` : Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées
+- `dateCreated[date-time]` : Horodatage de création de l'entité. Celui-ci est généralement attribué par la plateforme de stockage
+- `dateModified[date-time]` : Horodatage de la dernière modification de l'entité. Celui-ci est généralement attribué par la plateforme de stockage
+- `description[string]` : Une description de cet élément
+- `id[*]` : Identifiant unique de l'entité
+- `landuseType[string]` : Le tag d'utilisation des sols d'OSM classant l'usage principal humain du terrain. Énumération : 'commercial, construction, education, industrial, residential, retail, farmland, forest, meadow, orchard, ...'. Modèle : [https://wiki.openstreetmap.org/wiki/Key:landuse](https://wiki.openstreetmap.org/wiki/Key:landuse)
+- `location[*]` : Référence GeoJSON de l'élément. Peut être Point, LineString, Polygon, MultiPoint, MultiLineString ou MultiPolygon
+- `name[string]` : Le nom de cet élément
+- `operator[string]` : Nom de l'entité exploitant ou gérant la zone
+- `osmId[number]` : L'identifiant entier de l'élément original d'OpenStreetMap
+- `osmLastModified[date-time]` : Horodatage de la dernière modification
+- `osmType[string]` : Le type de l'élément OSM original
+- `owner[array]` : Une liste contenant une séquence de caractères encodée en JSON référençant les identifiants uniques du ou des propriétaire(s)
+- `seeAlso[*]` : Liste d'URIs pointant vers des ressources supplémentaires
+- `source[string]` : Une séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur de la source ou l'URL de l'objet source
+- `trees[string]` : Le type d'arbres cultivés si landuse=forest ou orchard. Modèle : [https://wiki.openstreetmap.org/wiki/Key:trees](https://wiki.openstreetmap.org/wiki/Key:trees)
+- `type[string]` : Type d'entité NGSI. Doit être OSMLanduse
+<!-- /30-PropertiesList -->
+<!-- 35-RequiredProperties -->
+
+Propriétés requises
+- `id`
+- `landuseType`
+- `location`
+- `osmId`
+- `osmType`
+- `type`
+<!-- /35-RequiredProperties -->
+<!-- 40-NotesYaml -->
+<!-- /40-NotesYaml -->
+<!-- 50-DataModelHeader -->
+
+## Description du modèle de données des propriétés
+
+Classées par ordre alphabétique (cliquez pour plus de détails)
+<!-- /50-DataModelHeader -->
+<!-- 60-ModelYaml -->
+<details><summary><strong>détails complets en YAML</strong></summary>
 ```yaml  
 OSMLanduse:    
   description: An area of land use from OpenStreetMap tagged with landuse=*. Describes the primary human purpose or use of an area of land    
@@ -475,16 +504,19 @@ OSMLanduse:
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMLanduse/schema.json    
   x-model-tags: OSM OpenStreetMap Environment Landuse    
   x-version: 0.0.1    
-```  
-</details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Exemples de charges utiles    
-#### Exemple de valeurs clés NGSI-v2 OSMLanduse    
-Voici un exemple d'OSMLanduse au format JSON sous forme de valeurs clés. Ceci est compatible avec NGSI-v2 lors de l'utilisation de `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
-<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
+```
+</details>
+<!-- /60-ModelYaml -->
+<!-- 70-MiddleNotes -->
+<!-- /70-MiddleNotes -->
+<!-- 80-Examples -->
+
+## Exemples de charge utile
+
+#### Exemple OSMLanduse NGSI-v2 en paires clé-valeurs
+
+Voici un exemple d'OSMLanduse au format JSON en paires clé-valeurs. Celui-ci est compatible avec NGSI-v2 lors de l'utilisation de `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.
+<details><summary><strong>afficher/masquer l'exemple</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMLanduse:relation:65432198",  
@@ -526,11 +558,13 @@ Voici un exemple d'OSMLanduse au format JSON sous forme de valeurs clés. Ceci e
     "https://www.openstreetmap.org/relation/65432198"  
   ]  
 }  
-```  
-</details>  
-#### Exemple normalisé NGSI-v2 OSMLanduse    
-Voici un exemple d'OSMLanduse au format JSON sous forme normalisée. Ceci est compatible avec NGSI-v2 lorsque les options ne sont pas utilisées et renvoie les données contextuelles d'une entité individuelle.  
-<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
+```
+</details>
+
+#### Exemple OSMLanduse NGSI-v2 normalisé
+
+Voici un exemple d'OSMLanduse au format JSON normalisé. Celui-ci est compatible avec NGSI-v2 sans utiliser d'options et renvoie les données contextuelles d'une entité individuelle.
+<details><summary><strong>afficher/masquer l'exemple</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMLanduse:relation:65432198",  
@@ -596,11 +630,13 @@ Voici un exemple d'OSMLanduse au format JSON sous forme normalisée. Ceci est co
     ]  
   }  
 }  
-```  
-</details>  
-#### Exemple de valeurs clés NGSI-LD OSMLanduse    
-Voici un exemple d'OSMLanduse au format JSON-LD sous forme de valeurs clés. Ceci est compatible avec NGSI-LD lors de l'utilisation de `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
-<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
+```
+</details>
+
+#### Exemple OSMLanduse NGSI-LD en paires clé-valeurs
+
+Voici un exemple d'OSMLanduse au format JSON-LD en paires clé-valeurs. Celui-ci est compatible avec NGSI-LD lors de l'utilisation de `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.
+<details><summary><strong>afficher/masquer l'exemple</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMLanduse:relation:65432198",  
@@ -645,11 +681,13 @@ Voici un exemple d'OSMLanduse au format JSON-LD sous forme de valeurs clés. Cec
     "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
   ]  
 }  
-```  
-</details>  
-#### Exemple normalisé NGSI-LD OSMLanduse    
-Voici un exemple d'OSMLanduse au format JSON-LD sous forme normalisée. Ceci est compatible avec NGSI-LD lorsque les options ne sont pas utilisées et renvoie les données contextuelles d'une entité individuelle.  
-<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
+```
+</details>
+
+#### Exemple OSMLanduse NGSI-LD normalisé
+
+Voici un exemple d'OSMLanduse au format JSON-LD normalisé. Celui-ci est compatible avec NGSI-LD sans utiliser d'options et renvoie les données contextuelles d'une entité individuelle.
+<details><summary><strong>afficher/masquer l'exemple</strong></summary>
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMLanduse:relation:65432198",  
@@ -721,13 +759,15 @@ Voici un exemple d'OSMLanduse au format JSON-LD sous forme normalisée. Ceci est
         "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
     ]  
 }  
-```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
----  
+```
+</details>
+<!-- /80-Examples -->
+<!-- 90-FooterNotes -->
+<!-- /90-FooterNotes -->
+<!-- 95-Units -->
+
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour savoir comment gérer les unités de mesure
+<!-- /95-Units -->
+<!-- 97-LastFooter -->
+---
 [Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
