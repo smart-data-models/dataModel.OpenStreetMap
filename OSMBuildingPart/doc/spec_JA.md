@@ -1,40 +1,94 @@
 <!-- 10-Header -->  
+ 
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+ 
 エンティティ: OSMBuildingPart  
 =======================<!-- /10-Header -->  
+ 
 <!-- 15-License -->  
+ 
 [Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMBuildingPart/LICENSE.md)  
+ 
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
+ 
 <!-- 20-Description -->  
-グローバルな説明: **OpenStreetMapのbuilding:part=*タグが付与された建物の一部または区画。異なる区画で高さ、屋根の形状、または材料が異なる建物を表現するために使用され、3D建物可視化（Simple 3D Buildings標準）を可能にする。**  
+ 
+グローバルな説明: **OpenStreetMapでタグ付けされた建物のパートまたはセクション（building:part=*）。建物の高さ、屋根の形状、または異なるセクション間の材料の違いを表現するために使用され、3Dビルディングの視覚化（Simple 3D Buildings標準）を可能にします。**  
 バージョン: 0.0.1  
 <!-- /20-Description -->  
+ 
 <!-- 30-PropertiesList -->  
+ 
 
-## プロパティ一覧  
+## プロパティの一覧  
 
-<sup><sub>[*] 属性に型がない場合、それは複数の型または異なる形式/パターンを持つ可能性があるためです</sub></sup>  
-- `address[object]`: 郵送先住所。モデル: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例：スペイン。モデル: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: 番地がある地域内の場所。モデル: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: その場所がある国の中の地域。モデル: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: 地区とは、一部の国で地方政府によって管理される行政区画の一種です    
-	- `postOfficeBoxNumber[string]`: 私書箱の私書箱番号。例：03578。モデル: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: 郵便番号。例：24004。モデル: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: 番地。モデル: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]`: 公道上の特定の物件を識別する番号    
-- `alternateName[string]`: このアイテムの別名  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的領域。モデル: [https://schema.org/Text](https://schema.org/Text)- `buildingColour[string]`: この建物部分のファサードの色。CSSカラー名または16進数コードで表現。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:colour](https://wiki.openstreetmap.org/wiki/Key:building:colour)- `buildingHeight[number]`: この建物部分の全高（メートル単位）。モデル: [https://wiki.openstreetmap.org/wiki/Key:height](https://wiki.openstreetmap.org/wiki/Key:height)- `buildingLevels[number]`: この建物部分の地上階数。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:levels](https://wiki.openstreetmap.org/wiki/Key:building:levels)- `buildingMaterial[string]`: この建物部分の主要なファサードまたは構造材料。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:material](https://wiki.openstreetmap.org/wiki/Key:building:material)- `buildingPartType[string]`: OSM building:partタグの値。通常は「yes」または建築区画の特定のタイプラベル。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:part](https://wiki.openstreetmap.org/wiki/Key:building:part)- `dataProvider[string]`: 調和されたデータエンティティのプロバイダーを識別する一連の文字  - `dateCreated[date-time]`: エンティティ作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます  - `dateModified[date-time]`: エンティティの最終変更タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意の識別子  - `location[*]`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、またはMultiPolygonのいずれかです  - `minHeight[number]`: この建物部分が始まる地上からの高さ（メートル単位）。張り出し部分や高架部分に使用されます。モデル: [https://wiki.openstreetmap.org/wiki/Key:min_height](https://wiki.openstreetmap.org/wiki/Key:min_height)- `minLevel[number]`: この建物部分が始まるフロアレベル。屋内マッピングに使用されます。モデル: [https://wiki.openstreetmap.org/wiki/Key:min_level](https://wiki.openstreetmap.org/wiki/Key:min_level)- `name[string]`: このアイテムの名前  - `osmId[number]`: 元のOpenStreetMap要素の整数識別子。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM要素の最終変更タイムスタンプ。  - `osmType[string]`: 元のOpenStreetMap要素のタイプ。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた一連の文字を含むリスト  - `refBuilding[uri]`: この部分が属する親OSMBuildingエンティティへのURI参照。  - `roofColour[string]`: この部分の屋根の色。CSSカラー名または16進数コードで表現。モデル: [https://wiki.openstreetmap.org/wiki/Key:roof:colour](https://wiki.openstreetmap.org/wiki/Key:roof:colour)- `roofMaterial[string]`: この部分の屋根表面の主要な材料。モデル: [https://wiki.openstreetmap.org/wiki/Key:roof:material](https://wiki.openstreetmap.org/wiki/Key:roof:material)- `roofShape[string]`: この建物部分の屋根の形状。Enum:'flat, gabled, hipped, half-hipped, pyramidal, gambrel, mansard, dome, skillion, round, saltbox, onion, cone'。モデル: [https://wiki.openstreetmap.org/wiki/Key:roof:shape](https://wiki.openstreetmap.org/wiki/Key:roof:shape)- `seeAlso[*]`: このアイテムに関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLとして示す一連の文字。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへのURLであることが推奨されます  - `type[string]`: NGSIエンティティタイプ。OSMBuildingPartである必要があります  <!-- /30-PropertiesList -->  
+ 
+<sup><sub>[*] 属性に型がない場合は、複数の型または異なる形式/パターンを持つ可能性があるためです</sub></sup>  
+- `address[object]`: 郵送先住所。モデル: [https://schema.org/address](https://schema.org/address)  
+	- `addressCountry[string]`: 国。例: スペイン。モデル: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 街道住所が存在する自治体であり、地域に存在します。モデル: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 自治体が存在する地域であり、国に存在します。モデル: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 一部の国では、地方自治体によって管理される行政区画の一種です  
+	- `postOfficeBoxNumber[string]`: POボックス住所のポストオフィスボックス番号。例: 03578。モデル: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例: 24004。モデル: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 街道住所。モデル: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 公共の通り上の特定の物件を識別する番号  
+- `alternateName[string]`: このアイテムの別名  
+- `areaServed[string]`: サービスまたは提供されたアイテムが提供される地理的なエリア。モデル: [https://schema.org/Text](https://schema.org/Text)  
+- `buildingColour[string]`: この建物パートのファサードの色を、CSSカラー名または16進コードで表します。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:colour](https://wiki.openstreetmap.org/wiki/Key:building:colour)  
+- `buildingHeight[number]`: この建物パートの全高（メートル単位）。モデル: [https://wiki.openstreetmap.org/wiki/Key:height](https://wiki.openstreetmap.org/wiki/Key:height)  
+- `buildingLevels[number]`: この建物パートの地上階の数。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:levels](https://wiki.openstreetmap.org/wiki/Key:building:levels)  
+- `buildingMaterial[string]`: この建物パートの主なファサードまたは構造材料。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:material](https://wiki.openstreetmap.org/wiki/Key:building:material)  
+- `buildingPartType[string]`: OSM building:partタグの値。通常は「yes」または建築セクションの特定のタイプラベルです。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:part](https://wiki.openstreetmap.org/wiki/Key:building:part)  
+- `dataProvider[string]`: ハーモナイズされたデータエンティティを提供するプロバイダを識別する文字シーケンス  
+- `dateCreated[date-time]`: エンティティの作成タイムスタンプ。このタイムスタンプは通常、ストレージプラットフォームによって割り当てられます  
+- `dateModified[date-time]`: エンティティの最後の変更タイムスタンプ。このタイムスタンプは通常、ストレージプラットフォームによって割り当てられます  
+- `description[string]`: このアイテムの説明  
+- `id[*]`: エンティティの一意の識別子  
+- `location[*]`: アイテムへのGeojson参照。ポイント、ラインストリング、ポリゴン、マルチポイント、マルチラインストリング、またはマルチポリゴンになります  
+- `minHeight[number]`: この建物パートが開始される高さ（メートル単位）。オーバーハングや高架セクションに使用されます。モデル: [https://wiki.openstreetmap.org/wiki/Key:min_height](https://wiki.openstreetmap.org/wiki/Key:min_height)  
+- `minLevel[number]`: この建物パートが開始されるフロアレベル。室内マッピングに使用されます。モデル: [https://wiki.openstreetmap.org/wiki/Key:min_level](https://wiki.openstreetmap.org/wiki/Key:min_level)  
+- `name[string]`: このアイテムの名前  
+- `osmId[number]`: 元のOpenStreetMap要素の整数識別子。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)  
+- `osmLastModified[date-time]`: OSM要素の最後の変更タイムスタンプ  
+- `osmType[string]`: 元のOpenStreetMap要素の種類。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)  
+- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字シーケンスを含むリスト  
+- `refBuilding[uri]`: このパートが属する親のOSMBuildingエンティティへのURI参照  
+- `roofColour[string]`: このパートの屋根の色を、CSSカラー名または16進コードで表します。モデル: [https://wiki.openstreetmap.org/wiki/Key:roof:colour](https://wiki.openstreetmap.org/wiki/Key:roof:colour)  
+- `roofMaterial[string]`: このパートの屋根表面の主な材料。モデル: [https://wiki.openstreetmap.org/wiki/Key:roof:material](https://wiki.openstreetmap.org/wiki/Key:roof:material)  
+- `roofShape[string]`: この建物パートの屋根の形状。列挙体: 'flat, gabled, hipped, half-hipped, pyramidal, gambrel, mansard, dome, skillion, round, saltbox, onion, cone'。モデル: [https://wiki.openstreetmap.org/wiki/Key:roof:shape](https://wiki.openstreetmap.org/wiki/Key:roof:shape)  
+- `seeAlso[*]`: このアイテムに関する追加のリソースを指すURIのリスト  
+- `source[string]`: エンティティデータの元のソースをURLとして提供する文字シーケンス。ソースプロバイダの完全なドメイン名またはソースオブジェクトのURLを推奨します  
+- `type[string]`: NGSIエンティティタイプ。OSMBuildingPartでなければなりません  
+<!-- /30-PropertiesList -->  
+ 
 <!-- 35-RequiredProperties -->  
+ 
 必須プロパティ  
-- `buildingPartType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
+- `buildingPartType`  
+- `id`  
+- `location`  
+- `osmId`  
+- `osmType`  
+- `type`  
+<!-- /35-RequiredProperties -->  
+ 
 <!-- 40-NotesYaml -->  
+ 
 <!-- /40-NotesYaml -->  
+ 
 <!-- 50-DataModelHeader -->  
+ 
 ## プロパティのデータモデル説明  
-アルファベット順（詳細はこちらをクリック）  
+ 
+アルファベット順に並べ替え（詳細をクリック）  
 <!-- /50-DataModelHeader -->  
+ 
 <!-- 60-ModelYaml -->  
-<details><summary><strong>完全なYAML詳細</strong></summary>    
+ 
+<details><summary><strong>フルヤムルの詳細</strong></summary>    
+ 
 ```yaml  
 OSMBuildingPart:    
   description: A part or section of a building from OpenStreetMap tagged with building:part=*. Used to represent buildings with varying heights, roof shapes, or materials across different sections, enabling 3D building visualisation (Simple 3D Buildings standard).    
@@ -515,14 +569,22 @@ OSMBuildingPart:
   x-version: 0.0.1    
 ```  
 </details>    
+ 
 <!-- /60-ModelYaml -->  
+ 
 <!-- 70-MiddleNotes -->  
+ 
 <!-- /70-MiddleNotes -->  
+ 
 <!-- 80-Examples -->  
+ 
 ## ペイロードの例    
-#### OSMBuildingPart NGSI-v2 キーバリューの例    
-これは、キーバリュー形式のJSON形式のOSMBuildingPartの例です。`options=keyValues`を使用する場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+ 
+#### OSMBuildingPart NGSI-v2 キー値の例    
+ 
+OSMBuildingPartのJSON形式のキー値の例です。これは、`options=keyValues`を使用して個々のエンティティのコンテキストデータを返す場合に、NGSI-v2と互換性があります。  
 <details><summary><strong>例を表示/非表示</strong></summary>    
+ 
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMBuildingPart:way:305981241",  
@@ -573,9 +635,12 @@ OSMBuildingPart:
 }  
 ```  
 </details>  
+ 
 #### OSMBuildingPart NGSI-v2 正規化された例    
-これは、正規化されたJSON形式のOSMBuildingPartの例です。オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+ 
+OSMBuildingPartのJSON形式の正規化された例です。これは、オプションを使用しない場合に、個々のエンティティのコンテキストデータを返す場合に、NGSI-v2と互換性があります。  
 <details><summary><strong>例を表示/非表示</strong></summary>    
+ 
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMBuildingPart:way:305981241",  
@@ -683,9 +748,12 @@ OSMBuildingPart:
 }  
 ```  
 </details>  
-#### OSMBuildingPart NGSI-LD キーバリューの例    
-これは、キーバリュー形式のJSON-LD形式のOSMBuildingPartの例です。`options=keyValues`を使用する場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+ 
+#### OSMBuildingPart NGSI-LD キー値の例    
+ 
+OSMBuildingPartのJSON-LD形式のキー値の例です。これは、`options=keyValues`を使用して個々のエンティティのコンテキストデータを返す場合に、NGSI-LDと互換性があります。  
 <details><summary><strong>例を表示/非表示</strong></summary>    
+ 
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMBuildingPart:way:305981241",  
@@ -739,9 +807,12 @@ OSMBuildingPart:
 }  
 ```  
 </details>  
+ 
 #### OSMBuildingPart NGSI-LD 正規化された例    
-これは、正規化されたJSON-LD形式のOSMBuildingPartの例です。オプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+ 
+OSMBuildingPartのJSON-LD形式の正規化された例です。これは、オプションを使用しない場合に、個々のエンティティのコンテキストデータを返す場合に、NGSI-LDと互換性があります。  
 <details><summary><strong>例を表示/非表示</strong></summary>    
+ 
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMBuildingPart:way:305981241",  
@@ -845,11 +916,18 @@ OSMBuildingPart:
 }  
 ```  
 </details><!-- /80-Examples -->  
+ 
 <!-- 90-FooterNotes -->  
+ 
 <!-- /90-FooterNotes -->  
+ 
 <!-- 95-Units -->  
-大きさの単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください  
+ 
+[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照して、量の単位をどのように処理するかについての回答を取得してください  
 <!-- /95-Units -->  
+ 
 <!-- 97-LastFooter -->  
+ 
 ---  
+ 
 [Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
