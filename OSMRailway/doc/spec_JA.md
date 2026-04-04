@@ -1,40 +1,77 @@
-<!-- 10-Header -->  
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティ: OSMRailway  
-==================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMRailway/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-グローバル説明: **OpenStreetMapで鉄道キーがタグ付けされた鉄道線路またはインフラ要素。幹線鉄道から路面電車、地下鉄、ケーブルカーまで、あらゆる種類の鉄道インフラをカバーします。**  
-バージョン: 0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
+<!-- 10-Header -->
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+Entity: OSMRailway
+==================<!-- /10-Header -->
+<!-- 15-License -->
+[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMRailway/LICENSE.md)
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
+<!-- /15-License -->
+<!-- 20-Description -->
+Global description: **OpenStreetMapで鉄道（railway）キーでタグ付けされた鉄道軌道または鉄道インフラ要素。幹線鉄道から路面電車、地下鉄、ケーブルカーまで、すべての種類の鉄道インフラを網羅。**<!-- /20-Description -->
+<!-- 30-PropertiesList -->
 
-## プロパティ一覧  
+## プロパティ一覧
 
-<sup><sub>[*] 属性に型がない場合、それは複数の型または異なる形式/パターンを持つ可能性があるためです</sub></sup>  
-- `address[object]`: 郵送先住所。モデル: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例：スペイン。モデル: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: 住所がある地域内の場所。モデル: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: 場所がある国内の地域。モデル: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: 地区は、一部の国で地方政府によって管理される行政区画の一種です    
-	- `postOfficeBoxNumber[string]`: 私書箱の番号。例：03578。モデル: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: 郵便番号。例：24004。モデル: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: 住所。モデル: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]`: 公道上の特定の物件を識別する番号    
-- `alternateName[string]`: このアイテムの別名  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的エリア。モデル: [https://schema.org/Text](https://schema.org/Text)- `bridge[boolean]`: この鉄道区間が橋の上を通るかどうかを示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:bridge](https://wiki.openstreetmap.org/wiki/Key:bridge)- `dataProvider[string]`: 調和されたデータエンティティのプロバイダーを識別する文字のシーケンス  - `dateCreated[date-time]`: エンティティ作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます  - `dateModified[date-time]`: エンティティの最終変更タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます  - `description[string]`: このアイテムの説明  - `electrified[string]`: 鉄道の電化方式。モデル: [https://wiki.openstreetmap.org/wiki/Key:electrified](https://wiki.openstreetmap.org/wiki/Key:electrified)- `frequency[number]`: 牽引電流の電気周波数（ヘルツ）。モデル: [https://wiki.openstreetmap.org/wiki/Key:frequency](https://wiki.openstreetmap.org/wiki/Key:frequency)- `gauge[number]`: 線路の軌間（ミリメートル単位、2本のレールの間の距離）。モデル: [https://wiki.openstreetmap.org/wiki/Key:gauge](https://wiki.openstreetmap.org/wiki/Key:gauge)- `id[*]`: エンティティの一意の識別子  - `layer[number]`: 同じ場所にある他のフィーチャに対する垂直レイヤー。モデル: [https://wiki.openstreetmap.org/wiki/Key:layer](https://wiki.openstreetmap.org/wiki/Key:layer)- `location[*]`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、またはMultiPolygonのいずれかです  - `maxSpeed[number]`: この線路での最大許容速度（時速キロメートル）。モデル: [https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed)- `name[string]`: このアイテムの名前  - `operator[string]`: 鉄道事業者または会社の名前。モデル: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: 元のOpenStreetMap要素の整数識別子。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM要素の最終変更タイムスタンプ。  - `osmType[string]`: 元のOpenStreetMap要素のタイプ。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字シーケンスを含むリスト  - `railwayType[string]`: 鉄道インフラのタイプを分類するOSM鉄道タグ値。列挙型:'rail, subway, tram, light_rail, narrow_gauge, monorail, funicular, miniature, preserved, disused, abandoned, construction, proposed'。モデル: [https://wiki.openstreetmap.org/wiki/Key:railway](https://wiki.openstreetmap.org/wiki/Key:railway)- `ref[string]`: 公式路線参照番号またはコード。モデル: [https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)- `seeAlso[*]`: このアイテムに関する追加リソースを指すURIのリスト。  - `service[string]`: 主要な運行線の一部ではない場合のサービス線路のタイプ。モデル: [https://wiki.openstreetmap.org/wiki/Key:service](https://wiki.openstreetmap.org/wiki/Key:service)- `source[string]`: エンティティデータの元のソースをURLとして示す文字のシーケンス。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへのURLであることが推奨されます  - `tracks[number]`: 平行する線路の数。モデル: [https://wiki.openstreetmap.org/wiki/Key:tracks](https://wiki.openstreetmap.org/wiki/Key:tracks)- `tunnel[boolean]`: この鉄道区間がトンネルを通るかどうかを示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:tunnel](https://wiki.openstreetmap.org/wiki/Key:tunnel)- `type[string]`: NGSIエンティティタイプ。OSMRailwayである必要があります  - `usage[string]`: 鉄道線の意図された用途。モデル: [https://wiki.openstreetmap.org/wiki/Key:usage](https://wiki.openstreetmap.org/wiki/Key:usage)- `voltage[number]`: 牽引に使用される電圧（ボルト）。モデル: [https://wiki.openstreetmap.org/wiki/Key:voltage](https://wiki.openstreetmap.org/wiki/Key:voltage)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-必須プロパティ  
-- `id`  - `location`  - `osmId`  - `osmType`  - `railwayType`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-NotesYaml -->  
-<!-- /40-NotesYaml -->  
-<!-- 50-DataModelHeader -->  
-## プロパティのデータモデル説明  
-アルファベット順（詳細はこちらをクリック）  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
-<details><summary><strong>完全なYAML詳細</strong></summary>    
+<sup><sub>[*] 属性に型がない場合は、複数の型や異なる形式/パターンを取り得るため</sub></sup>
+- `address[object]`：郵便住所。モデル：[https://schema.org/address](https://schema.org/address)
+	- `addressCountry[string]`：国。例：スペイン。モデル：[https://schema.org/addressCountry](https://schema.org/addressCountry)
+	- `addressLocality[string]`：街路住所が所在する地域内の地方自治体。モデル：[https://schema.org/addressLocality](https://schema.org/addressLocality)
+	- `addressRegion[string]`：地方自治体が所在する国内の地域。モデル：[https://schema.org/addressRegion](https://schema.org/addressRegion)
+	- `district[string]`：地区。一部の国では地方自治体によって管理される行政区画の一種
+	- `postOfficeBoxNumber[string]`：郵便ポストの郵便箱番号。例：03578。モデル：[https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
+	- `postalCode[string]`：郵便番号。例：24004。モデル：[https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
+	- `streetAddress[string]`：街路住所。モデル：[https://schema.org/streetAddress](https://schema.org/streetAddress)
+	- `streetNr[string]`：公共の街路にある特定の不動産を識別する番号
+- `alternateName[string]`：この項目の別名
+- `areaServed[string]`：サービスや提供されるアイテムが利用可能な地理的エリア。モデル：[https://schema.org/Text](https://schema.org/Text)
+- `bridge[boolean]`：この鉄道区間が橋の上を走っているかどうかを示す。モデル：[https://wiki.openstreetmap.org/wiki/Key:bridge](https://wiki.openstreetmap.org/wiki/Key:bridge)
+- `dataProvider[string]`：調和されたデータエンティティの提供者を識別する文字列
+- `dateCreated[date-time]`：エンティティ作成タイムスタンプ。通常はストレージプラットフォームによって割り当てられる
+- `dateModified[date-time]`：エンティティの最終更新タイムスタンプ。通常はストレージプラットフォームによって割り当てられる
+- `description[string]`：この項目の説明
+- `electrified[string]`：鉄道の電化方式。モデル：[https://wiki.openstreetmap.org/wiki/Key:electrified](https://wiki.openstreetmap.org/wiki/Key:electrified)
+- `frequency[number]`：電気式列車の引張電流の周波数（ヘルツ）。モデル：[https://wiki.openstreetmap.org/wiki/Key:frequency](https://wiki.openstreetmap.org/wiki/Key:frequency)
+- `gauge[number]`：軌間（2本のレール間の距離）をミリメートルで表した値。モデル：[https://wiki.openstreetmap.org/wiki/Key:gauge](https://wiki.openstreetmap.org/wiki/Key:gauge)
+- `id[*]`：エンティティの一意の識別子
+- `layer[number]`：同じ場所にある他の機能との相対的な垂直レイヤー。モデル：[https://wiki.openstreetmap.org/wiki/Key:layer](https://wiki.openstreetmap.org/wiki/Key:layer)
+- `location[*]`：ジオJSON参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれか
+- `maxSpeed[number]`：この軌道の最高許容速度（キロメートル/時）。モデル：[https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed)
+- `name[string]`：この項目の名前
+- `operator[string]`：鉄道事業者または会社名。モデル：[https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)
+- `osmId[number]`：元のOpenStreetMap要素の整数ID。モデル：[https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)
+- `osmLastModified[date-time]`：OSM要素の最終更新タイムスタンプ
+- `osmType[string]`：元のOpenStreetMap要素の種類。モデル：[https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)
+- `owner[array]`：所有者の一意IDを参照するJSONエンコードされた文字列のリスト
+- `railwayType[string]`：鉄道インフラの種類を分類するOSM鉄道タグの値。Enum:'rail, subway, tram, light_rail, narrow_gauge, monorail, funicular, miniature, preserved, disused, abandoned, construction, proposed'。モデル：[https://wiki.openstreetmap.org/wiki/Key:railway](https://wiki.openstreetmap.org/wiki/Key:railway)
+- `ref[string]`：公式の路線参照番号またはコード。モデル：[https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)
+- `seeAlso[*]`：この項目に関する追加リソースへのURIのリスト
+- `service[string]`：本線ではない場合のサービストラックの種類。モデル：[https://wiki.openstreetmap.org/wiki/Key:service](https://wiki.openstreetmap.org/wiki/Key:service)
+- `source[string]`：エンティティデータの元のソースURLとしての文字列。ソースプロバイダーの完全修飾ドメイン名またはソースオブジェクトのURLを推奨
+- `tracks[number]`：並行する線路の数。モデル：[https://wiki.openstreetmap.org/wiki/Key:tracks](https://wiki.openstreetmap.org/wiki/Key:tracks)
+- `tunnel[boolean]`：この鉄道区間がトンネル内を走っているかどうかを示す。モデル：[https://wiki.openstreetmap.org/wiki/Key:tunnel](https://wiki.openstreetmap.org/wiki/Key:tunnel)
+- `type[string]`：NGSIエンティティタイプ。OSMRailwayである必要がある
+- `usage[string]`：鉄道路線の用途。モデル：[https://wiki.openstreetmap.org/wiki/Key:usage](https://wiki.openstreetmap.org/wiki/Key:usage)
+- `voltage[number]`：牽引に使用される電圧（ボルト）。モデル：[https://wiki.openstreetmap.org/wiki/Key:voltage](https://wiki.openstreetmap.org/wiki/Key:voltage)
+<!-- /30-PropertiesList -->
+<!-- 35-RequiredProperties -->
+
+Required properties
+- `id`
+- `location`
+- `osmId`
+- `osmType`
+- `railwayType`
+- `type`
+<!-- /35-RequiredProperties -->
+<!-- 40-NotesYaml -->
+<!-- /40-NotesYaml -->
+<!-- 50-DataModelHeader -->
+
+## プロパティのデータモデル説明
+アルファベット順（詳細についてはクリック）
+<!-- /50-DataModelHeader -->
+<!-- 60-ModelYaml -->
+<details><summary><strong>完全なYAMLの詳細</strong></summary>
 ```yaml  
 OSMRailway:    
   description: A railway track or infrastructure element from OpenStreetMap tagged with the railway key. Covers all types of rail infrastructure, from mainline heavy rail to trams, subways and funiculars.    
@@ -553,16 +590,17 @@ OSMRailway:
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMRailway/schema.json    
   x-model-tags: OSM OpenStreetMap Transportation Railway    
   x-version: 0.0.1    
-```  
-</details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## ペイロードの例    
-#### OSMRailway NGSI-v2 キーバリューの例    
-以下は、キーバリュー形式のJSONにおけるOSMRailwayの例です。`options=keyValues`を使用する場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+```
+</details>
+<!-- /60-ModelYaml -->
+<!-- 70-MiddleNotes -->
+<!-- /70-MiddleNotes -->
+<!-- 80-Examples -->
+
+## 例のペイロード
+#### OSMRailway NGSI-v2 キー値形式の例
+これはNGSI-v2で`options=keyValues`を使用した場合に互換性があり、個別エンティティのコンテキストデータを返す、キー値形式のJSONにおけるOSMRailwayの例です。
+<details><summary><strong>例を表示/非表示</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMRailway:way:2903182",  
@@ -604,11 +642,12 @@ OSMRailway:
     "https://www.openstreetmap.org/way/2903182"  
   ]  
 }  
-```  
-</details>  
-#### OSMRailway NGSI-v2 正規化された例    
-以下は、正規化された形式のJSONにおけるOSMRailwayの例です。オプションを使用しない場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+```
+</details>
+
+#### OSMRailway NGSI-v2 標準化形式の例
+これはオプションを使用しない場合にNGSI-v2と互換性があり、個別エンティティのコンテキストデータを返す、標準化形式のJSONにおけるOSMRailwayの例です。
+<details><summary><strong>例を表示/非表示</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMRailway:way:2903182",  
@@ -728,11 +767,12 @@ OSMRailway:
     ]  
   }  
 }  
-```  
-</details>  
-#### OSMRailway NGSI-LD キーバリューの例    
-以下は、キーバリュー形式のJSON-LDにおけるOSMRailwayの例です。`options=keyValues`を使用する場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+```
+</details>
+
+#### OSMRailway NGSI-LD キー値形式の例
+これはNGSI-LDで`options=keyValues`を使用した場合に互換性があり、個別エンティティのコンテキストデータを返す、キー値形式のJSON-LDにおけるOSMRailwayの例です。
+<details><summary><strong>例を表示/非表示</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMRailway:way:2903182",  
@@ -777,11 +817,12 @@ OSMRailway:
     "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
   ]  
 }  
-```  
-</details>  
-#### OSMRailway NGSI-LD 正規化された例    
-以下は、正規化された形式のJSON-LDにおけるOSMRailwayの例です。オプションを使用しない場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+```
+</details>
+
+#### OSMRailway NGSI-LD 標準化形式の例
+これはオプションを使用しない場合にNGSI-LDと互換性があり、個別エンティティのコンテキストデータを返す、標準化形式のJSON-LDにおけるOSMRailwayの例です。
+<details><summary><strong>例を表示/非表示</strong></summary>
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMRailway:way:2903182",  
@@ -887,13 +928,13 @@ OSMRailway:
         "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
     ]  
 }  
-```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-数量単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
----  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+```
+</details><!-- /80-Examples -->
+<!-- 90-FooterNotes -->
+<!-- /90-FooterNotes -->
+<!-- 95-Units -->
+[FAQ 10](https://smartdatamodels.org/index.php/faqs/) 単位の扱いに関する詳細は[Smart Data Models](https://smartdatamodels.org)を参照
+<!-- /95-Units -->
+<!-- 97-LastFooter -->
+---
+<NT_81/> +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
