@@ -7,7 +7,7 @@
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-全局描述：**来自OpenStreetMap的道路或路径元素，使用highway关键字标记。代表所有类型的道路，从高速公路到人行道，按照OSM公路分类法定义。**  
+全局描述：**来自OpenStreetMap的道路或路径元素，带有highway标签。代表所有类型的道路，从高速公路到人行道，如OSM highway分类法所定义。**  
 版本：0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
@@ -17,13 +17,13 @@
 <sup><sub>[*] 如果属性中没有类型，是因为它可以有多种类型或不同的格式/模式</sub></sup>  
 - `access[string]`：道路的通用访问限制。模型：[https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`：邮寄地址。模型：[https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`：国家。例如，西班牙。模型：[https://schema.org/addressCountry](https://schema.org/addressCountry)  
 	- `addressLocality[string]`：街道地址所在的地区，并且在该地区。模型：[https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`：地区所在的地区，并且在国家内。模型：[https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`：区是一种行政区划，在一些国家，由地方政府管理    
+	- `addressRegion[string]`：地区所在的地区，并且在该国家。模型：[https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`：区是一个类型的行政区划，在一些国家，由地方政府管理    
 	- `postOfficeBoxNumber[string]`：邮政信箱号码。例如，03578。模型：[https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`：邮政编码。例如，24004。模型：[https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`：街道地址。模型：[https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]`：在公共街道上标识特定属性的编号    
-- `alternateName[string]`：此项的替代名称  - `areaServed[string]`：服务或提供的项目所提供的的地理区域。模型：[https://schema.org/Text](https://schema.org/Text)- `bridge[boolean]`：指示此道路段是否经过桥梁。模型：[https://wiki.openstreetmap.org/wiki/Key:bridge](https://wiki.openstreetmap.org/wiki/Key:bridge)- `cyclewayPresent[boolean]`：指示是否在此道路旁边有专用自行车道。模型：[https://wiki.openstreetmap.org/wiki/Key:cycleway](https://wiki.openstreetmap.org/wiki/Key:cycleway)- `dataProvider[string]`：识别和谐数据实体提供者的字符序列  - `dateCreated[date-time]`：实体创建时间戳。这通常由存储平台分配  - `dateModified[date-time]`：实体最后修改的时间戳。这通常由存储平台分配  - `description[string]`：此项的描述  - `highwayType[string]`：OSM公路标签值，用于分类道路或路径的类型。枚举：'高速公路，干道，主要干道，次要干道，三级干道，未分类，住宅，服务，生活街道，行人，轨道，人行道，自行车道，路径，高速公路连接，干道连接，主要干道连接，次要干道连接，三级干道连接，道路，公交车专用道，公交车导向道，建设，拟建'。模型：[https://wiki.openstreetmap.org/wiki/Key:highway](https://wiki.openstreetmap.org/wiki/Key:highway)- `id[*]`：实体的唯一标识符  - `inclinePercent[number]`：道路的坡度，以百分比表示。正值表示上坡。模型：[https://wiki.openstreetmap.org/wiki/Key:incline](https://wiki.openstreetmap.org/wiki/Key:incline)- `lanes[number]`：双向交通车道的总数。模型：[https://wiki.openstreetmap.org/wiki/Key:lanes](https://wiki.openstreetmap.org/wiki/Key:lanes)- `layer[number]`：相对于同一位置的其他功能的垂直层，用于指示重叠的方式。模型：[https://wiki.openstreetmap.org/wiki/Key:layer](https://wiki.openstreetmap.org/wiki/Key:layer)- `lit[boolean]`：指示道路是否由街道照明照亮。模型：[https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`：Geojson引用此项。它可以是点，线，多边形，多点，多线或多多边形  - `maxSpeed[number]`：允许的最大速度（公里每小时）。模型：[https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed)- `name[string]`：此项的名称  - `oneway[boolean]`：指示道路是否为机动车单行道。模型：[https://wiki.openstreetmap.org/wiki/Key:oneway](https://wiki.openstreetmap.org/wiki/Key:oneway)- `operator[string]`：负责此道路的运营或维护的实体名称。模型：[https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`：原始OpenStreetMap元素的整数标识符。模型：[https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`：原始OpenStreetMap元素的最后修改时间戳。  - `osmType[string]`：原始OpenStreetMap元素的类型。模型：[https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`：包含对所有者（们）的唯一标识符的JSON编码字符序列的列表  - `ref[string]`：官方道路参考编号或代码（例如A-3，M-30）。模型：[https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)- `seeAlso[*]`：指向此项的其他资源的URI列表（例如Wikidata，Wikipedia）。  - `sidewalk[string]`：指示道路旁边的人行道的存在和位置。模型：[https://wiki.openstreetmap.org/wiki/Key:sidewalk](https://wiki.openstreetmap.org/wiki/Key:sidewalk)- `source[string]`：实体数据的原始来源的字符序列，作为URL。建议使用完全合格的域名或源对象的URL  - `surface[string]`：道路的物理表面材料。模型：[https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `tunnel[boolean]`：指示此道路段是否经过隧道。模型：[https://wiki.openstreetmap.org/wiki/Key:tunnel](https://wiki.openstreetmap.org/wiki/Key:tunnel)- `type[string]`：NGSI实体类型。必须是OSMHighway  - `widthMeters[number]`：道路的物理宽度（米）。模型：[https://wiki.openstreetmap.org/wiki/Key:width](https://wiki.openstreetmap.org/wiki/Key:width)<!-- /30-PropertiesList -->  
+	- `streetNr[string]`：公共街道上特定属性的编号    
+- `alternateName[string]`：此项的替代名称  - `areaServed[string]`：服务或提供的项目的提供区域。模型：[https://schema.org/Text](https://schema.org/Text)- `bridge[boolean]`：指示此道路段是否在桥上运行。模型：[https://wiki.openstreetmap.org/wiki/Key:bridge](https://wiki.openstreetmap.org/wiki/Key:bridge)- `cyclewayPresent[boolean]`：指示是否在此道路旁边有专用自行车道。模型：[https://wiki.openstreetmap.org/wiki/Key:cycleway](https://wiki.openstreetmap.org/wiki/Key:cycleway)- `dataProvider[string]`：识别和谐数据实体的提供者的字符序列  - `dateCreated[date-time]`：实体创建时间戳。这通常由存储平台分配  - `dateModified[date-time]`：实体最后修改的时间戳。这通常由存储平台分配  - `description[string]`：此项的描述  - `highwayType[string]`：OSM highway标签值，用于分类道路或路径的类型。枚举：'motorway, trunk, primary, secondary, tertiary, unclassified, residential, service, living_street, pedestrian, track, footway, cycleway, path, motorway_link, trunk_link, primary_link, secondary_link, tertiary_link, road, busway, bus_guideway, construction, proposed'。模型：[https://wiki.openstreetmap.org/wiki/Key:highway](https://wiki.openstreetmap.org/wiki/Key:highway)- `id[*]`：实体的唯一标识符  - `inclinePercent[number]`：道路的坡度，表示为百分比。正值表示上坡。模型：[https://wiki.openstreetmap.org/wiki/Key:incline](https://wiki.openstreetmap.org/wiki/Key:incline)- `lanes[number]`：双向总车道数。模型：[https://wiki.openstreetmap.org/wiki/Key:lanes](https://wiki.openstreetmap.org/wiki/Key:lanes)- `layer[number]`：相对于同一位置的其他功能的垂直层，用于指示重叠的方式。模型：[https://wiki.openstreetmap.org/wiki/Key:layer](https://wiki.openstreetmap.org/wiki/Key:layer)- `lit[boolean]`：指示道路是否由街道照明照亮。模型：[https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`：Geojson引用项。可以是Point、LineString、Polygon、MultiPoint、MultiLineString或MultiPolygon  - `maxSpeed[number]`：每小时公里的最大允许速度。模型：[https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed)- `name[string]`：此项的名称  - `oneway[boolean]`：指示道路是否为机动车辆单行道。模型：[https://wiki.openstreetmap.org/wiki/Key:oneway](https://wiki.openstreetmap.org/wiki/Key:oneway)- `operator[string]`：负责此道路的运营或维护的实体名称。模型：[https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`：原始OpenStreetMap元素的整数标识符。模型：[https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`：OSM元素最后修改的时间戳。  - `osmType[string]`：原始OpenStreetMap元素的类型。模型：[https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`：包含JSON编码序列的列表，引用所有者（们）的唯一ID  - `ref[string]`：官方道路参考号码或代码（例如A-3，M-30）。模型：[https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)- `seeAlso[*]`：指向此项的其他资源的URI列表（例如Wikidata，Wikipedia）。  - `sidewalk[string]`：指示道路旁边的人行道的存在和位置。模型：[https://wiki.openstreetmap.org/wiki/Key:sidewalk](https://wiki.openstreetmap.org/wiki/Key:sidewalk)- `source[string]`：实体数据的原始来源的字符序列，作为URL。建议使用完全合格的域名或源对象的URL  - `surface[string]`：道路的物理表面材料。模型：[https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `tunnel[boolean]`：指示此道路段是否通过隧道运行。模型：[https://wiki.openstreetmap.org/wiki/Key:tunnel](https://wiki.openstreetmap.org/wiki/Key:tunnel)- `type[string]`：NGSI实体类型。必须是OSMHighway  - `widthMeters[number]`：道路的物理宽度（米）。模型：[https://wiki.openstreetmap.org/wiki/Key:width](https://wiki.openstreetmap.org/wiki/Key:width)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必需属性  
 - `highwayType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
@@ -596,7 +596,7 @@ OSMHighway:
 <!-- 80-Examples -->  
 ## 示例有效载荷    
 #### OSMHighway NGSI-v2 键值示例    
-这是OSMHighway在JSON格式中的键值示例，兼容NGSI-v2，当使用`options=keyValues`时，返回个别实体的上下文数据。  
+这是OSMHighway在JSON格式中的键值示例。与NGSI-v2兼容，当使用`options=keyValues`时，返回个别实体的上下文数据。  
 <details><summary><strong>显示/隐藏示例</strong></summary>    
 ```json  
 {  
@@ -641,7 +641,7 @@ OSMHighway:
 ```  
 </details>  
 #### OSMHighway NGSI-v2 规范化示例    
-这是OSMHighway在JSON格式中的规范化示例，兼容NGSI-v2，当不使用选项时，返回个别实体的上下文数据。  
+这是OSMHighway在JSON格式中的规范化示例。与NGSI-v2兼容，当不使用选项时，返回个别实体的上下文数据。  
 <details><summary><strong>显示/隐藏示例</strong></summary>    
 ```json  
 {  
@@ -749,7 +749,7 @@ OSMHighway:
 ```  
 </details>  
 #### OSMHighway NGSI-LD 键值示例    
-这是OSMHighway在JSON-LD格式中的键值示例，兼容NGSI-LD，当使用`options=keyValues`时，返回个别实体的上下文数据。  
+这是OSMHighway在JSON-LD格式中的键值示例。与NGSI-LD兼容，当使用`options=keyValues`时，返回个别实体的上下文数据。  
 <details><summary><strong>显示/隐藏示例</strong></summary>    
 ```json  
 {  
@@ -797,7 +797,7 @@ OSMHighway:
 ```  
 </details>  
 #### OSMHighway NGSI-LD 规范化示例    
-这是OSMHighway在JSON-LD格式中的规范化示例，兼容NGSI-LD，当不使用选项时，返回个别实体的上下文数据。  
+这是OSMHighway在JSON-LD格式中的规范化示例。与NGSI-LD兼容，当不使用选项时，返回个别实体的上下文数据。  
 <details><summary><strong>显示/隐藏示例</strong></summary>    
 ```json  
 {  
@@ -903,8 +903,8 @@ OSMHighway:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-请参阅[FAQ 10](https://smartdatamodels.org/index.php/faqs/)以获取有关如何处理数量单位的答案  
+请参阅[FAQ 10](https://smartdatamodels.org/index.php/faqs/)以了解如何处理数量单位  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
