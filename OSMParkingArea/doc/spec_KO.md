@@ -1,40 +1,40 @@
-<!-- 10-Header -->  
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-엔티티: OSMParkingArea  
-======================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMParkingArea/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-전역 설명: **amenity=parking 태그가 지정된 OpenStreetMap의 차량 주차 구역 또는 시설입니다. 지상 주차장, 다층 차고, 지하 시설 및 기타 조직화된 주차 구역을 나타냅니다.**  
-버전: 0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
+<!-- 10-Header -->
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+엔티티: OSMParkingArea
+======================<!-- /10-Header -->
+<!-- 15-License -->
+[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMParkingArea/LICENSE.md)
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
+<!-- /15-License -->
+<!-- 20-Description -->
+전역 설명: **OpenStreetMap 태그 amenity=parking이 지정된 차량 주차 구역 또는 시설입니다. 노상 주차장, 다층 주차장, 지하 시설 및 기타 조직화된 주차 구역을 나타냅니다.**
+버전: 0.0.1
+<!-- /20-Description -->
+<!-- 30-PropertiesList -->
 
-## 속성 목록  
+## 속성 목록
 
-<sup><sub>[*] 속성에 유형이 없는 경우 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다.</sub></sup>  
-- `access[string]`: 주차 시설에 대한 접근 제한. 모델: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: 우편 주소. 모델: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예를 들어, 스페인. 모델: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: 도로 주소가 있는 지역 내의 지방. 모델: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: 지방이 있는 국가 내의 지역. 모델: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: 구역은 일부 국가에서 지방 정부가 관리하는 행정 구역의 한 유형입니다.    
-	- `postOfficeBoxNumber[string]`: 사서함 주소의 우체국 사서함 번호. 예를 들어, 03578. 모델: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: 우편 번호. 예를 들어, 24004. 모델: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: 도로 주소. 모델: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]`: 공공 도로의 특정 속성을 식별하는 번호.    
-- `alternateName[string]`: 이 항목의 대체 이름.  - `areaServed[string]`: 서비스 또는 제공되는 항목이 제공되는 지리적 영역. 모델: [https://schema.org/Text](https://schema.org/Text)- `capacity[number]`: 사용 가능한 총 주차 공간 수. 모델: [https://wiki.openstreetmap.org/wiki/Key:capacity](https://wiki.openstreetmap.org/wiki/Key:capacity)- `capacityDisabled[number]`: 지정된 장애인 주차 공간 수. 모델: [https://wiki.openstreetmap.org/wiki/Key:capacity:disabled](https://wiki.openstreetmap.org/wiki/Key:capacity:disabled)- `dataProvider[string]`: 조화된 데이터 엔티티의 제공자를 식별하는 문자열.  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 일반적으로 저장 플랫폼에 의해 할당됩니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프. 일반적으로 저장 플랫폼에 의해 할당됩니다.  - `description[string]`: 이 항목에 대한 설명.  - `fee[boolean]`: 주차 요금이 부과되는지 여부를 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:fee](https://wiki.openstreetmap.org/wiki/Key:fee)- `id[*]`: 엔티티의 고유 식별자.  - `lit[boolean]`: 주차 구역이 밤에 조명되는지 여부를 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: 항목에 대한 Geojson 참조. Point, LineString, Polygon, MultiPoint, MultiLineString 또는 MultiPolygon이 될 수 있습니다.  - `maxStay[string]`: 최대 허용 주차 시간 (예: '2h', '1 day'). 모델: [https://wiki.openstreetmap.org/wiki/Key:maxstay](https://wiki.openstreetmap.org/wiki/Key:maxstay)- `name[string]`: 이 항목의 이름.  - `openingHours[string]`: OSM opening_hours 구문으로 된 주차 시설의 개장 시간. 모델: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: 주차 시설을 운영하거나 관리하는 엔티티의 이름. 모델: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: 원래 OpenStreetMap 요소의 정수 식별자. 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM 요소의 마지막 수정 타임스탬프.  - `osmType[string]`: 원래 OpenStreetMap 요소의 유형. 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩 문자열 시퀀스를 포함하는 목록.  - `parkingType[string]`: 주차 시설의 물리적 유형 또는 레이아웃. Enum:'surface, multi-storey, underground, street_side, rooftop, sheds, carports, garage_boxes, lane'. 모델: [https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking)- `seeAlso[*]`: 이 항목에 대한 추가 리소스를 가리키는 URI 목록.  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자열. 소스 제공자의 정규화된 도메인 이름 또는 소스 객체의 URL을 사용하는 것이 좋습니다.  - `surface[string]`: 주차 구역의 표면 재료. 모델: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `type[string]`: NGSI 엔티티 유형. OSMParkingArea여야 합니다.  - `wheelchair[string]`: 휠체어 접근 가능한 주차 공간의 가용성. 모델: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-필수 속성  
-- `id`  - `location`  - `osmId`  - `osmType`  - `parkingType`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-NotesYaml -->  
-<!-- /40-NotesYaml -->  
-<!-- 50-DataModelHeader -->  
-## 속성의 데이터 모델 설명  
-알파벳순 정렬 (자세한 내용은 클릭)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
-<details><summary><strong>전체 YAML 세부 정보</strong></summary>    
+<sup><sub>[*] 속성에 유형이 없는 경우 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다.</sub></sup>
+- `access[string]`: 주차 시설에 대한 접근 제한. 모델: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: 우편 주소. 모델: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예: 스페인. 모델: [https://schema.org/addressCountry](https://schema.org/addressCountry)
+	- `addressLocality[string]`: 지역 내의 거리 주소가 있는 지역. 모델: [https://schema.org/addressLocality](https://schema.org/addressLocality)
+	- `addressRegion[string]`: 국가 내 지역에 있는 지역. 모델: [https://schema.org/addressRegion](https://schema.org/addressRegion)
+	- `district[string]`: 구역은 행정 구역의 한 유형으로, 일부 국가에서는 지방 정부에서 관리합니다.
+	- `postOfficeBoxNumber[string]`: 사서함 주소의 우편 사서함 번호. 예: 03578. 모델: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
+	- `postalCode[string]`: 우편 번호. 예: 24004. 모델: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
+	- `streetAddress[string]`: 거리 주소. 모델: [https://schema.org/streetAddress](https://schema.org/streetAddress)
+	- `streetNr[string]`: 공공 거리의 특정 부동산을 식별하는 번호
+- `alternateName[string]`: 이 항목에 대한 대체 이름- `areaServed[string]`: 서비스 또는 제공되는 항목이 제공되는 지리적 영역. 모델: [https://schema.org/Text](https://schema.org/Text)- `capacity[number]`: 총 주차 공간 수. 모델: [https://wiki.openstreetmap.org/wiki/Key:capacity](https://wiki.openstreetmap.org/wiki/Key:capacity)- `capacityDisabled[number]`: 장애인 전용 주차 공간 수. 모델: [https://wiki.openstreetmap.org/wiki/Key:capacity:disabled](https://wiki.openstreetmap.org/wiki/Key:capacity:disabled)- `dataProvider[string]`: 조화된 데이터 엔티티 제공자를 식별하는 문자열 시퀀스- `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 일반적으로 스토리지 플랫폼에서 할당합니다.- `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프. 일반적으로 스토리지 플랫폼에서 할당합니다.- `description[string]`: 이 항목에 대한 설명- `fee[boolean]`: 주차에 대한 요금이 부과되는지 여부를 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:fee](https://wiki.openstreetmap.org/wiki/Key:fee)- `id[*]`: 엔티티의 고유 식별자- `lit[boolean]`: 주차 구역이 밤에 조명되는지 여부를 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: 항목에 대한 Geojson 참조. Point, LineString, Polygon, MultiPoint, MultiLineString 또는 MultiPolygon일 수 있습니다.- `maxStay[string]`: 최대 허용 주차 시간(예: '2h', '1 day'). 모델: [https://wiki.openstreetmap.org/wiki/Key:maxstay](https://wiki.openstreetmap.org/wiki/Key:maxstay)- `name[string]`: 이 항목의 이름- `openingHours[string]`: OSM opening_hours 구문의 주차 시설 운영 시간. 모델: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: 주차 시설을 운영하거나 관리하는 엔티티의 이름. 모델: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: 원본 OpenStreetMap 요소의 정수 식별자. 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM 요소의 마지막 수정 타임스탬프.- `osmType[string]`: 원본 OpenStreetMap 요소의 유형. 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: 소유자의 고유 ID 시퀀스를 참조하는 JSON으로 인코딩된 문자열 목록- `parkingType[string]`: 주차 시설의 물리적 유형 또는 레이아웃. 열거형: 'surface, multi-storey, underground, street_side, rooftop, sheds, carports, garage_boxes, lane'. 모델: [https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking)- `seeAlso[*]`: 이 항목에 대한 추가 리소스를 가리키는 URI 목록.- `source[string]`: 엔티티 데이터의 원본을 URL로 제공하는 문자열 시퀀스. 소스 제공자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 권장합니다.- `surface[string]`: 주차 구역의 표면 재질. 모델: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `type[string]`: NGSI 엔티티 유형. OSMParkingArea여야 합니다.- `wheelchair[string]`: 휠체어 접근 가능한 주차 공간의 가용성. 모델: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->
+<!-- 35-RequiredProperties -->
+필수 속성
+- `id`- `location`- `osmId`- `osmType`- `parkingType`- `type`<!-- /35-RequiredProperties -->
+<!-- 40-NotesYaml -->
+<!-- /40-NotesYaml -->
+<!-- 50-DataModelHeader -->
+## 데이터 모델 속성 설명
+알파벳순 정렬(자세히 보려면 클릭)
+<!-- /50-DataModelHeader -->
+<!-- 60-ModelYaml -->
+<details><summary><strong>전체 yaml 세부 정보</strong></summary>
 ```yaml  
 OSMParkingArea:    
   description: A vehicle parking area or facility from OpenStreetMap tagged with amenity=parking. Represents surface car parks, multi-storey garages, underground facilities, and other organised parking areas.    
@@ -526,16 +526,16 @@ OSMParkingArea:
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMParkingArea/schema.json    
   x-model-tags: OSM OpenStreetMap Transportation Parking    
   x-version: 0.0.1    
-```  
-</details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## 페이로드 예시    
-#### OSMParkingArea NGSI-v2 키-값 예시    
-다음은 키-값 형식의 JSON으로 된 OSMParkingArea 예시입니다. 이는 `options=keyValues`을(를) 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>예시 표시/숨기기</strong></summary>    
+```
+</details>
+<!-- /60-ModelYaml -->
+<!-- 70-MiddleNotes -->
+<!-- /70-MiddleNotes -->
+<!-- 80-Examples -->
+## 예시 페이로드
+#### OSMParkingArea NGSI-v2 키-값 예시
+다음은 키-값 형식의 OSMParkingArea JSON 예시입니다. 이는 `options=keyValues`를 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.
+<details><summary><strong>예시 표시/숨기기</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMParkingArea:way:34517828",  
@@ -585,11 +585,11 @@ OSMParkingArea:
     "https://www.openstreetmap.org/way/34517828"  
   ]  
 }  
-```  
-</details>  
-#### OSMParkingArea NGSI-v2 정규화된 예시    
-다음은 정규화된 JSON 형식의 OSMParkingArea 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>예시 표시/숨기기</strong></summary>    
+```
+</details>
+#### OSMParkingArea NGSI-v2 정규화 예시
+다음은 정규화된 OSMParkingArea JSON 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.
+<details><summary><strong>예시 표시/숨기기</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMParkingArea:way:34517828",  
@@ -687,11 +687,11 @@ OSMParkingArea:
     ]  
   }  
 }  
-```  
-</details>  
-#### OSMParkingArea NGSI-LD 키-값 예시    
-다음은 키-값 형식의 JSON-LD로 된 OSMParkingArea 예시입니다. 이는 `options=keyValues`을(를) 사용할 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>예시 표시/숨기기</strong></summary>    
+```
+</details>
+#### OSMParkingArea NGSI-LD 키-값 예시
+다음은 키-값 형식의 OSMParkingArea JSON-LD 예시입니다. 이는 `options=keyValues`를 사용할 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.
+<details><summary><strong>예시 표시/숨기기</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMParkingArea:way:34517828",  
@@ -744,11 +744,11 @@ OSMParkingArea:
     "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
   ]  
 }  
-```  
-</details>  
-#### OSMParkingArea NGSI-LD 정규화된 예시    
-다음은 정규화된 JSON-LD 형식의 OSMParkingArea 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>예시 표시/숨기기</strong></summary>    
+```
+</details>
+#### OSMParkingArea NGSI-LD 정규화 예시
+다음은 정규화된 OSMParkingArea JSON-LD 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.
+<details><summary><strong>예시 표시/숨기기</strong></summary>
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMParkingArea:way:34517828",  
@@ -852,13 +852,13 @@ OSMParkingArea:
         "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
     ]  
 }  
-```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-크기 단위 처리 방법에 대한 답변은 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)을(를) 참조하십시오.  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
----  
+```
+</details><!-- /80-Examples -->
+<!-- 90-FooterNotes -->
+<!-- /90-FooterNotes -->
+<!-- 95-Units -->
+크기 단위 처리 방법에 대한 답변은 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)를 참조하십시오.
+<!-- /95-Units -->
+<!-- 97-LastFooter -->
+---
 [Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
