@@ -1,40 +1,40 @@
-<!-- 10-Header -->
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
-エンティティ: OSMLeisure
-==================<!-- /10-Header -->
-<!-- 15-License -->
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMLeisure/LICENSE.md)
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
-<!-- /15-License -->
-<!-- 20-Description -->
-グローバル説明: **OpenStreetMap の leisure=\* タグが付いたレジャー、スポーツ、またはレクリエーションの場所。公園、スポーツピッチ、プール、スタジアムなどが含まれます**
-version: 0.0.1
-<!-- /20-Description -->
-<!-- 30-PropertiesList -->
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ: OSMLeisure  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMLeisure/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバル説明: **OpenStreetMapでleisure=*とタグ付けされたレジャー、スポーツ、またはレクリエーションの場所。公園、スポーツグラウンド、スイミングプール、スタジアムなどが含まれます**  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト
+## プロパティのリスト  
 
-<sup><sub>[*] 属性にタイプがない場合は、複数のタイプまたは異なる形式/パターンを持つ可能性があることを意味します</sub></sup>
-- `access[string]`: アクセス制限。モデル: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: 郵送先住所。モデル: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例: スペイン。モデル: [https://schema.org/addressCountry](https://schema.org/addressCountry)
-	- `addressLocality[string]`: 住所がある地域で、その地域は国にある。モデル: [https://schema.org/addressLocality](https://schema.org/addressLocality)
-	- `addressRegion[string]`: 国にある地域で、その地域は国にある。モデル: [https://schema.org/addressRegion](https://schema.org/addressRegion)
-	- `district[string]`: 地区は行政区画の一種で、一部の国では地方自治体によって管理されています
-	- `postOfficeBoxNumber[string]`: 私書箱住所の郵便私書箱番号。例: 03578。モデル: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
-	- `postalCode[string]`: 郵便番号。例: 24004。モデル: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
-	- `streetAddress[string]`: 住所。モデル: [https://schema.org/streetAddress](https://schema.org/streetAddress)
-	- `streetNr[string]`: 公道上の特定のプロパティを識別する番号
-- `alternateName[string]`: このアイテムの別名- `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的エリア。モデル: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 標準化されたデータエンティティのプロバイダーを識別する文字のシーケンス- `dateCreated[date-time]`: エンティティ作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます- `dateModified[date-time]`: エンティティの最終変更タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます- `description[string]`: このアイテムの説明- `fee[boolean]`: 入場料または利用料が必要かどうかを示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:fee](https://wiki.openstreetmap.org/wiki/Key:fee)- `id[*]`: エンティティの一意の識別子- `leisureType[string]`: 施設の分類に使用される OSM レジャー タグ。列挙型: 'park, pitch, swimming_pool, sports_centre, stadium, playground, garden, nature_reserve, marina...'。モデル: [https://wiki.openstreetmap.org/wiki/Key:leisure](https://wiki.openstreetmap.org/wiki/Key:leisure)- `lit[boolean]`: 施設が照明されているかどうかを示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、または MultiPolygon にすることができます- `name[string]`: このアイテムの名前- `openingHours[string]`: 施設の営業時間- `operator[string]`: オペレーターまたは管理エンティティ- `osmId[number]`: 元の OpenStreetMap 要素の整数識別子- `osmLastModified[date-time]`: 最終変更のタイムスタンプ- `osmType[string]`: 元の OSM 要素のタイプ- `owner[array]`: 所有者のユニーク ID を参照する JSON エンコードされた文字シーケンスを含むリスト- `seeAlso[*]`: 追加リソースを指す URI のリスト- `source[string]`: エンティティデータの元のソースを URL として示す文字シーケンス。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへの URL を推奨します- `sport[string]`: ここでプレイされる特定のスポーツ（例: サッカー、テニス、バスケットボール）。モデル: [https://wiki.openstreetmap.org/wiki/Key:sport](https://wiki.openstreetmap.org/wiki/Key:sport)- `surface[string]`: ピッチまたはトラックの物理的な表面。モデル: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `type[string]`: NGSI エンティティタイプ。OSMLeisure である必要があります- `wheelchair[string]`: 車椅子でのアクセス<!-- /30-PropertiesList -->
-<!-- 35-RequiredProperties -->
-必須プロパティ
-- `id` - `leisureType` - `location` - `osmId` - `osmType` - `type` <!-- /35-RequiredProperties -->
-<!-- 40-NotesYaml -->
-<!-- /40-NotesYaml -->
-<!-- 50-DataModelHeader -->
-## データモデルのプロパティの説明
-アルファベット順（詳細はこちらをクリック）
-<!-- /50-DataModelHeader -->
-<!-- 60-ModelYaml -->
-<details><summary><strong>完全な yaml 詳細</strong></summary>
+<sup><sub>[*] 属性に型がない場合、それは複数の型または異なる形式/パターンを持つ可能性があるためです</sub></sup>  
+- `access[string]`: アクセス制限。モデル: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: 郵送先住所。モデル: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例：スペイン。モデル: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地がある地域内の場所。モデル: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 場所がある国内の地域。モデル: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区は、一部の国で地方政府によって管理される行政区画の一種です    
+	- `postOfficeBoxNumber[string]`: 私書箱の私書箱番号。例：03578。モデル: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004。モデル: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地。モデル: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 公道上の特定の物件を識別する番号    
+- `alternateName[string]`: このアイテムの別名  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的領域。モデル: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティのプロバイダーを識別する一連の文字  - `dateCreated[date-time]`: エンティティ作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます  - `dateModified[date-time]`: エンティティの最終変更タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます  - `description[string]`: このアイテムの説明  - `fee[boolean]`: 入場料または使用料が必要かどうかを示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:fee](https://wiki.openstreetmap.org/wiki/Key:fee)- `id[*]`: エンティティの一意の識別子  - `leisureType[string]`: 施設を分類するOSMレジャータグ。列挙型:'park, pitch, swimming_pool, sports_centre, stadium, playground, garden, nature_reserve, marina...'。モデル: [https://wiki.openstreetmap.org/wiki/Key:leisure](https://wiki.openstreetmap.org/wiki/Key:leisure)- `lit[boolean]`: 施設が照明されているかどうかを示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、またはMultiPolygonのいずれかです  - `name[string]`: このアイテムの名前  - `openingHours[string]`: 施設の営業時間  - `operator[string]`: 運営者または管理エンティティ  - `osmId[number]`: 元のOpenStreetMap要素の整数識別子  - `osmLastModified[date-time]`: 最終変更のタイムスタンプ  - `osmType[string]`: 元のOSM要素のタイプ  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた一連の文字を含むリスト  - `seeAlso[*]`: 追加リソースを指すURIのリスト  - `source[string]`: エンティティデータの元のソースをURLとして示す一連の文字。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへのURLであることが推奨されます  - `sport[string]`: ここで行われる特定のスポーツ（例：サッカー、テニス、バスケットボール）。モデル: [https://wiki.openstreetmap.org/wiki/Key:sport](https://wiki.openstreetmap.org/wiki/Key:sport)- `surface[string]`: グラウンドまたはトラックの物理的な表面。モデル: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `type[string]`: NGSIエンティティタイプ。OSMLeisureである必要があります  - `wheelchair[string]`: 車椅子でのアクセス<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必須プロパティ  
+- `id`  - `leisureType`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+<!-- /40-NotesYaml -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデルの説明  
+アルファベット順（詳細はこちらをクリック）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
+<details><summary><strong>完全なYAML詳細</strong></summary>    
 ```yaml  
 OSMLeisure:    
   description: A place for leisure, sports, or recreation from OpenStreetMap tagged with leisure=*. Includes parks, sports pitches, swimming pools, stadiums, etc    
@@ -507,16 +507,16 @@ OSMLeisure:
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMLeisure/schema.json    
   x-model-tags: OSM OpenStreetMap Leisure    
   x-version: 0.0.1    
-```
-</details>
-<!-- /60-ModelYaml -->
-<!-- 70-MiddleNotes -->
-<!-- /70-MiddleNotes -->
-<!-- 80-Examples -->
-## サンプルペイロード
-#### OSMLeisure NGSI-v2 キー値ペアの例
-以下は、キー値ペアとしての OSMLeisure の JSON フォーマットの例です。これは、`options=keyValues` を使用する場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを提供します。
-<details><summary><strong>例を表示/非表示</strong></summary>
+```  
+</details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## ペイロードの例    
+#### OSMLeisure NGSI-v2 キーバリューの例    
+以下は、キーバリュー形式のJSON形式のOSMLeisureの例です。`options=keyValues`を使用する場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>例を表示/非表示</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMLeisure:way:55667788",  
@@ -563,11 +563,11 @@ OSMLeisure:
     "https://www.openstreetmap.org/way/55667788"  
   ]  
 }  
-```
-</details>
-#### OSMLeisure NGSI-v2 正規化された例
-以下は、正規化された OSMLeisure の JSON フォーマットの例です。これは、オプションを使用しない場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを提供します。
-<details><summary><strong>例を表示/非表示</strong></summary>
+```  
+</details>  
+#### OSMLeisure NGSI-v2 正規化された例    
+以下は、正規化されたJSON形式のOSMLeisureの例です。オプションを使用しない場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>例を表示/非表示</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMLeisure:way:55667788",  
@@ -653,11 +653,11 @@ OSMLeisure:
     ]  
   }  
 }  
-```
-</details>
-#### OSMLeisure NGSI-LD キー値ペアの例
-以下は、キー値ペアとしての OSMLeisure の JSON-LD フォーマットの例です。これは、`options=keyValues` を使用する場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを提供します。
-<details><summary><strong>例を表示/非表示</strong></summary>
+```  
+</details>  
+#### OSMLeisure NGSI-LD キーバリューの例    
+以下は、キーバリュー形式のJSON-LD形式のOSMLeisureの例です。`options=keyValues`を使用する場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>例を表示/非表示</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMLeisure:way:55667788",  
@@ -707,11 +707,11 @@ OSMLeisure:
     "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
   ]  
 }  
-```
-</details>
-#### OSMLeisure NGSI-LD 正規化された例
-以下は、正規化された OSMLeisure の JSON-LD フォーマットの例です。これは、オプションを使用しない場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを提供します。
-<details><summary><strong>例を表示/非表示</strong></summary>
+```  
+</details>  
+#### OSMLeisure NGSI-LD 正規化された例    
+以下は、正規化されたJSON-LD形式のOSMLeisureの例です。オプションを使用しない場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>例を表示/非表示</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMLeisure:way:55667788",  
@@ -803,13 +803,13 @@ OSMLeisure:
        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
     ]  
 }  
-```
-</details><!-- /80-Examples -->
-<!-- 90-FooterNotes -->
-<!-- /90-FooterNotes -->
-<!-- 95-Units -->
-大きさの単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/) を参照してください。
-<!-- /95-Units -->
-<!-- 97-LastFooter -->
----
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+大きさの単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
 [Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
