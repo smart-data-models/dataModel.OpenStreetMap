@@ -1,40 +1,40 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティ: OSMPublicTransportStop  
+Entity: OSMPublicTransportStop  
 ==============================<!-- /10-Header -->  
 <!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMPublicTransportStop/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバル説明: **OpenStreetMapの公共交通機関の停留所、駅、プラットフォーム、または乗降地点。public_transport=*または特定のモードタグでタグ付けされた、乗客が公共交通機関に乗降するノードおよびエリアを表します。**  
-バージョン: 0.0.1  
+Global description: **OpenStreetMapの公共交通機関の停留所、駅、プラットフォーム、または乗降ポイント。公共交通機関のサービスに乗降する乗客がいるノードやエリアを表し、public_transport=* または特定のモードタグでタグ付けされます。**  
+version: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## List of properties  
 
-<sup><sub>[*] 属性に型がない場合、それは複数の型または異なる形式/パターンを持つ可能性があるためです</sub></sup>  
-- `address[object]`: 郵送先住所。モデル: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例：スペイン。モデル: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: 番地がある地域内の場所。モデル: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: その場所がある国の中の地域。モデル: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: 地区とは、一部の国で地方政府によって管理される行政区画の一種です    
-	- `postOfficeBoxNumber[string]`: 私書箱の私書箱番号。例：03578。モデル: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: 郵便番号。例：24004。モデル: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: 番地。モデル: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]`: 公道上の特定の物件を識別する番号    
-- `alternateName[string]`: このアイテムの別名  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的エリア。モデル: [https://schema.org/Text](https://schema.org/Text)- `bench[boolean]`: この停留所にベンチまたは座席があるかどうかを示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:bench](https://wiki.openstreetmap.org/wiki/Key:bench)- `bin[boolean]`: この停留所にゴミ箱があるかどうかを示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:bin](https://wiki.openstreetmap.org/wiki/Key:bin)- `dataProvider[string]`: 調和されたデータエンティティのプロバイダーを識別する一連の文字  - `dateCreated[date-time]`: エンティティ作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます  - `dateModified[date-time]`: エンティティの最終変更タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意の識別子  - `location[*]`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、またはMultiPolygonのいずれかです  - `name[string]`: このアイテムの名前  - `network[string]`: この停留所が属する公共交通機関ネットワークの名前。モデル: [https://wiki.openstreetmap.org/wiki/Key:network](https://wiki.openstreetmap.org/wiki/Key:network)- `openingHours[string]`: OSMのopening_hours構文による停留所または駅の営業時間。モデル: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: この停留所でサービスを運行する事業者の名前。モデル: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: 元のOpenStreetMap要素の整数識別子。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM要素の最終変更タイムスタンプ。  - `osmType[string]`: 元のOpenStreetMap要素のタイプ。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた一連の文字を含むリスト  - `publicTransportType[string]`: 公共交通機関ネットワークにおけるこの要素の役割を示すOSM public_transportタグの値。列挙型:'stop_position, platform, station, stop_area'。モデル: [https://wiki.openstreetmap.org/wiki/Key:public_transport](https://wiki.openstreetmap.org/wiki/Key:public_transport)- `ref[string]`: 交通事業者が使用する公式の停留所参照コードまたは番号。モデル: [https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)- `seeAlso[*]`: このアイテムに関する追加リソースを指すURIのリスト。  - `shelter[boolean]`: この停留所に風雨よけがあるかどうかを示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:shelter](https://wiki.openstreetmap.org/wiki/Key:shelter)- `source[string]`: エンティティデータの元のソースをURLとして示す一連の文字。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへのURLであることが推奨されます  - `tactilePaving[boolean]`: 視覚障害者向けの点字ブロックがあるかどうかを示します。モデル: [https://wiki.openstreetmap.org/wiki/Key:tactile_paving](https://wiki.openstreetmap.org/wiki/Key:tactile_paving)- `transportMode[array]`: この停留所で利用可能な交通手段のリスト。モデル: [https://wiki.openstreetmap.org/wiki/Public_transport](https://wiki.openstreetmap.org/wiki/Public_transport)- `type[string]`: NGSIエンティティタイプ。OSMPublicTransportStopである必要があります  - `wheelchair[string]`: この停留所の車椅子アクセシビリティのレベルを示します。列挙型:'yes, no, limited'。モデル: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性にタイプがない場合は、複数のタイプまたは異なる形式/パターンを持つ可能性があることを意味します</sub></sup>  
+- `address[object]`: 郵便住所。 モデル: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例：スペイン。 モデル: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 住所がある地域で、その地域が国にある場所。 モデル: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 国にある地域で、その地域が国にある地域。 モデル: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区は行政区分のタイプであり、一部の国では地方自治体によって管理されています。    
+	- `postOfficeBoxNumber[string]`: 私書箱住所の私書箱番号。例：03578。 モデル: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004。 モデル: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 住所。 モデル: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 公共の通りにある特定のプロパティを識別する番号    
+- `alternateName[string]`: このアイテムの別名。 - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的エリア。 モデル: [https://schema.org/Text](https://schema.org/Text)- `bench[boolean]`: この停留所にベンチまたは座席が利用可能かどうかを示します。 モデル: [https://wiki.openstreetmap.org/wiki/Key:bench](https://wiki.openstreetmap.org/wiki/Key:bench)- `bin[boolean]`: この停留所にゴミ箱があるかどうかを示します。 モデル: [https://wiki.openstreetmap.org/wiki/Key:bin](https://wiki.openstreetmap.org/wiki/Key:bin)- `dataProvider[string]`: 調和されたデータエンティティのプロバイダーを識別する一連の文字。 - `dateCreated[date-time]`: エンティティ作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。 - `dateModified[date-time]`: エンティティの最後の変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。 - `description[string]`: このアイテムの説明。 - `id[*]`: エンティティの一意の識別子。 - `location[*]`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、またはMultiPolygonにすることができます。 - `name[string]`: このアイテムの名前。 - `network[string]`: この停留所が属する公共交通ネットワークの名前。 モデル: [https://wiki.openstreetmap.org/wiki/Key:network](https://wiki.openstreetmap.org/wiki/Key:network)- `openingHours[string]`: OSM opening_hours構文での停留所または駅の営業時間。 モデル: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: この停留所でサービスを実行しているオペレーターの名前。 モデル: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: 元のOpenStreetMap要素の整数識別子。 モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM要素の最後の変更のタイムスタンプ。 - `osmType[string]`: 元のOpenStreetMap要素のタイプ。 モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: 所有者のユニークIDのJSONエンコードされた文字シーケンスを参照するリスト。 - `publicTransportType[string]`: 公共交通ネットワークにおけるこの要素の役割を示すOSM public_transportタグの値。Enum:'stop_position, platform, station, stop_area'。 モデル: [https://wiki.openstreetmap.org/wiki/Key:public_transport](https://wiki.openstreetmap.org/wiki/Key:public_transport)- `ref[string]`: 交通事業者が使用する公式の停留所参照コードまたは番号。 モデル: [https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)- `seeAlso[*]`: このアイテムに関する追加リソースへのURIのリスト。 - `shelter[boolean]`: この停留所に天候シェルターが利用可能かどうかを示します。 モデル: [https://wiki.openstreetmap.org/wiki/Key:shelter](https://wiki.openstreetmap.org/wiki/Key:shelter)- `source[string]`: エンティティデータの元のソースをURLとして示す一連の文字。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへのURLであることが推奨されます。 - `tactilePaving[boolean]`: 視覚障害者向けの触覚舗装が存在するかどうかを示します。 モデル: [https://wiki.openstreetmap.org/wiki/Key:tactile_paving](https://wiki.openstreetmap.org/wiki/Key:tactile_paving)- `transportMode[array]`: この停留所で提供される交通手段のリスト。 モデル: [https://wiki.openstreetmap.org/wiki/Public_transport](https://wiki.openstreetmap.org/wiki/Public_transport)- `type[string]`: NGSIエンティティタイプ。OSMPublicTransportStopである必要があります。 - `wheelchair[string]`: この停留所での車椅子アクセシビリティのレベルを示します。Enum:'yes, no, limited'。 モデル: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必須プロパティ  
-- `id`  - `location`  - `osmId`  - `osmType`  - `publicTransportType`  - `type`  <!-- /35-RequiredProperties -->  
+Required properties  
+- `id` - `location` - `osmId` - `osmType` - `publicTransportType` - `type` <!-- /35-RequiredProperties -->  
 <!-- 40-NotesYaml -->  
 <!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
-## プロパティのデータモデル記述  
-アルファベット順 (詳細はこちらをクリック)  
+## Data Model description of properties  
+Sorted alphabetically (click for details)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
-<details><summary><strong>完全なYAML詳細</strong></summary>    
+<details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 OSMPublicTransportStop:    
   description: A public transport stop, station, platform or boarding point from OpenStreetMap. Represents nodes and areas where passengers board or alight from public transport services, tagged with public_transport=* or specific mode tags.    
@@ -523,10 +523,10 @@ OSMPublicTransportStop:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## ペイロードの例    
-#### OSMPublicTransportStop NGSI-v2 キーバリューの例    
-OSMPublicTransportStopのJSON形式のキーバリューの例を以下に示します。`options=keyValues`を使用する場合、これはNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+## Example payloads    
+#### OSMPublicTransportStop NGSI-v2 key-values Example    
+Here is an example of a OSMPublicTransportStop in JSON format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMPublicTransportStop:node:441728803",  
@@ -561,9 +561,9 @@ OSMPublicTransportStopのJSON形式のキーバリューの例を以下に示し
 }  
 ```  
 </details>  
-#### OSMPublicTransportStop NGSI-v2 正規化された例    
-OSMPublicTransportStopのJSON形式の正規化された例を以下に示します。オプションを使用しない場合、これはNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+#### OSMPublicTransportStop NGSI-v2 normalized Example    
+Here is an example of a OSMPublicTransportStop in JSON format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMPublicTransportStop:node:441728803",  
@@ -646,9 +646,9 @@ OSMPublicTransportStopのJSON形式の正規化された例を以下に示しま
 }  
 ```  
 </details>  
-#### OSMPublicTransportStop NGSI-LD キーバリューの例    
-OSMPublicTransportStopのJSON-LD形式のキーバリューの例を以下に示します。`options=keyValues`を使用する場合、これはNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+#### OSMPublicTransportStop NGSI-LD key-values Example    
+Here is an example of a OSMPublicTransportStop in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMPublicTransportStop:node:441728803",  
@@ -686,9 +686,9 @@ OSMPublicTransportStopのJSON-LD形式のキーバリューの例を以下に示
 }  
 ```  
 </details>  
-#### OSMPublicTransportStop NGSI-LD 正規化された例    
-OSMPublicTransportStopのJSON-LD形式の正規化された例を以下に示します。オプションを使用しない場合、これはNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+#### OSMPublicTransportStop NGSI-LD normalized Example    
+Here is an example of a OSMPublicTransportStop in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMPublicTransportStop:node:441728803",  
@@ -780,7 +780,7 @@ OSMPublicTransportStopのJSON-LD形式の正規化された例を以下に示し
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-数量単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください  
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
