@@ -1,40 +1,40 @@
-<!-- 10-Header -->
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
-엔티티: OSMLeisure
-==================<!-- /10-Header -->
-<!-- 15-License -->
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMLeisure/LICENSE.md)
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
-<!-- /15-License -->
-<!-- 20-Description -->
-전체 설명: **OpenStreetMap의 leisure=\* 태그가 지정된 레저, 스포츠 또는 레크리에이션 장소입니다. 공원, 스포츠 경기장, 수영장, 경기장 등이 포함됩니다.**
-버전: 0.0.1
-<!-- /20-Description -->
-<!-- 30-PropertiesList -->
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+엔티티: OSMLeisure  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMLeisure/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+글로벌 설명: **OpenStreetMap에서 leisure=* 태그가 지정된 여가, 스포츠 또는 레크리에이션 장소입니다. 공원, 스포츠 경기장, 수영장, 경기장 등을 포함합니다.**  
+버전: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## 속성 목록
+## 속성 목록  
 
-<sup><sub>[*] 속성에 유형이 없는 경우 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다.</sub></sup>
-- `access[string]`: 접근 제한. 모델: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: 우편 주소. 모델: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예를 들어 스페인. 모델: [https://schema.org/addressCountry](https://schema.org/addressCountry)
-	- `addressLocality[string]`: 지역에 속한 지역의 지역. 모델: [https://schema.org/addressLocality](https://schema.org/addressLocality)
-	- `addressRegion[string]`: 국가에 속한 지역의 지역. 모델: [https://schema.org/addressRegion](https://schema.org/addressRegion)
-	- `district[string]`: 구역은 일부 국가에서 지방 정부가 관리하는 행정 구역의 한 유형입니다.
-	- `postOfficeBoxNumber[string]`: PO 박스 주소의 우체국 사서함 번호. 예를 들어 03578. 모델: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
-	- `postalCode[string]`: 우편 번호. 예를 들어 24004. 모델: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
-	- `streetAddress[string]`: 거리 주소. 모델: [https://schema.org/streetAddress](https://schema.org/streetAddress)
-	- `streetNr[string]`: 공공 거리의 특정 속성을 식별하는 번호
-- `alternateName[string]`: 이 항목의 대체 이름- `areaServed[string]`: 서비스 또는 제공되는 항목이 제공되는 지리적 영역. 모델: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 조화된 데이터 엔티티의 제공자를 식별하는 문자 시퀀스- `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 일반적으로 스토리지 플랫폼에서 할당됩니다.- `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프. 일반적으로 스토리지 플랫폼에서 할당됩니다.- `description[string]`: 이 항목에 대한 설명- `fee[boolean]`: 입장료 또는 이용료가 필요한지 여부를 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:fee](https://wiki.openstreetmap.org/wiki/Key:fee)- `id[*]`: 엔티티의 고유 식별자- `leisureType[string]`: 시설을 분류하는 OSM 레저 태그. 열거형: 'park, pitch, swimming_pool, sports_centre, stadium, playground, garden, nature_reserve, marina...' 모델: [https://wiki.openstreetmap.org/wiki/Key:leisure](https://wiki.openstreetmap.org/wiki/Key:leisure)- `lit[boolean]`: 시설에 조명이 켜져 있는지 여부를 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: 항목에 대한 Geojson 참조. Point, LineString, Polygon, MultiPoint, MultiLineString 또는 MultiPolygon일 수 있습니다.- `name[string]`: 이 항목의 이름- `openingHours[string]`: 시설의 운영 시간- `operator[string]`: 운영자 또는 관리 주체- `osmId[number]`: 원본 OpenStreetMap 요소의 정수 식별자- `osmLastModified[date-time]`: 마지막 수정 타임스탬프- `osmType[string]`: 원본 OSM 요소의 유형- `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩 문자 시퀀스가 포함된 목록- `seeAlso[*]`: 추가 리소스를 가리키는 URI 목록- `source[string]`: 엔티티 데이터의 원본을 URL로 제공하는 문자 시퀀스. 소스 제공자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 권장합니다.- `sport[string]`: 여기서 플레이되는 특정 스포츠 (예: 축구, 테니스, 농구). 모델: [https://wiki.openstreetmap.org/wiki/Key:sport](https://wiki.openstreetmap.org/wiki/Key:sport)- `surface[string]`: 경기장 또는 트랙의 물리적 표면. 모델: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `type[string]`: NGSI 엔티티 유형. OSMLeisure여야 합니다.- `wheelchair[string]`: 휠체어 접근성 <!-- /30-PropertiesList -->
-<!-- 35-RequiredProperties -->
-필수 속성
-- `id` - `leisureType` - `location` - `osmId` - `osmType` - `type` <!-- /35-RequiredProperties -->
-<!-- 40-NotesYaml -->
-<!-- /40-NotesYaml -->
-<!-- 50-DataModelHeader -->
-## 속성의 데이터 모델 설명
-알파벳순으로 정렬 (자세히 보려면 클릭)
-<!-- /50-DataModelHeader -->
-<!-- 60-ModelYaml -->
-<details><summary><strong>전체 yaml 세부 정보</strong></summary>
+<sup><sub>[*] 속성에 유형이 없는 경우 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다.</sub></sup>  
+- `access[string]`: 접근 제한 . 모델: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: 우편 주소 . 모델: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예를 들어, 스페인 . 모델: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 도로 주소가 있는 지역 내의 지역. 모델: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 지역이 있는 국가 내의 지역. 모델: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 구역은 일부 국가에서 지방 정부가 관리하는 행정 구역의 한 유형입니다.    
+	- `postOfficeBoxNumber[string]`: 사서함 주소의 우체국 사서함 번호. 예를 들어, 03578 . 모델: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 우편 번호. 예를 들어, 24004 . 모델: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 도로 주소 . 모델: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 공공 도로의 특정 속성을 식별하는 번호    
+- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공되는 항목이 제공되는 지리적 영역 . 모델: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 조화된 데이터 엔티티의 제공자를 식별하는 문자 시퀀스  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 일반적으로 저장 플랫폼에 의해 할당됩니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프. 일반적으로 저장 플랫폼에 의해 할당됩니다.  - `description[string]`: 이 항목에 대한 설명  - `fee[boolean]`: 입장료 또는 사용료가 필요한지 여부를 나타냅니다 . 모델: [https://wiki.openstreetmap.org/wiki/Key:fee](https://wiki.openstreetmap.org/wiki/Key:fee)- `id[*]`: 엔티티의 고유 식별자  - `leisureType[string]`: 시설을 분류하는 OSM 여가 태그. 열거형: 'park, pitch, swimming_pool, sports_centre, stadium, playground, garden, nature_reserve, marina...' . 모델: [https://wiki.openstreetmap.org/wiki/Key:leisure](https://wiki.openstreetmap.org/wiki/Key:leisure)- `lit[boolean]`: 시설이 조명되는지 여부를 나타냅니다 . 모델: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: 항목에 대한 Geojson 참조. Point, LineString, Polygon, MultiPoint, MultiLineString 또는 MultiPolygon일 수 있습니다.  - `name[string]`: 이 항목의 이름  - `openingHours[string]`: 시설의 운영 시간  - `operator[string]`: 운영자 또는 관리 엔티티  - `osmId[number]`: 원래 OpenStreetMap 요소 정수 식별자  - `osmLastModified[date-time]`: 마지막 수정 타임스탬프  - `osmType[string]`: 원래 OSM 요소의 유형  - `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩 문자 시퀀스를 포함하는 목록  - `seeAlso[*]`: 추가 리소스를 가리키는 URI 목록  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스. 소스 제공자의 정규화된 도메인 이름 또는 소스 객체의 URL을 사용하는 것이 좋습니다.  - `sport[string]`: 여기서 플레이되는 특정 스포츠 (예: 축구, 테니스, 농구) . 모델: [https://wiki.openstreetmap.org/wiki/Key:sport](https://wiki.openstreetmap.org/wiki/Key:sport)- `surface[string]`: 경기장 또는 트랙의 물리적 표면 . 모델: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `type[string]`: NGSI 엔티티 유형. OSMLeisure여야 합니다.  - `wheelchair[string]`: 휠체어 접근성  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+필수 속성  
+- `id`  - `leisureType`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+<!-- /40-NotesYaml -->  
+<!-- 50-DataModelHeader -->  
+## 속성의 데이터 모델 설명  
+알파벳순 정렬 (자세한 내용은 클릭)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
+<details><summary>**전체 YAML 세부 정보**</summary>    
 ```yaml  
 OSMLeisure:    
   description: A place for leisure, sports, or recreation from OpenStreetMap tagged with leisure=*. Includes parks, sports pitches, swimming pools, stadiums, etc    
@@ -507,16 +507,16 @@ OSMLeisure:
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMLeisure/schema.json    
   x-model-tags: OSM OpenStreetMap Leisure    
   x-version: 0.0.1    
-```
-</details>
-<!-- /60-ModelYaml -->
-<!-- 70-MiddleNotes -->
-<!-- /70-MiddleNotes -->
-<!-- 80-Examples -->
-## 예시 페이로드
-#### OSMLeisure NGSI-v2 키-값 예시
-다음은 키-값 형식의 JSON으로 된 OSMLeisure 예시입니다. 이는 `options=keyValues`를 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.
-<details><summary><strong>예시 표시/숨기기</strong></summary>
+```  
+</details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## 예시 페이로드    
+#### OSMLeisure NGSI-v2 키-값 예시    
+다음은 키-값 형식의 JSON OSMLeisure 예시입니다. 이는 `options=keyValues`를 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary>**예시 표시/숨기기**</summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMLeisure:way:55667788",  
@@ -563,11 +563,11 @@ OSMLeisure:
     "https://www.openstreetmap.org/way/55667788"  
   ]  
 }  
-```
-</details>
-#### OSMLeisure NGSI-v2 정규화 예시
-다음은 정규화된 JSON 형식의 OSMLeisure 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.
-<details><summary><strong>예시 표시/숨기기</strong></summary>
+```  
+</details>  
+#### OSMLeisure NGSI-v2 정규화된 예시    
+다음은 정규화된 JSON 형식의 OSMLeisure 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary>**예시 표시/숨기기**</summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMLeisure:way:55667788",  
@@ -653,11 +653,11 @@ OSMLeisure:
     ]  
   }  
 }  
-```
-</details>
-#### OSMLeisure NGSI-LD 키-값 예시
-다음은 키-값 형식의 JSON-LD로 된 OSMLeisure 예시입니다. 이는 `options=keyValues`를 사용할 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.
-<details><summary><strong>예시 표시/숨기기</strong></summary>
+```  
+</details>  
+#### OSMLeisure NGSI-LD 키-값 예시    
+다음은 키-값 형식의 JSON-LD OSMLeisure 예시입니다. 이는 `options=keyValues`를 사용할 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary>**예시 표시/숨기기**</summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMLeisure:way:55667788",  
@@ -707,11 +707,11 @@ OSMLeisure:
     "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
   ]  
 }  
-```
-</details>
-#### OSMLeisure NGSI-LD 정규화 예시
-다음은 정규화된 JSON-LD 형식의 OSMLeisure 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.
-<details><summary><strong>예시 표시/숨기기</strong></summary>
+```  
+</details>  
+#### OSMLeisure NGSI-LD 정규화된 예시    
+다음은 정규화된 JSON-LD 형식의 OSMLeisure 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary>**예시 표시/숨기기**</summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMLeisure:way:55667788",  
@@ -803,13 +803,13 @@ OSMLeisure:
        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
     ]  
 }  
-```
-</details><!-- /80-Examples -->
-<!-- 90-FooterNotes -->
-<!-- /90-FooterNotes -->
-<!-- 95-Units -->
-크기 단위 처리 방법에 대한 답변은 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)를 참조하십시오.
-<!-- /95-Units -->
-<!-- 97-LastFooter -->
----
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+크기 단위를 처리하는 방법에 대한 답변은 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하십시오.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
 [Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
