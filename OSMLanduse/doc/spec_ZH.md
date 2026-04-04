@@ -1,70 +1,40 @@
-<!-- 10-Header -->
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
-实体：OSMLanduse
-==================
-<!-- /10-Header -->
-<!-- 15-License -->
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMLanduse/LICENSE.md)
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
-<!-- /15-License -->
-<!-- 20-Description -->
-全局描述：**OpenStreetMap 中标记为 landuse=* 的土地用途区域。描述土地的主要人类用途或使用方式**
-版本：0.0.1
-<!-- /20-Description -->
-<!-- 30-PropertiesList -->
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+实体: OSMLanduse  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMLanduse/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+全局描述: **来自OpenStreetMap的土地利用区域，标记为landuse=*。描述了土地区域的主要人类目的或用途**  
+版本: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## 属性列表
+## 属性列表  
 
-<sup><sub>[*] 如果某个属性未设置类型，是因为该属性可能具有多种类型或不同的格式/模式</sub></sup>
-- `address[object]`：邮寄地址。模型：[https://schema.org/address](https://schema.org/address)
-	- `addressCountry[string]`：国家。例如，西班牙。模型：[https://schema.org/addressCountry](https://schema.org/addressCountry)
-	- `addressLocality[string]`：街道地址所在的城镇，且该城镇隶属于某个地区。模型：[https://schema.org/addressLocality](https://schema.org/addressLocality)
-	- `addressRegion[string]`：城镇所在的地区，且该地区隶属于某个国家。模型：[https://schema.org/addressRegion](https://schema.org/addressRegion)
-	- `district[string]`：区（district）是一种行政区划类型，在某些国家由地方政府管理
-	- `postOfficeBoxNumber[string]`：用于邮政信箱地址的邮箱号码。例如，03578。模型：[https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
-	- `postalCode[string]`：邮政编码。例如，24004。模型：[https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
-	- `streetAddress[string]`：街道地址。模型：[https://schema.org/streetAddress](https://schema.org/streetAddress)
-	- `streetNr[string]`：标识公共街道上某个特定房产的编号
-- `alternateName[string]`：此项目的另一个名称
-- `areaServed[string]`：提供服务或商品的地理区域。模型：[https://schema.org/Text](https://schema.org/Text)
-- `crop[string]`：若 landuse=farmland，则为此土地上种植的农作物。模型：[https://wiki.openstreetmap.org/wiki/Key:crop](https://wiki.openstreetmap.org/wiki/Key:crop)
-- `dataProvider[string]`：标识统一数据实体提供者的一组字符序列
-- `dateCreated[date-time]`：实体创建时间戳。通常由存储平台分配
-- `dateModified[date-time]`：实体最后一次修改的时间戳。通常由存储平台分配
-- `description[string]`：此项目的描述
-- `id[*]`：实体的唯一标识符
-- `landuseType[string]`：对土地主要人类用途进行分类的 OSM landuse 标签。枚举值：'commercial（商业）、construction（建筑施工）、education（教育）、industrial（工业）、residential（住宅）、retail（零售）、farmland（农田）、forest（森林）、meadow（草地）、orchard（果园）、...'。模型：[https://wiki.openstreetmap.org/wiki/Key:landuse](https://wiki.openstreetmap.org/wiki/Key:landuse)
-- `location[*]`：指向该项目的 GeoJSON 引用。可以是 Point、LineString、Polygon、MultiPoint、MultiLineString 或 MultiPolygon
-- `name[string]`：此项目的名称
-- `operator[string]`：运营或管理该区域的实体名称
-- `osmId[number]`：原始 OpenStreetMap 元素整数标识符
-- `osmLastModified[date-time]`：最后一次修改的时间戳
-- `osmType[string]`：原始 OSM 元素的类型
-- `owner[array]`：包含以 JSON 编码的字符序列的列表，引用所有者的唯一 ID
-- `seeAlso[*]`：指向附加资源的 URI 列表
-- `source[string]`：以 URL 形式给出的实体数据的原始来源字符序列。建议使用源提供商的完整域名或指向源对象的 URL
-- `trees[string]`：若 landuse=forest 或 orchard，则为此林地或果园中种植的树木类型。模型：[https://wiki.openstreetmap.org/wiki/Key:trees](https://wiki.openstreetmap.org/wiki/Key:trees)
-- `type[string]`：NGSI 实体类型。必须为 OSMLanduse
-<!-- /30-PropertiesList -->
-<!-- 35-RequiredProperties -->
-
-必需属性
-- `id`
-- `landuseType`
-- `location`
-- `osmId`
-- `osmType`
-- `type`
-<!-- /35-RequiredProperties -->
-<!-- 40-NotesYaml -->
-<!-- /40-NotesYaml -->
-<!-- 50-DataModelHeader -->
-
-## 属性数据模型说明
-按字母顺序排序（点击查看详情）
-<!-- /50-DataModelHeader -->
-<!-- 60-ModelYaml -->
-<details><summary><strong>完整 YAML 详情</strong></summary>
+<sup><sub>[*] 如果属性中没有类型，那是因为它可能有多种类型或不同的格式/模式</sub></sup>  
+- `address[object]`: 邮寄地址。模型: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国家。例如，西班牙。模型: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 街道地址所在的地区，并且该地区位于某个区域内。模型: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 地区所在的区域，并且该区域位于某个国家内。模型: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区是一种行政区划，在某些国家由地方政府管理    
+	- `postOfficeBoxNumber[string]`: 邮政信箱地址的邮政信箱号码。例如，03578。模型: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 邮政编码。例如，24004。模型: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 街道地址。模型: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 识别公共街道上特定物业的号码    
+- `alternateName[string]`: 此项目的替代名称  - `areaServed[string]`: 提供服务或商品的地理区域。模型: [https://schema.org/Text](https://schema.org/Text)- `crop[string]`: 如果landuse=farmland，则为土地上种植的作物。模型: [https://wiki.openstreetmap.org/wiki/Key:crop](https://wiki.openstreetmap.org/wiki/Key:crop)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。这通常由存储平台分配  - `dateModified[date-time]`: 实体最后修改的时间戳。这通常由存储平台分配  - `description[string]`: 此项目的描述  - `id[*]`: 实体的唯一标识符  - `landuseType[string]`: 开放街道地图（OSM）土地利用标签，用于分类土地的主要人类用途。枚举值：'commercial, construction, education, industrial, residential, retail, farmland, forest, meadow, orchard, ...'。模型: [https://wiki.openstreetmap.org/wiki/Key:landuse](https://wiki.openstreetmap.org/wiki/Key:landuse)- `location[*]`: Geojson 对该项目的引用。可以是 Point, LineString, Polygon, MultiPoint, MultiLineString 或 MultiPolygon  - `name[string]`: 此项目的名称  - `operator[string]`: 运营或管理该区域的实体的名称  - `osmId[number]`: 原始OpenStreetMap元素的整数标识符  - `osmLastModified[date-time]`: 最后修改的时间戳  - `osmType[string]`: 原始OSM元素的类型  - `owner[array]`: 包含JSON编码字符序列的列表，引用所有者（一个或多个）的唯一ID  - `seeAlso[*]`: 指向附加资源的URI列表  - `source[string]`: 以URL形式给出实体数据原始来源的字符序列。建议使用源提供者的完全限定域名，或源对象的URL  - `trees[string]`: 如果landuse=forest或orchard，则为种植的树木类型。模型: [https://wiki.openstreetmap.org/wiki/Key:trees](https://wiki.openstreetmap.org/wiki/Key:trees)- `type[string]`: NGSI实体类型。必须是OSMLanduse  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必需属性  
+- `id`  - `landuseType`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+<!-- /40-NotesYaml -->  
+<!-- 50-DataModelHeader -->  
+## 属性数据模型描述  
+按字母顺序排序（点击查看详情）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
+<details><summary><strong>完整的yaml详情</strong></summary>    
 ```yaml  
 OSMLanduse:    
   description: An area of land use from OpenStreetMap tagged with landuse=*. Describes the primary human purpose or use of an area of land    
@@ -505,17 +475,16 @@ OSMLanduse:
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMLanduse/schema.json    
   x-model-tags: OSM OpenStreetMap Environment Landuse    
   x-version: 0.0.1    
-```
-</details>
-<!-- /60-ModelYaml -->
-<!-- 70-MiddleNotes -->
-<!-- /70-MiddleNotes -->
-<!-- 80-Examples -->
-
-## 示例有效负载
-#### OSMLanduse NGSI-v2 键值示例
-以下是以 JSON 格式表示的 OSMLanduse 键值示例。当使用 `options=keyValues` 时，此格式与 NGSI-v2 兼容，并返回单个实体的上下文数据。
-<details><summary><strong>显示/隐藏示例</strong></summary>
+```  
+</details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## 示例负载    
+#### OSMLanduse NGSI-v2 键值对示例    
+这是一个OSMLanduse的JSON格式键值对示例。这与使用 `options=keyValues` 时的NGSI-v2兼容，并返回单个实体的上下文数据。  
+<details><summary><strong>显示/隐藏示例</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMLanduse:relation:65432198",  
@@ -557,12 +526,11 @@ OSMLanduse:
     "https://www.openstreetmap.org/relation/65432198"  
   ]  
 }  
-```
-</details>
-
-#### OSMLanduse NGSI-v2 规范化示例
-以下是以 JSON 格式表示的 OSMLanduse 规范化示例。当不使用选项时，此格式与 NGSI-v2 兼容，并返回单个实体的上下文数据。
-<details><summary><strong>显示/隐藏示例</strong></summary>
+```  
+</details>  
+#### OSMLanduse NGSI-v2 规范化示例    
+这是一个OSMLanduse的JSON格式规范化示例。这与不使用选项时的NGSI-v2兼容，并返回单个实体的上下文数据。  
+<details><summary><strong>显示/隐藏示例</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMLanduse:relation:65432198",  
@@ -628,12 +596,11 @@ OSMLanduse:
     ]  
   }  
 }  
-```
-</details>
-
-#### OSMLanduse NGSI-LD 键值示例
-以下是以 JSON-LD 格式表示的 OSMLanduse 键值示例。当使用 `options=keyValues` 时，此格式与 NGSI-LD 兼容，并返回单个实体的上下文数据。
-<details><summary><strong>显示/隐藏示例</strong></summary>
+```  
+</details>  
+#### OSMLanduse NGSI-LD 键值对示例    
+这是一个OSMLanduse的JSON-LD格式键值对示例。这与使用 `options=keyValues` 时的NGSI-LD兼容，并返回单个实体的上下文数据。  
+<details><summary><strong>显示/隐藏示例</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMLanduse:relation:65432198",  
@@ -678,12 +645,11 @@ OSMLanduse:
     "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
   ]  
 }  
-```
-</details>
-
-#### OSMLanduse NGSI-LD 规范化示例
-以下是以 JSON-LD 格式表示的 OSMLanduse 规范化示例。当不使用选项时，此格式与 NGSI-LD 兼容，并返回单个实体的上下文数据。
-<details><summary><strong>显示/隐藏示例</strong></summary>
+```  
+</details>  
+#### OSMLanduse NGSI-LD 规范化示例    
+这是一个OSMLanduse的JSON-LD格式规范化示例。这与不使用选项时的NGSI-LD兼容，并返回单个实体的上下文数据。  
+<details><summary><strong>显示/隐藏示例</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMLanduse:relation:65432198",  
@@ -755,15 +721,13 @@ OSMLanduse:
         "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
     ]  
 }  
-```
-</details>
-<!-- /80-Examples -->
-<!-- 90-FooterNotes -->
-<!-- /90-FooterNotes -->
-<!-- 95-Units -->
-请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/) 了解如何处理数量单位的说明
-<!-- /95-Units -->
-<!-- 97-LastFooter -->
-
----
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/) 以获取有关如何处理量纲单位的答案  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
 [Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
