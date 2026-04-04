@@ -16,14 +16,14 @@
 
 <sup><sub>[*] 속성에 유형이 없는 경우 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다.</sub></sup>  
 - `access[string]`: 도로에 대한 일반적인 접근 제한. 모델: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: 우편 주소. 모델: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예를 들어, 스페인. 모델: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: 도로 주소가 있는 지역 내의 지방 자치 단체. 모델: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: 지방 자치 단체가 있는 국가 내의 지역. 모델: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `addressLocality[string]`: 도로 주소가 위치한 지역 내의 지역. 모델: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 지역이 위치한 국가 내의 지역. 모델: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
 	- `district[string]`: 구역은 일부 국가에서 지방 정부가 관리하는 행정 구역의 한 유형입니다.    
 	- `postOfficeBoxNumber[string]`: 사서함 주소의 우체국 사서함 번호. 예를 들어, 03578. 모델: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 우편 번호. 예를 들어, 24004. 모델: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 도로 주소. 모델: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: 공공 도로의 특정 속성을 식별하는 번호    
-- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공되는 항목이 제공되는 지리적 영역. 모델: [https://schema.org/Text](https://schema.org/Text)- `bridge[boolean]`: 이 도로 구간이 다리 위를 지나는지 여부를 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:bridge](https://wiki.openstreetmap.org/wiki/Key:bridge)- `cyclewayPresent[boolean]`: 이 도로 옆에 전용 자전거 도로가 있는지 여부를 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:cycleway](https://wiki.openstreetmap.org/wiki/Key:cycleway)- `dataProvider[string]`: 조화된 데이터 엔티티의 제공자를 식별하는 문자 시퀀스  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 일반적으로 저장 플랫폼에 의해 할당됩니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프. 일반적으로 저장 플랫폼에 의해 할당됩니다.  - `description[string]`: 이 항목에 대한 설명  - `highwayType[string]`: 도로 또는 경로의 유형을 분류하는 OSM highway 태그 값. 열거형:'motorway, trunk, primary, secondary, tertiary, unclassified, residential, service, living_street, pedestrian, track, footway, cycleway, path, motorway_link, trunk_link, primary_link, secondary_link, tertiary_link, road, busway, bus_guideway, construction, proposed'. 모델: [https://wiki.openstreetmap.org/wiki/Key:highway](https://wiki.openstreetmap.org/wiki/Key:highway)- `id[*]`: 엔티티의 고유 식별자  - `inclinePercent[number]`: 백분율로 표현된 도로의 경사. 양수 값은 오르막을 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:incline](https://wiki.openstreetmap.org/wiki/Key:incline)- `lanes[number]`: 양방향 총 교통 차선 수. 모델: [https://wiki.openstreetmap.org/wiki/Key:lanes](https://wiki.openstreetmap.org/wiki/Key:lanes)- `layer[number]`: 동일한 위치에 있는 다른 특징에 대한 수직 레이어로, 겹치는 경로를 나타내는 데 사용됩니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:layer](https://wiki.openstreetmap.org/wiki/Key:layer)- `lit[boolean]`: 도로가 가로등으로 조명되는지 여부를 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: 항목에 대한 Geojson 참조. Point, LineString, Polygon, MultiPoint, MultiLineString 또는 MultiPolygon이 될 수 있습니다.  - `maxSpeed[number]`: 시간당 킬로미터로 표시된 최대 허용 속도. 모델: [https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed)- `name[string]`: 이 항목의 이름  - `oneway[boolean]`: 도로가 자동차에 대해 일방통행인지 여부를 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:oneway](https://wiki.openstreetmap.org/wiki/Key:oneway)- `operator[string]`: 이 도로의 운영 또는 유지보수를 담당하는 엔티티의 이름. 모델: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: 원래 OpenStreetMap 요소 정수 식별자. 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM 요소의 마지막 수정 타임스탬프.  - `osmType[string]`: 원래 OpenStreetMap 요소의 유형. 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스를 포함하는 목록  - `ref[string]`: 공식 도로 참조 번호 또는 코드 (예: A-3, M-30). 모델: [https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)- `seeAlso[*]`: 이 항목에 대한 추가 리소스(예: Wikidata, Wikipedia)를 가리키는 URI 목록.  - `sidewalk[string]`: 도로 옆 보도의 존재 여부 및 측면을 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:sidewalk](https://wiki.openstreetmap.org/wiki/Key:sidewalk)- `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스. 소스 제공자의 정규화된 도메인 이름 또는 소스 객체에 대한 URL을 사용하는 것이 좋습니다.  - `surface[string]`: 도로의 물리적 표면 재료. 모델: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `tunnel[boolean]`: 이 도로 구간이 터널을 통과하는지 여부를 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:tunnel](https://wiki.openstreetmap.org/wiki/Key:tunnel)- `type[string]`: NGSI 엔티티 유형. OSMHighway여야 합니다.  - `widthMeters[number]`: 도로의 물리적 폭(미터). 모델: [https://wiki.openstreetmap.org/wiki/Key:width](https://wiki.openstreetmap.org/wiki/Key:width)<!-- /30-PropertiesList -->  
+- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공되는 항목이 제공되는 지리적 영역. 모델: [https://schema.org/Text](https://schema.org/Text)- `bridge[boolean]`: 이 도로 구간이 다리 위를 지나는지 여부를 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:bridge](https://wiki.openstreetmap.org/wiki/Key:bridge)- `cyclewayPresent[boolean]`: 이 도로 옆에 전용 자전거 도로가 있는지 여부를 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:cycleway](https://wiki.openstreetmap.org/wiki/Key:cycleway)- `dataProvider[string]`: 조화된 데이터 엔티티의 제공자를 식별하는 문자 시퀀스  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 일반적으로 저장 플랫폼에 의해 할당됩니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프. 일반적으로 저장 플랫폼에 의해 할당됩니다.  - `description[string]`: 이 항목에 대한 설명  - `highwayType[string]`: 도로 또는 경로 유형을 분류하는 OSM highway 태그 값. 열거형:'motorway, trunk, primary, secondary, tertiary, unclassified, residential, service, living_street, pedestrian, track, footway, cycleway, path, motorway_link, trunk_link, primary_link, secondary_link, tertiary_link, road, busway, bus_guideway, construction, proposed'. 모델: [https://wiki.openstreetmap.org/wiki/Key:highway](https://wiki.openstreetmap.org/wiki/Key:highway)- `id[*]`: 엔티티의 고유 식별자  - `inclinePercent[number]`: 백분율로 표시된 도로 경사. 양수 값은 오르막을 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:incline](https://wiki.openstreetmap.org/wiki/Key:incline)- `lanes[number]`: 양방향 총 교통 차선 수. 모델: [https://wiki.openstreetmap.org/wiki/Key:lanes](https://wiki.openstreetmap.org/wiki/Key:lanes)- `layer[number]`: 동일한 위치의 다른 특징에 대한 수직 레이어로, 겹치는 경로를 나타내는 데 사용됩니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:layer](https://wiki.openstreetmap.org/wiki/Key:layer)- `lit[boolean]`: 도로가 가로등으로 조명되는지 여부를 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: 항목에 대한 Geojson 참조. Point, LineString, Polygon, MultiPoint, MultiLineString 또는 MultiPolygon이 될 수 있습니다.  - `maxSpeed[number]`: 시간당 킬로미터로 표시된 최대 허용 속도. 모델: [https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed)- `name[string]`: 이 항목의 이름  - `oneway[boolean]`: 도로가 자동차에 대해 일방통행인지 여부를 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:oneway](https://wiki.openstreetmap.org/wiki/Key:oneway)- `operator[string]`: 이 도로의 운영 또는 유지보수를 담당하는 엔티티의 이름. 모델: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: 원래 OpenStreetMap 요소 정수 식별자. 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM 요소의 마지막 수정 타임스탬프.  - `osmType[string]`: 원래 OpenStreetMap 요소의 유형. 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자 시퀀스를 포함하는 목록  - `ref[string]`: 공식 도로 참조 번호 또는 코드 (예: A-3, M-30). 모델: [https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)- `seeAlso[*]`: 이 항목에 대한 추가 리소스(예: Wikidata, Wikipedia)를 가리키는 URI 목록.  - `sidewalk[string]`: 도로 옆 보도의 존재 여부 및 측면을 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:sidewalk](https://wiki.openstreetmap.org/wiki/Key:sidewalk)- `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자 시퀀스. 소스 제공자의 정규화된 도메인 이름 또는 소스 객체에 대한 URL을 사용하는 것이 좋습니다.  - `surface[string]`: 도로의 물리적 표면 재료. 모델: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `tunnel[boolean]`: 이 도로 구간이 터널을 통과하는지 여부를 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:tunnel](https://wiki.openstreetmap.org/wiki/Key:tunnel)- `type[string]`: NGSI 엔티티 유형. OSMHighway여야 합니다.  - `widthMeters[number]`: 도로의 물리적 너비(미터). 모델: [https://wiki.openstreetmap.org/wiki/Key:width](https://wiki.openstreetmap.org/wiki/Key:width)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 필수 속성  
 - `highwayType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
@@ -34,7 +34,7 @@
 알파벳순 정렬 (자세한 내용은 클릭)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
-<details><summary><strong>전체 YAML 세부 정보</strong></summary>    
+<details><summary>**전체 YAML 세부 정보**</summary>    
 ```yaml  
 OSMHighway:    
   description: A road or path element from OpenStreetMap tagged with the highway key. Represents all types of roads, from motorways to footpaths, as defined by the OSM highway taxonomy.    
@@ -597,7 +597,7 @@ OSMHighway:
 ## 예시 페이로드    
 #### OSMHighway NGSI-v2 키-값 예시    
 다음은 키-값 형식의 JSON OSMHighway 예시입니다. 이는 `options=keyValues`를 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>예시 표시/숨기기</strong></summary>    
+<details><summary>**예시 표시/숨기기**</summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMHighway:way:5837156",  
@@ -642,7 +642,7 @@ OSMHighway:
 </details>  
 #### OSMHighway NGSI-v2 정규화된 예시    
 다음은 정규화된 JSON 형식의 OSMHighway 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>예시 표시/숨기기</strong></summary>    
+<details><summary>**예시 표시/숨기기**</summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMHighway:way:5837156",  
@@ -750,7 +750,7 @@ OSMHighway:
 </details>  
 #### OSMHighway NGSI-LD 키-값 예시    
 다음은 키-값 형식의 JSON-LD OSMHighway 예시입니다. 이는 `options=keyValues`를 사용할 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>예시 표시/숨기기</strong></summary>    
+<details><summary>**예시 표시/숨기기**</summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMHighway:way:5837156",  
@@ -798,7 +798,7 @@ OSMHighway:
 </details>  
 #### OSMHighway NGSI-LD 정규화된 예시    
 다음은 정규화된 JSON-LD 형식의 OSMHighway 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>예시 표시/숨기기</strong></summary>    
+<details><summary>**예시 표시/숨기기**</summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMHighway:way:5837156",  
@@ -903,7 +903,7 @@ OSMHighway:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-크기 단위를 처리하는 방법에 대한 답변은 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)를 참조하십시오.  
+크기 단위 처리 방법에 대한 답변은 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)를 참조하십시오.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
