@@ -7,31 +7,31 @@ Entidad: OSMParkingArea
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Descripción global: **Un área o instalación de estacionamiento de vehículos de OpenStreetMap etiquetada con amenity=parking. Representa aparcamientos en superficie, garajes de varias plantas, instalaciones subterráneas y otras áreas de estacionamiento organizadas.**  
-versión: 0.0.1  
+Descripción global: **Un área o instalación de aparcamiento de vehículos de OpenStreetMap etiquetada con amenity=parking. Representa aparcamientos en superficie, garajes de varias plantas, instalaciones subterráneas y otras áreas de aparcamiento organizadas.**  
+version: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
 <sup><sub>[*] Si no hay un tipo en un atributo es porque podría tener varios tipos o diferentes formatos/patrones</sub></sup>  
-- `access[string]`: Restricción de acceso para la instalación de estacionamiento  . Modelo: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: La dirección postal  . Modelo: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: El país. Por ejemplo, España  . Modelo: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: La localidad en la que se encuentra la dirección y que está en la región  . Modelo: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: La región en la que se encuentra la localidad y que está en el país  . Modelo: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, es gestionada por el gobierno local    
-	- `postOfficeBoxNumber[string]`: El número de apartado de correos para direcciones de apartado de correos. Por ejemplo, 03578  . Modelo: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Modelo: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: La dirección de la calle  . Modelo: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]`: Número que identifica una propiedad específica en una calle pública    
-- `alternateName[string]`: Un nombre alternativo para este elemento  - `areaServed[string]`: El área geográfica donde se proporciona un servicio o un elemento ofrecido  . Modelo: [https://schema.org/Text](https://schema.org/Text)- `capacity[number]`: Número total de plazas de aparcamiento disponibles  . Modelo: [https://wiki.openstreetmap.org/wiki/Key:capacity](https://wiki.openstreetmap.org/wiki/Key:capacity)- `capacityDisabled[number]`: Número de plazas de aparcamiento designadas para personas con discapacidad  . Modelo: [https://wiki.openstreetmap.org/wiki/Key:capacity:disabled](https://wiki.openstreetmap.org/wiki/Key:capacity:disabled)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Marca de tiempo de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `description[string]`: Una descripción de este elemento  - `fee[boolean]`: Indica si se cobra una tarifa por el estacionamiento  . Modelo: [https://wiki.openstreetmap.org/wiki/Key:fee](https://wiki.openstreetmap.org/wiki/Key:fee)- `id[*]`: Identificador único de la entidad  - `lit[boolean]`: Indica si el área de estacionamiento está iluminada por la noche  . Modelo: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `maxStay[string]`: Duración máxima permitida de estacionamiento (p. ej., '2h', '1 día')  . Modelo: [https://wiki.openstreetmap.org/wiki/Key:maxstay](https://wiki.openstreetmap.org/wiki/Key:maxstay)- `name[string]`: El nombre de este elemento  - `openingHours[string]`: Horario de apertura de la instalación de estacionamiento en sintaxis OSM opening_hours  . Modelo: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: Nombre de la entidad que opera o gestiona la instalación de estacionamiento  . Modelo: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: El identificador entero del elemento original de OpenStreetMap  . Modelo: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: Marca de tiempo de la última modificación del elemento OSM.  - `osmType[string]`: El tipo del elemento original de OpenStreetMap  . Modelo: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos del(de los) propietario(s)  - `parkingType[string]`: Tipo físico o diseño de la instalación de estacionamiento. Enum:'surface, multi-storey, underground, street_side, rooftop, sheds, carports, garage_boxes, lane'  . Modelo: [https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking)- `seeAlso[*]`: Lista de URIs que apuntan a recursos adicionales sobre este elemento.  - `source[string]`: Una secuencia de caracteres que proporciona la fuente original de los datos de la entidad como una URL. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente, o la URL al objeto de la fuente  - `surface[string]`: Material de la superficie del área de estacionamiento  . Modelo: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `type[string]`: Tipo de entidad NGSI. Debe ser OSMParkingArea  - `wheelchair[string]`: Disponibilidad de plazas de aparcamiento accesibles para sillas de ruedas  . Modelo: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
+- `access[string]`: Restricción de acceso para la instalación de aparcamiento. Modelo: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: La dirección postal. Modelo: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: El país. Por ejemplo, España. Modelo: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localidad en la que se encuentra la dirección postal y que está en la región. Modelo: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La región en la que se encuentra la localidad y que está en el país. Modelo: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, es gestionado por el gobierno local.    
+	- `postOfficeBoxNumber[string]`: El número del apartado de correos para direcciones de apartados postales. Por ejemplo, 03578. Modelo: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: El código postal. Por ejemplo, 24004. Modelo: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: La dirección postal. Modelo: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Número que identifica una propiedad específica en una calle pública.    
+- `alternateName[string]`: Un nombre alternativo para este elemento. - `areaServed[string]`: El área geográfica donde se proporciona un servicio o artículo ofrecido. Modelo: [https://schema.org/Text](https://schema.org/Text)- `capacity[number]`: Número total de plazas de aparcamiento disponibles. Modelo: [https://wiki.openstreetmap.org/wiki/Key:capacity](https://wiki.openstreetmap.org/wiki/Key:capacity)- `capacityDisabled[number]`: Número de plazas de aparcamiento designadas para personas con discapacidad. Modelo: [https://wiki.openstreetmap.org/wiki/Key:capacity:disabled](https://wiki.openstreetmap.org/wiki/Key:capacity:disabled)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada. - `dateCreated[date-time]`: Marca de tiempo de creación de la entidad. Normalmente la asignará la plataforma de almacenamiento. - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Normalmente la asignará la plataforma de almacenamiento. - `description[string]`: Una descripción de este elemento. - `fee[boolean]`: Indica si se cobra una tarifa por aparcar. Modelo: [https://wiki.openstreetmap.org/wiki/Key:fee](https://wiki.openstreetmap.org/wiki/Key:fee)- `id[*]`: Identificador único de la entidad. - `lit[boolean]`: Indica si el área de aparcamiento está iluminada por la noche. Modelo: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon. - `maxStay[string]`: Duración máxima permitida de aparcamiento (por ejemplo, '2h', '1 día'). Modelo: [https://wiki.openstreetmap.org/wiki/Key:maxstay](https://wiki.openstreetmap.org/wiki/Key:maxstay)- `name[string]`: El nombre de este elemento. - `openingHours[string]`: Horario de apertura de la instalación de aparcamiento en la sintaxis de horarios de OSM. Modelo: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: Nombre de la entidad que opera o gestiona la instalación de aparcamiento. Modelo: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: El identificador entero original del elemento de OpenStreetMap. Modelo: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: Marca de tiempo de la última modificación del elemento de OSM. - `osmType[string]`: El tipo del elemento original de OpenStreetMap. Modelo: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los IDs únicos del(los) propietario(s). - `parkingType[string]`: Tipo físico o disposición de la instalación de aparcamiento. Enum: 'surface, multi-storey, underground, street_side, rooftop, sheds, carports, garage_boxes, lane'. Modelo: [https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking)- `seeAlso[*]`: Lista de URIs que apuntan a recursos adicionales sobre este elemento. - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad como una URL. Se recomienda que sea el nombre de dominio completo del proveedor de la fuente o la URL del objeto de origen. - `surface[string]`: Material de la superficie del área de aparcamiento. Modelo: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `type[string]`: Tipo de Entidad NGSI. Debe ser OSMParkingArea. - `wheelchair[string]`: Disponibilidad de plazas de aparcamiento accesibles para sillas de ruedas. Modelo: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `location`  - `osmId`  - `osmType`  - `parkingType`  - `type`  <!-- /35-RequiredProperties -->  
+- `id` - `location` - `osmId` - `osmType` - `parkingType` - `type` <!-- /35-RequiredProperties -->  
 <!-- 40-NotesYaml -->  
 <!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
-Ordenado alfabéticamente (haga clic para ver detalles)  
+Ordenado alfabéticamente (haga clic para más detalles)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>detalles completos de yaml</strong></summary>    
@@ -534,7 +534,7 @@ OSMParkingArea:
 <!-- 80-Examples -->  
 ## Ejemplos de cargas útiles    
 #### Ejemplo de OSMParkingArea NGSI-v2 clave-valor    
-Aquí hay un ejemplo de OSMParkingArea en formato JSON como clave-valor. Esto es compatible con NGSI-v2 cuando se usa `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+Aquí hay un ejemplo de OSMParkingArea en formato JSON como clave-valor. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>mostrar/ocultar ejemplo</strong></summary>    
 ```json  
 {  
@@ -588,7 +588,7 @@ Aquí hay un ejemplo de OSMParkingArea en formato JSON como clave-valor. Esto es
 ```  
 </details>  
 #### Ejemplo normalizado de OSMParkingArea NGSI-v2    
-Aquí hay un ejemplo de OSMParkingArea en formato JSON como normalizado. Esto es compatible con NGSI-v2 cuando no se usan opciones y devuelve los datos de contexto de una entidad individual.  
+Aquí hay un ejemplo de OSMParkingArea en formato JSON como normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>mostrar/ocultar ejemplo</strong></summary>    
 ```json  
 {  
@@ -690,7 +690,7 @@ Aquí hay un ejemplo de OSMParkingArea en formato JSON como normalizado. Esto es
 ```  
 </details>  
 #### Ejemplo de OSMParkingArea NGSI-LD clave-valor    
-Aquí hay un ejemplo de OSMParkingArea en formato JSON-LD como clave-valor. Esto es compatible con NGSI-LD cuando se usa `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+Aquí hay un ejemplo de OSMParkingArea en formato JSON-LD como clave-valor. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>mostrar/ocultar ejemplo</strong></summary>    
 ```json  
 {  
@@ -747,7 +747,7 @@ Aquí hay un ejemplo de OSMParkingArea en formato JSON-LD como clave-valor. Esto
 ```  
 </details>  
 #### Ejemplo normalizado de OSMParkingArea NGSI-LD    
-Aquí hay un ejemplo de OSMParkingArea en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se usan opciones y devuelve los datos de contexto de una entidad individual.  
+Aquí hay un ejemplo de OSMParkingArea en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>mostrar/ocultar ejemplo</strong></summary>    
 ```json  
 {  
@@ -857,7 +857,7 @@ Aquí hay un ejemplo de OSMParkingArea en formato JSON-LD como normalizado. Esto
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar con las unidades de magnitud  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
