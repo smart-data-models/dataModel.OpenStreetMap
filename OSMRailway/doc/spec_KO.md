@@ -1,40 +1,80 @@
-<!-- 10-Header -->  
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-엔티티: OSMRailway  
-==================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMRailway/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-전역 설명: **OpenStreetMap에서 철도 키로 태그된 철도 선로 또는 인프라 요소. 본선 중철도부터 트램, 지하철, 푸니쿨라까지 모든 유형의 철도 인프라를 포함합니다.**  
-버전: 0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
+<!-- 10-Header -->
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
+엔터티: OSMRailway
+==================
+<!-- /10-Header -->
+<!-- 15-License -->
+[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMRailway/LICENSE.md)
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
+<!-- /15-License -->
+<!-- 20-Description -->
+전역 설명: **OpenStreetMap에서 railway 키로 태그가 지정된 철도 선로 또는 인프라 요소입니다. 간선 철도부터 트램, 지하철, 삭도까지 모든 유형의 철도 인프라를 포함합니다.**
+version: 0.0.1
+<!-- /20-Description -->
+<!-- 30-PropertiesList -->
 
-## 속성 목록  
+## 속성 목록
 
-<sup><sub>[*] 속성에 유형이 없는 경우, 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다.</sub></sup>  
-- `address[object]`: 우편 주소. 모델: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예를 들어, 스페인. 모델: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: 도로 주소가 있고 해당 지역에 있는 지역. 모델: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: 지역이 있고 해당 국가에 있는 지역. 모델: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: 구역은 일부 국가에서 지방 정부가 관리하는 행정 구역의 한 유형입니다.    
-	- `postOfficeBoxNumber[string]`: 사서함 주소의 사서함 번호. 예를 들어, 03578. 모델: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: 우편 번호. 예를 들어, 24004. 모델: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: 도로 주소. 모델: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]`: 공공 도로의 특정 속성을 식별하는 번호    
-- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공되는 항목이 제공되는 지리적 영역. 모델: [https://schema.org/Text](https://schema.org/Text)- `bridge[boolean]`: 이 철도 구간이 다리 위를 지나는지 여부를 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:bridge](https://wiki.openstreetmap.org/wiki/Key:bridge)- `dataProvider[string]`: 조화된 데이터 엔티티의 제공자를 식별하는 문자열  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 일반적으로 저장 플랫폼에 의해 할당됩니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프. 이는 일반적으로 저장 플랫폼에 의해 할당됩니다.  - `description[string]`: 이 항목에 대한 설명  - `electrified[string]`: 철도 전철화 방식. 모델: [https://wiki.openstreetmap.org/wiki/Key:electrified](https://wiki.openstreetmap.org/wiki/Key:electrified)- `frequency[number]`: 견인 전류의 전기 주파수(헤르츠). 모델: [https://wiki.openstreetmap.org/wiki/Key:frequency](https://wiki.openstreetmap.org/wiki/Key:frequency)- `gauge[number]`: 궤간(두 레일 사이의 거리, 밀리미터). 모델: [https://wiki.openstreetmap.org/wiki/Key:gauge](https://wiki.openstreetmap.org/wiki/Key:gauge)- `id[*]`: 엔티티의 고유 식별자  - `layer[number]`: 동일 위치의 다른 특징에 대한 수직 레이어. 모델: [https://wiki.openstreetmap.org/wiki/Key:layer](https://wiki.openstreetmap.org/wiki/Key:layer)- `location[*]`: 항목에 대한 Geojson 참조. Point, LineString, Polygon, MultiPoint, MultiLineString 또는 MultiPolygon이 될 수 있습니다.  - `maxSpeed[number]`: 이 선로에서 허용되는 최대 속도(킬로미터/시). 모델: [https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed)- `name[string]`: 이 항목의 이름  - `operator[string]`: 철도 운영자 또는 회사의 이름. 모델: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: 원본 OpenStreetMap 요소 정수 식별자. 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM 요소의 마지막 수정 타임스탬프.  - `osmType[string]`: 원본 OpenStreetMap 요소의 유형. 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자열 시퀀스를 포함하는 목록  - `railwayType[string]`: 철도 인프라 유형을 분류하는 OSM 철도 태그 값. Enum:'rail, subway, tram, light_rail, narrow_gauge, monorail, funicular, miniature, preserved, disused, abandoned, construction, proposed'. 모델: [https://wiki.openstreetmap.org/wiki/Key:railway](https://wiki.openstreetmap.org/wiki/Key:railway)- `ref[string]`: 공식 노선 참조 번호 또는 코드. 모델: [https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)- `seeAlso[*]`: 이 항목에 대한 추가 리소스를 가리키는 URI 목록.  - `service[string]`: 주요 운행 노선의 일부가 아닌 경우 서비스 선로 유형. 모델: [https://wiki.openstreetmap.org/wiki/Key:service](https://wiki.openstreetmap.org/wiki/Key:service)- `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자열. 소스 제공자의 정규화된 도메인 이름 또는 소스 객체의 URL을 사용하는 것이 좋습니다.  - `tracks[number]`: 병렬 선로 수. 모델: [https://wiki.openstreetmap.org/wiki/Key:tracks](https://wiki.openstreetmap.org/wiki/Key:tracks)- `tunnel[boolean]`: 이 철도 구간이 터널을 통과하는지 여부를 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:tunnel](https://wiki.openstreetmap.org/wiki/Key:tunnel)- `type[string]`: NGSI 엔티티 유형. OSMRailway여야 합니다.  - `usage[string]`: 철도 노선의 의도된 용도. 모델: [https://wiki.openstreetmap.org/wiki/Key:usage](https://wiki.openstreetmap.org/wiki/Key:usage)- `voltage[number]`: 견인에 사용되는 전압(볼트). 모델: [https://wiki.openstreetmap.org/wiki/Key:voltage](https://wiki.openstreetmap.org/wiki/Key:voltage)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-필수 속성  
-- `id`  - `location`  - `osmId`  - `osmType`  - `railwayType`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-NotesYaml -->  
-<!-- /40-NotesYaml -->  
-<!-- 50-DataModelHeader -->  
-## 속성의 데이터 모델 설명  
-알파벳순 정렬 (자세한 내용은 클릭)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
-<details><summary><strong>전체 YAML 세부 정보</strong></summary>    
+<sup><sub>[*] 속성에 타입이 없는 경우 여러 타입 또는 다양한 형식/패턴을 가질 수 있기 때문입니다</sub></sup>
+- `address[object]`: 우편 주소. 모델: [https://schema.org/address](https://schema.org/address)
+	- `addressCountry[string]`: 국가. 예: 스페인. 모델: [https://schema.org/addressCountry](https://schema.org/addressCountry)
+	- `addressLocality[string]`: 도로 주소가 있는 지역. 모델: [https://schema.org/addressLocality](https://schema.org/addressLocality)
+	- `addressRegion[string]`: 국가 내에 있는 지역 내의 지역. 모델: [https://schema.org/addressRegion](https://schema.org/addressRegion)
+	- `district[string]`: 일부 국가에서 지방 자치 단체에 의해 관리되는 행정 구역의 한 유형
+	- `postOfficeBoxNumber[string]`: 우편함 주소의 우편함 번호. 예: 03578. 모델: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
+	- `postalCode[string]`: 우편번호. 예: 24004. 모델: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
+	- `streetAddress[string]`: 도로 주소. 모델: [https://schema.org/streetAddress](https://schema.org/streetAddress)
+	- `streetNr[string]`: 공공 도로에서 특정 부동산을 식별하는 번호
+- `alternateName[string]`: 이 항목의 대체 이름
+- `areaServed[string]`: 서비스 또는 제공되는 항목이 제공되는 지리적 영역. 모델: [https://schema.org/Text](https://schema.org/Text)
+- `bridge[boolean]`: 이 철도 구간이 다리 위를 달리는지 여부. 모델: [https://wiki.openstreetmap.org/wiki/Key:bridge](https://wiki.openstreetmap.org/wiki/Key:bridge)
+- `dataProvider[string]`: 조화된 데이터 엔터티 제공자의 식별자를 나타내는 문자열 시퀀스
+- `dateCreated[date-time]`: 엔터티 생성 타임스탬프. 일반적으로 저장 플랫폼에서 할당됩니다
+- `dateModified[date-time]`: 엔터티의 마지막 수정 타임스탬프. 일반적으로 저장 플랫폼에서 할당됩니다
+- `description[string]`: 이 항목에 대한 설명
+- `electrified[string]`: 철도의 전철화 방법. 모델: [https://wiki.openstreetmap.org/wiki/Key:electrified](https://wiki.openstreetmap.org/wiki/Key:electrified)
+- `frequency[number]`: 헤르츠 단위의 견인 전류의 전기 주파수. 모델: [https://wiki.openstreetmap.org/wiki/Key:frequency](https://wiki.openstreetmap.org/wiki/Key:frequency)
+- `gauge[number]`: 밀리미터 단위의 궤간(두 레일 사이의 거리). 모델: [https://wiki.openstreetmap.org/wiki/Key:gauge](https://wiki.openstreetmap.org/wiki/Key:gauge)
+- `id[*]`: 엔터티의 고유 식별자
+- `layer[number]`: 동일한 위치에 있는 다른 피처에 대한 상대적인 수직 레이어. 모델: [https://wiki.openstreetmap.org/wiki/Key:layer](https://wiki.openstreetmap.org/wiki/Key:layer)
+- `location[*]`: 이 항목에 대한 Geojson 참조. Point, LineString, Polygon, MultiPoint, MultiLineString 또는 MultiPolygon일 수 있습니다
+- `maxSpeed[number]`: 이 선로의 최대 허용 속도(시속 킬로미터). 모델: [https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed)
+- `name[string]`: 이 항목의 이름
+- `operator[string]`: 철도 운영자 또는 회사의 이름. 모델: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)
+- `osmId[number]`: 원래 OpenStreetMap 요소의 정수 식별자. 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)
+- `osmLastModified[date-time]`: OSM 요소의 마지막 수정 타임스탬프
+- `osmType[string]`: 원래 OpenStreetMap 요소의 유형. 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)
+- `owner[array]`: 소유자(들)의 고유 ID를 참조하는 JSON 인코딩된 문자열 시퀀스를 포함하는 목록
+- `railwayType[string]`: 철도 인프라의 유형을 분류하는 OSM railway 태그 값. Enum: 'rail, subway, tram, light_rail, narrow_gauge, monorail, funicular, miniature, preserved, disused, abandoned, construction, proposed'. 모델: [https://wiki.openstreetmap.org/wiki/Key:railway](https://wiki.openstreetmap.org/wiki/Key:railway)
+- `ref[string]`: 공식 노선 참조 번호 또는 코드. 모델: [https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)
+- `seeAlso[*]`: 이 항목에 대한 추가 리소스를 가리키는 URI 목록
+- `service[string]`: 주 운행선 외부에 있는 경우 서비스 선로의 유형. 모델: [https://wiki.openstreetmap.org/wiki/Key:service](https://wiki.openstreetmap.org/wiki/Key:service)
+- `source[string]`: 엔터티 데이터의 원래 출처 URL로 제공되는 문자열 시퀀스. 소스 제공자의 완전히 정규화된 도메인 이름 또는 소스 객체의 URL을 권장합니다
+- `tracks[number]`: 평행한 선로의 수. 모델: [https://wiki.openstreetmap.org/wiki/Key:tracks](https://wiki.openstreetmap.org/wiki/Key:tracks)
+- `tunnel[boolean]`: 이 철도 구간이 터널을 통과하는지 여부. 모델: [https://wiki.openstreetmap.org/wiki/Key:tunnel](https://wiki.openstreetmap.org/wiki/Key:tunnel)
+- `type[string]`: NGSI 엔터티 유형. 값은 OSMRailway여야 합니다
+- `usage[string]`: 철도 노선의 intended usage(의도된 용도). 모델: [https://wiki.openstreetmap.org/wiki/Key:usage](https://wiki.openstreetmap.org/wiki/Key:usage)
+- `voltage[number]`: 견인에 사용되는 전압(볼트 단위). 모델: [https://wiki.openstreetmap.org/wiki/Key:voltage](https://wiki.openstreetmap.org/wiki/Key:voltage)
+<!-- /30-PropertiesList -->
+<!-- 35-RequiredProperties -->
+
+필수 속성
+- `id`
+- `location`
+- `osmId`
+- `osmType`
+- `railwayType`
+- `type`
+<!-- /35-RequiredProperties -->
+<!-- 40-NotesYaml -->
+<!-- /40-NotesYaml -->
+<!-- 50-DataModelHeader -->
+
+## 속성 데이터 모델 설명
+알파벳순으로 정렬됨(자세한 내용은 클릭)
+<!-- /50-DataModelHeader -->
+<!-- 60-ModelYaml -->
+<details><summary><strong>전체 YAML 세부 정보</strong></summary>
 ```yaml  
 OSMRailway:    
   description: A railway track or infrastructure element from OpenStreetMap tagged with the railway key. Covers all types of rail infrastructure, from mainline heavy rail to trams, subways and funiculars.    
@@ -553,16 +593,17 @@ OSMRailway:
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMRailway/schema.json    
   x-model-tags: OSM OpenStreetMap Transportation Railway    
   x-version: 0.0.1    
-```  
-</details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## 예시 페이로드    
-#### OSMRailway NGSI-v2 키-값 예시    
-다음은 키-값 형식의 JSON으로 된 OSMRailway 예시입니다. 이는 `options=keyValues`를 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>예시 표시/숨기기</strong></summary>    
+```
+</details>
+<!-- /60-ModelYaml -->
+<!-- 70-MiddleNotes -->
+<!-- /70-MiddleNotes -->
+<!-- 80-Examples -->
+
+## 예제 페이로드
+#### OSMRailway NGSI-v2 key-values 예제
+NGSI-v2에서 `options=keyValues`를 사용하고 개별 엔터티의 컨텍스트 데이터를 반환할 때 호환되는 key-values 형식의 OSMRailway JSON 예제입니다.
+<details><summary><strong>예제 보기/숨기기</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMRailway:way:2903182",  
@@ -604,11 +645,11 @@ OSMRailway:
     "https://www.openstreetmap.org/way/2903182"  
   ]  
 }  
-```  
-</details>  
-#### OSMRailway NGSI-v2 정규화된 예시    
-다음은 정규화된 JSON 형식의 OSMRailway 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>예시 표시/숨기기</strong></summary>    
+```
+</details>
+#### OSMRailway NGSI-v2 정규화 예제
+옵션을 사용하지 않고 NGSI-v2와 호환되며 개별 엔터티의 컨텍스트 데이터를 반환하는 정규화된 JSON 형식의 OSMRailway 예제입니다.
+<details><summary><strong>예제 보기/숨기기</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMRailway:way:2903182",  
@@ -728,11 +769,11 @@ OSMRailway:
     ]  
   }  
 }  
-```  
-</details>  
-#### OSMRailway NGSI-LD 키-값 예시    
-다음은 키-값 형식의 JSON-LD로 된 OSMRailway 예시입니다. 이는 `options=keyValues`를 사용할 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>예시 표시/숨기기</strong></summary>    
+```
+</details>
+#### OSMRailway NGSI-LD key-values 예제
+NGSI-LD에서 `options=keyValues`를 사용하고 개별 엔터티의 컨텍스트 데이터를 반환할 때 호환되는 key-values 형식의 JSON-LD OSMRailway 예제입니다.
+<details><summary><strong>예제 보기/숨기기</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMRailway:way:2903182",  
@@ -777,11 +818,11 @@ OSMRailway:
     "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
   ]  
 }  
-```  
-</details>  
-#### OSMRailway NGSI-LD 정규화된 예시    
-다음은 정규화된 JSON-LD 형식의 OSMRailway 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>예시 표시/숨기기</strong></summary>    
+```
+</details>
+#### OSMRailway NGSI-LD 정규화 예제
+옵션을 사용하지 않고 NGSI-LD와 호환되며 개별 엔터티의 컨텍스트 데이터를 반환하는 정규화된 JSON-LD 형식의 OSMRailway 예제입니다.
+<details><summary><strong>예제 보기/숨기기</strong></summary>
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMRailway:way:2903182",  
@@ -887,13 +928,13 @@ OSMRailway:
         "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
     ]  
 }  
-```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-크기 단위 처리 방법에 대한 답변은 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하십시오.  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
----  
+```
+</details><!-- /80-Examples -->
+<!-- 90-FooterNotes -->
+<!-- /90-FooterNotes -->
+<!-- 95-Units -->
+[FAQ 10](https://smartdatamodels.org/index.php/faqs/) 단위 처리에 대한 답변은 여기를 참조하십시오
+<!-- /95-Units -->
+<!-- 97-LastFooter -->
+---
 [Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
