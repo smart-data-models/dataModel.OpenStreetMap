@@ -8,30 +8,30 @@ Entidad: OSMPublicTransportStop
 <!-- /15-License -->  
 <!-- 20-Description -->  
 Descripción global: **Una parada, estación, andén o punto de embarque de transporte público de OpenStreetMap. Representa nodos y áreas donde los pasajeros suben o bajan de los servicios de transporte público, etiquetados con public_transport=* o etiquetas de modo específicas.**  
-versión: 0.0.1  
+version: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
 <sup><sub>[*] Si no hay un tipo en un atributo es porque podría tener varios tipos o diferentes formatos/patrones</sub></sup>  
-- `address[object]`: La dirección postal . Modelo: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: El país. Por ejemplo, España . Modelo: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: La localidad en la que se encuentra la dirección, y que está en la región . Modelo: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: La región en la que se encuentra la localidad, y que está en el país . Modelo: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, es gestionado por el gobierno local    
-	- `postOfficeBoxNumber[string]`: El número de apartado de correos para direcciones de apartado postal. Por ejemplo, 03578 . Modelo: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: El código postal. Por ejemplo, 24004 . Modelo: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: La dirección . Modelo: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]`: Número que identifica una propiedad específica en una calle pública    
-- `alternateName[string]`: Un nombre alternativo para este elemento  - `areaServed[string]`: El área geográfica donde se proporciona un servicio o artículo ofrecido . Modelo: [https://schema.org/Text](https://schema.org/Text)- `bench[boolean]`: Indica si hay un banco o asientos disponibles en esta parada . Modelo: [https://wiki.openstreetmap.org/wiki/Key:bench](https://wiki.openstreetmap.org/wiki/Key:bench)- `bin[boolean]`: Indica si hay una papelera presente en esta parada . Modelo: [https://wiki.openstreetmap.org/wiki/Key:bin](https://wiki.openstreetmap.org/wiki/Key:bin)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Marca de tiempo de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `description[string]`: Una descripción de este elemento  - `id[*]`: Identificador único de la entidad  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name[string]`: El nombre de este elemento  - `network[string]`: Nombre de la red de transporte público a la que pertenece esta parada . Modelo: [https://wiki.openstreetmap.org/wiki/Key:network](https://wiki.openstreetmap.org/wiki/Key:network)- `openingHours[string]`: Horario de apertura de la parada o estación en sintaxis OSM opening_hours . Modelo: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: Nombre del operador que gestiona los servicios en esta parada . Modelo: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: El identificador entero del elemento original de OpenStreetMap . Modelo: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: Marca de tiempo de la última modificación del elemento OSM.  - `osmType[string]`: El tipo del elemento original de OpenStreetMap . Modelo: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los Ids únicos del(de los) propietario(s)  - `publicTransportType[string]`: El valor de la etiqueta OSM public_transport que indica el rol de este elemento en la red de transporte público. Enum:'stop_position, platform, station, stop_area' . Modelo: [https://wiki.openstreetmap.org/wiki/Key:public_transport](https://wiki.openstreetmap.org/wiki/Key:public_transport)- `ref[string]`: Código o número de referencia oficial de la parada utilizado por el operador de transporte . Modelo: [https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)- `seeAlso[*]`: Lista de URIs que apuntan a recursos adicionales sobre este elemento.  - `shelter[boolean]`: Indica si hay un refugio contra la intemperie disponible en esta parada . Modelo: [https://wiki.openstreetmap.org/wiki/Key:shelter](https://wiki.openstreetmap.org/wiki/Key:shelter)- `source[string]`: Una secuencia de caracteres que proporciona la fuente original de los datos de la entidad como una URL. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente, o la URL al objeto fuente  - `tactilePaving[boolean]`: Indica si hay pavimento táctil para usuarios con discapacidad visual . Modelo: [https://wiki.openstreetmap.org/wiki/Key:tactile_paving](https://wiki.openstreetmap.org/wiki/Key:tactile_paving)- `transportMode[array]`: Lista de modos de transporte atendidos en esta parada . Modelo: [https://wiki.openstreetmap.org/wiki/Public_transport](https://wiki.openstreetmap.org/wiki/Public_transport)- `type[string]`: Tipo de entidad NGSI. Debe ser OSMPublicTransportStop  - `wheelchair[string]`: Indica el nivel de accesibilidad para sillas de ruedas en esta parada. Enum:'yes, no, limited' . Modelo: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
+- `address[object]`: La dirección postal. Modelo: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: El país. Por ejemplo, España. Modelo: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localidad en la que se encuentra la dirección de la calle, y que está en la región. Modelo: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La región en la que se encuentra la localidad, y que está en el país. Modelo: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, es gestionado por el gobierno local.    
+	- `postOfficeBoxNumber[string]`: El número de apartado postal para direcciones de apartados postales. Por ejemplo, 03578. Modelo: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: El código postal. Por ejemplo, 24004. Modelo: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: La dirección de la calle. Modelo: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Número que identifica una propiedad específica en una calle pública.    
+- `alternateName[string]`: Un nombre alternativo para este elemento. - `areaServed[string]`: El área geográfica donde se proporciona un servicio o artículo ofrecido. Modelo: [https://schema.org/Text](https://schema.org/Text)- `bench[boolean]`: Indica si hay un banco o asiento disponible en esta parada. Modelo: [https://wiki.openstreetmap.org/wiki/Key:bench](https://wiki.openstreetmap.org/wiki/Key:bench)- `bin[boolean]`: Indica si hay una papelera en esta parada. Modelo: [https://wiki.openstreetmap.org/wiki/Key:bin](https://wiki.openstreetmap.org/wiki/Key:bin)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada. - `dateCreated[date-time]`: Marca de tiempo de creación de la entidad. Esto será asignado normalmente por la plataforma de almacenamiento. - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Esto será asignado normalmente por la plataforma de almacenamiento. - `description[string]`: Una descripción de este elemento. - `id[*]`: Identificador único de la entidad. - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon. - `name[string]`: El nombre de este elemento. - `network[string]`: Nombre de la red de transporte público a la que pertenece esta parada. Modelo: [https://wiki.openstreetmap.org/wiki/Key:network](https://wiki.openstreetmap.org/wiki/Key:network)- `openingHours[string]`: Horario de apertura de la parada o estación en la sintaxis de horarios de OSM. Modelo: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: Nombre del operador que presta servicios en esta parada. Modelo: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: El identificador entero original del elemento de OpenStreetMap. Modelo: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: Marca de tiempo de la última modificación del elemento de OSM. - `osmType[string]`: El tipo del elemento original de OpenStreetMap. Modelo: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los IDs únicos del/los propietario(s). - `publicTransportType[string]`: El valor de la etiqueta public_transport de OSM que indica el rol de este elemento en la red de transporte público. Enum: 'stop_position, platform, station, stop_area'. Modelo: [https://wiki.openstreetmap.org/wiki/Key:public_transport](https://wiki.openstreetmap.org/wiki/Key:public_transport)- `ref[string]`: Código o número de referencia oficial de la parada utilizado por el operador de transporte. Modelo: [https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)- `seeAlso[*]`: Lista de URIs que apuntan a recursos adicionales sobre este elemento. - `shelter[boolean]`: Indica si hay un refugio contra la intemperie disponible en esta parada. Modelo: [https://wiki.openstreetmap.org/wiki/Key:shelter](https://wiki.openstreetmap.org/wiki/Key:shelter)- `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad como una URL. Se recomienda que sea el nombre de dominio completo del proveedor de la fuente o la URL del objeto fuente. - `tactilePaving[boolean]`: Indica si hay pavimento táctil para usuarios con discapacidad visual. Modelo: [https://wiki.openstreetmap.org/wiki/Key:tactile_paving](https://wiki.openstreetmap.org/wiki/Key:tactile_paving)- `transportMode[array]`: Lista de modos de transporte atendidos en esta parada. Modelo: [https://wiki.openstreetmap.org/wiki/Public_transport](https://wiki.openstreetmap.org/wiki/Public_transport)- `type[string]`: Tipo de Entidad NGSI. Debe ser OSMPublicTransportStop. - `wheelchair[string]`: Indica el nivel de accesibilidad para sillas de ruedas en esta parada. Enum: 'yes, no, limited'. Modelo: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `location`  - `osmId`  - `osmType`  - `publicTransportType`  - `type`  <!-- /35-RequiredProperties -->  
+- `id` - `location` - `osmId` - `osmType` - `publicTransportType` - `type` <!-- /35-RequiredProperties -->  
 <!-- 40-NotesYaml -->  
 <!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
-Ordenado alfabéticamente (haga clic para detalles)  
+Ordenado alfabéticamente (haga clic para ver los detalles)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>detalles completos de yaml</strong></summary>    
@@ -523,9 +523,9 @@ OSMPublicTransportStop:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## Ejemplos de cargas útiles    
-#### Ejemplo de OSMPublicTransportStop NGSI-v2 clave-valor    
-Aquí hay un ejemplo de OSMPublicTransportStop en formato JSON como clave-valor. Esto es compatible con NGSI-v2 cuando se usa `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+## Ejemplos de carga útil    
+#### Ejemplo de valores clave de OSMPublicTransportStop NGSI-v2    
+Aquí hay un ejemplo de OSMPublicTransportStop en formato JSON como valores clave. Esto es compatible con NGSI-v2 cuando se usa `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>mostrar/ocultar ejemplo</strong></summary>    
 ```json  
 {  
@@ -562,7 +562,7 @@ Aquí hay un ejemplo de OSMPublicTransportStop en formato JSON como clave-valor.
 ```  
 </details>  
 #### Ejemplo normalizado de OSMPublicTransportStop NGSI-v2    
-Aquí hay un ejemplo de OSMPublicTransportStop en formato JSON como normalizado. Esto es compatible con NGSI-v2 cuando no se usan opciones y devuelve los datos de contexto de una entidad individual.  
+Aquí hay un ejemplo de OSMPublicTransportStop en formato JSON como valores normalizados. Esto es compatible con NGSI-v2 cuando no se usan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>mostrar/ocultar ejemplo</strong></summary>    
 ```json  
 {  
@@ -646,8 +646,8 @@ Aquí hay un ejemplo de OSMPublicTransportStop en formato JSON como normalizado.
 }  
 ```  
 </details>  
-#### Ejemplo de OSMPublicTransportStop NGSI-LD clave-valor    
-Aquí hay un ejemplo de OSMPublicTransportStop en formato JSON-LD como clave-valor. Esto es compatible con NGSI-LD cuando se usa `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### Ejemplo de valores clave de OSMPublicTransportStop NGSI-LD    
+Aquí hay un ejemplo de OSMPublicTransportStop en formato JSON-LD como valores clave. Esto es compatible con NGSI-LD cuando se usa `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>mostrar/ocultar ejemplo</strong></summary>    
 ```json  
 {  
@@ -687,7 +687,7 @@ Aquí hay un ejemplo de OSMPublicTransportStop en formato JSON-LD como clave-val
 ```  
 </details>  
 #### Ejemplo normalizado de OSMPublicTransportStop NGSI-LD    
-Aquí hay un ejemplo de OSMPublicTransportStop en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se usan opciones y devuelve los datos de contexto de una entidad individual.  
+Aquí hay un ejemplo de OSMPublicTransportStop en formato JSON-LD como valores normalizados. Esto es compatible con NGSI-LD cuando no se usan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>mostrar/ocultar ejemplo</strong></summary>    
 ```json  
 {  
@@ -780,7 +780,7 @@ Aquí hay un ejemplo de OSMPublicTransportStop en formato JSON-LD como normaliza
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar con unidades de magnitud  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
