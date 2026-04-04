@@ -7,34 +7,34 @@ Entité : OSMPublicTransportStop
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Description globale : **Un arrêt, une station, un quai ou un point d'embarquement de transport public provenant d'OpenStreetMap. Représente les nœuds et les zones où les passagers montent ou descendent des services de transport public, étiquetés avec public_transport=* ou des étiquettes de mode spécifiques.**  
+Description globale : **Un arrêt, une gare, un quai ou un point d'embarquement de transport public provenant d'OpenStreetMap. Représente les nœuds et les zones où les passagers montent ou descendent des services de transport public, marqués avec public_transport=* ou des balises de mode spécifiques.**  
 version : 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-<sup><sub>[*] Si un attribut n'a pas de type, c'est qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>  
-- `address[object]` : L'adresse postale . Modèle : [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]` : Le pays. Par exemple, l'Espagne . Modèle : [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]` : La localité où se trouve l'adresse et qui est dans la région . Modèle : [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]` : La région où se trouve la localité et qui est dans le pays . Modèle : [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]` : Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local    
-	- `postOfficeBoxNumber[string]` : Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578 . Modèle : [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]` : Le code postal. Par exemple, 24004 . Modèle : [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]` : L'adresse de la rue . Modèle : [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]` : Numéro identifiant une propriété spécifique sur une voie publique    
-- `alternateName[string]` : Un nom alternatif pour cet élément  - `areaServed[string]` : La zone géographique où un service ou un article proposé est fourni . Modèle : [https://schema.org/Text](https://schema.org/Text)- `bench[boolean]` : Indique si un banc ou des sièges sont disponibles à cet arrêt . Modèle : [https://wiki.openstreetmap.org/wiki/Key:bench](https://wiki.openstreetmap.org/wiki/Key:bench)- `bin[boolean]` : Indique si une poubelle est présente à cet arrêt . Modèle : [https://wiki.openstreetmap.org/wiki/Key:bin](https://wiki.openstreetmap.org/wiki/Key:bin)- `dataProvider[string]` : Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]` : Horodatage de création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage  - `dateModified[date-time]` : Horodatage de la dernière modification de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage  - `description[string]` : Une description de cet élément  - `id[*]` : Identifiant unique de l'entité  - `location[*]` : Référence Geojson à l'élément. Il peut s'agir de Point, LineString, Polygon, MultiPoint, MultiLineString ou MultiPolygon  - `name[string]` : Le nom de cet élément  - `network[string]` : Nom du réseau de transport public auquel appartient cet arrêt . Modèle : [https://wiki.openstreetmap.org/wiki/Key:network](https://wiki.openstreetmap.org/wiki/Key:network)- `openingHours[string]` : Heures d'ouverture de l'arrêt ou de la station selon la syntaxe OSM opening_hours . Modèle : [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]` : Nom de l'opérateur exploitant les services à cet arrêt . Modèle : [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]` : L'identifiant entier de l'élément OpenStreetMap original . Modèle : [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]` : Horodatage de la dernière modification de l'élément OSM.  - `osmType[string]` : Le type de l'élément OpenStreetMap original . Modèle : [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]` : Une liste contenant une séquence de caractères encodée en JSON référençant les identifiants uniques du ou des propriétaires  - `publicTransportType[string]` : La valeur de l'étiquette OSM public_transport indiquant le rôle de cet élément dans le réseau de transport public. Enum:'stop_position, platform, station, stop_area' . Modèle : [https://wiki.openstreetmap.org/wiki/Key:public_transport](https://wiki.openstreetmap.org/wiki/Key:public_transport)- `ref[string]` : Code ou numéro de référence officiel de l'arrêt utilisé par l'opérateur de transport . Modèle : [https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)- `seeAlso[*]` : Liste d'URIs pointant vers des ressources supplémentaires concernant cet élément.  - `shelter[boolean]` : Indique si un abri météorologique est disponible à cet arrêt . Modèle : [https://wiki.openstreetmap.org/wiki/Key:shelter](https://wiki.openstreetmap.org/wiki/Key:shelter)- `source[string]` : Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur de la source, ou l'URL de l'objet source  - `tactilePaving[boolean]` : Indique si un pavé tactile pour les utilisateurs malvoyants est présent . Modèle : [https://wiki.openstreetmap.org/wiki/Key:tactile_paving](https://wiki.openstreetmap.org/wiki/Key:tactile_paving)- `transportMode[array]` : Liste des modes de transport desservis à cet arrêt . Modèle : [https://wiki.openstreetmap.org/wiki/Public_transport](https://wiki.openstreetmap.org/wiki/Public_transport)- `type[string]` : Type d'entité NGSI. Il doit s'agir de OSMPublicTransportStop  - `wheelchair[string]` : Indique le niveau d'accessibilité en fauteuil roulant à cet arrêt. Enum:'yes, no, limited' . Modèle : [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est qu'il peut en avoir plusieurs ou différents formats/modèles</sub></sup>  
+- `address[object]` : L'adresse postale. Modèle : [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]` : Le pays. Par exemple, Espagne. Modèle : [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]` : La localité dans laquelle se trouve l'adresse de la rue, et qui se trouve dans la région. Modèle : [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]` : La région dans laquelle se trouve la localité, et qui se trouve dans le pays. Modèle : [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]` : Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local.    
+	- `postOfficeBoxNumber[string]` : Le numéro de boîte postale pour les adresses postales. Par exemple, 03578. Modèle : [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]` : Le code postal. Par exemple, 24004. Modèle : [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]` : L'adresse de la rue. Modèle : [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]` : Numéro identifiant une propriété spécifique dans une rue publique.  
+- `alternateName[string]` : Un nom alternatif pour cet élément. - `areaServed[string]` : La zone géographique où un service ou un article proposé est fourni. Modèle : [https://schema.org/Text](https://schema.org/Text) - `bench[boolean]` : Indique si un banc ou un siège est disponible à cet arrêt. Modèle : [https://wiki.openstreetmap.org/wiki/Key:bench](https://wiki.openstreetmap.org/wiki/Key:bench) - `bin[boolean]` : Indique si une poubelle est présente à cet arrêt. Modèle : [https://wiki.openstreetmap.org/wiki/Key:bin](https://wiki.openstreetmap.org/wiki/Key:bin) - `dataProvider[string]` : Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisée. - `dateCreated[date-time]` : Horodatage de création de l'entité. Il sera généralement attribué par la plateforme de stockage. - `dateModified[date-time]` : Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage. - `description[string]` : Une description de cet élément. - `id[*]` : Identifiant unique de l'entité. - `location[*]` : Référence Geojson à l'élément. Il peut s'agir de Point, LineString, Polygon, MultiPoint, MultiLineString ou MultiPolygon. - `name[string]` : Le nom de cet élément. - `network[string]` : Nom du réseau de transport public auquel cet arrêt appartient. Modèle : [https://wiki.openstreetmap.org/wiki/Key:network](https://wiki.openstreetmap.org/wiki/Key:network) - `openingHours[string]` : Horaires d'ouverture de l'arrêt ou de la gare en syntaxe opening_hours d'OSM. Modèle : [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours) - `operator[string]` : Nom de l'opérateur qui gère les services à cet arrêt. Modèle : [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator) - `osmId[number]` : L'identifiant entier original de l'élément OpenStreetMap. Modèle : [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements) - `osmLastModified[date-time]` : Horodatage de la dernière modification de l'élément OSM. - `osmType[string]` : Le type de l'élément OpenStreetMap original. Modèle : [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements) - `owner[array]` : Une liste contenant une séquence d'identifiants uniques du ou des propriétaires, encodée en JSON. - `publicTransportType[string]` : La valeur de la balise public_transport d'OSM indiquant le rôle de cet élément dans le réseau de transport public. Enumération : 'stop_position, platform, station, stop_area'. Modèle : [https://wiki.openstreetmap.org/wiki/Key:public_transport](https://wiki.openstreetmap.org/wiki/Key:public_transport) - `ref[string]` : Code ou numéro de référence officiel de l'arrêt utilisé par l'opérateur de transport. Modèle : [https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref) - `seeAlso[*]` : Liste des URI pointant vers des ressources supplémentaires sur cet élément. - `shelter[boolean]` : Indique si un abri météorologique est disponible à cet arrêt. Modèle : [https://wiki.openstreetmap.org/wiki/Key:shelter](https://wiki.openstreetmap.org/wiki/Key:shelter) - `source[string]` : Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine pleinement qualifié du fournisseur source, ou l'URL de l'objet source. - `tactilePaving[boolean]` : Indique si un revêtement podotactile pour les personnes malvoyantes est présent. Modèle : [https://wiki.openstreetmap.org/wiki/Key:tactile_paving](https://wiki.openstreetmap.org/wiki/Key:tactile_paving) - `transportMode[array]` : Liste des modes de transport desservis à cet arrêt. Modèle : [https://wiki.openstreetmap.org/wiki/Public_transport](https://wiki.openstreetmap.org/wiki/Public_transport) - `type[string]` : Type d'entité NGSI. Il doit s'agir de OSMPublicTransportStop. - `wheelchair[string]` : Indique le niveau d'accessibilité en fauteuil roulant à cet arrêt. Enumération : 'yes, no, limited'. Modèle : [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `id`  - `location`  - `osmId`  - `osmType`  - `publicTransportType`  - `type`  <!-- /35-RequiredProperties -->  
+- `id` - `location` - `osmId` - `osmType` - `publicTransportType` - `type` <!-- /35-RequiredProperties -->  
 <!-- 40-NotesYaml -->  
 <!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## Description du modèle de données des propriétés  
-Trié par ordre alphabétique (cliquez pour les détails)  
+Trié par ordre alphabétique (cliquez pour plus de détails)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
-<details><summary>**détails complets du yaml**</summary>    
+<details><summary><strong>détails complets en yaml</strong></summary>    
 ```yaml  
 OSMPublicTransportStop:    
   description: A public transport stop, station, platform or boarding point from OpenStreetMap. Represents nodes and areas where passengers board or alight from public transport services, tagged with public_transport=* or specific mode tags.    
@@ -524,9 +524,9 @@ OSMPublicTransportStop:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## Exemples de charges utiles    
-#### Exemple de valeurs-clés OSMPublicTransportStop NGSI-v2    
-Voici un exemple d'OSMPublicTransportStop au format JSON en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
-<details><summary>**afficher/masquer l'exemple**</summary>    
+#### Exemple de valeurs clés NGSI-v2 pour OSMPublicTransportStop    
+Voici un exemple d'OSMPublicTransportStop au format JSON sous forme de paires clé-valeur. Ceci est compatible avec NGSI-v2 lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMPublicTransportStop:node:441728803",  
@@ -561,9 +561,9 @@ Voici un exemple d'OSMPublicTransportStop au format JSON en tant que valeurs-cl�
 }  
 ```  
 </details>  
-#### Exemple normalisé OSMPublicTransportStop NGSI-v2    
-Voici un exemple d'OSMPublicTransportStop au format JSON en tant que normalisé. Ceci est compatible avec NGSI-v2 lorsque les options ne sont pas utilisées et renvoie les données de contexte d'une entité individuelle.  
-<details><summary>**afficher/masquer l'exemple**</summary>    
+#### Exemple normalisé NGSI-v2 pour OSMPublicTransportStop    
+Voici un exemple d'OSMPublicTransportStop au format JSON sous forme normalisée. Ceci est compatible avec NGSI-v2 lorsque les options ne sont pas utilisées et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMPublicTransportStop:node:441728803",  
@@ -646,9 +646,9 @@ Voici un exemple d'OSMPublicTransportStop au format JSON en tant que normalisé.
 }  
 ```  
 </details>  
-#### Exemple de valeurs-clés OSMPublicTransportStop NGSI-LD    
-Voici un exemple d'OSMPublicTransportStop au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
-<details><summary>**afficher/masquer l'exemple**</summary>    
+#### Exemple de valeurs clés NGSI-LD pour OSMPublicTransportStop    
+Voici un exemple d'OSMPublicTransportStop au format JSON-LD sous forme de paires clé-valeur. Ceci est compatible avec NGSI-LD lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMPublicTransportStop:node:441728803",  
@@ -686,9 +686,9 @@ Voici un exemple d'OSMPublicTransportStop au format JSON-LD en tant que valeurs-
 }  
 ```  
 </details>  
-#### Exemple normalisé OSMPublicTransportStop NGSI-LD    
-Voici un exemple d'OSMPublicTransportStop au format JSON-LD en tant que normalisé. Ceci est compatible avec NGSI-LD lorsque les options ne sont pas utilisées et renvoie les données de contexte d'une entité individuelle.  
-<details><summary>**afficher/masquer l'exemple**</summary>    
+#### Exemple normalisé NGSI-LD pour OSMPublicTransportStop    
+Voici un exemple d'OSMPublicTransportStop au format JSON-LD sous forme normalisée. Ceci est compatible avec NGSI-LD lorsque les options ne sont pas utilisées et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMPublicTransportStop:node:441728803",  
@@ -780,8 +780,10 @@ Voici un exemple d'OSMPublicTransportStop au format JSON-LD en tant que normalis
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de gérer les unités de grandeur  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+
+--- FIN DU DOCUMENT ---
