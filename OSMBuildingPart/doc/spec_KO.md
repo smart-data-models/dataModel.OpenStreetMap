@@ -1,40 +1,94 @@
 <!-- 10-Header -->  
+ 
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+ 
 엔티티: OSMBuildingPart  
 =======================<!-- /10-Header -->  
+ 
 <!-- 15-License -->  
+ 
 [Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMBuildingPart/LICENSE.md)  
+ 
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
+ 
 <!-- 20-Description -->  
-전역 설명: **OpenStreetMap에서 building:part=* 태그가 지정된 건물의 일부 또는 섹션입니다. 다양한 섹션에 걸쳐 높이, 지붕 모양 또는 재료가 다른 건물을 나타내는 데 사용되며, 3D 건물 시각화(Simple 3D Buildings 표준)를 가능하게 합니다.**  
+ 
+전역 설명: **오픈스트리트맵에서 태그가 지정된 건물의 일부 또는 섹션입니다. 건물: 부분=* 태그를 사용하여 높이, 지붕 모양 또는 다른 섹션에서 재료가 다른 건물을 나타낼 수 있습니다. 3D 건물 시각화를 가능하게 합니다(간단한 3D 건물 표준).**  
 버전: 0.0.1  
 <!-- /20-Description -->  
+ 
 <!-- 30-PropertiesList -->  
+ 
 
 ## 속성 목록  
 
-<sup><sub>[*] 속성에 유형이 없는 경우 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다.</sub></sup>  
-- `address[object]`: 우편 주소. 모델: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 국가. 예를 들어, 스페인. 모델: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: 도로 주소가 있는 지역 내의 지방자치단체. 모델: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: 지방자치단체가 있는 국가 내의 지역. 모델: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: 지구는 일부 국가에서 지방 정부가 관리하는 행정 구역의 한 유형입니다.    
-	- `postOfficeBoxNumber[string]`: 사서함 주소의 우체국 사서함 번호. 예를 들어, 03578. 모델: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: 우편 번호. 예를 들어, 24004. 모델: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: 도로 주소. 모델: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]`: 공공 도로의 특정 부동산을 식별하는 번호    
-- `alternateName[string]`: 이 항목의 대체 이름  - `areaServed[string]`: 서비스 또는 제공되는 항목이 제공되는 지리적 영역. 모델: [https://schema.org/Text](https://schema.org/Text)- `buildingColour[string]`: 이 건물 부분의 외관 색상으로, CSS 색상 이름 또는 헥스 코드로 표현됩니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:building:colour](https://wiki.openstreetmap.org/wiki/Key:building:colour)- `buildingHeight[number]`: 이 건물 부분의 총 높이(미터). 모델: [https://wiki.openstreetmap.org/wiki/Key:height](https://wiki.openstreetmap.org/wiki/Key:height)- `buildingLevels[number]`: 이 건물 부분의 지상층 수. 모델: [https://wiki.openstreetmap.org/wiki/Key:building:levels](https://wiki.openstreetmap.org/wiki/Key:building:levels)- `buildingMaterial[string]`: 이 건물 부분의 주요 외관 또는 구조 재료. 모델: [https://wiki.openstreetmap.org/wiki/Key:building:material](https://wiki.openstreetmap.org/wiki/Key:building:material)- `buildingPartType[string]`: OSM building:part 태그 값. 일반적으로 'yes' 또는 건축 섹션에 대한 특정 유형 레이블. 모델: [https://wiki.openstreetmap.org/wiki/Key:building:part](https://wiki.openstreetmap.org/wiki/Key:building:part)- `dataProvider[string]`: 조화된 데이터 엔티티의 제공자를 식별하는 문자열  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 일반적으로 저장 플랫폼에 의해 할당됩니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프. 일반적으로 저장 플랫폼에 의해 할당됩니다.  - `description[string]`: 이 항목에 대한 설명  - `id[*]`: 엔티티의 고유 식별자  - `location[*]`: 항목에 대한 Geojson 참조. Point, LineString, Polygon, MultiPoint, MultiLineString 또는 MultiPolygon이 될 수 있습니다.  - `minHeight[number]`: 이 건물 부분이 시작되는 지상 높이(미터). 돌출부 및 고가 섹션에 사용됩니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:min_height](https://wiki.openstreetmap.org/wiki/Key:min_height)- `minLevel[number]`: 이 건물 부분이 시작되는 층 수준. 실내 매핑에 사용됩니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:min_level](https://wiki.openstreetmap.org/wiki/Key:min_level)- `name[string]`: 이 항목의 이름  - `osmId[number]`: 원본 OpenStreetMap 요소 정수 식별자. 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM 요소의 마지막 수정 타임스탬프.  - `osmType[string]`: 원본 OpenStreetMap 요소의 유형. 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: 소유자의 고유 ID를 참조하는 JSON 인코딩된 문자열 시퀀스를 포함하는 목록  - `refBuilding[uri]`: 이 부분이 속한 상위 OSMBuilding 엔티티에 대한 URI 참조.  - `roofColour[string]`: 이 부분의 지붕 색상으로, CSS 색상 이름 또는 헥스 코드로 표현됩니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:roof:colour](https://wiki.openstreetmap.org/wiki/Key:roof:colour)- `roofMaterial[string]`: 이 부분의 지붕 표면의 주요 재료. 모델: [https://wiki.openstreetmap.org/wiki/Key:roof:material](https://wiki.openstreetmap.org/wiki/Key:roof:material)- `roofShape[string]`: 이 건물 부분의 지붕 모양. Enum:'flat, gabled, hipped, half-hipped, pyramidal, gambrel, mansard, dome, skillion, round, saltbox, onion, cone'. 모델: [https://wiki.openstreetmap.org/wiki/Key:roof:shape](https://wiki.openstreetmap.org/wiki/Key:roof:shape)- `seeAlso[*]`: 이 항목에 대한 추가 리소스를 가리키는 URI 목록.  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자열 시퀀스. 소스 제공자의 정규화된 도메인 이름 또는 소스 객체에 대한 URL을 사용하는 것이 좋습니다.  - `type[string]`: NGSI 엔티티 유형. OSMBuildingPart여야 합니다.  <!-- /30-PropertiesList -->  
+ 
+<sup><sub>[*] 속성에 유형이 없으면 여러 유형이나 다른 형식/패턴을 가질 수 있습니다</sub></sup>  
+- `address[object]`: 우편 주소입니다. 모델: [https://schema.org/address](https://schema.org/address)  
+	- `addressCountry[string]`: 국가입니다. 예: 스페인입니다. 모델: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 거리 주소가 있는 지역이며, 지역은 국가에 있습니다. 모델: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 지역은 지방에 있으며, 지방은 국가에 있습니다. 모델: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 구역은 일부 국가에서 지방 정부가 관리하는 행정 구역 유형입니다.  
+	- `postOfficeBoxNumber[string]`: 우편함 주소의 우편함 번호입니다. 예: 03578입니다. 모델: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 우편 번호입니다. 예: 24004입니다. 모델: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 거리 주소입니다. 모델: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 공공 도로에서 특정 속성을 식별하는 번호입니다.  
+- `alternateName[string]`: 이 항목의 대체 이름입니다.  
+- `areaServed[string]`: 서비스 또는 제공된 항목이 제공되는 지리적 영역입니다. 모델: [https://schema.org/Text](https://schema.org/Text)  
+- `buildingColour[string]`: 이 건물 부분의 파사드 색상입니다. CSS 색상 이름 또는 16진수 코드로 표현됩니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:building:colour](https://wiki.openstreetmap.org/wiki/Key:building:colour)  
+- `buildingHeight[number]`: 이 건물 부분의 총 높이(미터 단위)입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:height](https://wiki.openstreetmap.org/wiki/Key:height)  
+- `buildingLevels[number]`: 이 건물 부분의 지상층 수입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:building:levels](https://wiki.openstreetmap.org/wiki/Key:building:levels)  
+- `buildingMaterial[string]`: 이 건물 부분의 주요 파사드 또는 구조 재료입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:building:material](https://wiki.openstreetmap.org/wiki/Key:building:material)  
+- `buildingPartType[string]`: OSM 건물: 부분 태그 값입니다. 일반적으로 'yes' 또는 건물 섹션의 특정 유형 레이블입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:building:part](https://wiki.openstreetmap.org/wiki/Key:building:part)  
+- `dataProvider[string]`: 조화된 데이터 엔티티를 제공하는 공급자의 일련의 문자입니다.  
+- `dateCreated[date-time]`: 엔티티 생성 타임스탬프입니다. 일반적으로 저장 플랫폼에 의해 할당됩니다.  
+- `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 일반적으로 저장 플랫폼에 의해 할당됩니다.  
+- `description[string]`: 이 항목에 대한 설명입니다.  
+- `id[*]`: 엔티티의 고유 식별자입니다.  
+- `location[*]`: 항목에 대한 Geojson 참조입니다. 점, 선, 다각형, 다중 점, 다중 선, 다중 다각형 중 하나일 수 있습니다.  
+- `minHeight[number]`: 이 건물 부분이 시작하는 높이(미터 단위)입니다. 돌출부 및 고상 섹션에 사용됩니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:min_height](https://wiki.openstreetmap.org/wiki/Key:min_height)  
+- `minLevel[number]`: 이 건물 부분이 시작하는 층 수입니다. 실내 매핑에 사용됩니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:min_level](https://wiki.openstreetmap.org/wiki/Key:min_level)  
+- `name[string]`: 이 항목의 이름입니다.  
+- `osmId[number]`: 원래 오픈스트리트맵 요소의 정수 식별자입니다. 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)  
+- `osmLastModified[date-time]`: OSM 요소의 마지막 수정 타임스탬프입니다.  
+- `osmType[string]`: 원래 오픈스트리트맵 요소의 유형입니다. 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)  
+- `owner[array]`: 고유 ID를 참조하는 JSON으로 인코딩된 문자열 시퀀스를 포함하는 목록입니다.  
+- `refBuilding[uri]`: 이 부분이 속한 부모 OSMBuilding 엔티티를 참조하는 URI입니다.  
+- `roofColour[string]`: 이 부분의 지붕 색상입니다. CSS 색상 이름 또는 16진수 코드로 표현됩니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:roof:colour](https://wiki.openstreetmap.org/wiki/Key:roof:colour)  
+- `roofMaterial[string]`: 이 부분의 지붕 표면의 주요 재료입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:roof:material](https://wiki.openstreetmap.org/wiki/Key:roof:material)  
+- `roofShape[string]`: 이 건물 부분의 지붕 모양입니다. 열거형: '평면, 사면, 사다리꼴, 반사다리꼴, 피라미드, 감벨, 만사드, 돔, 스킬리온, 원형, 솔트박스, 양파, 원뿔'입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:roof:shape](https://wiki.openstreetmap.org/wiki/Key:roof:shape)  
+- `seeAlso[*]`: 이 항목에 대한 추가 리소스를 가리키는 URI 목록입니다.  
+- `source[string]`: 엔티티 데이터의 원래 출처를 URL로 제공하는 문자열입니다. 제공자의 완전한 도메인 이름 또는 원본 개체의 URL을 권장합니다.  
+- `type[string]`: NGSI 엔티티 유형입니다. OSMBuildingPart이어야 합니다.  
+<!-- /30-PropertiesList -->  
+ 
 <!-- 35-RequiredProperties -->  
+ 
 필수 속성  
-- `buildingPartType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
+- `buildingPartType`  
+- `id`  
+- `location`  
+- `osmId`  
+- `osmType`  
+- `type`  
+<!-- /35-RequiredProperties -->  
+ 
 <!-- 40-NotesYaml -->  
+ 
 <!-- /40-NotesYaml -->  
+ 
 <!-- 50-DataModelHeader -->  
-## 속성의 데이터 모델 설명  
-알파벳순 정렬 (자세한 내용은 클릭)  
+ 
+## 속성에 대한 데이터 모델 설명  
+ 
+알파벳순으로 정렬됨(클릭하여 자세한 정보 확인)  
 <!-- /50-DataModelHeader -->  
+ 
 <!-- 60-ModelYaml -->  
-<details><summary>**전체 YAML 세부 정보**</summary>    
+ 
+<details><summary><strong>전체 YAML 세부 정보</strong></summary>    
+ 
 ```yaml  
 OSMBuildingPart:    
   description: A part or section of a building from OpenStreetMap tagged with building:part=*. Used to represent buildings with varying heights, roof shapes, or materials across different sections, enabling 3D building visualisation (Simple 3D Buildings standard).    
@@ -516,13 +570,20 @@ OSMBuildingPart:
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
+ 
 <!-- 70-MiddleNotes -->  
+ 
 <!-- /70-MiddleNotes -->  
+ 
 <!-- 80-Examples -->  
-## 페이로드 예시    
-#### OSMBuildingPart NGSI-v2 키-값 예시    
-다음은 키-값 형식의 JSON OSMBuildingPart 예시입니다. 이는 `options=keyValues`를 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary>**예시 표시/숨기기**</summary>    
+ 
+## 예제 페이로드    
+ 
+#### OSMBuildingPart NGSI-v2 키-값 예제    
+ 
+OSMBuildingPart의 JSON 형식의 키-값 예입니다. 이는 `options=keyValues`를 사용하여 개별 엔티티의 컨텍스트 데이터를 반환할 때 NGSI-v2와 호환됩니다.  
+<details><summary><strong>예제 표시/숨기기</strong></summary>    
+ 
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMBuildingPart:way:305981241",  
@@ -573,9 +634,12 @@ OSMBuildingPart:
 }  
 ```  
 </details>  
-#### OSMBuildingPart NGSI-v2 정규화된 예시    
-다음은 정규화된 JSON 형식의 OSMBuildingPart 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary>**예시 표시/숨기기**</summary>    
+ 
+#### OSMBuildingPart NGSI-v2 정규화된 예제    
+ 
+OSMBuildingPart의 JSON 형식의 정규화된 예입니다. 이는 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>예제 표시/숨기기</strong></summary>    
+ 
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMBuildingPart:way:305981241",  
@@ -683,9 +747,12 @@ OSMBuildingPart:
 }  
 ```  
 </details>  
-#### OSMBuildingPart NGSI-LD 키-값 예시    
-다음은 키-값 형식의 JSON-LD OSMBuildingPart 예시입니다. 이는 `options=keyValues`를 사용할 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary>**예시 표시/숨기기**</summary>    
+ 
+#### OSMBuildingPart NGSI-LD 키-값 예제    
+ 
+OSMBuildingPart의 JSON-LD 형식의 키-값 예입니다. 이는 `options=keyValues`를 사용하여 개별 엔티티의 컨텍스트 데이터를 반환할 때 NGSI-LD와 호환됩니다.  
+<details><summary><strong>예제 표시/숨기기</strong></summary>    
+ 
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMBuildingPart:way:305981241",  
@@ -739,9 +806,12 @@ OSMBuildingPart:
 }  
 ```  
 </details>  
-#### OSMBuildingPart NGSI-LD 정규화된 예시    
-다음은 정규화된 JSON-LD 형식의 OSMBuildingPart 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary>**예시 표시/숨기기**</summary>    
+ 
+#### OSMBuildingPart NGSI-LD 정규화된 예제    
+ 
+OSMBuildingPart의 JSON-LD 형식의 정규화된 예입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>예제 표시/숨기기</strong></summary>    
+ 
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMBuildingPart:way:305981241",  
@@ -845,11 +915,19 @@ OSMBuildingPart:
 }  
 ```  
 </details><!-- /80-Examples -->  
+ 
 <!-- 90-FooterNotes -->  
+ 
 <!-- /90-FooterNotes -->  
+ 
 <!-- 95-Units -->  
-크기 단위 처리 방법에 대한 답변은 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하십시오.  
+ 
+[FAQ 10](https://smartdatamodels.org/index.php/faqs/)를 참조하여 크기 단위를 처리하는 방법에 대한 답변을 얻으십시오.  
 <!-- /95-Units -->  
+ 
 <!-- 97-LastFooter -->  
+ 
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+ 
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+ 
