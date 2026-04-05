@@ -1,40 +1,90 @@
 <!-- 10-Header -->  
+ 
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティ: OSMNatural  
+ 
+Entity: OSMNatural  
 ==================<!-- /10-Header -->  
+ 
 <!-- 15-License -->  
+ 
 [Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMNatural/LICENSE.md)  
+ 
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
+ 
 <!-- 20-Description -->  
-グローバル説明: **OpenStreetMap の自然のフィーチャーで、natural=*. 水域、森林、低木地、山頂、砂浜などの地理的フィーチャーを表します**  
+ 
+グローバルな説明: **OpenStreetMapで自然= *とタグ付けされた自然の特徴。水域、森林、低木、ピーク、ビーチなど、地理的な特徴を記述する**  
+ 
 バージョン: 0.0.1  
 <!-- /20-Description -->  
+ 
 <!-- 30-PropertiesList -->  
+ 
 
 ## プロパティのリスト  
 
-<sup><sub>[*] 属性にタイプがない場合は、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があることを意味します</sub></sup>  
-- `address[object]`: 郵便住所。 モデル: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例: スペイン。 モデル: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: 住所がある地域で、国の中にある地域。 モデル: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: 国の中にある地域にある地域。 モデル: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: 行政区画の一種で、一部の国では地方自治体によって管理されています。    
-	- `postOfficeBoxNumber[string]`: 私書箱住所の郵便番号。例: 03578。 モデル: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: 郵便番号。例: 24004。 モデル: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: 住所。 モデル: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]`: 公共の通りにある特定のプロパティを識別する番号。    
-- `alternateName[string]`: このアイテムの別名。 - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的エリア。 モデル: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータエンティティのプロバイダーを識別する文字のシーケンス。 - `dateCreated[date-time]`: エンティティ作成タイムスタンプ。通常はストレージプラットフォームによって割り当てられます。 - `dateModified[date-time]`: エンティティの最終変更タイムスタンプ。通常はストレージプラットフォームによって割り当てられます。 - `description[string]`: このアイテムの説明。 - `elevation[number]`: 海抜メートル単位でのフィーチャーの標高 (ele)。通常は山頂用。 モデル: [https://wiki.openstreetmap.org/wiki/Key:ele](https://wiki.openstreetmap.org/wiki/Key:ele)- `id[*]`: エンティティの一意の識別子。 - `leafCycle[string]`: 木または森林の葉のサイクル。 モデル: [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle](https://wiki.openstreetmap.org/wiki/Key:leaf_cycle)- `leafType[string]`: 木または森林の葉の種類。 モデル: [https://wiki.openstreetmap.org/wiki/Key:leaf_type](https://wiki.openstreetmap.org/wiki/Key:leaf_type)- `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、または MultiPolygon のいずれかになります。 - `name[string]`: このアイテムの名前。 - `naturalType[string]`: 地質学的または物理的なフィーチャーを分類する OSM の自然タグ。Enum: 'water, wood, tree, scrub, heath, grassland, peak, ridge, bare_rock, sand, beach, coastline, spring, cave_entrance, wetland...'。 モデル: [https://wiki.openstreetmap.org/wiki/Key:natural](https://wiki.openstreetmap.org/wiki/Key:natural)- `osmId[number]`: 元の OpenStreetMap 要素の整数識別子。 - `osmLastModified[date-time]`: 最終変更のタイムスタンプ。 - `osmType[string]`: 元の OSM 要素のタイプ。 - `owner[array]`: 所有者のユニーク ID を参照する JSON エンコードされた文字シーケンスを含むリスト。 - `seeAlso[*]`: 追加のリソースを指す URI のリスト。 - `source[string]`: エンティティデータの元のソースを URL として示す文字シーケンス。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへの URL を推奨します。 - `type[string]`: NGSI エンティティタイプ。OSMNatural である必要があります。 - `water[string]`: 水域のタイプ (natural=water の場合)。例: lake, reservoir, river, pond。 モデル: [https://wiki.openstreetmap.org/wiki/Key:water](https://wiki.openstreetmap.org/wiki/Key:water)- `wetland[string]`: 湿地のタイプ (natural=wetland の場合)。例: swamp, bog, marsh。 モデル: [https://wiki.openstreetmap.org/wiki/Key:wetland](https://wiki.openstreetmap.org/wiki/Key:wetland)<!-- /30-PropertiesList -->  
+ 
+<sup><sub>[*] 属性にタイプがない場合は、複数のタイプまたは異なる形式/パターンを持つ可能性があるためです</sub></sup>  
+- `address[object]`: 郵送先住所。モデル: [https://schema.org/address](https://schema.org/address)  
+	- `addressCountry[string]`: 国。例: スペイン。モデル: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 街道住所が存在する、地域内の自治体。モデル: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 自治体が存在する、国内の地域。モデル: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 一部の国では、地方自治体によって管理される行政区画の一種である地区  
+	- `postOfficeBoxNumber[string]`: POボックス住所のポストオフィスボックス番号。例: 03578。モデル: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例: 24004。モデル: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 街道住所。モデル: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 公共の通りで特定のプロパティを識別する番号  
+- `alternateName[string]`: このアイテムの別名  
+- `areaServed[string]`: サービスまたは提供されたアイテムが提供される地理的なエリア。モデル: [https://schema.org/Text](https://schema.org/Text)  
+- `dataProvider[string]`: ハーモナイズされたデータエンティティの提供者を識別する文字シーケンス  
+- `dateCreated[date-time]`: エンティティの作成タイムスタンプ。このタイムスタンプは通常、ストレージプラットフォームによって割り当てられます  
+- `dateModified[date-time]`: エンティティの最後の変更のタイムスタンプ。このタイムスタンプは通常、ストレージプラットフォームによって割り当てられます  
+- `description[string]`: このアイテムの説明  
+- `elevation[number]`: ピークの場合の通常の高さ（ele）をメートル単位で海抜から測定。モデル: [https://wiki.openstreetmap.org/wiki/Key:ele](https://wiki.openstreetmap.org/wiki/Key:ele)  
+- `id[*]`: エンティティの一意の識別子  
+- `leafCycle[string]`: 木や森林の葉のサイクル。モデル: [https://wiki.openstreetmap.org/wiki/Key:leaf_cycle](https://wiki.openstreetmap.org/wiki/Key:leaf_cycle)  
+- `leafType[string]`: 木や森林の葉の種類。モデル: [https://wiki.openstreetmap.org/wiki/Key:leaf_type](https://wiki.openstreetmap.org/wiki/Key:leaf_type)  
+- `location[*]`: アイテムへのGeojsonリファレンス。ポイント、ラインストリング、ポリゴン、マルチポイント、マルチラインストリング、またはマルチポリゴンにすることができます  
+- `name[string]`: このアイテムの名前  
+- `naturalType[string]`: 地質学的または物理的な特徴を分類するOSM自然タグ。列挙: '水、木、樹木、低木、荒地、草地、ピーク、尾根、裸岩、砂、ビーチ、海岸、泉、洞窟の入り口、湿地...'。モデル: [https://wiki.openstreetmap.org/wiki/Key:natural](https://wiki.openstreetmap.org/wiki/Key:natural)  
+- `osmId[number]`: 元のOpenStreetMap要素の整数識別子  
+- `osmLastModified[date-time]`: 最終変更のタイムスタンプ  
+- `osmType[string]`: 元のOSM要素のタイプ  
+- `owner[array]`: 所有者の一意のIDを参照するJSONエンコード文字シーケンスを含むリスト  
+- `seeAlso[*]`: 追加のリソースを指すURIのリスト  
+- `source[string]`: エンティティデータの元のソースをURLとして提供する文字シーケンス。ソースプロバイダーの完全なドメイン名、またはソースオブジェクトのURLを推奨します  
+- `type[string]`: NGSIエンティティタイプ。OSMNaturalである必要があります  
+- `water[string]`: 自然=水の場合の水域のタイプ（例: 湖、貯水池、川、池）。モデル: [https://wiki.openstreetmap.org/wiki/Key:water](https://wiki.openstreetmap.org/wiki/Key:water)  
+- `wetland[string]`: 自然=湿地の場合の湿地のタイプ（例: 沼、泥炭地、沼地）。モデル: [https://wiki.openstreetmap.org/wiki/Key:wetland](https://wiki.openstreetmap.org/wiki/Key:wetland)  
+<!-- /30-PropertiesList -->  
+ 
 <!-- 35-RequiredProperties -->  
-必須プロパティ  
-- `id` - `location` - `naturalType` - `osmId` - `osmType` - `type` <!-- /35-RequiredProperties -->  
+ 
+必要なプロパティ  
+- `id`  
+- `location`  
+- `naturalType`  
+- `osmId`  
+- `osmType`  
+- `type`  
+<!-- /35-RequiredProperties -->  
+ 
 <!-- 40-NotesYaml -->  
+ 
 <!-- /40-NotesYaml -->  
+ 
 <!-- 50-DataModelHeader -->  
-## データモデルプロパティの説明  
-アルファベット順 (クリックして詳細を表示)  
+ 
+## プロパティのデータモデル説明  
+ 
+アルファベット順に並べ替え（詳細をクリック）  
 <!-- /50-DataModelHeader -->  
+ 
 <!-- 60-ModelYaml -->  
-<details><summary><strong>完全な yaml 詳細</strong></summary>    
+ 
+<details><summary><strong>全てのYAMLの詳細</strong></summary>    
+ 
 ```yaml  
 OSMNatural:    
   description: A natural feature from OpenStreetMap tagged with natural=*. Describes geographical features such as water bodies, woods, scrub, peaks, beaches, etc    
@@ -503,13 +553,20 @@ OSMNatural:
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
+ 
 <!-- 70-MiddleNotes -->  
+ 
 <!-- /70-MiddleNotes -->  
+ 
 <!-- 80-Examples -->  
-## サンプルペイロード    
-#### OSMNatural NGSI-v2 キー値ペアの例    
-これは、キー値ペアとしての OSMNatural の JSON フォーマットの例です。これは、`options=keyValues` を使用して NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+ 
+## ペイロードの例    
+ 
+#### OSMNatural NGSI-v2 キー値の例    
+ 
+OSMNaturalのJSON形式のキー値の例です。これは、`options=keyValues`を使用してNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>例の表示/非表示</strong></summary>    
+ 
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMNatural:node:88990011",  
@@ -535,9 +592,12 @@ OSMNatural:
 }  
 ```  
 </details>  
+ 
 #### OSMNatural NGSI-v2 正規化された例    
-これは、正規化された OSMNatural の JSON フォーマットの例です。これは、オプションを使用しない場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+ 
+OSMNaturalのJSON形式の正規化された例です。これは、オプションを使用しないNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>例の表示/非表示</strong></summary>    
+ 
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMNatural:node:88990011",  
@@ -596,9 +656,12 @@ OSMNatural:
 }  
 ```  
 </details>  
-#### OSMNatural NGSI-LD キー値ペアの例    
-これは、キー値ペアとしての OSMNatural の JSON-LD フォーマットの例です。これは、`options=keyValues` を使用して NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+ 
+#### OSMNatural NGSI-LD キー値の例    
+ 
+OSMNaturalのJSON-LD形式のキー値の例です。これは、`options=keyValues`を使用してNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>例の表示/非表示</strong></summary>    
+ 
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMNatural:node:88990011",  
@@ -627,9 +690,12 @@ OSMNatural:
 }  
 ```  
 </details>  
+ 
 #### OSMNatural NGSI-LD 正規化された例    
-これは、正規化された OSMNatural の JSON-LD フォーマットの例です。これは、オプションを使用しない場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+ 
+OSMNaturalのJSON-LD形式の正規化された例です。これは、オプションを使用しないNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>例の表示/非表示</strong></summary>    
+ 
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMNatural:node:88990011",  
@@ -689,11 +755,19 @@ OSMNatural:
 }  
 ```  
 </details><!-- /80-Examples -->  
+ 
 <!-- 90-FooterNotes -->  
+ 
 <!-- /90-FooterNotes -->  
+ 
 <!-- 95-Units -->  
-大きさの単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/) を参照してください。  
+ 
+[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照して、量の単位を扱う方法についての回答を得てください  
 <!-- /95-Units -->  
+ 
 <!-- 97-LastFooter -->  
+ 
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+ 
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+ 
