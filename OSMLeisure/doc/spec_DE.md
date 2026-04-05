@@ -1,41 +1,41 @@
-<!-- 10-Header -->
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
-Entität: OSMLeisure
-==================<!-- /10-Header -->
-<!-- 15-License -->
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMLeisure/LICENSE.md)
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
-<!-- /15-License -->
-<!-- 20-Description -->
-Globale Beschreibung: **Ein Ort für Freizeit, Sport oder Erholung von OpenStreetMap mit dem Tag leisure=*. Beinhaltet Parks, Sportplätze, Schwimmbäder, Stadien usw.**
-Version: 0.0.1
-<!-- /20-Description -->
-<!-- 30-PropertiesList -->
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: OSMLeisure  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMLeisure/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Globale Beschreibung: **Ein Ort für Freizeit, Sport oder Erholung aus OpenStreetMap mit dem Tag leisure=*. Enthält Parks, Sportplätze, Schwimmbäder, Stadien usw.**  
+Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## Liste der Eigenschaften
+## Liste der Eigenschaften  
 
-<sup><sub>[*] Wenn kein Typ in einem Attribut vorhanden ist, liegt es daran, dass es mehrere Typen oder verschiedene Formate/Muster haben könnte</sub></sup>
-- `access[string]`: Zugangsbeschränkungen. Modell: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: Die Postanschrift. Modell: [https://schema.org/address](https://schema.org/address) - `addressCountry[string]`: Das Land. Zum Beispiel Spanien. Modell: [https://schema.org/addressCountry](https://schema.org/addressCountry)
-	- `addressLocality[string]`: Die Ortschaft, in der sich die Straßenadresse befindet und die sich in der Region befindet. Modell: [https://schema.org/addressLocality](https://schema.org/addressLocality)
-	- `addressRegion[string]`: Die Region, in der sich die Ortschaft befindet und die sich im Land befindet. Modell: [https://schema.org/addressRegion](https://schema.org/addressRegion)
-	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.
-	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel 03578. Modell: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
-	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel 24004. Modell: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
-	- `streetAddress[string]`: Die Straßenadresse. Modell: [https://schema.org/streetAddress](https://schema.org/streetAddress)
-	- `streetNr[string]`: Nummer, die ein bestimmtes Grundstück an einer öffentlichen Straße identifiziert.
-- `alternateName[string]`: Ein alternativer Name für diesen Eintrag. - `areaServed[string]`: Der geografische Bereich, in dem eine Dienstleistung oder ein angebotener Artikel bereitgestellt wird. Modell: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Zeichenkette, die den Anbieter der harmonisierten Dateneinheit identifiziert. - `dateCreated[date-time]`: Zeitstempel der Erstellung der Entität. Dieser wird normalerweise von der Speicherplattform zugewiesen. - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird normalerweise von der Speicherplattform zugewiesen. - `description[string]`: Eine Beschreibung dieses Eintrags. - `fee[boolean]`: Gibt an, ob eine Eintritts- oder Nutzungsgebühr erforderlich ist. Modell: [https://wiki.openstreetmap.org/wiki/Key:fee](https://wiki.openstreetmap.org/wiki/Key:fee)- `id[*]`: Eindeutiger Bezeichner der Entität. - `leisureType[string]`: Der OSM-Freizeit-Tag, der die Einrichtung klassifiziert. Enum: 'park, pitch, swimming_pool, sports_centre, stadium, playground, garden, nature_reserve, marina...' Modell: [https://wiki.openstreetmap.org/wiki/Key:leisure](https://wiki.openstreetmap.org/wiki/Key:leisure)- `lit[boolean]`: Gibt an, ob die Einrichtung beleuchtet ist. Modell: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: Geojson-Referenz zum Eintrag. Es kann Point, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein. - `name[string]`: Der Name dieses Eintrags. - `openingHours[string]`: Öffnungszeiten der Einrichtung. - `operator[string]`: Betreiber oder verwaltende Stelle. - `osmId[number]`: Die ursprüngliche ganzzahlige Kennung des OpenStreetMap-Elements. - `osmLastModified[date-time]`: Zeitstempel der letzten Änderung. - `osmType[string]`: Der Typ des ursprünglichen OSM-Elements. - `owner[array]`: Eine Liste, die eine JSON-kodierte Zeichenkette enthält, die auf die eindeutigen IDs des/der Eigentümer(s) verweist. - `seeAlso[*]`: Liste von URIs, die auf zusätzliche Ressourcen verweisen. - `source[string]`: Eine Zeichenkette, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den vollständig qualifizierten Domänennamen des Anbieters oder die URL zum Quellobjekt zu verwenden. - `sport[string]`: Die spezifische Sportart, die hier gespielt wird (z. B. Fußball, Tennis, Basketball). Modell: [https://wiki.openstreetmap.org/wiki/Key:sport](https://wiki.openstreetmap.org/wiki/Key:sport)- `surface[string]`: Die physische Oberfläche des Spielfelds oder der Bahn. Modell: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `type[string]`: NGSI-Entitätstyp. Es muss OSMLeisure sein. - `wheelchair[string]`: Rollstuhlgerechtigkeit. <!-- /30-PropertiesList -->
-<!-- 35-RequiredProperties -->
-Erforderliche Eigenschaften
-- `id` - `leisureType` - `location` - `osmId` - `osmType` - `type` <!-- /35-RequiredProperties -->
-<!-- 40-NotesYaml -->
-<!-- /40-NotesYaml -->
-<!-- 50-DataModelHeader -->
-## Datenmodellbeschreibung der Eigenschaften
-Alphabetisch sortiert (zum Details anklicken)
-<!-- /50-DataModelHeader -->
-<!-- 60-ModelYaml -->
-<details><summary><strong>vollständige YAML-Details</strong></summary>
-```yaml  
+<sup><sub>[*] Wenn in einem Attribut kein Typ angegeben ist, liegt dies daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>  
+- `access[string]`: Zugangsbeschränkungen  . Modell: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: Die Postanschrift  . Modell: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel Spanien  . Modell: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: Die Ortschaft, in der die Straßenadresse liegt und die in der Region liegt  . Modell: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: Die Region, in der die Ortschaft liegt und die im Land liegt  . Modell: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird    
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel 03578  . Modell: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel 24004  . Modell: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: Die Straßenadresse  . Modell: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Eine Nummer, die ein bestimmtes Grundstück auf einer öffentlichen Straße identifiziert    
+- `alternateName[string]`: Ein alternativer Name für dieses Element  - `areaServed[string]`: Das geografische Gebiet, in dem ein Dienst oder ein angebotenes Element bereitgestellt wird  . Modell: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Datenentität identifiziert  - `dateCreated[date-time]`: Zeitstempel der Erstellung der Entität. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `description[string]`: Eine Beschreibung dieses Elements  - `fee[boolean]`: Gibt an, ob ein Eintritts- oder Nutzungsgebühr erforderlich ist  . Modell: [https://wiki.openstreetmap.org/wiki/Key:fee](https://wiki.openstreetmap.org/wiki/Key:fee)- `id[*]`: Eindeutige Identifikation der Entität  - `leisureType[string]`: Der OSM-Leisure-Tag, der die Einrichtung klassifiziert. Enum:'park, pitch, swimming_pool, sports_centre, stadium, playground, garden, nature_reserve, marina...'  . Modell: [https://wiki.openstreetmap.org/wiki/Key:leisure](https://wiki.openstreetmap.org/wiki/Key:leisure)- `lit[boolean]`: Gibt an, ob die Einrichtung beleuchtet ist  . Modell: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: Geojson-Verweis auf das Element. Es kann ein Punkt, eine Linie, ein Polygon, ein Multi-Punkt, ein Multi-Linien- oder ein Multi-Polygon-Element sein  - `name[string]`: Der Name dieses Elements  - `openingHours[string]`: Öffnungszeiten der Einrichtung  - `operator[string]`: Betreiber oder verantwortliche Einheit  - `osmId[number]`: Der ursprüngliche OpenStreetMap-Element-Integer-Schlüssel  - `osmLastModified[date-time]`: Zeitstempel der letzten Änderung  - `osmType[string]`: Der Typ des ursprünglichen OSM-Elements  - `owner[array]`: Eine Liste, die eine JSON-codierte Folge von Zeichen enthält, die auf die eindeutigen IDs der Eigentümer verweisen  - `seeAlso[*]`: Liste von URIs, die auf zusätzliche Ressourcen verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angeben. Es wird empfohlen, den vollständig qualifizierten Domain-Namen des Quellanbieters oder die URL des Quellobjekts zu verwenden  - `sport[string]`: Der spezifische Sport, der hier gespielt wird (z. B. Fußball, Tennis, Basketball)  . Modell: [https://wiki.openstreetmap.org/wiki/Key:sport](https://wiki.openstreetmap.org/wiki/Key:sport)- `surface[string]`: Die physische Oberfläche des Spielfelds oder der Bahn  . Modell: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `type[string]`: NGSI-Entitätstyp. Es muss OSMLeisure sein  - `wheelchair[string]`: Zugänglichkeit für Rollstuhlfahrer  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+Erforderliche Eigenschaften  
+- `id`  - `leisureType`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+<!-- /40-NotesYaml -->  
+<!-- 50-DataModelHeader -->  
+## Beschreibung des Datenmodells der Eigenschaften  
+Sortiert alphabetisch (klicken für Details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
+<details><summary><strong>Vollständige YAML-Details</strong></summary>    
+```yaml  
 OSMLeisure:    
   description: A place for leisure, sports, or recreation from OpenStreetMap tagged with leisure=*. Includes parks, sports pitches, swimming pools, stadiums, etc    
   properties:    
@@ -507,17 +507,17 @@ OSMLeisure:
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMLeisure/schema.json    
   x-model-tags: OSM OpenStreetMap Leisure    
   x-version: 0.0.1    
-```
-</details>
-<!-- /60-ModelYaml -->
-<!-- 70-MiddleNotes -->
-<!-- /70-MiddleNotes -->
-<!-- 80-Examples -->
-## Beispiel-Payloads
-#### OSMLeisure NGSI-v2 Schlüssel-Werte-Beispiel
-Hier ist ein Beispiel für eine OSMLeisure im JSON-Format als Schlüssel-Werte-Paare. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird, und gibt die Kontextdaten einer einzelnen Entität zurück.
-<details><summary><strong>Beispiel ein-/ausblenden</strong></summary>
-```json  
+```  
+</details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Beispiele für Nutzlasten    
+#### OSMLeisure NGSI-v2 Schlüssel-Wert-Beispiel    
+Hier ist ein Beispiel für ein OSMLeisure im JSON-Format als Schlüssel-Wert. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und die Kontextdaten einer einzelnen Entität zurückgibt.  
+<details><summary><strong>Beispiel anzeigen/verstecken</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMLeisure:way:55667788",  
   "type": "OSMLeisure",  
@@ -563,12 +563,12 @@ Hier ist ein Beispiel für eine OSMLeisure im JSON-Format als Schlüssel-Werte-P
     "https://www.openstreetmap.org/way/55667788"  
   ]  
 }  
-```
-</details>
-#### OSMLeisure NGSI-v2 normalisiertes Beispiel
-Hier ist ein Beispiel für eine OSMLeisure im JSON-Format als normalisierte Werte. Dies ist mit NGSI-v2 kompatibel, wenn keine Optionen verwendet werden, und gibt die Kontextdaten einer einzelnen Entität zurück.
-<details><summary><strong>Beispiel ein-/ausblenden</strong></summary>
-```json  
+```  
+</details>  
+#### OSMLeisure NGSI-v2 normalisiertes Beispiel    
+Hier ist ein Beispiel für ein OSMLeisure im JSON-Format als normalisiert. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden und die Kontextdaten einer einzelnen Entität zurückgibt.  
+<details><summary><strong>Beispiel anzeigen/verstecken</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMLeisure:way:55667788",  
   "type": "OSMLeisure",  
@@ -653,12 +653,12 @@ Hier ist ein Beispiel für eine OSMLeisure im JSON-Format als normalisierte Wert
     ]  
   }  
 }  
-```
-</details>
-#### OSMLeisure NGSI-LD Schlüssel-Werte-Beispiel
-Hier ist ein Beispiel für eine OSMLeisure im JSON-LD-Format als Schlüssel-Werte-Paare. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird, und gibt die Kontextdaten einer einzelnen Entität zurück.
-<details><summary><strong>Beispiel ein-/ausblenden</strong></summary>
-```json  
+```  
+</details>  
+#### OSMLeisure NGSI-LD Schlüssel-Wert-Beispiel    
+Hier ist ein Beispiel für ein OSMLeisure im JSON-LD-Format als Schlüssel-Wert. Dies ist kompatibel mit NGSI-LD, wenn `options=keyValues` verwendet wird und die Kontextdaten einer einzelnen Entität zurückgibt.  
+<details><summary><strong>Beispiel anzeigen/verstecken</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMLeisure:way:55667788",  
   "type": "OSMLeisure",  
@@ -707,12 +707,12 @@ Hier ist ein Beispiel für eine OSMLeisure im JSON-LD-Format als Schlüssel-Wert
     "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
   ]  
 }  
-```
-</details>
-#### OSMLeisure NGSI-LD normalisiertes Beispiel
-Hier ist ein Beispiel für eine OSMLeisure im JSON-LD-Format als normalisierte Werte. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und gibt die Kontextdaten einer einzelnen Entität zurück.
-<details><summary><strong>Beispiel ein-/ausblenden</strong></summary>
-```json  
+```  
+</details>  
+#### OSMLeisure NGSI-LD normalisiertes Beispiel    
+Hier ist ein Beispiel für ein OSMLeisure im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden und die Kontextdaten einer einzelnen Entität zurückgibt.  
+<details><summary><strong>Beispiel anzeigen/verstecken</strong></summary>    
+```json  
 {  
     "id": "urn:ngsi-ld:OSMLeisure:way:55667788",  
     "type": "OSMLeisure",  
@@ -803,13 +803,13 @@ Hier ist ein Beispiel für eine OSMLeisure im JSON-LD-Format als normalisierte W
        "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
     ]  
 }  
-```
-</details><!-- /80-Examples -->
-<!-- 90-FooterNotes -->
-<!-- /90-FooterNotes -->
-<!-- 95-Units -->
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/) für eine Antwort, wie mit Einheiten umzugehen ist.
-<!-- /95-Units -->
-<!-- 97-LastFooter -->
----
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort darauf zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
