@@ -1,82 +1,41 @@
-<!-- 10-Header -->
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
-实体：OSMRailway
-==================<!-- /10-Header -->
-<!-- 15-License -->
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMRailway/LICENSE.md)
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
-<!-- /15-License -->
-<!-- 20-Description -->
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+实体：OSMRailway  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMRailway/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+全局描述：**来自OpenStreetMap的铁路轨道或基础设施元素，带有铁路标签。涵盖所有类型的铁道基础设施，从干线重轨到有轨电车、地铁和齿轨铁路。**  
+版本：0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-全局描述：**来自 OpenStreetMap 且使用 railway 键标记的铁路轨道或基础设施元素。涵盖各类轨道基础设施，从干线重轨到有轨电车、地铁和缆车。**
-version: 0.0.1
-<!-- /20-Description -->
-<!-- 30-PropertiesList -->
+## 属性列表  
 
-## 属性列表
-
-<sup><sub>[*] 如果某个属性未指定类型，则表示其可包含多种类型或不同的格式/模式</sub></sup>
-- `address[object]`：邮寄地址。模型：[https://schema.org/address](https://schema.org/address)
-	- `addressCountry[string]`：国家。例如，西班牙。模型：[https://schema.org/addressCountry](https://schema.org/addressCountry)
-	- `addressLocality[string]`：街道地址所在的城镇，且该城镇位于该地区内。模型：[https://schema.org/addressLocality](https://schema.org/addressLocality)
-	- `addressRegion[string]`：城镇所在的地区，且该地区位于该国家内。模型：[https://schema.org/addressRegion](https://schema.org/addressRegion)
-	- `district[string]`：区县，在某些国家中由地方政府管理的一种行政区划类型
-	- `postOfficeBoxNumber[string]`：用于邮政信箱地址的邮政信箱号码。例如，03578。模型：[https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
-	- `postalCode[string]`：邮政编码。例如，24004。模型：[https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
-	- `streetAddress[string]`：街道地址。模型：[https://schema.org/streetAddress](https://schema.org/streetAddress)
-	- `streetNr[string]`：标识公共街道上特定房产的编号
-- `alternateName[string]`：此项目的另一个名称
-- `areaServed[string]`：提供服务或提供的项目的地理区域。模型：[https://schema.org/Text](https://schema.org/Text)
-- `bridge[boolean]`：指示该铁路段是否通过桥梁。模型：[https://wiki.openstreetmap.org/wiki/Key:bridge](https://wiki.openstreetmap.org/wiki/Key:bridge)
-- `dataProvider[string]`：标识统一数据实体提供者的一组字符序列
-- `dateCreated[date-time]`：实体创建时间戳。通常由存储平台分配
-- `dateModified[date-time]`：实体最后一次修改的时间戳。通常由存储平台分配
-- `description[string]`：此项目的描述
-- `electrified[string]`：铁路的电气化方式。模型：[https://wiki.openstreetmap.org/wiki/Key:electrified](https://wiki.openstreetmap.org/wiki/Key:electrified)
-- `frequency[number]`：牵引电流的电气频率，单位为赫兹。模型：[https://wiki.openstreetmap.org/wiki/Key:frequency](https://wiki.openstreetmap.org/wiki/Key:frequency)
-- `gauge[number]`：轨距，以毫米为单位（两根钢轨之间的距离）。模型：[https://wiki.openstreetmap.org/wiki/Key:gauge](https://wiki.openstreetmap.org/wiki/Key:gauge)
-- `id[*]`：实体的唯一标识符
-- `layer[number]`：相对于同一位置的其他要素的垂直图层。模型：[https://wiki.openstreetmap.org/wiki/Key:layer](https://wiki.openstreetmap.org/wiki/Key:layer)
-- `location[*]`：指向该项目的 GeoJSON 引用。可以是 Point、LineString、Polygon、MultiPoint、MultiLineString 或 MultiPolygon
-- `maxSpeed[number]`：该轨道允许的最高速度，单位为公里/小时。模型：[https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed)
-- `name[string]`：此项目的名称
-- `operator[string]`：铁路运营商或公司的名称。模型：[https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)
-- `osmId[number]`：原始 OpenStreetMap 元素的整数标识符。模型：[https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)
-- `osmLastModified[date-time]`：原始 OSM 元素的最后一次修改时间戳
-- `osmType[string]`：原始 OpenStreetMap 元素的类型。模型：[https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)
-- `owner[array]`：包含以 JSON 编码的字符序列的列表，引用所有者的唯一 ID
-- `railwayType[string]`：对铁路基础设施类型进行分类的原始 OpenStreetMap 铁路标签值。枚举：‘rail（干线铁路）, subway（地铁）, tram（有轨电车）, light_rail（轻轨）, narrow_gauge（窄轨）, monorail（单轨铁路）, funicular（缆车）, miniature（小型铁路）, preserved（保护性铁路）, disused（废弃铁路）, abandoned（废弃铁路）, construction（在建铁路）, proposed（规划铁路）’。模型：[https://wiki.openstreetmap.org/wiki/Key:railway](https://wiki.openstreetmap.org/wiki/Key:railway)
-- `ref[string]`：官方线路参考编号或代码。模型：[https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)
-- `seeAlso[*]`：指向关于此项目的其他资源的 URI 列表
-- `service[string]`：服务轨道的类型（如非干线）。模型：[https://wiki.openstreetmap.org/wiki/Key:service](https://wiki.openstreetmap.org/wiki/Key:service)
-- `source[string]`：作为 URL 提供的实体数据的原始来源字符序列。建议使用源提供商的完整域名或指向源对象的 URL
-- `tracks[number]`：平行轨道的数量。模型：[https://wiki.openstreetmap.org/wiki/Key:tracks](https://wiki.openstreetmap.org/wiki/Key:tracks)
-- `tunnel[boolean]`：指示该铁路段是否通过隧道。模型：[https://wiki.openstreetmap.org/wiki/Key:tunnel](https://wiki.openstreetmap.org/wiki/Key:tunnel)
-- `type[string]`：NGSI 实体类型。必须为 OSMRailway
-- `usage[string]`：铁路线路的预期用途。模型：[https://wiki.openstreetmap.org/wiki/Key:usage](https://wiki.openstreetmap.org/wiki/Key:usage)
-- `voltage[number]`：牵引用电气电压，单位为伏特。模型：[https://wiki.openstreetmap.org/wiki/Key:voltage](https://wiki.openstreetmap.org/wiki/Key:voltage)
-<!-- /30-PropertiesList -->
-<!-- 35-RequiredProperties -->
-
-必需属性
-- `id`
-- `location`
-- `osmId`
-- `osmType`
-- `railwayType`
-- `type`
-<!-- /35-RequiredProperties -->
-<!-- 40-NotesYaml -->
-<!-- /40-NotesYaml -->
-<!-- 50-DataModelHeader -->
-
-## 属性数据模型说明
-
-按字母顺序排序（点击查看详情）
-<!-- /50-DataModelHeader -->
-<!-- 60-ModelYaml -->
-<details><summary><strong>完整 YAML 详情</strong></summary>
-```yaml  
+<sup><sub>[*] 如果属性中没有类型，是因为它可以有多种类型或不同的格式/模式</sub></sup>  
+- `address[object]`：邮寄地址。模型：[https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`：国家。例如，西班牙。模型：[https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`：街道地址所在的地区，并且在该地区。模型：[https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`：地区所在的国家。模型：[https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`：区是一个类型的行政区划，在一些国家，由地方政府管理    
+	- `postOfficeBoxNumber[string]`：邮政信箱号码。例如，03578。模型：[https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`：邮政编码。例如，24004。模型：[https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`：街道地址。模型：[https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`：在公共街道上标识特定属性的编号    
+- `alternateName[string]`：此项的替代名称  - `areaServed[string]`：服务或提供的项目的提供地理区域。模型：[https://schema.org/Text](https://schema.org/Text)- `bridge[boolean]`：指示此铁路段是否在桥梁上运行。模型：[https://wiki.openstreetmap.org/wiki/Key:bridge](https://wiki.openstreetmap.org/wiki/Key:bridge)- `dataProvider[string]`：识别和谐数据实体的提供者的字符序列  - `dateCreated[date-time]`：实体创建时间戳。这通常由存储平台分配  - `dateModified[date-time]`：实体最后修改的时间戳。这通常由存储平台分配  - `description[string]`：此项的描述  - `electrified[string]`：铁路的电气化方式。模型：[https://wiki.openstreetmap.org/wiki/Key:electrified](https://wiki.openstreetmap.org/wiki/Key:electrified)- `frequency[number]`：牵引电流的电频率（赫兹）。模型：[https://wiki.openstreetmap.org/wiki/Key:frequency](https://wiki.openstreetmap.org/wiki/Key:frequency)- `gauge[number]`：轨距（毫米）（两条轨道之间的距离）。模型：[https://wiki.openstreetmap.org/wiki/Key:gauge](https://wiki.openstreetmap.org/wiki/Key:gauge)- `id[*]`：实体的唯一标识符  - `layer[number]`：相对于同一位置的其他功能的垂直层。模型：[https://wiki.openstreetmap.org/wiki/Key:layer](https://wiki.openstreetmap.org/wiki/Key:layer)- `location[*]`：Geojson引用此项。它可以是点、线、多边形、多点、多线或多多边形  - `maxSpeed[number]`：此轨道允许的最大速度（公里每小时）。模型：[https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed)- `name[string]`：此项的名称  - `operator[string]`：铁路运营商或公司的名称。模型：[https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`：原始OpenStreetMap元素的整数标识符。模型：[https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`：OSM元素最后修改的时间戳。  - `osmType[string]`：原始OpenStreetMap元素的类型。模型：[https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`：包含对所有者（们）的唯一ID的JSON编码字符序列的列表  - `railwayType[string]`：OSM铁路标签值，用于分类铁路基础设施类型。枚举：'rail, subway, tram, light_rail, narrow_gauge, monorail, funicular, miniature, preserved, disused, abandoned, construction, proposed'。模型：[https://wiki.openstreetmap.org/wiki/Key:railway](https://wiki.openstreetmap.org/wiki/Key:railway)- `ref[string]`：官方线路参考号码或代码。模型：[https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)- `seeAlso[*]`：指向此项的其他资源的URI列表。  - `service[string]`：服务轨道的类型，如果不是主运行线的一部分。模型：[https://wiki.openstreetmap.org/wiki/Key:service](https://wiki.openstreetmap.org/wiki/Key:service)- `source[string]`：实体数据的原始来源的字符序列。建议为源提供者的完全限定域名，或源对象的URL  - `tracks[number]`：平行轨道的数量。模型：[https://wiki.openstreetmap.org/wiki/Key:tracks](https://wiki.openstreetmap.org/wiki/Key:tracks)- `tunnel[boolean]`：指示此铁路段是否通过隧道运行。模型：[https://wiki.openstreetmap.org/wiki/Key:tunnel](https://wiki.openstreetmap.org/wiki/Key:tunnel)- `type[string]`：NGSI实体类型。必须是OSMRailway  - `usage[string]`：铁路线的预期用途。模型：[https://wiki.openstreetmap.org/wiki/Key:usage](https://wiki.openstreetmap.org/wiki/Key:usage)- `voltage[number]`：用于牵引的电压（伏特）。模型：[https://wiki.openstreetmap.org/wiki/Key:voltage](https://wiki.openstreetmap.org/wiki/Key:voltage)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必需属性  
+- `id`  - `location`  - `osmId`  - `osmType`  - `railwayType`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+<!-- /40-NotesYaml -->  
+<!-- 50-DataModelHeader -->  
+## 属性的数据模型描述  
+按字母顺序排序（点击查看详细信息）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
+<details><summary><strong>完整的YAML详细信息</strong></summary>    
+```yaml  
 OSMRailway:    
   description: A railway track or infrastructure element from OpenStreetMap tagged with the railway key. Covers all types of rail infrastructure, from mainline heavy rail to trams, subways and funiculars.    
   properties:    
@@ -594,20 +553,17 @@ OSMRailway:
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMRailway/schema.json    
   x-model-tags: OSM OpenStreetMap Transportation Railway    
   x-version: 0.0.1    
-```
-</details>
-<!-- /60-ModelYaml -->
-<!-- 70-MiddleNotes -->
-<!-- /70-MiddleNotes -->
-<!-- 80-Examples -->
-
-## 示例有效负载
-
-#### OSMRailway NGSI-v2 键值示例
-以下是以 JSON 键值格式表示的 OSMRailway 示例。当使用 `options=keyValues` 时，此格式与 NGSI-v2 兼容，并返回单个实体的上下文数据。
-
-<details><summary><strong>显示/隐藏示例</strong></summary>
-```json  
+```  
+</details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## 示例有效载荷    
+#### OSMRailway NGSI-v2 键值示例    
+这是OSMRailway在JSON格式下的键值示例。它与NGSI-v2兼容，当使用`options=keyValues`时，返回个别实体的上下文数据。  
+<details><summary><strong>显示/隐藏示例</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMRailway:way:2903182",  
   "type": "OSMRailway",  
@@ -648,14 +604,12 @@ OSMRailway:
     "https://www.openstreetmap.org/way/2903182"  
   ]  
 }  
-```
-</details>
-
-#### OSMRailway NGSI-v2 规范化示例
-以下是以 JSON 规范化格式表示的 OSMRailway 示例。当不使用选项时，此格式与 NGSI-v2 兼容，并返回单个实体的上下文数据。
-
-<details><summary><strong>显示/隐藏示例</strong></summary>
-```json  
+```  
+</details>  
+#### OSMRailway NGSI-v2 规范化示例    
+这是OSMRailway在JSON格式下的规范化示例。它与NGSI-v2兼容，当不使用选项时，返回个别实体的上下文数据。  
+<details><summary><strong>显示/隐藏示例</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMRailway:way:2903182",  
   "type": "OSMRailway",  
@@ -774,14 +728,12 @@ OSMRailway:
     ]  
   }  
 }  
-```
-</details>
-
-#### OSMRailway NGSI-LD 键值示例
-以下是以 JSON-LD 键值格式表示的 OSMRailway 示例。当使用 `options=keyValues` 时，此格式与 NGSI-LD 兼容，并返回单个实体的上下文数据。
-
-<details><summary><strong>显示/隐藏示例</strong></summary>
-```json  
+```  
+</details>  
+#### OSMRailway NGSI-LD 键值示例    
+这是OSMRailway在JSON-LD格式下的键值示例。它与NGSI-LD兼容，当使用`options=keyValues`时，返回个别实体的上下文数据。  
+<details><summary><strong>显示/隐藏示例</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMRailway:way:2903182",  
   "type": "OSMRailway",  
@@ -825,14 +777,12 @@ OSMRailway:
     "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
   ]  
 }  
-```
-</details>
-
-#### OSMRailway NGSI-LD 规范化示例
-以下是以 JSON-LD 规范化格式表示的 OSMRailway 示例。当不使用选项时，此格式与 NGSI-LD 兼容，并返回单个实体的上下文数据。
-
-<details><summary><strong>显示/隐藏示例</strong></summary>
-```json  
+```  
+</details>  
+#### OSMRailway NGSI-LD 规范化示例    
+这是OSMRailway在JSON-LD格式下的规范化示例。它与NGSI-LD兼容，当不使用选项时，返回个别实体的上下文数据。  
+<details><summary><strong>显示/隐藏示例</strong></summary>    
+```json  
 {  
     "id": "urn:ngsi-ld:OSMRailway:way:2903182",  
     "type": "OSMRailway",  
@@ -937,14 +887,13 @@ OSMRailway:
         "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
     ]  
 }  
-```
-</details><!-- /80-Examples -->
-<!-- 90-FooterNotes -->
-<!-- /90-FooterNotes -->
-<!-- 95-Units -->
-
-有关如何处理数量单位的说明，请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)
-<!-- /95-Units -->
-<!-- 97-LastFooter -->
----
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+请参阅[FAQ 10](https://smartdatamodels.org/index.php/faqs/)以了解如何处理数量单位  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
