@@ -1,6 +1,6 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entity: OSMShop  
+Entity: OSMShop  
 ===============<!-- /10-Header -->  
 <!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMShop/LICENSE.md)  
@@ -731,7 +731,8 @@ OSMShop:
     ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
+</details>  
+<!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
