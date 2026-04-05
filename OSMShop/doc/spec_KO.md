@@ -1,37 +1,70 @@
 <!-- 10-Header -->
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
-엔티티: OSMShop
+Entity: OSMShop
 ===============<!-- /10-Header -->
 <!-- 15-License -->
 [Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMShop/LICENSE.md)
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
 <!-- /15-License -->
 <!-- 20-Description -->
-전체 설명: **OpenStreetMap에서 shop=*. 태그가 지정된 상점 또는 소매점. 최종 소비자에게 직접 소매 제품을 판매하는 사업체를 나타냅니다.**
-버전: 0.0.1
+Global description: **OpenStreetMap에 태그된 shop=*로 표시되는 상점 또는 소매점입니다. 최종 소비자에게 직접 소매 제품을 판매하는 업체를 나타냅니다.**
+version: 0.0.1
 <!-- /20-Description -->
 <!-- 30-PropertiesList -->
 
 ## 속성 목록
 
-<sup><sub>[*] 속성에 유형이 없는 이유는 여러 유형 또는 다른 형식/패턴을 가질 수 있기 때문입니다.</sub></sup>
-- `address[object]`: 상점 주소, schema.org PostalAddress를 따르는 구조 - `addressCity[string]`: 주소의 도시
+<sup><sub>[*] 속성에 타입이 명시되지 않은 경우, 여러 타입 또는 다양한 형식/패턴을 가질 수 있음을 의미합니다</sub></sup>
+- `address[object]`: schema.org PostalAddress를 따라 구조화된 상점의 주소
+	- `addressCity[string]`: 주소의 도시
 	- `addressCountry[string]`: ISO 3166-1 alpha-2 국가 코드
 	- `houseNumber[string]`: 건물 번호
-	- `postalCode[string]`: 우편 번호
-	- `streetAddress[string]`: 거리 이름
-- `alternateName[string]`: 이 항목에 대한 대체 이름 - `areaServed[string]`: 서비스 또는 제공되는 항목이 제공되는 지리적 영역. 모델: [https://schema.org/Text](https://schema.org/Text)- `brand[string]`: 상점이 체인 또는 프랜차이즈의 일부인 경우 브랜드 이름. 모델: [https://wiki.openstreetmap.org/wiki/Key:brand](https://wiki.openstreetmap.org/wiki/Key:brand)- `dataProvider[string]`: 조정된 데이터 엔티티의 제공자를 식별하는 문자 시퀀스 - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 일반적으로 스토리지 플랫폼에서 할당됩니다. - `dateModified[date-time]`: 엔티티 마지막 수정 타임스탬프. 일반적으로 스토리지 플랫폼에서 할당됩니다. - `description[string]`: 이 항목에 대한 설명 - `id[*]`: 엔티티의 고유 식별자 - `location[*]`: 항목에 대한 Geojson 참조. Point, LineString, Polygon, MultiPoint, MultiLineString 또는 MultiPolygon일 수 있습니다. - `name[string]`: 이 항목의 이름 - `openingHours[string]`: OSM 형식의 상점 영업 시간. 모델: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: 상점을 운영하는 엔티티의 이름. 모델: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `organic[string]`: 상점이 유기농 제품을 판매하는지 여부를 나타냅니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:organic](https://wiki.openstreetmap.org/wiki/Key:organic)- `osmId[number]`: 원본 OpenStreetMap 요소의 정수 식별자 - `osmLastModified[date-time]`: 마지막 수정 타임스탬프 - `osmType[string]`: 원본 OSM 요소의 유형 - `owner[array]`: 소유자의 고유 ID 시퀀스를 참조하는 JSON으로 인코딩된 문자 목록을 포함하는 목록 - `phone[string]`: 상점 전화번호 - `seeAlso[*]`: 추가 리소스를 가리키는 URI 목록 - `shopType[string]`: 소매 범주를 분류하는 OSM 상점 태그. 열거형: 'supermarket, convenience, bakery, clothes, shoes, hairdresser, car_repair, bicycle, hardware, electronics, florist, books...' 모델: [https://wiki.openstreetmap.org/wiki/Key:shop](https://wiki.openstreetmap.org/wiki/Key:shop)- `source[string]`: 엔티티 데이터의 원본 출처를 URL로 제공하는 문자 시퀀스. 소스 제공자의 정규화된 도메인 이름 또는 소스 개체에 대한 URL을 권장합니다. - `type[string]`: NGSI 엔티티 유형. OSMShop이어야 합니다. - `website[uri]`: 공식 웹사이트 URL - `wheelchair[string]`: 휠체어 접근성. 모델: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->
+	- `postalCode[string]`: 우편번호
+	- `streetAddress[string]`: 도로명
+- `alternateName[string]`: 이 항목의 대체 이름
+- `areaServed[string]`: 서비스 또는 제공되는 품목이 제공되는 지역. 모델: [https://schema.org/Text](https://schema.org/Text)
+- `brand[string]`: 체인점 또는 프랜차이즈에 속한 경우 브랜드명. 모델: [https://wiki.openstreetmap.org/wiki/Key:brand](https://wiki.openstreetmap.org/wiki/Key:brand)
+- `dataProvider[string]`: 조화된 데이터 엔터티 제공자의 식별 문자열
+- `dateCreated[date-time]`: 엔터티 생성 타임스탬프(보통 저장 플랫폼에서 할당됨)
+- `dateModified[date-time]`: 엔터티의 마지막 수정 타임스탬프(보통 저장 플랫폼에서 할당됨)
+- `description[string]`: 이 항목에 대한 설명
+- `id[*]`: 엔터티의 고유 식별자
+- `location[*]`: Point, LineString, Polygon, MultiPoint, MultiLineString 또는 MultiPolygon이 될 수 있는 GeoJSON 참조
+- `name[string]`: 이 항목의 이름
+- `openingHours[string]`: OSM 형식의 상점 영업 시간. 모델: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)
+- `operator[string]`: 상점을 운영하는 엔터티의 이름. 모델: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)
+- `organic[string]`: 유기농 제품을 판매하는지 여부. 모델: [https://wiki.openstreetmap.org/wiki/Key:organic](https://wiki.openstreetmap.org/wiki/Key:organic)
+- `osmId[number]`: 원래 OpenStreetMap 요소의 정수 ID
+- `osmLastModified[date-time]`: 마지막 수정 타임스탬프
+- `osmType[string]`: 원래 OSM 요소의 타입
+- `owner[array]`: 소유자(들)의 고유 ID를 참조하는 JSON으로 인코딩된 문자열 시퀀스를 포함하는 목록
+- `phone[string]`: 상점의 전화번호
+- `seeAlso[*]`: 추가 리소스를 가리키는 URI 목록
+- `shopType[string]`: 소매 카테고리를 분류하는 OSM 상점 태그. Enum: 'supermarket, convenience, bakery, clothes, shoes, hairdresser, car_repair, bicycle, hardware, electronics, florist, books...'. 모델: [https://wiki.openstreetmap.org/wiki/Key:shop](https://wiki.openstreetmap.org/wiki/Key:shop)
+- `source[string]`: 엔터티 데이터의 원래 출처 URL로, 권장되는 형식은 소스 제공자의 완전 도메인 이름 또는 소스 객체의 URL입니다.
+- `type[string]`: NGSI 엔터티 타입. 반드시 OSMShop이어야 합니다.
+- `website[uri]`: 공식 웹사이트 URL
+- `wheelchair[string]`: 휠체어 접근성. 모델: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)
+<!-- /30-PropertiesList -->
 <!-- 35-RequiredProperties -->
+
 필수 속성
-- `id` - `location` - `osmId` - `osmType` - `shopType` - `type` <!-- /35-RequiredProperties -->
+- `id`
+- `location`
+- `osmId`
+- `osmType`
+- `shopType`
+- `type`
+<!-- /35-RequiredProperties -->
 <!-- 40-NotesYaml -->
 <!-- /40-NotesYaml -->
 <!-- 50-DataModelHeader -->
+
 ## 속성 데이터 모델 설명
-알파벳순 정렬 (자세히 보려면 클릭)
+알파벳순으로 정렬됨(자세한 내용은 클릭)
 <!-- /50-DataModelHeader -->
 <!-- 60-ModelYaml -->
-<details><summary><strong>전체 yaml 세부 정보</strong></summary>
+<details><summary><strong>전체 YAML 세부 정보</strong></summary>
 ```yaml  
 OSMShop:    
   description: A shop or retail store from OpenStreetMap tagged with shop=*. Represents establishments selling retail products directly to end customers    
@@ -500,10 +533,11 @@ OSMShop:
 <!-- 70-MiddleNotes -->
 <!-- /70-MiddleNotes -->
 <!-- 80-Examples -->
-## 예시 페이로드
-#### OSMShop NGSI-v2 키-값 예시
-다음은 키-값 형식의 OSMShop JSON 예시입니다. 이는 `options=keyValues`를 사용할 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.
-<details><summary><strong>예시 표시/숨기기</strong></summary>
+
+## 예제 페이로드
+#### OSMShop NGSI-v2 key-values 예제
+NGSI-v2에서 `options=keyValues`를 사용하여 개별 엔터티의 컨텍스트 데이터를 반환할 때 key-values 형식으로 표현된 OSMShop의 JSON 예제입니다.
+<details><summary><strong>예제 보기/숨기기</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMShop:node:9876543210",  
@@ -537,9 +571,9 @@ OSMShop:
 }  
 ```
 </details>
-#### OSMShop NGSI-v2 정규화 예시
-다음은 정규화된 OSMShop JSON 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.
-<details><summary><strong>예시 표시/숨기기</strong></summary>
+#### OSMShop NGSI-v2 정규화 예제
+옵션을 사용하지 않고 NGSI-v2에서 개별 엔터티의 컨텍스트 데이터를 반환할 때 정규화된 JSON 형식으로 표현된 OSMShop의 예제입니다.
+<details><summary><strong>예제 보기/숨기기</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMShop:node:9876543210",  
@@ -612,9 +646,9 @@ OSMShop:
 }  
 ```
 </details>
-#### OSMShop NGSI-LD 키-값 예시
-다음은 키-값 형식의 OSMShop JSON-LD 예시입니다. 이는 `options=keyValues`를 사용할 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.
-<details><summary><strong>예시 표시/숨기기</strong></summary>
+#### OSMShop NGSI-LD key-values 예제
+NGSI-LD에서 `options=keyValues`를 사용하여 개별 엔터티의 컨텍스트 데이터를 반환할 때 key-values 형식으로 표현된 OSMShop의 JSON-LD 예제입니다.
+<details><summary><strong>예제 보기/숨기기</strong></summary>
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMShop:node:9876543210",  
@@ -651,9 +685,9 @@ OSMShop:
 }  
 ```
 </details>
-#### OSMShop NGSI-LD 정규화 예시
-다음은 정규화된 OSMShop JSON-LD 예시입니다. 이는 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔티티의 컨텍스트 데이터를 반환합니다.
-<details><summary><strong>예시 표시/숨기기</strong></summary>
+#### OSMShop NGSI-LD 정규화 예제
+옵션을 사용하지 않고 NGSI-LD에서 개별 엔터티의 컨텍스트 데이터를 반환할 때 정규화된 JSON-LD 형식으로 표현된 OSMShop의 예제입니다.
+<details><summary><strong>예제 보기/숨기기</strong></summary>
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMShop:node:9876543210",  
@@ -735,7 +769,7 @@ OSMShop:
 <!-- 90-FooterNotes -->
 <!-- /90-FooterNotes -->
 <!-- 95-Units -->
-크기 단위 처리에 대한 답변은 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)를 참조하십시오.
+단위 처리에 대한 답변은 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)를 참조하십시오.
 <!-- /95-Units -->
 <!-- 97-LastFooter -->
 ---
