@@ -1,84 +1,41 @@
-<!-- 10-Header -->
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
-Entity: OSMRailway
-==================<!-- /10-Header -->
-<!-- 15-License -->
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMRailway/LICENSE.md)
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
-<!-- /15-License -->
-<!-- 20-Description -->
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : OSMRailway  
+==================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMRailway/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Description globale : **Une voie ferrée ou un élément d'infrastructure ferroviaire d'OpenStreetMap étiqueté avec la clé railway. Couvre tous les types d'infrastructures ferroviaires, des lignes principales de chemin de fer lourd aux tramways, métros et funiculaires.**  
+version : 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-Global description : **Un élément d'infrastructure ferroviaire ou de voie ferrée issu d'OpenStreetMap et marqué avec la clé railway. Couvre tous les types d'infrastructures ferroviaires, des grandes lignes aux tramways, métros et funiculaires.**
-version: 0.0.1
-<!-- /20-Description -->
-<!-- 30-PropertiesList -->
+## Liste des propriétés  
 
-## Liste des propriétés
-
-<sup><sub>[*] Si un attribut n'a pas de type, c'est qu'il peut avoir plusieurs types ou différents formats/schémas</sub></sup>
-- `address[object]` : L'adresse postale. Modèle : [https://schema.org/address](https://schema.org/address)
-	- `addressCountry[string]` : Le pays. Par exemple, Espagne. Modèle : [https://schema.org/addressCountry](https://schema.org/addressCountry)
-	- `addressLocality[string]` : La localité où se trouve l'adresse postale, et qui est dans la région. Modèle : [https://schema.org/addressLocality](https://schema.org/addressLocality)
-	- `addressRegion[string]` : La région où se trouve la localité, et qui est dans le pays. Modèle : [https://schema.org/addressRegion](https://schema.org/addressRegion)
-	- `district[string]` : Un district est un type de division administrative qui, dans certains pays, est géré par les autorités locales
-	- `postOfficeBoxNumber[string]` : Le numéro de boîte postale pour les adresses de type boîte postale. Par exemple, 03578. Modèle : [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
-	- `postalCode[string]` : Le code postal. Par exemple, 24004. Modèle : [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
-	- `streetAddress[string]` : L'adresse de rue. Modèle : [https://schema.org/streetAddress](https://schema.org/streetAddress)
-	- `streetNr[string]` : Numéro identifiant une propriété spécifique sur une voie publique
-- `alternateName[string]` : Un nom alternatif pour cet élément
-- `areaServed[string]` : La zone géographique où un service ou un article proposé est fourni. Modèle : [https://schema.org/Text](https://schema.org/Text)
-- `bridge[boolean]` : Indique si ce segment ferroviaire passe sur un pont. Modèle : [https://wiki.openstreetmap.org/wiki/Key:bridge](https://wiki.openstreetmap.org/wiki/Key:bridge)
-- `dataProvider[string]` : Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées
-- `dateCreated[date-time]` : Horodatage de création de l'entité. Celui-ci est généralement attribué par la plateforme de stockage
-- `dateModified[date-time]` : Horodatage de la dernière modification de l'entité. Celui-ci est généralement attribué par la plateforme de stockage
-- `description[string]` : Une description de cet élément
-- `electrified[string]` : Méthode d'électrification de la voie ferrée. Modèle : [https://wiki.openstreetmap.org/wiki/Key:electrified](https://wiki.openstreetmap.org/wiki/Key:electrified)
-- `frequency[number]` : Fréquence électrique du courant de traction en Hertz. Modèle : [https://wiki.openstreetmap.org/wiki/Key:frequency](https://wiki.openstreetmap.org/wiki/Key:frequency)
-- `gauge[number]` : Écartement des voies en millimètres (distance entre les deux rails). Modèle : [https://wiki.openstreetmap.org/wiki/Key:gauge](https://wiki.openstreetmap.org/wiki/Key:gauge)
-- `id[*]` : Identifiant unique de l'entité
-- `layer[number]` : Couche verticale par rapport à d'autres éléments situés au même endroit. Modèle : [https://wiki.openstreetmap.org/wiki/Key:layer](https://wiki.openstreetmap.org/wiki/Key:layer)
-- `location[*]` : Référence Geojson de l'élément. Peut être Point, LineString, Polygon, MultiPoint, MultiLineString ou MultiPolygon
-- `maxSpeed[number]` : Vitesse maximale autorisée sur cette voie en kilomètres par heure. Modèle : [https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed)
-- `name[string]` : Le nom de cet élément
-- `operator[string]` : Nom de l'opérateur ou de la compagnie ferroviaire. Modèle : [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)
-- `osmId[number]` : L'identifiant entier de l'élément OpenStreetMap d'origine. Modèle : [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)
-- `osmLastModified[date-time]` : Horodatage de la dernière modification de l'élément OSM
-- `osmType[string]` : Le type de l'élément OpenStreetMap d'origine. Modèle : [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)
-- `owner[array]` : Une liste contenant une séquence de caractères encodée en JSON référençant les identifiants uniques du ou des propriétaire(s)
-- `railwayType[string]` : La valeur de la balise railway d'OSM qui classe le type d'infrastructure ferroviaire. Enum : 'rail, subway, tram, light_rail, narrow_gauge, monorail, funicular, miniature, preserved, disused, abandoned, construction, proposed'. Modèle : [https://wiki.openstreetmap.org/wiki/Key:railway](https://wiki.openstreetmap.org/wiki/Key:railway)
-- `ref[string]` : Numéro ou code de référence officiel de la ligne. Modèle : [https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)
-- `seeAlso[*]` : Liste d'URIs pointant vers des ressources supplémentaires concernant cet élément
-- `service[string]` : Type de voie de service, si elle ne fait pas partie de la ligne principale. Modèle : [https://wiki.openstreetmap.org/wiki/Key:service](https://wiki.openstreetmap.org/wiki/Key:service)
-- `source[string]` : Une séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Recommandé d'utiliser le nom de domaine pleinement qualifié du fournisseur de la source, ou l'URL de l'objet source
-- `tracks[number]` : Nombre de voies parallèles. Modèle : [https://wiki.openstreetmap.org/wiki/Key:tracks](https://wiki.openstreetmap.org/wiki/Key:tracks)
-- `tunnel[boolean]` : Indique si ce segment ferroviaire passe dans un tunnel. Modèle : [https://wiki.openstreetmap.org/wiki/Key:tunnel](https://wiki.openstreetmap.org/wiki/Key:tunnel)
-- `type[string]` : Type d'entité NGSI. Doit être OSMRailway
-- `usage[string]` : Utilisation prévue de la ligne ferroviaire. Modèle : [https://wiki.openstreetmap.org/wiki/Key:usage](https://wiki.openstreetmap.org/wiki/Key:usage)
-- `voltage[number]` : Tension électrique utilisée pour la traction en volts. Modèle : [https://wiki.openstreetmap.org/wiki/Key:voltage](https://wiki.openstreetmap.org/wiki/Key:voltage)
-<!-- /30-PropertiesList -->
-
-<!-- 35-RequiredProperties -->
-
-Propriétés requises
-- `id`
-- `location`
-- `osmId`
-- `osmType`
-- `railwayType`
-- `type`
-<!-- /35-RequiredProperties -->
-
-<!-- 40-NotesYaml -->
-<!-- /40-NotesYaml -->
-<!-- 50-DataModelHeader -->
-
-## Description du modèle de données des propriétés
-
-Classées par ordre alphabétique (cliquez pour plus de détails)
-<!-- /50-DataModelHeader -->
-<!-- 60-ModelYaml -->
-<details><summary><strong>détails complets en yaml</strong></summary>
-```yaml  
+<sup><sub>[*] Si il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modes</sub></sup>  
+- `address[object]` : L'adresse postale  . Modèle : [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]` : Le pays. Par exemple, l'Espagne  . Modèle : [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]` : La localité dans laquelle se trouve l'adresse de la rue, et qui se trouve dans la région  . Modèle : [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]` : La région dans laquelle se trouve la localité, et qui se trouve dans le pays  . Modèle : [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]` : Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local    
+	- `postOfficeBoxNumber[string]` : Le numéro de boîte postale pour les adresses de boîte postale. Par exemple, 03578  . Modèle : [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]` : Le code postal. Par exemple, 24004  . Modèle : [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]` : L'adresse de la rue  . Modèle : [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]` : Numéro identifiant une propriété spécifique sur une rue publique    
+- `alternateName[string]` : Un nom alternatif pour cet élément  - `areaServed[string]` : La zone géographique où un service ou un élément proposé est fourni  . Modèle : [https://schema.org/Text](https://schema.org/Text)- `bridge[boolean]` : Indique si ce segment de chemin de fer passe sur un pont  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:bridge](https://wiki.openstreetmap.org/wiki/Key:bridge)- `dataProvider[string]` : Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisée  - `dateCreated[date-time]` : Horodatage de la création de l'entité. Cela sera généralement alloué par la plate-forme de stockage  - `dateModified[date-time]` : Horodatage de la dernière modification de l'entité. Cela sera généralement alloué par la plate-forme de stockage  - `description[string]` : Une description de cet élément  - `electrified[string]` : Méthode d'électrification du chemin de fer  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:electrified](https://wiki.openstreetmap.org/wiki/Key:electrified)- `frequency[number]` : Fréquence électrique du courant de traction en Hertz  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:frequency](https://wiki.openstreetmap.org/wiki/Key:frequency)- `gauge[number]` : Écartement des rails en millimètres (distance entre les deux rails)  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:gauge](https://wiki.openstreetmap.org/wiki/Key:gauge)- `id[*]` : Identifiant unique de l'entité  - `layer[number]` : Couche verticale relative aux autres fonctionnalités au même emplacement  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:layer](https://wiki.openstreetmap.org/wiki/Key:layer)- `location[*]` : Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un multi-point, d'un multi-ligne ou d'un multi-polygone  - `maxSpeed[number]` : Vitesse maximale autorisée sur cette voie en kilomètres par heure  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:maxspeed](https://wiki.openstreetmap.org/wiki/Key:maxspeed)- `name[string]` : Le nom de cet élément  - `operator[string]` : Nom de l'opérateur ferroviaire ou de l'entreprise  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]` : L'identifiant entier de l'élément OpenStreetMap d'origine  . Modèle : [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]` : Horodatage de la dernière modification de l'élément OSM.  - `osmType[string]` : Le type de l'élément OpenStreetMap d'origine  . Modèle : [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]` : Une liste contenant une séquence de caractères codés en JSON référençant les identifiants uniques des propriétaires  - `railwayType[string]` : La valeur de la balise OSM railway qui classe le type d'infrastructure ferroviaire. Enum:'rail, subway, tram, light_rail, narrow_gauge, monorail, funicular, miniature, preserved, disused, abandoned, construction, proposed'  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:railway](https://wiki.openstreetmap.org/wiki/Key:railway)- `ref[string]` : Numéro de référence de ligne officiel ou code  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:ref](https://wiki.openstreetmap.org/wiki/Key:ref)- `seeAlso[*]` : Liste des URI pointant vers des ressources supplémentaires sur cet élément.  - `service[string]` : Type de voie de service, si ce n'est pas une partie de la ligne principale  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:service](https://wiki.openstreetmap.org/wiki/Key:service)- `source[string]` : Une séquence de caractères indiquant la source d'origine des données de l'entité sous la forme d'une URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source  - `tracks[number]` : Nombre de voies parallèles  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:tracks](https://wiki.openstreetmap.org/wiki/Key:tracks)- `tunnel[boolean]` : Indique si ce segment de chemin de fer passe à travers un tunnel  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:tunnel](https://wiki.openstreetmap.org/wiki/Key:tunnel)- `type[string]` : Type d'entité NGSI. Il doit s'agir d'OSMRailway  - `usage[string]` : Utilisation prévue de la ligne ferroviaire  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:usage](https://wiki.openstreetmap.org/wiki/Key:usage)- `voltage[number]` : Tension électrique utilisée pour la traction en Volts  . Modèle : [https://wiki.openstreetmap.org/wiki/Key:voltage](https://wiki.openstreetmap.org/wiki/Key:voltage)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+Propriétés requises  
+- `id`  - `location`  - `osmId`  - `osmType`  - `railwayType`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+<!-- /40-NotesYaml -->  
+<!-- 50-DataModelHeader -->  
+## Description du modèle de données des propriétés  
+Classées par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
+<details><summary><strong>détails yaml complets</strong></summary>    
+```yaml  
 OSMRailway:    
   description: A railway track or infrastructure element from OpenStreetMap tagged with the railway key. Covers all types of rail infrastructure, from mainline heavy rail to trams, subways and funiculars.    
   properties:    
@@ -596,19 +553,17 @@ OSMRailway:
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMRailway/schema.json    
   x-model-tags: OSM OpenStreetMap Transportation Railway    
   x-version: 0.0.1    
-```
-</details>
-<!-- /60-ModelYaml -->
-<!-- 70-MiddleNotes -->
-<!-- /70-MiddleNotes -->
-<!-- 80-Examples -->
-
-## Exemples de charge utile
-
-#### Exemple de charge utile OSMRailway NGSI-v2 en mode clé-valeur
-Voici un exemple d'OSMRailway au format JSON en mode clé-valeur. Celui-ci est compatible avec NGSI-v2 lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.
-<details><summary><strong>afficher/masquer l'exemple</strong></summary>
-```json  
+```  
+</details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Exemples de charges utiles    
+#### Exemple de clés-valeurs OSMRailway NGSI-v2    
+Voici un exemple d'OSMRailway au format JSON en tant que clés-valeurs. Cela est compatible avec NGSI-v2 lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMRailway:way:2903182",  
   "type": "OSMRailway",  
@@ -649,13 +604,12 @@ Voici un exemple d'OSMRailway au format JSON en mode clé-valeur. Celui-ci est c
     "https://www.openstreetmap.org/way/2903182"  
   ]  
 }  
-```
-</details>
-
-#### Exemple de charge utile OSMRailway NGSI-v2 en mode normalisé
-Voici un exemple d'OSMRailway au format JSON en mode normalisé. Celui-ci est compatible avec NGSI-v2 sans utiliser d'options et renvoie les données de contexte d'une entité individuelle.
-<details><summary><strong>afficher/masquer l'exemple</strong></summary>
-```json  
+```  
+</details>  
+#### Exemple normalisé OSMRailway NGSI-v2    
+Voici un exemple d'OSMRailway au format JSON en tant que normalisé. Cela est compatible avec NGSI-v2 lorsqu'aucune option n'est utilisée et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMRailway:way:2903182",  
   "type": "OSMRailway",  
@@ -774,13 +728,12 @@ Voici un exemple d'OSMRailway au format JSON en mode normalisé. Celui-ci est co
     ]  
   }  
 }  
-```
-</details>
-
-#### Exemple de charge utile OSMRailway NGSI-LD en mode clé-valeur
-Voici un exemple d'OSMRailway au format JSON-LD en mode clé-valeur. Celui-ci est compatible avec NGSI-LD lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.
-<details><summary><strong>afficher/masquer l'exemple</strong></summary>
-```json  
+```  
+</details>  
+#### Exemple de clés-valeurs OSMRailway NGSI-LD    
+Voici un exemple d'OSMRailway au format JSON-LD en tant que clés-valeurs. Cela est compatible avec NGSI-LD lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMRailway:way:2903182",  
   "type": "OSMRailway",  
@@ -824,13 +777,12 @@ Voici un exemple d'OSMRailway au format JSON-LD en mode clé-valeur. Celui-ci es
     "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
   ]  
 }  
-```
-</details>
-
-#### Exemple de charge utile OSMRailway NGSI-LD en mode normalisé
-Voici un exemple d'OSMRailway au format JSON-LD en mode normalisé. Celui-ci est compatible avec NGSI-LD sans utiliser d'options et renvoie les données de contexte d'une entité individuelle.
-<details><summary><strong>afficher/masquer l'exemple</strong></summary>
-```json  
+```  
+</details>  
+#### Exemple normalisé OSMRailway NGSI-LD    
+Voici un exemple d'OSMRailway au format JSON-LD en tant que normalisé. Cela est compatible avec NGSI-LD lorsqu'aucune option n'est utilisée et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
+```json  
 {  
     "id": "urn:ngsi-ld:OSMRailway:way:2903182",  
     "type": "OSMRailway",  
@@ -935,14 +887,15 @@ Voici un exemple d'OSMRailway au format JSON-LD en mode normalisé. Celui-ci est
         "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
     ]  
 }  
-```
-</details><!-- /80-Examples -->
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de gérer les unités de magnitude  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
 
-<!-- 90-FooterNotes -->
-<!-- /90-FooterNotes -->
-<!-- 95-Units -->
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour savoir comment gérer les unités de mesure
-<!-- /95-Units -->
-<!-- 97-LastFooter -->
----
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+--- FIN DU DOCUMENT ---
