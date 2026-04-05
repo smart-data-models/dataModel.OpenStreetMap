@@ -1,41 +1,41 @@
-<!-- 10-Header -->
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
-实体：OSMParkingArea
-======================<!-- /10-Header -->
-<!-- 15-License -->
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMParkingArea/LICENSE.md)
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
-<!-- /15-License -->
-<!-- 20-Description -->
-全局描述：**来自 OpenStreetMap 的车辆停车场或设施，标记为 amenity=parking。代表地面停车场、多层车库、地下设施和其他有组织的停车场。**
-版本：0.0.1
-<!-- /20-Description -->
-<!-- 30-PropertiesList -->
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+实体：OSMParkingArea  
+======================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMParkingArea/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+全局描述：**一个来自OpenStreetMap的带有amenity=parking标签的车辆停车区域或设施。代表地面停车场、多层停车库、地下设施和其他有组织的停车区域。**  
+版本：0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## 属性列表
+## 属性列表  
 
-<sup><sub>[*] 如果属性中没有类型，则表示它可能具有多种类型或不同的格式/模式</sub></sup>
-- `access[string]`：停车设施的访问限制。模型：[https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`：邮寄地址。模型：[https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`：国家。例如，西班牙。模型：[https://schema.org/addressCountry](https://schema.org/addressCountry)
-	- `addressLocality[string]`：街道地址所在的地区，该地区位于该国家/地区内。模型：[https://schema.org/addressLocality](https://schema.org/addressLocality)
-	- `addressRegion[string]`：地区所在的地区，该地区位于该国家/地区内。模型：[https://schema.org/addressRegion](https://schema.org/addressRegion)
-	- `district[string]`：区是行政区划的一种，在某些国家/地区由地方政府管理。
-	- `postOfficeBoxNumber[string]`：邮政信箱地址的邮政信箱号码。例如，03578。模型：[https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)
-	- `postalCode[string]`：邮政编码。例如，24004。模型：[https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)
-	- `streetAddress[string]`：街道地址。模型：[https://schema.org/streetAddress](https://schema.org/streetAddress)
-	- `streetNr[string]`：标识公共街道上特定物业的编号。
-- `alternateName[string]`：此项目的备用名称。- `areaServed[string]`：提供服务或所提供项目的地理区域。模型：[https://schema.org/Text](https://schema.org/Text)- `capacity[number]`：可用的停车位总数。模型：[https://wiki.openstreetmap.org/wiki/Key:capacity](https://wiki.openstreetmap.org/wiki/Key:capacity)- `capacityDisabled[number]`：指定的残疾人停车位数量。模型：[https://wiki.openstreetmap.org/wiki/Key:capacity:disabled](https://wiki.openstreetmap.org/wiki/Key:capacity:disabled)- `dataProvider[string]`：标识统一数据实体提供者的字符序列。- `dateCreated[date-time]`：实体创建时间戳。这通常由存储平台分配。- `dateModified[date-time]`：实体最后修改时间戳。这通常由存储平台分配。- `description[string]`：此项目的描述。- `fee[boolean]`：指示是否收取停车费。模型：[https://wiki.openstreetmap.org/wiki/Key:fee](https://wiki.openstreetmap.org/wiki/Key:fee)- `id[*]`：实体的唯一标识符。- `lit[boolean]`：指示停车场夜间是否照明。模型：[https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`：项目的 Geojson 引用。它可以是 Point、LineString、Polygon、MultiPoint、MultiLineString 或 MultiPolygon。- `maxStay[string]`：允许的最大停车时长（例如，“2h”、“1 day”）。模型：[https://wiki.openstreetmap.org/wiki/Key:maxstay](https://wiki.openstreetmap.org/wiki/Key:maxstay)- `name[string]`：此项目的名称。- `openingHours[string]`：OSM opening_hours 语法的停车场开放时间。模型：[https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`：运营或管理停车设施的实体的名称。模型：[https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`：原始 OpenStreetMap 元素的整数标识符。模型：[https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`：OSM 元素最后修改的时间戳。- `osmType[string]`：原始 OpenStreetMap 元素的类型。模型：[https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`：一个列表，包含一个 JSON 编码的字符序列，引用所有者（们）的唯一 ID。- `parkingType[string]`：停车设施的物理类型或布局。枚举：“surface, multi-storey, underground, street_side, rooftop, sheds, carports, garage_boxes, lane”。模型：[https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking)- `seeAlso[*]`：指向有关此项目的其他资源的 URI 列表。- `source[string]`：一个字符序列，给出实体数据的原始来源（URL）。建议使用源提供者的完全限定域名，或指向源对象的 URL。- `surface[string]`：停车场的表面材料。模型：[https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `type[string]`：NGSI 实体类型。它必须是 OSMParkingArea。- `wheelchair[string]`：是否有无障碍停车位。模型：[https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->
-<!-- 35-RequiredProperties -->
-必需属性
-- `id` - `location` - `osmId` - `osmType` - `parkingType` - `type` <!-- /35-RequiredProperties -->
-<!-- 40-NotesYaml -->
-<!-- /40-NotesYaml -->
-<!-- 50-DataModelHeader -->
-## 数据模型属性描述
-按字母顺序排序（点击查看详情）
-<!-- /50-DataModelHeader -->
-<!-- 60-ModelYaml -->
-<details><summary><strong>完整的 yaml 详情</strong></summary>
-```yaml  
+<sup><sub>[*] 如果属性中没有类型，那是因为它可以有多种类型或不同的格式/模式</sub></sup>  
+- `access[string]`：停车设施的访问限制。模型：[https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`：邮寄地址。模型：[https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`：国家。例如，西班牙。模型：[https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`：街道地址所在的地区，并且在该地区。模型：[https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`：该地区所在的地区，并且在该国家。模型：[https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`：一个地区是一种行政区划，在某些国家，由地方政府管理    
+	- `postOfficeBoxNumber[string]`：邮政信箱地址的邮政信箱号码。例如，03578。模型：[https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`：邮政编码。例如，24004。模型：[https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`：街道地址。模型：[https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`：在公共街道上标识特定属性的编号    
+- `alternateName[string]`：此项的替代名称  - `areaServed[string]`：服务或提供的项目所提供的的地理区域。模型：[https://schema.org/Text](https://schema.org/Text)- `capacity[number]`：可用的停车位总数。模型：[https://wiki.openstreetmap.org/wiki/Key:capacity](https://wiki.openstreetmap.org/wiki/Key:capacity)- `capacityDisabled[number]`：指定的残疾人停车位数量。模型：[https://wiki.openstreetmap.org/wiki/Key:capacity:disabled](https://wiki.openstreetmap.org/wiki/Key:capacity:disabled)- `dataProvider[string]`：一串字符，用于标识和谐数据实体的提供者  - `dateCreated[date-time]`：实体创建的时间戳。这通常由存储平台分配  - `dateModified[date-time]`：实体最后修改的时间戳。这通常由存储平台分配  - `description[string]`：此项的描述  - `fee[boolean]`：指示是否收取停车费。模型：[https://wiki.openstreetmap.org/wiki/Key:fee](https://wiki.openstreetmap.org/wiki/Key:fee)- `id[*]`：实体的唯一标识符  - `lit[boolean]`：指示停车区域是否在晚上照明。模型：[https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`：Geojson引用项。它可以是点、线字符串、多边形、多点、多线字符串或多多边形  - `maxStay[string]`：允许的最大停车时间（例如'2h'，'1天'）。模型：[https://wiki.openstreetmap.org/wiki/Key:maxstay](https://wiki.openstreetmap.org/wiki/Key:maxstay)- `name[string]`：此项的名称  - `openingHours[string]`：停车设施的营业时间，以OSM开业时间语法表示。模型：[https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`：管理或运营停车设施的实体名称。模型：[https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`：原始OpenStreetMap元素的整数标识符。模型：[https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`：OSM元素最后修改的时间戳。  - `osmType[string]`：原始OpenStreetMap元素的类型。模型：[https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`：包含JSON编码序列的列表，引用所有者（们）的唯一ID  - `parkingType[string]`：停车设施的物理类型或布局。枚举：'surface, multi-storey, underground, street_side, rooftop, sheds, carports, garage_boxes, lane'。模型：[https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking)- `seeAlso[*]`：指向此项的其他资源的URI列表。  - `source[string]`：一个字符序列，给出实体数据的原始来源作为URL。建议使用完全合格的域名或源对象的URL  - `surface[string]`：停车区的表面材料。模型：[https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `type[string]`：NGSI实体类型。必须是OSMParkingArea  - `wheelchair[string]`：轮椅可达停车位的可用性。模型：[https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必需属性  
+- `id`  - `location`  - `osmId`  - `osmType`  - `parkingType`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+<!-- /40-NotesYaml -->  
+<!-- 50-DataModelHeader -->  
+## 属性的数据模型描述  
+按字母顺序排序（点击查看详细信息）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
+<details><summary><strong>完整的YAML详细信息</strong></summary>    
+```yaml  
 OSMParkingArea:    
   description: A vehicle parking area or facility from OpenStreetMap tagged with amenity=parking. Represents surface car parks, multi-storey garages, underground facilities, and other organised parking areas.    
   properties:    
@@ -526,17 +526,17 @@ OSMParkingArea:
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMParkingArea/schema.json    
   x-model-tags: OSM OpenStreetMap Transportation Parking    
   x-version: 0.0.1    
-```
-</details>
-<!-- /60-ModelYaml -->
-<!-- 70-MiddleNotes -->
-<!-- /70-MiddleNotes -->
-<!-- 80-Examples -->
-## 示例负载
-#### OSMParkingArea NGSI-v2 键值示例
-以下是 OSMParkingArea 的 JSON 格式键值示例。在使用 `options=keyValues` 时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。
-<details><summary><strong>显示/隐藏示例</strong></summary>
-```json  
+```  
+</details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## 示例有效载荷    
+#### OSMParkingArea NGSI-v2 键值示例    
+这是一个OSMParkingArea在JSON格式中的键值示例。它与NGSI-v2兼容，当使用`options=keyValues`时，返回个别实体的上下文数据。  
+<details><summary><strong>显示/隐藏示例</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMParkingArea:way:34517828",  
   "type": "OSMParkingArea",  
@@ -585,12 +585,12 @@ OSMParkingArea:
     "https://www.openstreetmap.org/way/34517828"  
   ]  
 }  
-```
-</details>
-#### OSMParkingArea NGSI-v2 规范化示例
-以下是 OSMParkingArea 的 JSON 格式规范化示例。在不使用选项时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。
-<details><summary><strong>显示/隐藏示例</strong></summary>
-```json  
+```  
+</details>  
+#### OSMParkingArea NGSI-v2 规范化示例    
+这是一个OSMParkingArea在JSON格式中的规范化示例。它与NGSI-v2兼容，当不使用选项时，返回个别实体的上下文数据。  
+<details><summary><strong>显示/隐藏示例</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMParkingArea:way:34517828",  
   "type": "OSMParkingArea",  
@@ -687,12 +687,12 @@ OSMParkingArea:
     ]  
   }  
 }  
-```
-</details>
-#### OSMParkingArea NGSI-LD 键值示例
-以下是 OSMParkingArea 的 JSON-LD 格式键值示例。在使用 `options=keyValues` 时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。
-<details><summary><strong>显示/隐藏示例</strong></summary>
-```json  
+```  
+</details>  
+#### OSMParkingArea NGSI-LD 键值示例    
+这是一个OSMParkingArea在JSON-LD格式中的键值示例。它与NGSI-LD兼容，当使用`options=keyValues`时，返回个别实体的上下文数据。  
+<details><summary><strong>显示/隐藏示例</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMParkingArea:way:34517828",  
   "type": "OSMParkingArea",  
@@ -744,12 +744,12 @@ OSMParkingArea:
     "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
   ]  
 }  
-```
-</details>
-#### OSMParkingArea NGSI-LD 规范化示例
-以下是 OSMParkingArea 的 JSON-LD 格式规范化示例。在不使用选项时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。
-<details><summary><strong>显示/隐藏示例</strong></summary>
-```json  
+```  
+</details>  
+#### OSMParkingArea NGSI-LD 规范化示例    
+这是一个OSMParkingArea在JSON-LD格式中的规范化示例。它与NGSI-LD兼容，当不使用选项时，返回个别实体的上下文数据。  
+<details><summary><strong>显示/隐藏示例</strong></summary>    
+```json  
 {  
     "id": "urn:ngsi-ld:OSMParkingArea:way:34517828",  
     "type": "OSMParkingArea",  
@@ -852,13 +852,13 @@ OSMParkingArea:
         "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
     ]  
 }  
-```
-</details><!-- /80-Examples -->
-<!-- 90-FooterNotes -->
-<!-- /90-FooterNotes -->
-<!-- 95-Units -->
-有关如何处理数量单位的答案，请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)
-<!-- /95-Units -->
-<!-- 97-LastFooter -->
----
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+请参阅[FAQ 10](https://smartdatamodels.org/index.php/faqs/)，了解如何处理数量单位  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
