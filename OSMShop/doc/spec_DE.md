@@ -7,28 +7,61 @@ Entity: OSMShop
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)
 <!-- /15-License -->
 <!-- 20-Description -->
-Globale Beschreibung: **Ein Geschäft oder Einzelhandelsgeschäft von OpenStreetMap mit dem Tag shop=*. Stellt Betriebe dar, die Einzelhandelsprodukte direkt an Endkunden verkaufen**
+
+Globale Beschreibung: **Ein Laden oder Einzelhandelsgeschäft aus OpenStreetMap, das mit shop=* getaggt ist. Stellt Einrichtungen dar, die Einzelhandelsprodukte direkt an Endkunden verkaufen**
+
 version: 0.0.1
 <!-- /20-Description -->
 <!-- 30-PropertiesList -->
 
 ## Liste der Eigenschaften
 
-<sup><sub>[*] Wenn kein Typ in einem Attribut vorhanden ist, liegt es daran, dass es mehrere Typen oder verschiedene Formate/Muster haben könnte</sub></sup>
-- `address[object]`: Adresse des Geschäfts, strukturiert nach schema.org PostalAddress - `addressCity[string]`: Stadt der Adresse
-	- `addressCountry[string]`: ISO 3166-1 alpha-2 Ländercode
+<sup><sub>[*] Wenn in einem Attribut kein Typ angegeben ist, kann dies mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>
+- `address[object]`: Adresse des Ladens, strukturiert nach schema.org PostalAddress
+	- `addressCity[string]`: Stadt der Adresse
+	- `addressCountry[string]`: ISO 3166-1 Alpha-2-Ländercode
 	- `houseNumber[string]`: Haus- oder Gebäudenummer
 	- `postalCode[string]`: Postleitzahl
 	- `streetAddress[string]`: Straßenname
-- `alternateName[string]`: Ein alternativer Name für diesen Artikel - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel bereitgestellt wird. Modell: [https://schema.org/Text](https://schema.org/Text)- `brand[string]`: Der Markenname, wenn das Geschäft Teil einer Kette oder Franchise ist. Modell: [https://wiki.openstreetmap.org/wiki/Key:brand](https://wiki.openstreetmap.org/wiki/Key:brand)- `dataProvider[string]`: Eine Zeichenkette, die den Anbieter der harmonisierten Dateneinheit identifiziert - `dateCreated[date-time]`: Zeitstempel der Erstellung der Entität. Dieser wird normalerweise von der Speicherplattform zugewiesen - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird normalerweise von der Speicherplattform zugewiesen - `description[string]`: Eine Beschreibung dieses Artikels - `id[*]`: Eindeutiger Identifikator der Entität - `location[*]`: Geojson-Referenz auf den Artikel. Es kann Point, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein - `name[string]`: Der Name dieses Artikels - `openingHours[string]`: Öffnungszeiten des Geschäfts im OSM-Format. Modell: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: Name des Betreibers des Geschäfts. Modell: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `organic[string]`: Gibt an, ob das Geschäft Bio-Produkte verkauft. Modell: [https://wiki.openstreetmap.org/wiki/Key:organic](https://wiki.openstreetmap.org/wiki/Key:organic)- `osmId[number]`: Der ursprüngliche ganzzahlige Bezeichner des OSM-Elements - `osmLastModified[date-time]`: Zeitstempel der letzten Änderung - `osmType[string]`: Der Typ des ursprünglichen OSM-Elements - `owner[array]`: Eine Liste, die eine JSON-kodierte Zeichenkette mit Verweisen auf die eindeutigen IDs des/der Eigentümer(s) enthält - `phone[string]`: Telefonnummer für das Geschäft - `seeAlso[*]`: Liste von URIs, die auf zusätzliche Ressourcen verweisen - `shopType[string]`: Der OSM-Shop-Tag, der die Einzelhandelskategorie klassifiziert. Enum: 'supermarket, convenience, bakery, clothes, shoes, hairdresser, car_repair, bicycle, hardware, electronics, florist, books...' Modell: [https://wiki.openstreetmap.org/wiki/Key:shop](https://wiki.openstreetmap.org/wiki/Key:shop)- `source[string]`: Eine Zeichenkette, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der vollqualifizierte Domainname des Anbieters oder die URL zum Quellobjekt - `type[string]`: NGSI Entity Typ. Es muss OSMShop sein - `website[uri]`: Offizielle Website-URL - `wheelchair[string]`: Rollstuhlgerechte Zugänglichkeit. Modell: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->
+- `alternateName[string]`: Ein alternativer Name für dieses Element
+- `areaServed[string]`: Das geografische Gebiet, in dem ein Service oder angebotene Artikel bereitgestellt werden. Modell: [https://schema.org/Text](https://schema.org/Text)
+- `brand[string]`: Der Markenname, falls der Laden zu einer Kette oder Franchise gehört. Modell: [https://wiki.openstreetmap.org/wiki/Key:brand](https://wiki.openstreetmap.org/wiki/Key:brand)
+- `dataProvider[string]`: Eine Zeichenfolge, die den Anbieter der harmonisierten Datenentität identifiziert
+- `dateCreated[date-time]`: Zeitstempel der Erstellung dieser Entität. Wird normalerweise von der Speicherplattform zugewiesen
+- `dateModified[date-time]`: Zeitstempel der letzten Änderung dieser Entität. Wird normalerweise von der Speicherplattform zugewiesen
+- `description[string]`: Eine Beschreibung dieses Elements
+- `id[*]`: Eindeutige Kennung der Entität
+- `location[*]`: Geojson-Referenz auf das Element. Kann Point, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein
+- `name[string]`: Der Name dieses Elements
+- `openingHours[string]`: Öffnungszeiten des Ladens im OSM-Format. Modell: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)
+- `operator[string]`: Name der Entität, die den Laden betreibt. Modell: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)
+- `organic[string]`: Gibt an, ob der Laden Bio-Produkte verkauft. Modell: [https://wiki.openstreetmap.org/wiki/Key:organic](https://wiki.openstreetmap.org/wiki/Key:organic)
+- `osmId[number]`: Die ursprüngliche OpenStreetMap-Element-Ganzzahlkennung
+- `osmLastModified[date-time]`: Zeitstempel der letzten Änderung
+- `osmType[string]`: Der Typ des ursprünglichen OSM-Elements
+- `owner[array]`: Eine Liste mit einer JSON-codierten Zeichenfolge, die auf die eindeutigen IDs der Besitzer verweist
+- `phone[string]`: Telefonnummer für den Laden
+- `seeAlso[*]`: Liste von URIs, die auf zusätzliche Ressourcen verweisen
+- `shopType[string]`: Der OSM-Shop-Tag, der die Einzelhandelskategorie klassifiziert. Enum: 'supermarket, convenience, bakery, clothes, shoes, hairdresser, car_repair, bicycle, hardware, electronics, florist, books...'. Modell: [https://wiki.openstreetmap.org/wiki/Key:shop](https://wiki.openstreetmap.org/wiki/Key:shop)
+- `source[string]`: Eine Zeichenfolge, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen ist die vollqualifizierte Domain des Anbieters oder die URL zum Quellobjekt
+- `type[string]`: NGSI-Entitätstyp. Muss OSMShop sein
+- `website[uri]`: Offizielle Website-URL
+- `wheelchair[string]`: Rollstuhlgerechtigkeit. Modell: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->
 <!-- 35-RequiredProperties -->
+
 Erforderliche Eigenschaften
-- `id` - `location` - `osmId` - `osmType` - `shopType` - `type` <!-- /35-RequiredProperties -->
+- `id`
+- `location`
+- `osmId`
+- `osmType`
+- `shopType`
+- `type`<!-- /35-RequiredProperties -->
 <!-- 40-NotesYaml -->
 <!-- /40-NotesYaml -->
 <!-- 50-DataModelHeader -->
-## Datenmodellbeschreibung der Eigenschaften
-Alphabetisch sortiert (zum Details anklicken)
+
+## Datenmodell-Beschreibung der Eigenschaften
+Sortiert alphabetisch (zum Öffnen der Details klicken)
 <!-- /50-DataModelHeader -->
 <!-- 60-ModelYaml -->
 <details><summary><strong>vollständige YAML-Details</strong></summary>
@@ -500,9 +533,11 @@ OSMShop:
 <!-- 70-MiddleNotes -->
 <!-- /70-MiddleNotes -->
 <!-- 80-Examples -->
+
 ## Beispiel-Payloads
-#### OSMShop NGSI-v2 Schlüssel-Werte-Beispiel
-Hier ist ein Beispiel für einen OSMShop im JSON-Format als Schlüssel-Werte-Paare. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird, und gibt die Kontextdaten einer einzelnen Entität zurück.
+#### OSMShop NGSI-v2 Schlüssel-Wert-Beispiel
+Hier ist ein Beispiel für einen OSMShop im JSON-Format als Schlüssel-Wert-Paare. Dies ist kompatibel mit NGSI-v2 bei Verwendung von `options=keyValues` und gibt die Kontextdaten einer einzelnen Entität zurück.
+
 <details><summary><strong>Beispiel ein-/ausblenden</strong></summary>
 ```json  
 {  
@@ -537,8 +572,10 @@ Hier ist ein Beispiel für einen OSMShop im JSON-Format als Schlüssel-Werte-Paa
 }  
 ```
 </details>
+
 #### OSMShop NGSI-v2 normalisiertes Beispiel
-Hier ist ein Beispiel für einen OSMShop im JSON-Format als normalisierte Werte. Dies ist mit NGSI-v2 kompatibel, wenn keine Optionen verwendet werden, und gibt die Kontextdaten einer einzelnen Entität zurück.
+Hier ist ein Beispiel für einen OSMShop im JSON-Format als normalisiert. Dies ist kompatibel mit NGSI-v2 ohne Verwendung von Optionen und gibt die Kontextdaten einer einzelnen Entität zurück.
+
 <details><summary><strong>Beispiel ein-/ausblenden</strong></summary>
 ```json  
 {  
@@ -612,8 +649,10 @@ Hier ist ein Beispiel für einen OSMShop im JSON-Format als normalisierte Werte.
 }  
 ```
 </details>
-#### OSMShop NGSI-LD Schlüssel-Werte-Beispiel
-Hier ist ein Beispiel für einen OSMShop im JSON-LD-Format als Schlüssel-Werte-Paare. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird, und gibt die Kontextdaten einer einzelnen Entität zurück.
+
+#### OSMShop NGSI-LD Schlüssel-Wert-Beispiel
+Hier ist ein Beispiel für einen OSMShop im JSON-LD-Format als Schlüssel-Wert-Paare. Dies ist kompatibel mit NGSI-LD bei Verwendung von `options=keyValues` und gibt die Kontextdaten einer einzelnen Entität zurück.
+
 <details><summary><strong>Beispiel ein-/ausblenden</strong></summary>
 ```json  
 {  
@@ -651,8 +690,10 @@ Hier ist ein Beispiel für einen OSMShop im JSON-LD-Format als Schlüssel-Werte-
 }  
 ```
 </details>
+
 #### OSMShop NGSI-LD normalisiertes Beispiel
-Hier ist ein Beispiel für einen OSMShop im JSON-LD-Format als normalisierte Werte. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und gibt die Kontextdaten einer einzelnen Entität zurück.
+Hier ist ein Beispiel für einen OSMShop im JSON-LD-Format als normalisiert. Dies ist kompatibel mit NGSI-LD ohne Verwendung von Optionen und gibt die Kontextdaten einer einzelnen Entität zurück.
+
 <details><summary><strong>Beispiel ein-/ausblenden</strong></summary>
 ```json  
 {  
@@ -735,7 +776,8 @@ Hier ist ein Beispiel für einen OSMShop im JSON-LD-Format als normalisierte Wer
 <!-- 90-FooterNotes -->
 <!-- /90-FooterNotes -->
 <!-- 95-Units -->
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/) für eine Antwort, wie mit Einheiten umzugehen ist
+
+Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/) für Informationen, wie mit Maßeinheiten umgegangen wird
 <!-- /95-Units -->
 <!-- 97-LastFooter -->
 ---
