@@ -1,13 +1,13 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティ: OSMShop  
+Entity: OSMShop  
 ===============<!-- /10-Header -->  
 <!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMShop/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバル説明: **OpenStreetMapでタグ付けされたshop=*の店舗または小売店。小売製品をエンド顧客に直接販売する施設を表す**  
+グローバルな説明: **OpenStreetMapでタグ付けされたshop=*の店舗または小売店。小売製品をエンドカスタマーに直接販売する施設を表す**  
 バージョン: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
@@ -20,7 +20,7 @@
 	- `houseNumber[string]`: 家や建物番号    
 	- `postalCode[string]`: 郵便番号    
 	- `streetAddress[string]`: 通り名    
-- `alternateName[string]`: このアイテムの別名  - `areaServed[string]`: サービスまたは提供アイテムが提供される地理的なエリア  . モデル: [https://schema.org/Text](https://schema.org/Text)- `brand[string]`: 店舗がチェーンまたはフランチャイズの一部である場合のブランド名  . モデル: [https://wiki.openstreetmap.org/wiki/Key:brand](https://wiki.openstreetmap.org/wiki/Key:brand)- `dataProvider[string]`: ハーモナイズされたデータエンティティの提供者を識別する文字シーケンス  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。この値は通常、ストレージプラットフォームによって割り当てられます  - `dateModified[date-time]`: エンティティの最後の変更のタイムスタンプ。この値は通常、ストレージプラットフォームによって割り当てられます  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意の識別子  - `location[*]`: アイテムへのGeojsonリファレンス。Point、LineString、Polygon、MultiPoint、MultiLineString、またはMultiPolygonのいずれかになります  - `name[string]`: このアイテムの名前  - `openingHours[string]`: 店舗の営業時間（OSM形式）  . モデル: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: 店舗を運営するエンティティの名前  . モデル: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `organic[string]`: 店舗が有機製品を販売するかどうかを示す  . モデル: [https://wiki.openstreetmap.org/wiki/Key:organic](https://wiki.openstreetmap.org/wiki/Key:organic)- `osmId[number]`: 元のOpenStreetMap要素の整数識別子  - `osmLastModified[date-time]`: 最終変更のタイムスタンプ  - `osmType[string]`: 元のOSM要素のタイプ  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコード文字シーケンスを含むリスト  - `phone[string]`: 店舗の電話番号  - `seeAlso[*]`: 追加リソースを指すURIのリスト  - `shopType[string]`: 小売カテゴリを分類するOSM店舗タグ。列挙体:'スーパーマーケット、コンビニエンスストア、パン屋、服、靴、ヘアドレッサー、車の修理、自転車、ハードウェア、電子機器、フローリスト、書籍...'  . モデル: [https://wiki.openstreetmap.org/wiki/Key:shop](https://wiki.openstreetmap.org/wiki/Key:shop)- `source[string]`: エンティティデータの元のソースをURLとして提供する文字シーケンス。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトのURLであることをお勧めします  - `type[string]`: NGSIエンティティタイプ。OSMShopでなければなりません  - `website[uri]`: 公式ウェブサイトのURL  - `wheelchair[string]`: 車椅子アクセシビリティ  . モデル: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
+- `alternateName[string]`: このアイテムの別名  - `areaServed[string]`: サービスまたは提供されたアイテムが提供される地理的なエリア  . モデル: [https://schema.org/Text](https://schema.org/Text)- `brand[string]`: チェーンまたはフランチャイズの一部である場合のブランド名  . モデル: [https://wiki.openstreetmap.org/wiki/Key:brand](https://wiki.openstreetmap.org/wiki/Key:brand)- `dataProvider[string]`: ハーモナイズされたデータエンティティを提供するプロバイダーのシーケンスの文字列  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。この場合は通常、ストレージプラットフォームによって割り当てられます  - `dateModified[date-time]`: エンティティの最後の変更のタイムスタンプ。この場合は通常、ストレージプラットフォームによって割り当てられます  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意の識別子  - `location[*]`: アイテムへのGeojsonリファレンス。ポイント、ラインストリング、ポリゴン、マルチポイント、マルチラインストリング、またはマルチポリゴンになります  - `name[string]`: このアイテムの名前  - `openingHours[string]`: OSM形式の店舗の営業時間  . モデル: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: 店舗を運営するエンティティの名前  . モデル: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `organic[string]`: 店舗が有機製品を販売するかどうかを示します  . モデル: [https://wiki.openstreetmap.org/wiki/Key:organic](https://wiki.openstreetmap.org/wiki/Key:organic)- `osmId[number]`: 元のOpenStreetMap要素の整数識別子  - `osmLastModified[date-time]`: 最終変更のタイムスタンプ  - `osmType[string]`: 元のOSM要素のタイプ  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列のシーケンスを含むリスト  - `phone[string]`: 店舗の電話番号  - `seeAlso[*]`: 追加のリソースを指すURIのリスト  - `shopType[string]`: 小売カテゴリを分類するOSM店舗タグ。列挙:'スーパーマーケット、コンビニエンス、ベーカリー、服、靴、ヘアドレッサー、車の修理、自転車、ハードウェア、エレクトロニクス、フローリスト、書籍...'  . モデル: [https://wiki.openstreetmap.org/wiki/Key:shop](https://wiki.openstreetmap.org/wiki/Key:shop)- `source[string]`: エンティティデータの元のソースをURLとして提供する文字列のシーケンス。ソースプロバイダーの完全なドメイン名、またはソースオブジェクトのURLを推奨します  - `type[string]`: NGSIエンティティタイプ。OSMShopでなければなりません  - `website[uri]`: 公式ウェブサイトのURL  - `wheelchair[string]`: 車椅子アクセシビリティ  . モデル: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `id`  - `location`  - `osmId`  - `osmType`  - `shopType`  - `type`  <!-- /35-RequiredProperties -->  
@@ -502,8 +502,8 @@ OSMShop:
 <!-- 80-Examples -->  
 ## ペイロードの例    
 #### OSMShop NGSI-v2 キー値の例    
-ここでは、キー値としてJSON形式のOSMShopの例を示します。これは、`options=keyValues`を使用して個々のエンティティのコンテキストデータを返す場合に、NGSI-v2と互換性があります。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+ここでは、キー値としてJSON形式のOSMShopの例を示します。これは、`options=keyValues`を使用して個々のエンティティのコンテキストデータを返すときにNGSI-v2と互換性があります。  
+<details><summary><strong>例の表示/非表示</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMShop:node:9876543210",  
@@ -538,8 +538,8 @@ OSMShop:
 ```  
 </details>  
 #### OSMShop NGSI-v2 正規化された例    
-ここでは、正規化されたJSON形式のOSMShopの例を示します。これは、オプションを使用しない場合に、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+ここでは、正規化されたJSON形式のOSMShopの例を示します。これは、オプションを使用しないときにNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>例の表示/非表示</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMShop:node:9876543210",  
@@ -613,8 +613,8 @@ OSMShop:
 ```  
 </details>  
 #### OSMShop NGSI-LD キー値の例    
-ここでは、キー値としてJSON-LD形式のOSMShopの例を示します。これは、`options=keyValues`を使用して個々のエンティティのコンテキストデータを返す場合に、NGSI-LDと互換性があります。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+ここでは、キー値としてJSON-LD形式のOSMShopの例を示します。これは、`options=keyValues`を使用して個々のエンティティのコンテキストデータを返すときにNGSI-LDと互換性があります。  
+<details><summary><strong>例の表示/非表示</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMShop:node:9876543210",  
@@ -652,8 +652,8 @@ OSMShop:
 ```  
 </details>  
 #### OSMShop NGSI-LD 正規化された例    
-ここでは、正規化されたJSON-LD形式のOSMShopの例を示します。これは、オプションを使用しない場合に、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
+ここでは、正規化されたJSON-LD形式のOSMShopの例を示します。これは、オプションを使用しないときにNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>例の表示/非表示</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMShop:node:9876543210",  
@@ -739,4 +739,4 @@ OSMShop:
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
