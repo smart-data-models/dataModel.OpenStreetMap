@@ -15,13 +15,12 @@
 ## 属性列表  
 
 <sup><sub>[*] 如果属性中没有类型，是因为它可以有多种类型或不同的格式/模式</sub></sup>  
-- `address[object]`：商店的地址，按照schema.org PostalAddress结构化    
-	- `addressCity[string]`：地址的城市    
+- `address[object]`：商店的地址，按照schema.org PostalAddress结构化  	- `addressCity[string]`：地址的城市    
 	- `addressCountry[string]`：ISO 3166-1 alpha-2国家代码    
 	- `houseNumber[string]`：房屋或建筑编号    
 	- `postalCode[string]`：邮政编码    
 	- `streetAddress[string]`：街道名称    
-- `alternateName[string]`：该项的替代名称  - `areaServed[string]`：服务或提供的项目所提供的的地理区域  . 模型：[https://schema.org/Text](https://schema.org/Text)- `brand[string]`：如果商店是连锁店或特许经营的一部分，则为品牌名称  . 模型：[https://wiki.openstreetmap.org/wiki/Key:brand](https://wiki.openstreetmap.org/wiki/Key:brand)- `dataProvider[string]`：一串字符，用于识别提供的和谐数据实体  - `dateCreated[date-time]`：实体创建的时间戳。这通常由存储平台分配  - `dateModified[date-time]`：实体最后修改的时间戳。这通常由存储平台分配  - `description[string]`：对该项的描述  - `id[*]`：实体的唯一标识符  - `location[*]`：对该项的Geojson引用。它可以是Point、LineString、Polygon、MultiPoint、MultiLineString或MultiPolygon  - `name[string]`：该项的名称  - `openingHours[string]`：商店的营业时间，以OSM格式表示  . 模型：[https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`：经营商店的实体名称  . 模型：[https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `organic[string]`：指示商店是否销售有机产品  . 模型：[https://wiki.openstreetmap.org/wiki/Key:organic](https://wiki.openstreetmap.org/wiki/Key:organic)- `osmId[number]`：原始OpenStreetMap元素的整数标识符  - `osmLastModified[date-time]`：最后修改的时间戳  - `osmType[string]`：原始OSM元素的类型  - `owner[array]`：包含对所有者（们）的唯一ID的JSON编码字符序列的列表  - `phone[string]`：商店的电话号码  - `seeAlso[*]`：指向其他资源的URI列表  - `shopType[string]`：将零售类别分类的OSM商店标签。枚举：'超市、便利店、面包店、服装、鞋子、理发店、汽车维修、自行车、五金、电子产品、花店、书籍...'  . 模型：[https://wiki.openstreetmap.org/wiki/Key:shop](https://wiki.openstreetmap.org/wiki/Key:shop)- `source[string]`：实体数据的原始来源的字符序列，以URL形式给出。建议使用源提供者的全限定域名或源对象的URL  - `type[string]`：NGSI实体类型。必须是OSMShop  - `website[uri]`：官方网站的URL  - `wheelchair[string]`：轮椅无障碍  . 模型：[https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
+- `alternateName[string]`：该项目的另一个名称  - `areaServed[string]`：服务或提供的项目所提供的的地理区域  . 模型：[https://schema.org/Text](https://schema.org/Text)- `brand[string]`：如果商店是连锁店或特许经营的一部分，则为品牌名称  . 模型：[https://wiki.openstreetmap.org/wiki/Key:brand](https://wiki.openstreetmap.org/wiki/Key:brand)- `dataProvider[string]`：一系列字符，用于标识和谐数据实体的提供者  - `dateCreated[date-time]`：实体创建的时间戳。这通常由存储平台分配  - `dateModified[date-time]`：实体最后修改的时间戳。这通常由存储平台分配  - `description[string]`：该项目的描述  - `id[*]`：实体的唯一标识符  - `location[*]`：对项目的Geojson引用。它可以是Point、LineString、Polygon、MultiPoint、MultiLineString或MultiPolygon  - `name[string]`：该项目的名称  - `openingHours[string]`：商店的营业时间，以OSM格式表示  . 模型：[https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`：经营商店的实体名称  . 模型：[https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `organic[string]`：指示商店是否销售有机产品  . 模型：[https://wiki.openstreetmap.org/wiki/Key:organic](https://wiki.openstreetmap.org/wiki/Key:organic)- `osmId[number]`：原始OpenStreetMap元素的整数标识符  - `osmLastModified[date-time]`：最后修改的时间戳  - `osmType[string]`：原始OSM元素的类型  - `owner[array]`：包含对所有者（们）的唯一ID的JSON编码字符序列的列表  - `phone[string]`：商店的电话号码  - `seeAlso[*]`：指向其他资源的URI列表  - `shopType[string]`：将零售类别分类的OSM商店标签。枚举：'超市、便利店、面包店、服装、鞋子、理发店、汽车维修、自行车、五金、电子产品、花店、书籍...'  . 模型：[https://wiki.openstreetmap.org/wiki/Key:shop](https://wiki.openstreetmap.org/wiki/Key:shop)- `source[string]`：一个字符序列，给出实体数据的原始来源作为URL。建议使用源提供者的全限定域名，或源对象的URL  - `type[string]`：NGSI实体类型。必须是OSMShop  - `website[uri]`：官方网站的URL  - `wheelchair[string]`：轮椅无障碍  . 模型：[https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必需属性  
 - `id`  - `location`  - `osmId`  - `osmType`  - `shopType`  - `type`  <!-- /35-RequiredProperties -->  
@@ -503,7 +502,7 @@ OSMShop:
 <!-- 80-Examples -->  
 ## 示例有效载荷    
 #### OSMShop NGSI-v2 键值示例    
-这是一个OSMShop在JSON格式下的键值示例。它与NGSI-v2兼容，当使用 `options=keyValues` 时，返回个别实体的上下文数据。  
+这是一个OSMShop在JSON格式下的键值示例。这与NGSI-v2兼容，当使用 `options=keyValues` 时，返回个别实体的上下文数据。  
 <details><summary><strong>显示/隐藏示例</strong></summary>    
 ```json  
 {  
@@ -539,7 +538,7 @@ OSMShop:
 ```  
 </details>  
 #### OSMShop NGSI-v2 规范化示例    
-这是一个OSMShop在JSON格式下的规范化示例。它与NGSI-v2兼容，当不使用选项时，返回个别实体的上下文数据。  
+这是一个OSMShop在JSON格式下的规范化示例。这与NGSI-v2兼容，当不使用选项时，返回个别实体的上下文数据。  
 <details><summary><strong>显示/隐藏示例</strong></summary>    
 ```json  
 {  
@@ -614,7 +613,7 @@ OSMShop:
 ```  
 </details>  
 #### OSMShop NGSI-LD 键值示例    
-这是一个OSMShop在JSON-LD格式下的键值示例。它与NGSI-LD兼容，当使用 `options=keyValues` 时，返回个别实体的上下文数据。  
+这是一个OSMShop在JSON-LD格式下的键值示例。这与NGSI-LD兼容，当使用 `options=keyValues` 时，返回个别实体的上下文数据。  
 <details><summary><strong>显示/隐藏示例</strong></summary>    
 ```json  
 {  
@@ -653,7 +652,7 @@ OSMShop:
 ```  
 </details>  
 #### OSMShop NGSI-LD 规范化示例    
-这是一个OSMShop在JSON-LD格式下的规范化示例。它与NGSI-LD兼容，当不使用选项时，返回个别实体的上下文数据。  
+这是一个OSMShop在JSON-LD格式下的规范化示例。这与NGSI-LD兼容，当不使用选项时，返回个别实体的上下文数据。  
 <details><summary><strong>显示/隐藏示例</strong></summary>    
 ```json  
 {  
@@ -736,8 +735,8 @@ OSMShop:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/) 以获取有关如何处理数量级单位的答案  
+请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/) 以了解如何处理数量单位  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
