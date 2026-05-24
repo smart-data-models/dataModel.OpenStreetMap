@@ -1,0 +1,2 @@
+"id", "type", "osmId", "osmType", "osmLastModified", "name", "advertisingType", "lit", "operator", "location__coordinates__0", "location__coordinates__1", "source", "seeAlso__0", "@context__0"
+"urn:ngsi-ld:OSMAdvertising:node:11223388", "OSMAdvertising", "11223388", "node", "2024-03-10T10:00:00Z", "Billboard - Gran Vía", "billboard", "True", "JCDecaux", "-3.7038", "40.4192", "https://www.openstreetmap.org", "https://www.openstreetmap.org/node/11223388", "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"

@@ -1,10 +1,12 @@
 # dataModel.OpenStreetMap
 
-
-
 ### List of data models
 
 The following entity types are available:
+- [OSMAddressPoint](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMAddressPoint/README.md). A standalone address point from OpenStreetMap, representing a node or area tagged with addr:* keys that describes a postal address not attached to a specific building outline. Used when address data exists independently of building geometry.
+
+- [OSMAdvertising](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMAdvertising/README.md). Advertising installations from OpenStreetMap tagged with advertising=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
+
 - [OSMAerialway](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMAerialway/README.md). An aerial transport or lift from OpenStreetMap tagged with aerialway=*. Describes cable cars, gondolas, chair lifts, and drag lifts
 
 - [OSMAmenity](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMAmenity/README.md). A facility or amenity from OpenStreetMap tagged with amenity=*. Represents places of public or private use such as restaurants, schools, hospitals, banks, etc
@@ -35,8 +37,11 @@ The following entity types are available:
 
 - [OSMWaterway](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMWaterway/README.md). A waterway from OpenStreetMap tagged with waterway=*. Describes rivers, streams, canals, drains, and other water courses
 
+
+
 ### Contributors
-[Link](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/CONTRIBUTORS.yaml) to the 1 current contributors.
+[Link](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/CONTRIBUTORS.yaml) to the 1 current contributors of the data models of this Subject.
+
 
 ### Contribution
-You can raise an [issue](https://github.com/smart-data-models/dataModel.OpenStreetMap/issues) or submit your [PR](https://github.com/smart-data-models/dataModel.OpenStreetMap/pulls) on existing data models.
+You can raise an [issue](https://github.com/smart-data-models/dataModel.OpenStreetMap/issues) or submit your [PR](https://github.com/smart-data-models/dataModel.OpenStreetMap/pulls) on existing data models
