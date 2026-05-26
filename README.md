@@ -9,6 +9,8 @@ The following entity types are available:
 
 - [OSMAerialway](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMAerialway/README.md). An aerial transport or lift from OpenStreetMap tagged with aerialway=*. Describes cable cars, gondolas, chair lifts, and drag lifts
 
+- [OSMAeroway](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMAeroway/README.md). An aeroway feature from OpenStreetMap tagged with aeroway=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
+
 - [OSMAmenity](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMAmenity/README.md). A facility or amenity from OpenStreetMap tagged with amenity=*. Represents places of public or private use such as restaurants, schools, hospitals, banks, etc
 
 - [OSMBuilding](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMBuilding/README.md). A building or group of connected buildings from OpenStreetMap tagged with building=*. Represents the physical structure of a building, including its geometry, dimensions, materials, and functional classification. For specific functions within a building (shop, amenity, etc.) additional entities should be used.
