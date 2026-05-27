@@ -7,23 +7,23 @@
 [自動生成されたドキュメント](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-全体的な説明: **advertising=* タグが付いた OpenStreetMap の広告設備。このデータモデルは、OpenStreetMap の寄稿者によって CC BY-SA 2.0 ライセンスの下で提供されている OpenStreetMap Wiki に基づく二次的著作物です。**  
-バージョン: 0.0.1  
+全体説明: **OpenStreetMapのadvertising=*でタグ付けされた広告設備。このデータモデルは、OpenStreetMap Wikiに基づく派生作品であり、OpenStreetMapの貢献者によってCC BY-SA 2.0ライセンスの下で提供されています。**  
+version: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+## プロパティリスト  
 
-<sup><sub>[*] 属性に型が指定されていない場合は、複数の型や異なる形式/パターンを持つ可能性があるためです</sub></sup>  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: その国。例えば、スペイン。  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: 住所が所在する、その地方に属する地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: その地方が存在し、かつその国の中にある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: 地区とは、一部の国では地方自治体によって管理される行政区画の一種です。    
+<sup><sub>[*] 属性に型がない場合、それは複数の型または異なる形式/パターンを持つ可能性があるためです。</sub></sup>  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例：スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地が存在し、その地域内にある場所（都市/町村など）  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その場所が存在し、その国内にある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは、一部の国において地方政府によって管理される行政区画の一種です。    
 	- `postOfficeBoxNumber[string]`: 私書箱住所の私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: 郵便番号。例えば、24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: 住所  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: 公道上の特定の物件を識別する番号    
-- `advertisingType[string]`: インストールタイプを分類するOSM広告タグ  . Model: [https://wiki.openstreetmap.org/wiki/Key:advertising](https://wiki.openstreetmap.org/wiki/Key:advertising)- `alternateName[string]`: このアイテムの別名  - `areaServed[string]`: サービスまたは提供される品物が提供される地理的領域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する文字列  - `dateCreated[date-time]`: エンティティ作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意識別子  - `lit[boolean]`: 広告看板が点灯しているかどうかを示します。  . Model: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: アイテムへのGeoJSON参照。Point、LineString、Polygon、MultiPoint、MultiLineString、またはMultiPolygonのいずれかです。  - `name[string]`: このアイテムの名前  - `operator[string]`: 広告看板を運営する組織の名前  - `osmId[number]`: 元のOpenStreetMap要素の整数識別子  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM要素の最終更新タイムスタンプ  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmType[string]`: 元のOpenStreetMap要素の型。  - `owner[array]`: 所有者の一意のIDを参照する、JSONエンコードされた文字シーケンスを含むリスト  - `seeAlso[*]`: 追加のリソースを指すURIのリスト  - `source[string]`: エンティティデータの元のソースをURLとして示す文字列。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。OSMAdvertisingである必要があります。  <!-- /30-PropertiesList -->  
+- `advertisingType[string]`: 設置タイプを分類するOSM広告タグ。  . Model: [https://wiki.openstreetmap.org/wiki/Key:advertising](https://wiki.openstreetmap.org/wiki/Key:advertising)- `alternateName[string]`: このアイテムの別名  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的領域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 統合されたデータエンティティのプロバイダーを識別する一連の文字  - `dateCreated[date-time]`: エンティティ作成日時。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。通常、ストレージプラットフォームによって割り当てられます。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `lit[boolean]`: 広告看板が点灯しているかどうかを示します。  . Model: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: アイテムへのGeoJSON参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name[string]`: このアイテムの名前  - `operator[string]`: 広告看板を運営している組織の名前。  - `osmId[number]`: 元のOpenStreetMap要素の整数識別子  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM要素の最終変更のタイムスタンプ  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmType[string]`: 元のOpenStreetMap要素のタイプ。  - `owner[array]`: 所有者の一意のIDを参照する、JSONエンコードされた文字のシーケンスを含むリスト  - `seeAlso[*]`: 追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLとして示す一連の文字。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。これはOSMAdvertisingである必要があります。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
 - `advertisingType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
@@ -31,7 +31,7 @@
 <!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
-アルファベット順（クリックで詳細を表示）  
+アルファベット順にソートされています（詳細はこちらをクリック）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -459,9 +459,9 @@ OSMAdvertising:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## ペイロードの例  
-#### OSMAdvertising NGSI-v2 キーと値の例  
-以下は、キー・バリュー形式のJSON-LD形式によるOSMAdvertisingの例です。これは`options=keyValues`を使用する場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+## 例のペイロード  
+#### OSMAdvertising NGSI-v2 キー値の例  
+これは、キー値形式のJSON-LD形式のOSMAdvertisingの例です。これは、`options=keyValues`を使用する場合のNGSI-v2と互換性があり、個別エンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -489,7 +489,7 @@ OSMAdvertising:
 ```  
 </details>  
 #### OSMAdvertising NGSI-v2 正規化された例  
-正規化されたJSON-LD形式によるOSMAdvertisingの例を以下に示します。これは、オプションを使用しない場合にはNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+これは、正規化されたJSON-LD形式のOSMAdvertisingの例です。これは、オプションを使用しない場合のNGSI-v2と互換性があり、個別エンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -547,7 +547,7 @@ OSMAdvertising:
 ```  
 </details>  
 #### OSMAdvertising NGSI-LD キー値の例  
-以下は、キーと値（key-values）の形式のJSON-LD形式によるOSMAdvertisingの例です。これは、`options=keyValues`を使用する場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+これは、キー値形式のJSON-LD形式のOSMAdvertisingの例です。これは、`options=keyValues`を使用する場合のNGSI-LDと互換性があり、個別エンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -578,7 +578,7 @@ OSMAdvertising:
 ```  
 </details>  
 #### OSMAdvertising NGSI-LD 正規化された例  
-正規化されたJSON-LD形式によるOSMAdvertisingの例を以下に示します。これは、オプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+これは、正規化されたJSON-LD形式のOSMAdvertisingの例です。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個別エンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -636,7 +636,7 @@ OSMAdvertising:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-規模単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/) を参照してください。  
+規模単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  

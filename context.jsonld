@@ -5,6 +5,7 @@
         "OSMAerialway": "https://smartdatamodels.org/dataModel.OpenStreetMap/OSMAerialway",
         "OSMAeroway": "https://smartdatamodels.org/dataModel.OpenStreetMap/OSMAeroway",
         "OSMAmenity": "https://smartdatamodels.org/dataModel.OpenStreetMap/OSMAmenity",
+        "OSMBarrier": "https://smartdatamodels.org/dataModel.OpenStreetMap/OSMBarrier",
         "OSMBuilding": "https://smartdatamodels.org/dataModel.OpenStreetMap/OSMBuilding",
         "OSMBuildingPart": "https://smartdatamodels.org/dataModel.OpenStreetMap/OSMBuildingPart",
         "OSMCycleRoute": "https://smartdatamodels.org/dataModel.OpenStreetMap/OSMCycleRoute",
@@ -34,6 +35,7 @@
         "amenityType": "https://smartdatamodels.org/dataModel.OpenStreetMap/amenityType",
         "areaServed": "https://smartdatamodels.org/areaServed",
         "artworkType": "https://smartdatamodels.org/dataModel.OpenStreetMap/artworkType",
+        "barrierType": "https://smartdatamodels.org/dataModel.OpenStreetMap/barrierType",
         "bbox": {
             "@container": "@list",
             "@id": "https://purl.org/geojson/vocab#bbox"
@@ -77,6 +79,7 @@
         "fullAddress": "https://smartdatamodels.org/dataModel.OpenStreetMap/fullAddress",
         "gauge": "https://smartdatamodels.org/dataModel.OpenStreetMap/gauge",
         "heating": "https://smartdatamodels.org/dataModel.OpenStreetMap/heating",
+        "height": "https://smartdatamodels.org/dataModel.OpenStreetMap/height",
         "highwayType": "https://smartdatamodels.org/dataModel.OpenStreetMap/highwayType",
         "houseName": "https://smartdatamodels.org/dataModel.OpenStreetMap/houseName",
         "houseNumber": "https://smartdatamodels.org/dataModel.OpenStreetMap/houseNumber",

@@ -52,22 +52,22 @@ if serverUrl is None:
         print("WARNING: No broker URL provided. Script cannot provide results.")
         sys.exit(1)
 
-dataModel = "OSMAdvertising"
+dataModel = "OSMBarrier"
 subject = "dataModel.OpenStreetMap"
 
-osmId = 11223388
+osmId = 77665544
 attribute = "osmId"
 value = osmId
 # Updates the attribute in the broker; creates the entity if it does not exist
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-osmType = "node"
+osmType = "way"
 attribute = "osmType"
 value = osmType
 # Updates the attribute in the broker; creates the entity if it does not exist
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-osmLastModified = "2024-03-10T10:00:00Z"
+osmLastModified = "2023-08-10T14:30:00Z"
 attribute = "osmLastModified"
 value = osmLastModified
 # Updates the attribute in the broker; creates the entity if it does not exist

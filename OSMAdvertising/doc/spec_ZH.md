@@ -1,36 +1,36 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-实体: OSMAdvertising  
-==================<!-- /10-Header -->  
+实体：OSMAdvertising  
+=================<!-- /10-Header -->  
 <!-- 15-License -->  
 [开放许可](https://github.com/smart-data-models//dataModel.OpenStreetMap/LICENSE.md)  
 [自动生成的文档](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-全局描述：**来自 OpenStreetMap 且标记为 advertising=* 的广告设施。该数据模型是基于 OpenStreetMap Wiki 的衍生作品，由 OpenStreetMap 贡献者根据 CC BY-SA 2.0 协议授权。**  
-版本: 0.0.1  
+全局描述：标记为advertising=*的OpenStreetMap广告设施。该数据模型是基于OpenStreetMap Wiki的衍生作品，由OpenStreetMap贡献者在CC BY-SA 2.0许可下授权。  
+version: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## 属性列表  
 
-<sup><sub>[*] 如果属性中没有类型，是因为它可能具有多种类型或不同的格式/模式</sub></sup>  
-- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 该国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: 街道地址所在的、且位于该区域内的地区。  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: 该地点所在的、且位于该国境内的地区  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: 行政区是一种行政区划，在某些国家由地方政府管理。    
+<sup><sub>[*] 如果属性中没有类型，则可能是因为它有多种类型或不同的格式/模式</sub></sup>  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 街道地址所在的城镇，该城镇位于该区域内  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 城镇所在的区域，该区域位于该国家内  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 区是一种行政区划类型，在某些国家由地方政府管理    
 	- `postOfficeBoxNumber[string]`: 邮政信箱地址的邮政信箱号码。例如，03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 邮政编码。例如，24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]`: 标识公共街道上特定房产的号码    
-- `advertisingType[string]`: 用于对安装类型进行分类的 OSM 广告标签  . Model: [https://wiki.openstreetmap.org/wiki/Key:advertising](https://wiki.openstreetmap.org/wiki/Key:advertising)- `alternateName[string]`: 该物品的另一个名称  - `areaServed[string]`: 提供服务或所提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 用于标识协调数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。这通常由存储平台分配。  - `dateModified[date-time]`: 实体最后修改的时间戳。这通常由存储平台分配。  - `description[string]`: 此物品的描述  - `id[*]`: 实体的唯一标识符  - `lit[boolean]`: 表示广告牌是否点亮  . Model: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: 指向该项目的 GeoJSON 引用。它可以是 Point、LineString、Polygon、MultiPoint、MultiLineString 或 MultiPolygon。  - `name[string]`: 这个物品的名称  - `operator[string]`: 运营该广告牌的组织名称  - `osmId[number]`: 原始 OpenStreetMap 元素整数标识符  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM 元素最后一次修改的时间戳  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmType[string]`: 原始 OpenStreetMap 元素的类型。  - `owner[array]`: 一个包含 JSON 编码字符序列的列表，该序列引用了所有者的唯一 ID。  - `seeAlso[*]`: 指向额外资源的 URI 列表。  - `source[string]`: 一串以 URL 形式提供实体数据原始来源的字符序列。建议使用源提供者的全限定域名或源对象的 URL。  - `type[string]`: NGSI 实体类型。必须是 OSMAdvertising。  <!-- /30-PropertiesList -->  
+	- `streetNr[string]`: 标识公共街道上特定属性的编号    
+- `advertisingType[string]`: 对安装类型进行分类的OSM广告标签。  . Model: [https://wiki.openstreetmap.org/wiki/Key:advertising](https://wiki.openstreetmap.org/wiki/Key:advertising)- `alternateName[string]`: 此项目的替代名称  - `areaServed[string]`: 提供服务或商品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识协调数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。这通常由存储平台分配。  - `dateModified[date-time]`: 实体上次修改的时间戳。这通常由存储平台分配  - `description[string]`: 此项目的描述  - `id[*]`: 实体的唯一标识符  - `lit[boolean]`: 指示广告牌是否被照亮。  . Model: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: 项目的 Geojson 引用。它可以是 Point、LineString、Polygon、MultiPoint、MultiLineString 或 MultiPolygon  - `name[string]`: 此项目的名称  - `operator[string]`: 广告牌运营机构的名称。  - `osmId[number]`: 原始 OpenStreetMap 元素的整数标识符  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM 元素上次修改的时间戳  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmType[string]`: 原始 OpenStreetMap 元素的类型。  - `owner[array]`: 一个包含 JSON 编码字符序列的列表，该序列引用所有者（一个或多个）的唯一 ID  - `seeAlso[*]`: 指向额外资源的URI列表。  - `source[string]`: 以 URL 形式提供实体数据原始来源的字符序列。建议使用来源提供者的完全限定域名，或指向来源对象的 URL  - `type[string]`: NGSI实体类型。它必须是OSMAdvertising。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必填属性  
 - `advertisingType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-NotesYaml -->  
 <!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
-## 数据模型属性描述  
+## 属性的数据模型描述  
 按字母顺序排序（点击查看详情）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
@@ -459,9 +459,9 @@ OSMAdvertising:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## 示例有效载荷  
+## 示例载荷    
 #### OSMAdvertising NGSI-v2 键值对示例  
-这里是一个以键值对形式呈现的 JSON-LD 格式的 OSMAdvertising 示例。当使用 `options=keyValues` 时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
+这是一个采用键值对JSON-LD格式的OSMAdvertising示例。它在使用`options=keyValues`时兼容NGSI-v2，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -488,8 +488,8 @@ OSMAdvertising:
 }  
 ```  
 </details>  
-#### OSMAdvertising NGSI-v2 归一化示例  
-这里是一个归一化后的 JSON-LD 格式的 OSMAdvertising 示例。在不使用选项时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
+#### OSMAdvertising NGSI-v2 标准化示例  
+这是一个采用标准化JSON-LD格式的OSMAdvertising示例。它在不使用选项时兼容NGSI-v2，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -547,7 +547,7 @@ OSMAdvertising:
 ```  
 </details>  
 #### OSMAdvertising NGSI-LD 键值对示例  
-这是一个采用键值对形式的 JSON-LD 格式的 OSMAdvertising 示例。当使用 `options=keyValues` 时，这与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
+这是一个采用键值对JSON-LD格式的OSMAdvertising示例。它在使用`options=keyValues`时兼容NGSI-LD，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -577,8 +577,8 @@ OSMAdvertising:
 }  
 ```  
 </details>  
-#### OSMAdvertising NGSI-LD 归一化示例  
-这里是一个规范化后的 JSON-LD 格式的 OSMAdvertising 示例。在不使用选项时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
+#### OSMAdvertising NGSI-LD 标准化示例  
+这是一个采用标准化JSON-LD格式的OSMAdvertising示例。它在不使用选项时兼容NGSI-LD，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -636,7 +636,7 @@ OSMAdvertising:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/) 以获取关于如何处理量级单位的解答。  
+请参阅 [常见问题 10](https://smartdatamodels.org/index.php/faqs/)，了解如何处理数量单位的答案  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  

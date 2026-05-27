@@ -1,44 +1,55 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entität: OSMAdvertising  
-=======================<!-- /10-Header -->  
+エンティティ: OSMBarrier  
+==================<!-- /10-Header -->  
 <!-- 15-License -->  
-[Offene Lizenz](https://github.com/smart-data-models//dataModel.OpenStreetMap/LICENSE.md)  
-[automatisch generiertes Dokument](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.OpenStreetMap/LICENSE.md)  
+[自動生成されたドキュメント](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Globale Beschreibung: **Werbeanlagen aus OpenStreetMap, die mit advertising=* getaggt sind. Dieses Datenmodell ist ein Derivat, basierend auf dem OpenStreetMap-Wiki, lizenziert unter CC BY-SA 2.0 von OpenStreetMap-Mitwirkenden.**  
+全体説明: OpenStreetMapにbarrier=*でタグ付けされたバリアおよび物理的障害物。このデータモデルは、OpenStreetMap Wikiに基づいて作成された派生著作物であり、OpenStreetMapの寄稿者によりCC BY-SA 2.0ライセンスの下で提供されています。  
 version: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## Liste der Eigenschaften  
+## プロパティリスト  
 
-<sup><sub>[*] Wenn in einem Attribut kein Typ vorhanden ist, liegt dies daran, dass es mehrere Typen oder verschiedene Formate/Muster haben könnte</sub></sup>  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: Die Ortschaft, in der sich die Straßenadresse befindet und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: Die Region, in der sich die Ortschaft befindet und die im Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: Ein Distrikt ist eine Art von Verwaltungsgliederung, die in einigen Ländern von der lokalen Regierung verwaltet wird    
-	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]`: Die Straßenadresse  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]`: Nummer, die ein bestimmtes Grundstück an einer öffentlichen Straße identifiziert    
-- `advertisingType[string]`: Der OSM-Werbetag, der den Installationstyp klassifiziert  . Model: [https://wiki.openstreetmap.org/wiki/Key:advertising](https://wiki.openstreetmap.org/wiki/Key:advertising)- `alternateName[string]`: Ein alternativer Name für dieses Element  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel bereitgestellt wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Zeichenfolge, die den Anbieter der harmonisierten Datenentität identifiziert  - `dateCreated[date-time]`: Erstellungszeitstempel der Entität. Dieser wird üblicherweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird normalerweise von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Elements  - `id[*]`: Eindeutiger Bezeichner der Entität  - `lit[boolean]`: Gibt an, ob das Werbeschild beleuchtet ist  . Model: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: Geojson-Referenz zum Element. Es kann Point, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Elements  - `operator[string]`: Der Name der Organisation, die das Werbeschild betreibt.  - `osmId[number]`: Der ursprüngliche OpenStreetMap-Element-Integer-Identifikator  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: Zeitstempel der letzten Änderung des OSM-Elements  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmType[string]`: Der Typ des ursprünglichen OpenStreetMap-Elements.  - `owner[array]`: Eine Liste, die eine JSON-kodierte Zeichenfolge enthält, die die eindeutigen IDs des/der Eigentümer(s) referenziert  - `seeAlso[*]`: Liste der URIs, die auf zusätzliche Ressourcen verweisen.  - `source[string]`: Eine Zeichenfolge, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt  - `type[string]`: NGSI-Entitätstyp. Es muss OSMAdvertising sein  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合、それは複数の型または異なる形式/パターンを持つ可能性があるためです。</sub></sup>  
+- `access[string]`: バリアまたはゲートのアクセス制限  . Model: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例：スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地が存在し、その地域内にある場所（都市/町村など）  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その場所が存在し、その国内にある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは、一部の国において地方政府によって管理される行政区画の一種です。    
+	- `postOfficeBoxNumber[string]`: 私書箱住所の私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 公道上の特定の物件を識別する番号    
+- `alternateName[string]`: このアイテムの別名  - `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的領域  . Model: [https://schema.org/Text](https://schema.org/Text)- `barrierType[string]`: 障害物を分類するOSMバリアタグ  . Model: [https://wiki.openstreetmap.org/wiki/Key:barrier](https://wiki.openstreetmap.org/wiki/Key:barrier)- `dataProvider[string]`: 統合されたデータエンティティのプロバイダーを識別する一連の文字  - `dateCreated[date-time]`: エンティティ作成日時。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。通常、ストレージプラットフォームによって割り当てられます。  - `description[string]`: このアイテムの説明  - `height[number]`: バリアの高さ（メートル単位）  . Model: [https://wiki.openstreetmap.org/wiki/Key:height](https://wiki.openstreetmap.org/wiki/Key:height)- `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへのGeoJSON参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name[string]`: このアイテムの名前  - `osmId[number]`: 元のOpenStreetMap要素の整数識別子  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM要素の最終変更のタイムスタンプ  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmType[string]`: 元のOpenStreetMap要素のタイプ。  - `owner[array]`: 所有者の一意のIDを参照する、JSONエンコードされた文字のシーケンスを含むリスト  - `seeAlso[*]`: 追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLとして示す一連の文字。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへのURLであることが推奨されます。  - `type[string]`: NGSIエンティティタイプ。OSMBarrierである必要があります。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-Erforderliche Eigenschaften  
-- `advertisingType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
+必須プロパティ  
+- `barrierType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-NotesYaml -->  
 <!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
-## Datenmodellbeschreibung der Eigenschaften  
-Alphabetisch sortiert (für Details klicken)  
+## プロパティのデータモデル記述  
+アルファベット順にソートされています（詳細はこちらをクリック）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
-OSMAdvertising:    
-  description: Advertising installations from OpenStreetMap tagged with advertising=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.    
+OSMBarrier:    
+  description: Barriers and physical obstructions from OpenStreetMap tagged with barrier=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.    
   properties:    
+    access:    
+      description: Access restrictions for the barrier or gate    
+      enum:    
+        - 'yes'    
+        - 'no'    
+        - private    
+        - permissive    
+      type: string    
+      x-ngsi:    
+        model: https://wiki.openstreetmap.org/wiki/Key:access    
+        type: Property    
     address:    
       description: The mailing address    
       properties:    
@@ -92,21 +103,6 @@ OSMAdvertising:
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
-    advertisingType:    
-      description: The OSM advertising tag classifying the installation type    
-      enum:    
-        - billboard    
-        - poster    
-        - totem    
-        - board    
-        - wall_painting    
-        - column    
-        - scrolling_billboard    
-        - digital_billboard    
-      type: string    
-      x-ngsi:    
-        model: https://wiki.openstreetmap.org/wiki/Key:advertising    
-        type: Property    
     alternateName:    
       description: An alternative name for this item    
       type: string    
@@ -117,6 +113,31 @@ OSMAdvertising:
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
+    barrierType:    
+      description: The OSM barrier tag classifying the obstruction    
+      enum:    
+        - fence    
+        - wall    
+        - gate    
+        - bollard    
+        - hedge    
+        - retaining_wall    
+        - city_wall    
+        - ditch    
+        - cattle_grid    
+        - guard_rail    
+        - kerb    
+        - block    
+        - stile    
+        - toll_booth    
+        - lift_gate    
+        - swing_gate    
+        - wire_fence    
+        - 'yes'    
+      type: string    
+      x-ngsi:    
+        model: https://wiki.openstreetmap.org/wiki/Key:barrier    
         type: Property    
     dataProvider:    
       description: A sequence of characters identifying the provider of the harmonised data entity    
@@ -140,6 +161,12 @@ OSMAdvertising:
       type: string    
       x-ngsi:    
         type: Property    
+    height:    
+      description: Height of the barrier in metres    
+      type: number    
+      x-ngsi:    
+        model: https://wiki.openstreetmap.org/wiki/Key:height    
+        type: Property    
     id:    
       anyOf:    
         - description: Identifier format of any NGSI entity    
@@ -157,12 +184,6 @@ OSMAdvertising:
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Relationship    
-    lit:    
-      description: Indicates if the advertising sign is illuminated    
-      type: boolean    
-      x-ngsi:    
-        model: https://wiki.openstreetmap.org/wiki/Key:lit    
-        type: Property    
     location:    
       description: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon    
       oneOf:    
@@ -366,11 +387,6 @@ OSMAdvertising:
       type: string    
       x-ngsi:    
         type: Property    
-    operator:    
-      description: The name of the organization operating the advertising sign.    
-      type: string    
-      x-ngsi:    
-        type: Property    
     osmId:    
       description: The original OpenStreetMap element integer identifier    
       type: number    
@@ -433,9 +449,9 @@ OSMAdvertising:
       x-ngsi:    
         type: Property    
     type:    
-      description: NGSI Entity type. It has to be OSMAdvertising    
+      description: NGSI Entity type. It has to be OSMBarrier    
       enum:    
-        - OSMAdvertising    
+        - OSMBarrier    
       type: string    
       x-ngsi:    
         type: Property    
@@ -445,13 +461,13 @@ OSMAdvertising:
     - location    
     - osmId    
     - osmType    
-    - advertisingType    
+    - barrierType    
   type: object    
-  x-derived-from: https://wiki.openstreetmap.org/wiki/Key:advertising    
+  x-derived-from: https://wiki.openstreetmap.org/wiki/Key:barrier    
   x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program    
-  x-license-url: https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMAdvertising/LICENSE.md    
-  x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMAdvertising/schema.json    
-  x-model-tags: OSM OpenStreetMap Advertising    
+  x-license-url: https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMBarrier/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMBarrier/schema.json    
+  x-model-tags: OSM OpenStreetMap Barrier    
   x-version: 0.0.1    
 ```  
 </details>    
@@ -459,77 +475,92 @@ OSMAdvertising:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## Beispiel-Payloads    
-#### OSMAdvertising NGSI-v2 Schlüssel-Werte-Beispiel  
-Hier ist ein Beispiel für ein OSMAdvertising im JSON-LD-Format als Schlüssel-Werte-Paare. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird, und liefert die Kontextdaten einer einzelnen Entität.  
+## 例のペイロード  
+#### OSMBarrier NGSI-v2 キーバリューの例   
+これは、キーバリュー形式のJSON-LDフォーマットにおけるOSMBarrierの例です。これは、`options=keyValues` を使用する際にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:OSMAdvertising:node:11223388",  
-  "type": "OSMAdvertising",  
-  "osmId": 11223388,  
-  "osmType": "node",  
-  "osmLastModified": "2024-03-10T10:00:00Z",  
-  "name": "Billboard - Gran Vía",  
-  "advertisingType": "billboard",  
-  "lit": true,  
-  "operator": "JCDecaux",  
+  "id": "urn:ngsi-ld:OSMBarrier:way:77665544",  
+  "type": "OSMBarrier",  
+  "osmId": 77665544,  
+  "osmType": "way",  
+  "osmLastModified": "2023-08-10T14:30:00Z",  
+  "name": "Valla del Parque del Retiro",  
+  "barrierType": "fence",  
+  "height": 2.5,  
   "location": {  
-    "type": "Point",  
+    "type": "LineString",  
     "coordinates": [  
-      -3.7038,  
-      40.4192  
+      [  
+        -3.6825,  
+        40.413  
+      ],  
+      [  
+        -3.682,  
+        40.414  
+      ],  
+      [  
+        -3.6815,  
+        40.415  
+      ]  
     ]  
   },  
   "source": "https://www.openstreetmap.org",  
   "seeAlso": [  
-    "https://www.openstreetmap.org/node/11223388"  
+    "https://www.openstreetmap.org/way/77665544"  
   ]  
 }  
 ```  
 </details>  
-#### OSMAdvertising NGSI-v2 normalisiertes Beispiel  
-Hier ist ein Beispiel für ein OSMAdvertising im JSON-LD-Format als normalisiert. Dies ist mit NGSI-v2 kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### OSMBarrier NGSI-v2 正規化された例   
+これは、正規化されたJSON-LDフォーマットにおけるOSMBarrierの例です。これは、オプションを使用しない場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:OSMAdvertising:node:11223388",  
-  "type": "OSMAdvertising",  
+  "id": "urn:ngsi-ld:OSMBarrier:way:77665544",  
+  "type": "OSMBarrier",  
   "osmId": {  
     "type": "Integer",  
-    "value": 11223388  
+    "value": 77665544  
   },  
   "osmType": {  
     "type": "Text",  
-    "value": "node"  
+    "value": "way"  
   },  
   "osmLastModified": {  
     "type": "DateTime",  
-    "value": "2024-03-10T10:00:00Z"  
+    "value": "2023-08-10T14:30:00Z"  
   },  
   "name": {  
     "type": "Text",  
-    "value": "Billboard - Gran Vía"  
+    "value": "Valla del Parque del Retiro"  
   },  
-  "advertisingType": {  
+  "barrierType": {  
     "type": "Text",  
-    "value": "billboard"  
+    "value": "fence"  
   },  
-  "lit": {  
-    "type": "Boolean",  
-    "value": true  
-  },  
-  "operator": {  
-    "type": "Text",  
-    "value": "JCDecaux"  
+  "height": {  
+    "type": "Number",  
+    "value": 2.5  
   },  
   "location": {  
     "type": "geo:json",  
     "value": {  
-      "type": "Point",  
+      "type": "LineString",  
       "coordinates": [  
-        -3.7038,  
-        40.4192  
+        [  
+          -3.6825,  
+          40.413  
+        ],  
+        [  
+          -3.682,  
+          40.414  
+        ],  
+        [  
+          -3.6815,  
+          40.415  
+        ]  
       ]  
     }  
   },  
@@ -540,36 +571,45 @@ OSMAdvertising:
   "seeAlso": {  
     "type": "StructuredValue",  
     "value": [  
-      "https://www.openstreetmap.org/node/11223388"  
+      "https://www.openstreetmap.org/way/77665544"  
     ]  
   }  
 }  
 ```  
 </details>  
-#### OSMAdvertising NGSI-LD Schlüssel-Werte-Beispiel  
-Hier ist ein Beispiel für ein OSMAdvertising im JSON-LD-Format als Schlüssel-Werte-Paare. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird, und liefert die Kontextdaten einer einzelnen Entität.  
+#### OSMBarrier NGSI-LD キーバリューの例   
+これは、キーバリュー形式のJSON-LDフォーマットにおけるOSMBarrierの例です。これは、`options=keyValues` を使用する際にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:OSMAdvertising:node:11223388",  
-  "type": "OSMAdvertising",  
-  "osmId": 11223388,  
-  "osmType": "node",  
-  "osmLastModified": "2024-03-10T10:00:00Z",  
-  "name": "Billboard - Gran Vía",  
-  "advertisingType": "billboard",  
-  "lit": true,  
-  "operator": "JCDecaux",  
+  "id": "urn:ngsi-ld:OSMBarrier:way:77665544",  
+  "type": "OSMBarrier",  
+  "osmId": 77665544,  
+  "osmType": "way",  
+  "osmLastModified": "2023-08-10T14:30:00Z",  
+  "name": "Valla del Parque del Retiro",  
+  "barrierType": "fence",  
+  "height": 2.5,  
   "location": {  
-    "type": "Point",  
+    "type": "LineString",  
     "coordinates": [  
-      -3.7038,  
-      40.4192  
+      [  
+        -3.6825,  
+        40.413  
+      ],  
+      [  
+        -3.682,  
+        40.414  
+      ],  
+      [  
+        -3.6815,  
+        40.415  
+      ]  
     ]  
   },  
   "source": "https://www.openstreetmap.org",  
   "seeAlso": [  
-    "https://www.openstreetmap.org/node/11223388"  
+    "https://www.openstreetmap.org/way/77665544"  
   ],  
   "@context": [  
     "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
@@ -577,46 +617,55 @@ OSMAdvertising:
 }  
 ```  
 </details>  
-#### OSMAdvertising NGSI-LD normalisiertes Beispiel  
-Hier ist ein Beispiel für ein OSMAdvertising im JSON-LD-Format als normalisiert. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+#### OSMBarrier NGSI-LD 正規化された例   
+これは、正規化されたJSON-LDフォーマットにおけるOSMBarrierの例です。これは、オプションを使用しない場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:OSMAdvertising:node:11223388",  
-  "type": "OSMAdvertising",  
+  "id": "urn:ngsi-ld:OSMBarrier:way:77665544",  
+  "type": "OSMBarrier",  
   "osmId": {  
     "type": "Property",  
-    "value": 11223388  
+    "value": 77665544  
   },  
   "osmType": {  
     "type": "Property",  
-    "value": "node"  
+    "value": "way"  
   },  
   "osmLastModified": {  
     "type": "Property",  
-    "value": "2024-03-10T10:00:00Z"  
+    "value": "2023-08-10T14:30:00Z"  
   },  
   "name": {  
     "type": "Property",  
-    "value": "Billboard - Gran Vía"  
+    "value": "Valla del Parque del Retiro"  
   },  
-  "advertisingType": {  
+  "barrierType": {  
     "type": "Property",  
-    "value": "billboard"  
+    "value": "fence"  
   },  
-  "lit": {  
+  "height": {  
     "type": "Property",  
-    "value": true  
-  },  
-  "operator": {  
-    "type": "Property",  
-    "value": "JCDecaux"  
+    "value": 2.5  
   },  
   "location": {  
     "type": "GeoProperty",  
     "value": {  
-      "type": "Point",  
-      "coordinates": [-3.7038, 40.4192]  
+      "type": "LineString",  
+      "coordinates": [  
+        [  
+          -3.6825,  
+          40.413  
+        ],  
+        [  
+          -3.682,  
+          40.414  
+        ],  
+        [  
+          -3.6815,  
+          40.415  
+        ]  
+      ]  
     }  
   },  
   "source": {  
@@ -625,7 +674,9 @@ OSMAdvertising:
   },  
   "seeAlso": {  
     "type": "Property",  
-    "value": ["https://www.openstreetmap.org/node/11223388"]  
+    "value": [  
+      "https://www.openstreetmap.org/way/77665544"  
+    ]  
   },  
   "@context": [  
     "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"  
@@ -636,7 +687,7 @@ OSMAdvertising:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort darauf zu erhalten, wie mit Größeneinheiten umzugehen ist  
+規模単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  

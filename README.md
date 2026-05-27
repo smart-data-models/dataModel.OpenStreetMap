@@ -13,6 +13,8 @@ The following entity types are available:
 
 - [OSMAmenity](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMAmenity/README.md). A facility or amenity from OpenStreetMap tagged with amenity=*. Represents places of public or private use such as restaurants, schools, hospitals, banks, etc
 
+- [OSMBarrier](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMBarrier/README.md). Barriers and physical obstructions from OpenStreetMap tagged with barrier=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
+
 - [OSMBuilding](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMBuilding/README.md). A building or group of connected buildings from OpenStreetMap tagged with building=*. Represents the physical structure of a building, including its geometry, dimensions, materials, and functional classification. For specific functions within a building (shop, amenity, etc.) additional entities should be used.
 
 - [OSMBuildingPart](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMBuildingPart/README.md). A part or section of a building from OpenStreetMap tagged with building:part=*. Used to represent buildings with varying heights, roof shapes, or materials across different sections, enabling 3D building visualisation (Simple 3D Buildings standard).

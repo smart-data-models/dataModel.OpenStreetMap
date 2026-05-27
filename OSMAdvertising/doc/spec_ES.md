@@ -3,35 +3,35 @@
 Entidad: OSMAdvertising  
 =======================<!-- /10-Header -->  
 <!-- 15-License -->  
-[Licencia abierta](https://github.com/smart-data-models//dataModel.OpenStreetMap/LICENSE.md)  
+[Licencia Abierta](https://github.com/smart-data-models//dataModel.OpenStreetMap/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Descripción global: **Instalaciones publicitarias de OpenStreetMap etiquetadas con advertising=*. Este modelo de datos es una obra derivada basada en el Wiki de OpenStreetMap, bajo la licencia CC BY-SA 2.0 de los colaboradores de OpenStreetMap.**  
-versión: 0.0.1  
+Descripción global: **Instalaciones publicitarias de OpenStreetMap etiquetadas con advertising=*. Este modelo de datos es un trabajo derivado basado en la Wiki de OpenStreetMap, licenciado bajo CC BY-SA 2.0 por los colaboradores de OpenStreetMap.**  
+version: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-<sup><sub>[*] Si no hay un tipo en un atributo, es porque podría tener varios tipos o diferentes formatos/patrones</sub></sup>  
+<sup><sub>[*] Si no hay un tipo en un atributo es porque podría tener varios tipos o diferentes formatos/patrones</sub></sup>  
 - `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: El país. Por ejemplo, España  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]`: La localidad en la que se encuentra la dirección de la calle, y que está en la región.  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]`: La región en la que se encuentra la localidad, y que está en el país.  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, es administrada por el gobierno local.    
-	- `postOfficeBoxNumber[string]`: El número de apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `addressLocality[string]`: La localidad en la que se encuentra la dirección postal, y que está en la región  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La región en la que se encuentra la localidad, y que está en el país  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, es gestionado por el gobierno local    
+	- `postOfficeBoxNumber[string]`: El número de apartado de correos para direcciones de apartado postal. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: La dirección de la calle  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]`: Número que identifica una propiedad específica en una calle pública    
-- `advertisingType[string]`: La etiqueta publicitaria OSM que clasifica el tipo de instalación  . Model: [https://wiki.openstreetmap.org/wiki/Key:advertising](https://wiki.openstreetmap.org/wiki/Key:advertising)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: El área geográfica donde se presta un servicio o un artículo ofrecido.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizados  - `dateCreated[date-time]`: Marca de tiempo de creación de la entidad. Esto normalmente será asignado por la plataforma de almacenamiento.  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Esto normalmente será asignado por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `lit[boolean]`: Indica si el letrero publicitario está iluminado  . Model: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: Referencia GeoJSON al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `name[string]`: El nombre de este artículo  - `operator[string]`: El nombre de la organización que opera el cartel publicitario.  - `osmId[number]`: El identificador entero original del elemento de OpenStreetMap  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: Marca de tiempo de la última modificación del elemento OSM  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmType[string]`: El tipo del elemento original de OpenStreetMap.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los IDs únicos de los propietarios.  - `seeAlso[*]`: Lista de URIs que apuntan a recursos adicionales.  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad como una URL. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente, o la URL del objeto de origen.  - `type[string]`: Tipo de entidad NGSI. Debe ser OSMAdvertising  <!-- /30-PropertiesList -->  
+	- `streetNr[string]`: Número que identifica una propiedad específica en una vía pública    
+- `advertisingType[string]`: La etiqueta de publicidad de OSM que clasifica el tipo de instalación  . Model: [https://wiki.openstreetmap.org/wiki/Key:advertising](https://wiki.openstreetmap.org/wiki/Key:advertising)- `alternateName[string]`: Un nombre alternativo para este elemento  - `areaServed[string]`: El área geográfica donde se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Marca de tiempo de creación de la entidad. Esto generalmente será asignado por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Esto normalmente será asignado por la plataforma de almacenamiento  - `description[string]`: Una descripción de este elemento  - `id[*]`: Identificador único de la entidad  - `lit[boolean]`: Indica si el cartel publicitario está iluminado  . Model: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name[string]`: El nombre de este elemento  - `operator[string]`: El nombre de la organización que opera el cartel publicitario.  - `osmId[number]`: El identificador entero del elemento original de OpenStreetMap  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: Marca de tiempo de la última modificación del elemento OSM  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmType[string]`: El tipo del elemento original de OpenStreetMap.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos del/de los propietario(s)  - `seeAlso[*]`: Lista de URIs que apuntan a recursos adicionales.  - `source[string]`: Una secuencia de caracteres que proporciona la fuente original de los datos de la entidad como una URL. Se recomienda que sea el nombre de dominio completamente calificado del proveedor de la fuente, o la URL del objeto fuente  - `type[string]`: Tipo de entidad NGSI. Debe ser OSMAdvertising  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades obligatorias  
 - `advertisingType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-NotesYaml -->  
 <!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
-## Descripción de propiedades del modelo de datos  
-Ordenado alfabéticamente (clic para ver detalles)  
+## Descripción de propiedades del Modelo de Datos  
+Ordenado alfabéticamente (clic para detalles)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
@@ -459,9 +459,9 @@ OSMAdvertising:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## Ejemplos de payloads  
-#### Ejemplo de pares clave-valor de OSMAdvertising NGSI-v2  
-Aquí hay un ejemplo de un OSMAdvertising en formato JSON-LD como pares clave-valor. Esto es compatible con NGSI-v2 al usar `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+## Ejemplos de cargas útiles    
+#### Ejemplo de OSMAdvertising NGSI-v2 clave-valor   
+Aquí hay un ejemplo de OSMAdvertising en formato JSON-LD como pares clave-valor. Esto es compatible con NGSI-v2 cuando se usa `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -488,8 +488,8 @@ OSMAdvertising:
 }  
 ```  
 </details>  
-#### Ejemplo normalizado de OSMAdvertising NGSI-v2  
-Aquí hay un ejemplo de un OSMAdvertising en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### Ejemplo normalizado de OSMAdvertising NGSI-v2   
+Aquí hay un ejemplo de OSMAdvertising en formato JSON-LD como normalizado. Esto es compatible con NGSI-v2 cuando no se usan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -546,8 +546,8 @@ OSMAdvertising:
 }  
 ```  
 </details>  
-#### Ejemplo de pares clave-valor de OSMAdvertising NGSI-LD  
-Aquí hay un ejemplo de un OSMAdvertising en formato JSON-LD como pares clave-valor. Esto es compatible con NGSI-LD al usar `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### Ejemplo de OSMAdvertising NGSI-LD clave-valor   
+Aquí hay un ejemplo de OSMAdvertising en formato JSON-LD como pares clave-valor. Esto es compatible con NGSI-LD cuando se usa `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -577,8 +577,8 @@ OSMAdvertising:
 }  
 ```  
 </details>  
-#### Ejemplo normalizado de OSMAdvertising NGSI-LD  
-Aquí hay un ejemplo de un OSMAdvertising en formato JSON-LD tal como está normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### Ejemplo normalizado de OSMAdvertising NGSI-LD   
+Aquí hay un ejemplo de OSMAdvertising en formato JSON-LD como normalizado. Esto es compatible con NGSI-LD cuando no se usan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -636,7 +636,7 @@ OSMAdvertising:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo manejar las unidades de magnitud  
+Consulte [Preguntas Frecuentes 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
