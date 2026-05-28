@@ -1,0 +1,2 @@
+"id", "type", "osmId", "osmType", "osmLastModified", "name", "geologicalType", "location__coordinates__0", "location__coordinates__1", "source", "seeAlso__0", "@context__0"
+"urn:ngsi-ld:OSMGeological:node:99881122", "OSMGeological", "99881122", "node", "2024-03-01T10:00:00Z", "Cueva del Aire", "cave_entrance", "-3.8", "40.5", "https://www.openstreetmap.org", "https://www.openstreetmap.org/node/99881122", "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"

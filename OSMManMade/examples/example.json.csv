@@ -1,0 +1,2 @@
+"id", "type", "osmId", "osmType", "osmLastModified", "name", "manMadeType", "manMadeHeight", "material", "operator", "location__coordinates__0", "location__coordinates__1", "source", "seeAlso__0", "seeAlso__1"
+"urn:ngsi-ld:OSMManMade:node:7890123", "OSMManMade", "7890123", "node", "2022-09-05T14:15:00Z", "Torre de Comunicaciones Torrespaña", "tower", "231.0", "concrete", "Cellnex", "-3.6644", "40.4208", "https://www.openstreetmap.org", "https://www.openstreetmap.org/node/7890123", "https://es.wikipedia.org/wiki/Torrespa%C3%B1a"

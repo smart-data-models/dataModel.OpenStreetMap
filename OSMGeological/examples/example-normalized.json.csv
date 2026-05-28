@@ -1,0 +1,2 @@
+"id", "type", "osmId__value", "osmType__value", "osmLastModified__value", "name__value", "geologicalType__value", "location__value__coordinates__0", "location__value__coordinates__1", "source__value", "seeAlso__value__0"
+"urn:ngsi-ld:OSMGeological:node:99881122", "OSMGeological", "99881122", "node", "2024-03-01T10:00:00Z", "Cueva del Aire", "cave_entrance", "-3.8", "40.5", "https://www.openstreetmap.org", "https://www.openstreetmap.org/node/99881122"

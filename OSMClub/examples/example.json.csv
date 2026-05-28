@@ -1,0 +1,2 @@
+"id", "type", "osmId", "osmType", "osmLastModified", "name", "clubType", "location__coordinates__0", "location__coordinates__1", "source", "seeAlso__0", "seeAlso__1"
+"urn:ngsi-ld:OSMClub:node:55667788", "OSMClub", "55667788", "node", "2023-11-20T10:00:00Z", "Real Madrid C.F.", "sport", "-3.6883", "40.4531", "https://www.openstreetmap.org", "https://www.openstreetmap.org/node/55667788", "https://www.realmadrid.com"

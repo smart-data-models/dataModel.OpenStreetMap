@@ -15,29 +15,63 @@ The following entity types are available:
 
 - [OSMBarrier](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMBarrier/README.md). Barriers and physical obstructions from OpenStreetMap tagged with barrier=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
 
+- [OSMBoundary](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMBoundary/README.md). Administrative and other boundaries from OpenStreetMap tagged with boundary=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
+
 - [OSMBuilding](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMBuilding/README.md). A building or group of connected buildings from OpenStreetMap tagged with building=*. Represents the physical structure of a building, including its geometry, dimensions, materials, and functional classification. For specific functions within a building (shop, amenity, etc.) additional entities should be used.
 
 - [OSMBuildingPart](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMBuildingPart/README.md). A part or section of a building from OpenStreetMap tagged with building:part=*. Used to represent buildings with varying heights, roof shapes, or materials across different sections, enabling 3D building visualisation (Simple 3D Buildings standard).
 
+- [OSMClub](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMClub/README.md). Social, sports, or interest-based clubs from OpenStreetMap tagged with club=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
+
+- [OSMCraft](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMCraft/README.md). A place for crafts and manual trades from OpenStreetMap tagged with craft=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
+
 - [OSMCycleRoute](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMCycleRoute/README.md). A dedicated cycling infrastructure element from OpenStreetMap. Represents cycle paths, shared cycle lanes, and bike routes tagged with highway=cycleway or cycleway=* on road ways.
 
+- [OSMEmergency](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMEmergency/README.md). An emergency facility or equipment from OpenStreetMap tagged with emergency=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
+
+- [OSMGeological](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMGeological/README.md). Geological features from OpenStreetMap tagged with geological=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
+
+- [OSMHealthcare](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMHealthcare/README.md). Healthcare facilities and services from OpenStreetMap tagged with healthcare=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
+
 - [OSMHighway](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMHighway/README.md). A road or path element from OpenStreetMap tagged with the highway key. Represents all types of roads, from motorways to footpaths, as defined by the OSM highway taxonomy.
+
+- [OSMHistoric](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMHistoric/README.md). A historic site or monument from OpenStreetMap tagged with historic=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
+
+- [OSMIndoor](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMIndoor/README.md). Indoor features from OpenStreetMap tagged with indoor=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
 
 - [OSMLanduse](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMLanduse/README.md). An area of land use from OpenStreetMap tagged with landuse=*. Describes the primary human purpose or use of an area of land
 
 - [OSMLeisure](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMLeisure/README.md). A place for leisure, sports, or recreation from OpenStreetMap tagged with leisure=*. Includes parks, sports pitches, swimming pools, stadiums, etc
 
+- [OSMManMade](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMManMade/README.md). An artificial structure from OpenStreetMap tagged with man_made=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
+
+- [OSMMilitary](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMMilitary/README.md). Military zones and buildings from OpenStreetMap tagged with military=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
+
 - [OSMNatural](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMNatural/README.md). A natural feature from OpenStreetMap tagged with natural=*. Describes geographical features such as water bodies, woods, scrub, peaks, beaches, etc
 
+- [OSMOffice](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMOffice/README.md). An office or place of business from OpenStreetMap tagged with office=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
+
 - [OSMParkingArea](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMParkingArea/README.md). A vehicle parking area or facility from OpenStreetMap tagged with amenity=parking. Represents surface car parks, multi-storey garages, underground facilities, and other organised parking areas.
+
+- [OSMPlace](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMPlace/README.md). Geographical places from OpenStreetMap tagged with place=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
+
+- [OSMPower](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMPower/README.md). Facilities for generation and distribution of electrical power from OpenStreetMap tagged with power=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
 
 - [OSMPublicTransportStop](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMPublicTransportStop/README.md). A public transport stop, station, platform or boarding point from OpenStreetMap. Represents nodes and areas where passengers board or alight from public transport services, tagged with public_transport=* or specific mode tags.
 
 - [OSMRailway](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMRailway/README.md). A railway track or infrastructure element from OpenStreetMap tagged with the railway key. Covers all types of rail infrastructure, from mainline heavy rail to trams, subways and funiculars.
 
+- [OSMRoute](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMRoute/README.md). Established routes from OpenStreetMap tagged with route=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
+
 - [OSMShop](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMShop/README.md). A shop or retail store from OpenStreetMap tagged with shop=*. Represents establishments selling retail products directly to end customers
 
+- [OSMTelecom](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMTelecom/README.md). Telecommunication infrastructure from OpenStreetMap tagged with telecom=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
+
 - [OSMTourism](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMTourism/README.md). A tourist attraction or tourism-related facility from OpenStreetMap tagged with tourism=*. Includes hotels, museums, viewpoints, artworks, etc
+
+- [OSMTrafficSign](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMTrafficSign/README.md). Road and traffic signs from OpenStreetMap tagged with traffic_sign=*. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
+
+- [OSMWater](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMWater/README.md). Bodies of water from OpenStreetMap tagged with water=* or natural=water. This data model is a derivative work based on the OpenStreetMap Wiki, licensed under CC BY-SA 2.0 by OpenStreetMap contributors.
 
 - [OSMWaterway](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMWaterway/README.md). A waterway from OpenStreetMap tagged with waterway=*. Describes rivers, streams, canals, drains, and other water courses
 

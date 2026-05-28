@@ -1,0 +1,2 @@
+"id", "type", "osmId__value", "osmType__value", "osmLastModified__value", "name__value", "trafficSignType__value", "direction__value", "location__value__coordinates__0", "location__value__coordinates__1", "source__value", "seeAlso__value__0"
+"urn:ngsi-ld:OSMTrafficSign:node:99884433", "OSMTrafficSign", "99884433", "node", "2024-03-01T10:00:00Z", "Stop Sign - Plaza Mayor", "stop", "180", "-3.7074", "40.4153", "https://www.openstreetmap.org", "https://www.openstreetmap.org/node/99884433"

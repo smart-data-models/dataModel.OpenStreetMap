@@ -1,0 +1,2 @@
+"id", "type", "osmId", "osmType", "osmLastModified", "name", "emergencyType", "operator", "ref", "location__coordinates__0", "location__coordinates__1", "source", "seeAlso__0"
+"urn:ngsi-ld:OSMEmergency:node:88776655", "OSMEmergency", "88776655", "node", "2024-02-15T10:00:00Z", "Defibrillator Pharmacy", "defibrillator", "Farmacia local", "DEA-452", "-3.7038", "40.4168", "https://www.openstreetmap.org", "https://www.openstreetmap.org/node/88776655"

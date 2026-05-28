@@ -1,0 +1,2 @@
+"id", "type", "osmId", "osmType", "osmLastModified", "name", "placeType", "population", "location__coordinates__0", "location__coordinates__1", "source", "seeAlso__0", "seeAlso__1", "@context__0"
+"urn:ngsi-ld:OSMPlace:node:312456", "OSMPlace", "312456", "node", "2024-02-15T15:00:00Z", "Madrid", "city", "3334730", "-3.7037", "40.4167", "https://www.openstreetmap.org", "https://www.openstreetmap.org/node/312456", "https://es.wikipedia.org/wiki/Madrid", "https://raw.githubusercontent.com/smart-data-models/dataModel.OpenStreetMap/refs/heads/master/context.jsonld"
