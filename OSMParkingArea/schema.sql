@@ -1,12 +1,12 @@
 /* (Beta) Export of data model OSMParkingArea of the subject dataModel.OpenStreetMap for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE access_type AS ENUM ('yes', 'no', 'private', 'permissive', 'customers', 'destination');
-CREATE TYPE osmType_type AS ENUM ('node', 'way', 'relation');
-CREATE TYPE parkingType_type AS ENUM ('surface', 'multi-storey', 'underground', 'street_side', 'rooftop', 'sheds', 'carports', 'garage_boxes', 'lane');
-CREATE TYPE surface_type AS ENUM ('asphalt', 'concrete', 'gravel', 'dirt', 'paving_stones', 'cobblestone', 'unpaved', 'grass', 'compacted');
+CREATE TYPE OSMParkingArea_access_type AS ENUM ('yes', 'no', 'private', 'permissive', 'customers', 'destination');
+CREATE TYPE OSMParkingArea_osmType_type AS ENUM ('node', 'way', 'relation');
+CREATE TYPE OSMParkingArea_parkingType_type AS ENUM ('surface', 'multi-storey', 'underground', 'street_side', 'rooftop', 'sheds', 'carports', 'garage_boxes', 'lane');
+CREATE TYPE OSMParkingArea_surface_type AS ENUM ('asphalt', 'concrete', 'gravel', 'dirt', 'paving_stones', 'cobblestone', 'unpaved', 'grass', 'compacted');
 CREATE TYPE OSMParkingArea_type AS ENUM ('OSMParkingArea');
-CREATE TYPE wheelchair_type AS ENUM ('yes', 'no', 'limited');
+CREATE TYPE OSMParkingArea_wheelchair_type AS ENUM ('yes', 'no', 'limited');
 CREATE TABLE OSMParkingArea (
-  "access" access_type,
+  "access" OSMParkingArea_access_type,
   "address" JSON,
   "alternateName" TEXT,
   "areaServed" TEXT,
@@ -26,12 +26,12 @@ CREATE TABLE OSMParkingArea (
   "operator" TEXT,
   "osmId" NUMERIC,
   "osmLastModified" TIMESTAMP,
-  "osmType" osmType_type,
+  "osmType" OSMParkingArea_osmType_type,
   "owner" JSON,
-  "parkingType" parkingType_type,
+  "parkingType" OSMParkingArea_parkingType_type,
   "seeAlso" JSON,
   "source" TEXT,
-  "surface" surface_type,
+  "surface" OSMParkingArea_surface_type,
   "type" OSMParkingArea_type,
-  "wheelchair" wheelchair_type
+  "wheelchair" OSMParkingArea_wheelchair_type
 );
