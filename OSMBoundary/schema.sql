@@ -1,13 +1,13 @@
 /* (Beta) Export of data model OSMBoundary of the subject dataModel.OpenStreetMap for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE boundaryType_type AS ENUM ('administrative', 'national_park', 'postal_code', 'maritime', 'political', 'traditional', 'historic', 'protected_area');
-CREATE TYPE osmType_type AS ENUM ('node', 'way', 'relation');
+CREATE TYPE OSMBoundary_boundaryType_type AS ENUM ('administrative', 'national_park', 'postal_code', 'maritime', 'political', 'traditional', 'historic', 'protected_area');
+CREATE TYPE OSMBoundary_osmType_type AS ENUM ('node', 'way', 'relation');
 CREATE TYPE OSMBoundary_type AS ENUM ('OSMBoundary');
 CREATE TABLE OSMBoundary (
   "address" JSON,
   "adminLevel" NUMERIC,
   "alternateName" TEXT,
   "areaServed" TEXT,
-  "boundaryType" boundaryType_type,
+  "boundaryType" OSMBoundary_boundaryType_type,
   "dataProvider" TEXT,
   "dateCreated" TIMESTAMP,
   "dateModified" TIMESTAMP,
@@ -17,7 +17,7 @@ CREATE TABLE OSMBoundary (
   "name" TEXT,
   "osmId" NUMERIC,
   "osmLastModified" TIMESTAMP,
-  "osmType" osmType_type,
+  "osmType" OSMBoundary_osmType_type,
   "owner" JSON,
   "postalCode" TEXT,
   "seeAlso" JSON,
