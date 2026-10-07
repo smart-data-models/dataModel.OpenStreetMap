@@ -1,10 +1,10 @@
 /* (Beta) Export of data model OSMAerialway of the subject dataModel.OpenStreetMap for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE aerialwayType_type AS ENUM ('cable_car', 'gondola', 'mixed_lift', 'chair_lift', 'drag_lift', 't-bar', 'j-bar', 'platter', 'rope_tow', 'magic_carpet', 'zip_line', 'goods', 'pylon', 'station');
-CREATE TYPE osmType_type AS ENUM ('node', 'way', 'relation');
+CREATE TYPE OSMAerialway_aerialwayType_type AS ENUM ('cable_car', 'gondola', 'mixed_lift', 'chair_lift', 'drag_lift', 't-bar', 'j-bar', 'platter', 'rope_tow', 'magic_carpet', 'zip_line', 'goods', 'pylon', 'station');
+CREATE TYPE OSMAerialway_osmType_type AS ENUM ('node', 'way', 'relation');
 CREATE TYPE OSMAerialway_type AS ENUM ('OSMAerialway');
 CREATE TABLE OSMAerialway (
   "address" JSON,
-  "aerialwayType" aerialwayType_type,
+  "aerialwayType" OSMAerialway_aerialwayType_type,
   "alternateName" TEXT,
   "areaServed" TEXT,
   "bubble" BOOLEAN,
@@ -23,7 +23,7 @@ CREATE TABLE OSMAerialway (
   "operator" TEXT,
   "osmId" NUMERIC,
   "osmLastModified" TIMESTAMP,
-  "osmType" osmType_type,
+  "osmType" OSMAerialway_osmType_type,
   "owner" JSON,
   "seeAlso" JSON,
   "source" TEXT,
