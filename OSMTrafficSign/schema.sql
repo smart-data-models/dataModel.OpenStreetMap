@@ -1,5 +1,5 @@
 /* (Beta) Export of data model OSMTrafficSign of the subject dataModel.OpenStreetMap for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE osmType_type AS ENUM ('node', 'way', 'relation');
+CREATE TYPE OSMTrafficSign_osmType_type AS ENUM ('node', 'way', 'relation');
 CREATE TYPE OSMTrafficSign_type AS ENUM ('OSMTrafficSign');
 CREATE TABLE OSMTrafficSign (
   "address" JSON,
@@ -15,7 +15,7 @@ CREATE TABLE OSMTrafficSign (
   "name" TEXT,
   "osmId" NUMERIC,
   "osmLastModified" TIMESTAMP,
-  "osmType" osmType_type,
+  "osmType" OSMTrafficSign_osmType_type,
   "owner" JSON,
   "seeAlso" JSON,
   "source" TEXT,
