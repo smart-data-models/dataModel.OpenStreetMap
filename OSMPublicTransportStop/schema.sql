@@ -1,8 +1,8 @@
 /* (Beta) Export of data model OSMPublicTransportStop of the subject dataModel.OpenStreetMap for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE osmType_type AS ENUM ('node', 'way', 'relation');
-CREATE TYPE publicTransportType_type AS ENUM ('stop_position', 'platform', 'station', 'stop_area');
+CREATE TYPE OSMPublicTransportStop_osmType_type AS ENUM ('node', 'way', 'relation');
+CREATE TYPE OSMPublicTransportStop_publicTransportType_type AS ENUM ('stop_position', 'platform', 'station', 'stop_area');
 CREATE TYPE OSMPublicTransportStop_type AS ENUM ('OSMPublicTransportStop');
-CREATE TYPE wheelchair_type AS ENUM ('yes', 'no', 'limited');
+CREATE TYPE OSMPublicTransportStop_wheelchair_type AS ENUM ('yes', 'no', 'limited');
 CREATE TABLE OSMPublicTransportStop (
   "address" JSON,
   "alternateName" TEXT,
@@ -21,9 +21,9 @@ CREATE TABLE OSMPublicTransportStop (
   "operator" TEXT,
   "osmId" NUMERIC,
   "osmLastModified" TIMESTAMP,
-  "osmType" osmType_type,
+  "osmType" OSMPublicTransportStop_osmType_type,
   "owner" JSON,
-  "publicTransportType" publicTransportType_type,
+  "publicTransportType" OSMPublicTransportStop_publicTransportType_type,
   "ref" TEXT,
   "seeAlso" JSON,
   "shelter" BOOLEAN,
@@ -31,5 +31,5 @@ CREATE TABLE OSMPublicTransportStop (
   "tactilePaving" BOOLEAN,
   "transportMode" JSON,
   "type" OSMPublicTransportStop_type,
-  "wheelchair" wheelchair_type
+  "wheelchair" OSMPublicTransportStop_wheelchair_type
 );
