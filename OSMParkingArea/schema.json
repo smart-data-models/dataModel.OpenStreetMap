@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$schemaVersion": "0.0.1",
+  "$schemaVersion": "0.0.2",
   "modelTags": "OSM OpenStreetMap Transportation Parking",
   "$id": "https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMParkingArea/schema.json",
   "title": "Smart Data Models - OpenStreetMap / OSMParkingArea",
@@ -44,15 +44,15 @@
         "parkingType": {
           "type": "string",
           "enum": [
-            "surface",
-            "multi-storey",
-            "underground",
-            "street_side",
-            "rooftop",
-            "sheds",
             "carports",
             "garage_boxes",
-            "lane"
+            "lane",
+            "multi-storey",
+            "rooftop",
+            "sheds",
+            "street_side",
+            "surface",
+            "underground"
           ],
           "description": "Property. Physical type or layout of the parking facility. Enum:'surface, multi-storey, underground, street_side, rooftop, sheds, carports, garage_boxes, lane'. Model:'https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking'"
         },
