@@ -54,7 +54,7 @@
             "surface",
             "underground"
           ],
-          "description": "Property. Physical type or layout of the parking facility. Enum:'surface, multi-storey, underground, street_side, rooftop, sheds, carports, garage_boxes, lane'. Model:'https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking'"
+          "description": "Property. Physical type or layout of the parking facility. Enum:'carports, garage_boxes, lane, multi-storey, rooftop, sheds, street_side, surface, underground'. Model:'https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking'"
         },
         "access": {
           "type": "string",

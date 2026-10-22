@@ -93,7 +93,7 @@
             "warehouse",
             "yes"
           ],
-          "description": "Property. The OSM building tag value classifying the type or function of the building. Enum:'yes, residential, apartments, house, detached, bungalow, cabin, dormitory, hotel, commercial, office, industrial, warehouse, retail, supermarket, school, university, hospital, church, cathedral, mosque, synagogue, civic, government, public, transportation, train_station, stadium, garage, shed, greenhouse, service, ruins'. Model:'https://wiki.openstreetmap.org/wiki/Key:building'"
+          "description": "Property. The OSM building tag value classifying the type or function of the building. Enum:'annexe, apartments, barn, barracks, bungalow, cabin, cathedral, chapel, church, civic, clinic, commercial, conservatory, detached, dormitory, farm, farm_auxiliary, garage, garages, ger, government, grandstand, greenhouse, hospital, hotel, house, industrial, kiosk, mosque, office, public, residential, retail, roof, ruins, school, service, shed, sports_hall, stadium, supermarket, synagogue, temple, train_station, transportation, university, warehouse, yes'. Model:'https://wiki.openstreetmap.org/wiki/Key:building'"
         },
         "buildingLevels": {
           "type": "integer",
