@@ -1,98 +1,38 @@
-<!-- 10-Header -->  
- 
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
- 
-엔티티: OSMBuilding
-===================<!-- /10-Header -->  
- 
-<!-- 15-License -->  
- 
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMBuilding/LICENSE.md)  
- 
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
- 
-<!-- 20-Description -->  
- 
-전역 설명: **오픈스트리트맵에서 건물= *로 태그가 지정된 건물 또는 연결된 건물 그룹입니다. 건물의 물리적 구조를 나타내며, 기하학, 치수, 재료 및 기능 분류를 포함합니다. 건물 내의 특정 기능(상점, 편의 시설 등)에 대한 추가 엔티티를 사용해야 합니다.**  
-버전: 0.0.1  
-<!-- /20-Description -->  
- 
-<!-- 30-PropertiesList -->  
- 
+엔터티: OSMBuilding  
+================<!-- /10-Header -->  
+<!-- 15-License -->  
+[오픈 라이선스](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMBuilding/LICENSE.md)  
+[자동으로 생성된 문서](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+전체 설명: **building=* 태그가 지정된 OpenStreetMap의 건물 또는 연결된 건물 그룹입니다. 건물의 지오메트리, 크기, 재료 및 기능적 분류를 포함하여 건물의 물리적 구조를 나타냅니다. 건물 내의 특정 기능(상점, 편의 시설 등)에는 추가 엔터티를 사용해야 합니다.**  
+version: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## 속성 목록  
+## 속성 목록  
 
- 
-<sup><sub>[*] 속성에 유형이 없으면 여러 유형이나 다른 형식/패턴을 가질 수 있습니다</sub></sup>  
-- `access[string]`: 건물에 대한 일반적인 접근 제한입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)  
-- `address[object]`: 건물의 주소로 schema.org PostalAddress를 따릅니다.   
-	- `addressCity[string]`: 도시입니다. OSM: addr:city    
-	- `addressCountry[string]`: ISO 3166-1 알파-2 국가 코드입니다. OSM: addr:country    
-	- `houseNumber[string]`: 집 또는 건물 번호입니다. OSM: addr:housenumber    
-	- `postalCode[string]`: 우편 번호입니다. OSM: addr:postcode    
-	- `streetAddress[string]`: 거리 이름입니다. OSM: addr:street    
-- `alternateName[string]`: 이 항목의 대체 이름입니다.   
-- `amenity[string]`: 건물의 주요 편의 기능입니다(예: 병원, 학교). 모델: [https://wiki.openstreetmap.org/wiki/Key:amenity](https://wiki.openstreetmap.org/wiki/Key:amenity)  
-- `areaServed[string]`: 서비스 또는 제공된 항목이 제공되는 지리적 영역입니다. 모델: [https://schema.org/Text](https://schema.org/Text)  
-- `buildingColour[string]`: 주요 외벽의 색상으로 CSS 색상 이름 또는 16진수 코드로 표현됩니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:building:colour](https://wiki.openstreetmap.org/wiki/Key:building:colour)  
-- `buildingHeight[number]`: 지면에서 가장 높은 지점까지 건물의 총 높이(미터 단위)입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:height](https://wiki.openstreetmap.org/wiki/Key:height)  
-- `buildingLevels[number]`: 건물의 지상층 수입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:building:levels](https://wiki.openstreetmap.org/wiki/Key:building:levels)  
-- `buildingLevelsUnderground[number]`: 건물의 지하 또는 지하층 수입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:building:levels:underground](https://wiki.openstreetmap.org/wiki/Key:building:levels:underground)  
-- `buildingMaterial[string]`: 건물의 주요 구조 또는 외벽 재료입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:building:material](https://wiki.openstreetmap.org/wiki/Key:building:material)  
-- `buildingType[string]`: 건물의 유형 또는 기능을 분류하는 OSM 건물 태그 값입니다. 열거형:'예, 주거, 아파트, 집, 분리, 방갈로, 오두막, 기숙사, 호텔, 상업, 사무실, 산업, 창고, 소매, 슈퍼마켓, 학교, 대학, 병원, 교회, 대성당, 모스크, 성당, 시민, 정부, 공공, 교통, 기차역, 경기장, 차고, 헛간, 온실, 서비스, 폐허' . 모델: [https://wiki.openstreetmap.org/wiki/Key:building](https://wiki.openstreetmap.org/wiki/Key:building)  
-- `dataProvider[string]`: 조화된 데이터 엔티티를 제공하는 공급자의 일련의 문자입니다.   
-- `dateCreated[date-time]`: 엔티티 생성 타임스탬프입니다. 이는 일반적으로 저장 플랫폼에 의해 할당됩니다.   
-- `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프입니다. 이는 일반적으로 저장 플랫폼에 의해 할당됩니다.   
-- `description[string]`: 이 항목에 대한 설명입니다.   
-- `flats[number]`: 건물 내의 개별 주택 단위의 총 수입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:building:flats](https://wiki.openstreetmap.org/wiki/Key:building:flats)  
-- `id[*]`: 엔티티의 고유 식별자입니다.   
-- `location[*]`: 항목에 대한 Geojson 참조입니다. 점, 선, 다각형, 멀티포인트, 멀티라인, 멀티다각형 중 하나일 수 있습니다.   
-- `minHeight[number]`: 건물의 기초 높이(미터 단위)입니다. 경사나 고가 구조물에 있는 건물에 사용됩니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:min_height](https://wiki.openstreetmap.org/wiki/Key:min_height)  
-- `name[string]`: 이 항목의 이름입니다.   
-- `openingHours[string]`: 건물 또는 주요 기능의 영업 시간입니다. OSM opening_hours 구문으로 지정됩니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)  
-- `operator[string]`: 건물의 운영 또는 관리를 담당하는 엔티티의 이름입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)  
-- `osmId[number]`: 원래 오픈스트리트맵 요소의 정수 식별자입니다. 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)  
-- `osmLastModified[date-time]`: OSM 요소의 마지막 수정 타임스탬프입니다.   
-- `osmType[string]`: 원래 오픈스트리트맵 요소의 유형입니다. 모델: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)  
-- `owner[array]`: 고유 ID를 참조하는 JSON으로 인코딩된 문자열 시퀀스를 포함하는 목록입니다.   
-- `roofColour[string]`: 지붕의 색상으로 CSS 색상 이름 또는 16진수 코드로 표현됩니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:roof:colour](https://wiki.openstreetmap.org/wiki/Key:roof:colour)  
-- `roofMaterial[string]`: 지붕 표면의 주요 재료입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:roof:material](https://wiki.openstreetmap.org/wiki/Key:roof:material)  
-- `roofShape[string]`: 지붕의 모양입니다. 열거형:'평면, 사면, 사다리꼴, 반사다리꼴, 피라미드, 감벨, 만사드, 돔, 스킬리온, 라운드, 솔트박스, 양파, 원뿔' . 모델: [https://wiki.openstreetmap.org/wiki/Key:roof:shape](https://wiki.openstreetmap.org/wiki/Key:roof:shape)  
-- `seeAlso[*]`: 이 항목에 대한 추가 리소스를 가리키는 URI 목록입니다.   
-- `source[string]`: 엔티티 데이터의 원래 소스를 URL로 지정합니다. 소스 제공자의 완전한 도메인 이름이나 소스 개체의 URL을 권장합니다.   
-- `startDate[string]`: 건물이 건축된 연도 또는 날짜입니다. 자유 형식의 날짜 또는 연도 값입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:start_date](https://wiki.openstreetmap.org/wiki/Key:start_date)  
-- `type[string]`: NGSI 엔티티 유형입니다. OSMBuilding이어야 합니다.   
-- `wheelchair[string]`: 건물의 휠체어 접근성 수준입니다. 모델: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)  
-<!-- /30-PropertiesList -->  
- 
-<!-- 35-RequiredProperties -->  
- 
-필수 속성  
-- `buildingType`   
-- `id`   
-- `location`   
-- `osmId`   
-- `osmType`   
-- `type`   
-<!-- /35-RequiredProperties -->  
- 
-<!-- 40-NotesYaml -->  
- 
-<!-- /40-NotesYaml -->  
- 
-<!-- 50-DataModelHeader -->  
- 
-## 속성에 대한 데이터 모델 설명  
- 
-알파벳 순으로 정렬됨(자세한 정보를 위해 클릭)  
-<!-- /50-DataModelHeader -->  
- 
-<!-- 60-ModelYaml -->  
- 
-<details><summary><strong>전체 yaml 세부 정보</strong></summary>    
- 
-```yaml  
+<sup><sub>[*] 속성에 유형이 없는 경우 여러 유형이나 다른 형식/패턴을 가질 수 있기 때문입니다</sub></sup>  
+- `access[string]`: 건물에 대한 일반적인 접근 제한  . Model: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: schema.org PostalAddress에 따라 구조화된 건물의 주소입니다.  	- `addressCity[string]`: 도시. OSM: addr:city    
+	- `addressCountry[string]`: ISO 3166-1 alpha-2 국가 코드. OSM: addr:country    
+	- `houseNumber[string]`: 건물 또는 건물 번호. OSM: addr:housenumber    
+	- `postalCode[string]`: 우편번호. OSM: addr:postcode    
+	- `streetAddress[string]`: 도로명. OSM: addr:street    
+- `alternateName[string]`: 이 항목의 대체 이름  - `amenity[string]`: 건물의 주요 편의 기능 (예: 병원, 학교)  . Model: [https://wiki.openstreetmap.org/wiki/Key:amenity](https://wiki.openstreetmap.org/wiki/Key:amenity)- `areaServed[string]`: 서비스 또는 제공되는 품목이 제공되는 지리적 영역  . Model: [https://schema.org/Text](https://schema.org/Text)- `buildingColour[string]`: 주요 외벽의 색상으로, CSS 색상 이름 또는 헥스 코드로 표현됩니다.  . Model: [https://wiki.openstreetmap.org/wiki/Key:building:colour](https://wiki.openstreetmap.org/wiki/Key:building:colour)- `buildingHeight[number]`: 건물의 지면에서 가장 높은 지점까지의 총 높이(미터)  . Model: [https://wiki.openstreetmap.org/wiki/Key:height](https://wiki.openstreetmap.org/wiki/Key:height)- `buildingLevels[number]`: 건물의 지상 층 수  . Model: [https://wiki.openstreetmap.org/wiki/Key:building:levels](https://wiki.openstreetmap.org/wiki/Key:building:levels)- `buildingLevelsUnderground[number]`: 건물의 지하 또는 지하실 층 수  . Model: [https://wiki.openstreetmap.org/wiki/Key:building:levels:underground](https://wiki.openstreetmap.org/wiki/Key:building:levels:underground)- `buildingMaterial[string]`: 건물의 주요 구조 또는 외벽 재료  . Model: [https://wiki.openstreetmap.org/wiki/Key:building:material](https://wiki.openstreetmap.org/wiki/Key:building:material)- `buildingType[string]`: 건물의 유형 또는 기능을 분류하는 OSM 건물 태그 값입니다. 열거형:'annexe, apartments, barn, barracks, bungalow, cabin, cathedral, chapel, church, civic, clinic, commercial, conservatory, detached, dormitory, farm, farm_auxiliary, garage, garages, ger, government, grandstand, greenhouse, hospital, hotel, house, industrial, kiosk, mosque, office, public, residential, retail, roof, ruins, school, service, shed, sports_hall, stadium, supermarket, synagogue, temple, train_station, transportation, university, warehouse, yes'  . Model: [https://wiki.openstreetmap.org/wiki/Key:building](https://wiki.openstreetmap.org/wiki/Key:building)- `dataProvider[string]`: 조화된 데이터 엔티티의 제공자를 식별하는 문자열  - `dateCreated[date-time]`: 엔티티 생성 타임스탬프. 이는 대개 스토리지 플랫폼에 의해 할당됩니다.  - `dateModified[date-time]`: 엔티티의 마지막 수정 타임스탬프. 이것은 일반적으로 저장 플랫폼에 의해 할당됩니다.  - `description[string]`: 이 항목에 대한 설명  - `flats[number]`: 건물 내 개별 주거 단위의 총 수  . Model: [https://wiki.openstreetmap.org/wiki/Key:building:flats](https://wiki.openstreetmap.org/wiki/Key:building:flats)- `id[*]`: 엔티티의 고유 식별자  - `location[*]`: 항목에 대한 Geojson 참조. Point, LineString, Polygon, MultiPoint, MultiLineString 또는 MultiPolygon일 수 있습니다.  - `minHeight[number]`: 경사지 또는 고가 구조물에 있는 건물에 사용되는, 지면에서 건물 바닥의 높이(미터)  . Model: [https://wiki.openstreetmap.org/wiki/Key:min_height](https://wiki.openstreetmap.org/wiki/Key:min_height)- `name[string]`: 이 항목의 이름  - `openingHours[string]`: 건물 또는 그 주요 기능의 OSM opening_hours 구문으로 표현된 개장 시간  . Model: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: 건물을 운영 또는 관리하는 주체의 이름  . Model: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: 원본 OpenStreetMap 요소 정수 식별자  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM 요소의 최종 수정 타임스탬프.  - `osmType[string]`: 원본 OpenStreetMap 요소의 유형  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: 소유자(들)의 고유 ID를 참조하는 JSON 인코딩 문자열 시퀀스를 포함하는 목록  - `roofColour[string]`: 지붕의 색상으로, CSS 색상 이름 또는 헥스 코드로 표현됩니다.  . Model: [https://wiki.openstreetmap.org/wiki/Key:roof:colour](https://wiki.openstreetmap.org/wiki/Key:roof:colour)- `roofMaterial[string]`: 지붕 표면의 주요 재료  . Model: [https://wiki.openstreetmap.org/wiki/Key:roof:material](https://wiki.openstreetmap.org/wiki/Key:roof:material)- `roofShape[string]`: 지붕의 모양입니다. 열거형:'flat, gabled, hipped, half-hipped, pyramidal, gambrel, mansard, dome, skillion, round, saltbox, onion, cone'  . Model: [https://wiki.openstreetmap.org/wiki/Key:roof:shape](https://wiki.openstreetmap.org/wiki/Key:roof:shape)- `seeAlso[*]`: 이 항목에 대한 추가 리소스를 가리키는 URI 목록.  - `source[string]`: 엔티티 데이터의 원본 소스를 URL로 제공하는 문자열. 소스 제공자의 정규화된 도메인 이름 또는 소스 객체의 URL을 사용하는 것이 좋습니다.  - `startDate[string]`: 건물이 건설된 연도 또는 날짜. 자유 형식 날짜 또는 연도 값  . Model: [https://wiki.openstreetmap.org/wiki/Key:start_date](https://wiki.openstreetmap.org/wiki/Key:start_date)- `type[string]`: NGSI 엔터티 유형. OSMBuilding이어야 합니다.  - `wheelchair[string]`: 건물의 휠체어 접근성 수준  . Model: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+필수 속성  
+- `buildingType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+<!-- /40-NotesYaml -->  
+<!-- 50-DataModelHeader -->  
+## 속성에 대한 데이터 모델 설명  
+알파벳순으로 정렬됨 (자세한 내용은 클릭)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
 OSMBuilding:    
   description: A building or group of connected buildings from OpenStreetMap tagged with building=*. Represents the physical structure of a building, including its geometry, dimensions, materials, and functional classification. For specific functions within a building (shop, amenity, etc.) additional entities should be used.    
   properties:    
@@ -208,57 +148,56 @@ OSMBuilding:
         model: https://wiki.openstreetmap.org/wiki/Key:building:material    
         type: Property    
     buildingType:    
-      description: The OSM building tag value classifying the type or function of the building. Enum:'yes, residential, apartments, house, detached, bungalow, cabin, dormitory, hotel, commercial, office, industrial, warehouse, retail, supermarket, school, university, hospital, church, cathedral, mosque, synagogue, civic, government, public, transportation, train_station, stadium, garage, shed, greenhouse, service, ruins'    
+      description: The OSM building tag value classifying the type or function of the building. Enum:'annexe, apartments, barn, barracks, bungalow, cabin, cathedral, chapel, church, civic, clinic, commercial, conservatory, detached, dormitory, farm, farm_auxiliary, garage, garages, ger, government, grandstand, greenhouse, hospital, hotel, house, industrial, kiosk, mosque, office, public, residential, retail, roof, ruins, school, service, shed, sports_hall, stadium, supermarket, synagogue, temple, train_station, transportation, university, warehouse, yes'    
       enum:    
-        - 'yes'    
-        - residential    
+        - annexe    
         - apartments    
-        - house    
-        - detached    
+        - barn    
+        - barracks    
         - bungalow    
         - cabin    
+        - cathedral    
+        - chapel    
+        - church    
+        - civic    
+        - clinic    
+        - commercial    
+        - conservatory    
+        - detached    
         - dormitory    
-        - hotel    
-        - ger    
-        - barracks    
-        - annexe    
         - farm    
         - farm_auxiliary    
-        - barn    
-        - commercial    
-        - office    
-        - industrial    
-        - warehouse    
-        - retail    
-        - supermarket    
-        - kiosk    
-        - school    
-        - university    
-        - hospital    
-        - clinic    
-        - church    
-        - cathedral    
-        - mosque    
-        - synagogue    
-        - temple    
-        - chapel    
-        - civic    
-        - government    
-        - public    
-        - transportation    
-        - train_station    
-        - stadium    
-        - grandstand    
-        - sports_hall    
         - garage    
         - garages    
-        - shed    
+        - ger    
+        - government    
+        - grandstand    
         - greenhouse    
-        - conservatory    
-        - service    
-        - shed    
+        - hospital    
+        - hotel    
+        - house    
+        - industrial    
+        - kiosk    
+        - mosque    
+        - office    
+        - public    
+        - residential    
+        - retail    
         - roof    
         - ruins    
+        - school    
+        - service    
+        - shed    
+        - sports_hall    
+        - stadium    
+        - supermarket    
+        - synagogue    
+        - temple    
+        - train_station    
+        - transportation    
+        - university    
+        - warehouse    
+        - 'yes'    
       type: string    
       x-ngsi:    
         model: https://wiki.openstreetmap.org/wiki/Key:building    
@@ -657,29 +596,22 @@ OSMBuilding:
     - buildingType    
   type: object    
   x-derived-from: https://wiki.openstreetmap.org/wiki/Key:building    
-  x-disclaimer: Redistribution and use in source and binary forms...    
+  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program    
   x-license-url: https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMBuilding/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMBuilding/schema.json    
   x-model-tags: OSM OpenStreetMap Buildings    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
- 
-<!-- 70-MiddleNotes -->  
- 
-<!-- /70-MiddleNotes -->  
- 
-<!-- 80-Examples -->  
- 
-## 예제 페이로드    
- 
-#### OSMBuilding NGSI-v2 키-값 예제    
- 
-OSMBuilding의 JSON 형식의 키-값 예입니다. 이는 NGSI-v2와 호환되며 `options=keyValues`를 사용하여 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>예제 표시/숨기기</strong></summary>    
- 
-```json  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## 페이로드 예시  
+#### OSMBuilding NGSI-v2 키-값 예시  
+다음은 키-값 형식의 JSON-LD OSMBuilding 예시입니다. 이것은 `options=keyValues`를 사용할 때 NGSI-v2와 호환되며 개별 엔터티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMBuilding:way:22234584",  
   "type": "OSMBuilding",  
@@ -742,13 +674,10 @@ OSMBuilding의 JSON 형식의 키-값 예입니다. 이는 NGSI-v2와 호환되�
 }  
 ```  
 </details>  
- 
-#### OSMBuilding NGSI-v2 정규화된 예제    
- 
-OSMBuilding의 JSON 형식의 정규화된 예입니다. 이는 NGSI-v2와 호환되며 옵션을 사용하지 않고 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>예제 표시/숨기기</strong></summary>    
- 
-```json  
+#### OSMBuilding NGSI-v2 정규화된 예시  
+다음은 정규화된 JSON-LD 형식의 OSMBuilding 예시입니다. 이것은 옵션을 사용하지 않을 때 NGSI-v2와 호환되며 개별 엔터티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMBuilding:way:22234584",  
   "type": "OSMBuilding",  
@@ -880,13 +809,10 @@ OSMBuilding의 JSON 형식의 정규화된 예입니다. 이는 NGSI-v2와 호�
 }  
 ```  
 </details>  
- 
-#### OSMBuilding NGSI-LD 키-값 예제    
- 
-OSMBuilding의 JSON-LD 형식의 키-값 예입니다. 이는 NGSI-LD와 호환되며 `options=keyValues`를 사용하여 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>예제 표시/숨기기</strong></summary>    
- 
-```json  
+#### OSMBuilding NGSI-LD 키-값 예시  
+다음은 키-값 형식의 JSON-LD OSMBuilding 예시입니다. 이것은 `options=keyValues`를 사용할 때 NGSI-LD와 호환되며 개별 엔터티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMBuilding:way:22234584",  
   "type": "OSMBuilding",  
@@ -952,13 +878,10 @@ OSMBuilding의 JSON-LD 형식의 키-값 예입니다. 이는 NGSI-LD와 호환�
 }  
 ```  
 </details>  
- 
-#### OSMBuilding NGSI-LD 정규화된 예제    
- 
-OSMBuilding의 JSON-LD 형식의 정규화된 예입니다. 이는 NGSI-LD와 호환되며 옵션을 사용하지 않고 개별 엔티티의 컨텍스트 데이터를 반환합니다.  
-<details><summary><strong>예제 표시/숨기기</strong></summary>    
- 
-```json  
+#### OSMBuilding NGSI-LD 정규화된 예시  
+다음은 정규화된 JSON-LD 형식의 OSMBuilding 예시입니다. 이것은 옵션을 사용하지 않을 때 NGSI-LD와 호환되며 개별 엔터티의 컨텍스트 데이터를 반환합니다.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
 {  
     "id": "urn:ngsi-ld:OSMBuilding:way:22234584",  
     "type": "OSMBuilding",  
@@ -1090,20 +1013,12 @@ OSMBuilding의 JSON-LD 형식의 정규화된 예입니다. 이는 NGSI-LD와 �
     ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
- 
-<!-- 90-FooterNotes -->  
- 
-<!-- /90-FooterNotes -->  
- 
-<!-- 95-Units -->  
- 
-[FAQ 10](https://smartdatamodels.org/index.php/faqs/)를 참조하여 크기 단위에 대한 처리 방법에 대한 답변을 얻으십시오  
-<!-- /95-Units -->  
- 
-<!-- 97-LastFooter -->  
- 
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+크기 단위를 다루는 방법에 대한 답을 얻으려면 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)을 참조하십시오.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
- 
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
- 
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

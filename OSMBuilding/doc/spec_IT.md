@@ -1,38 +1,38 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entità: OSMBuilding  
-===================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMBuilding/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Descrizione globale: **Un edificio o un gruppo di edifici collegati provenienti da OpenStreetMap etichettati con building=*. Rappresenta la struttura fisica di un edificio, inclusa la sua geometria, dimensioni, materiali e classificazione funzionale. Per funzioni specifiche all'interno di un edificio (negozio, servizio, ecc.) dovrebbero essere utilizzate entità aggiuntive.**  
-versione: 0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
+Entità: OSMBuilding  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Licenza Aperta](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMBuilding/LICENSE.md)  
+[documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Un edificio o un gruppo di edifici collegati provenienti da OpenStreetMap taggati con building=*. Rappresenta la struttura fisica di un edificio, inclusi geometria, dimensioni, materiali e classificazione funzionale. Per funzioni specifiche all'interno di un edificio (negozio, servizio, ecc.) dovrebbero essere utilizzate entità aggiuntive.**  
+version: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## Elenco delle proprietà  
+## Elenco delle proprietà  
 
-<sup><sub>[*] Se non è presente un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>  
-- `access[string]`: Restrizione di accesso generale all'edificio  . Modello: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: Indirizzo dell'edificio, strutturato seguendo schema.org PostalAddress.  	- `addressCity[string]`: Città. OSM: addr:city    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/pattern</sub></sup>  
+- `access[string]`: Restrizione generale dell'accesso all'edificio  . Model: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: Indirizzo dell'edificio, strutturato secondo schema.org PostalAddress.  	- `addressCity[string]`: Città. OSM: addr:city    
 	- `addressCountry[string]`: Codice paese ISO 3166-1 alpha-2. OSM: addr:country    
 	- `houseNumber[string]`: Numero civico o dell'edificio. OSM: addr:housenumber    
 	- `postalCode[string]`: Codice postale. OSM: addr:postcode    
 	- `streetAddress[string]`: Nome della via. OSM: addr:street    
-- `alternateName[string]`: Un nome alternativo per questo elemento  - `amenity[string]`: Funzione di servizio primaria dell'edificio (es. ospedale, scuola)  . Modello: [https://wiki.openstreetmap.org/wiki/Key:amenity](https://wiki.openstreetmap.org/wiki/Key:amenity)- `areaServed[string]`: L'area geografica in cui viene fornito un servizio o un articolo offerto  . Modello: [https://schema.org/Text](https://schema.org/Text)- `buildingColour[string]`: Colore della facciata principale, espresso come nome colore CSS o codice esadecimale  . Modello: [https://wiki.openstreetmap.org/wiki/Key:building:colour](https://wiki.openstreetmap.org/wiki/Key:building:colour)- `buildingHeight[number]`: Altezza totale dell'edificio in metri dal suolo al punto più alto  . Modello: [https://wiki.openstreetmap.org/wiki/Key:height](https://wiki.openstreetmap.org/wiki/Key:height)- `buildingLevels[number]`: Numero di piani fuori terra nell'edificio  . Modello: [https://wiki.openstreetmap.org/wiki/Key:building:levels](https://wiki.openstreetmap.org/wiki/Key:building:levels)- `buildingLevelsUnderground[number]`: Numero di piani interrati o seminterrati nell'edificio  . Modello: [https://wiki.openstreetmap.org/wiki/Key:building:levels:underground](https://wiki.openstreetmap.org/wiki/Key:building:levels:underground)- `buildingMaterial[string]`: Materiale strutturale o di facciata primario dell'edificio  . Modello: [https://wiki.openstreetmap.org/wiki/Key:building:material](https://wiki.openstreetmap.org/wiki/Key:building:material)- `buildingType[string]`: Il valore del tag building di OSM che classifica il tipo o la funzione dell'edificio. Enum:'yes, residential, apartments, house, detached, bungalow, cabin, dormitory, hotel, commercial, office, industrial, warehouse, retail, supermarket, school, university, hospital, church, cathedral, mosque, synagogue, civic, government, public, transportation, train_station, stadium, garage, shed, greenhouse, service, ruins'  . Modello: [https://wiki.openstreetmap.org/wiki/Key:building](https://wiki.openstreetmap.org/wiki/Key:building)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzati  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Questo sarà solitamente allocato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Questo sarà solitamente allocato dalla piattaforma di archiazionev  - `description[string]`: Una descrizione di questo elemento  - `flats[number]`: Numero totale di singole unità abitative all'interno dell'edificio  . Modello: [https://wiki.openstreetmap.org/wiki/Key:building:flats](https://wiki.openstreetmap.org/wiki/Key:building:flats)- `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `minHeight[number]`: Altezza della base dell'edificio rispetto al livello del suolo in metri, utilizzata per edifici su pendii o strutture elevate  . Modello: [https://wiki.openstreetmap.org/wiki/Key:min_height](https://wiki.openstreetmap.org/wiki/Key:min_height)- `name[string]`: Il nome di questo elemento  - `openingHours[string]`: Orari di apertura dell'edificio o della sua funzione primaria nella sintassi opening_hours di OSM  . Modello: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: Nome dell'entità che opera o gestisce l'edificio  . Modello: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: L'identificatore intero originale dell'elemento OpenStreetMap  . Modello: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: Timestamp dell'ultima modifica dell'elemento OSM.  - `osmType[string]`: Il tipo dell'elemento OpenStreetMap originale  . Modello: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata in JSON che fa riferimento agli ID univoci dei proprietari  - `roofColour[string]`: Colore del tetto, espresso come nome colore CSS o codice esadecimale  . Modello: [https://wiki.openstreetmap.org/wiki/Key:roof:colour](https://wiki.openstreetmap.org/wiki/Key:roof:colour)- `roofMaterial[string]`: Materiale primario della superficie del tetto  . Modello: [https://wiki.openstreetmap.org/wiki/Key:roof:material](https://wiki.openstreetmap.org/wiki/Key:roof:material)- `roofShape[string]`: Forma del tetto. Enum:'flat, gabled, hipped, half-hipped, pyramidal, gambrel, mansard, dome, skillion, round, saltbox, onion, cone'  . Modello: [https://wiki.openstreetmap.org/wiki/Key:roof:shape](https://wiki.openstreetmap.org/wiki/Key:roof:shape)- `seeAlso[*]`: Elenco di URI che puntano a risorse aggiuntive su questo elemento.  - `source[string]`: Una sequenza di caratteri che fornisce la fonte originale dei dati dell'entità come URL. Si raccomanda che sia il nome di dominio completo del fornitore della fonte o l'URL dell'oggetto sorgente  - `startDate[string]`: Anno o data in cui l'edificio è stato costruito. Valore di data o anno in formato libero  . Modello: [https://wiki.openstreetmap.org/wiki/Key:start_date](https://wiki.openstreetmap.org/wiki/Key:start_date)- `type[string]`: Tipo di entità NGSI. Deve essere OSMBuilding  - `wheelchair[string]`: Livello di accessibilità in sedia a rotelle dell'edificio  . Modello: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Proprietà obbligatorie  
-- `buildingType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-NotesYaml -->  
-<!-- /40-NotesYaml -->  
-<!-- 50-DataModelHeader -->  
-## Descrizione del modello dati delle proprietà  
-Ordinate alfabeticamente (clicca per i dettagli)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
-<details><summary><strong>dettagli yaml completi</strong></summary>    
-```yaml  
+- `alternateName[string]`: Un nome alternativo per questo elemento  - `amenity[string]`: Funzione principale di servizio dell'edificio (es. ospedale, scuola)  . Model: [https://wiki.openstreetmap.org/wiki/Key:amenity](https://wiki.openstreetmap.org/wiki/Key:amenity)- `areaServed[string]`: L'area geografica in cui viene fornito un servizio o un articolo offerto  . Model: [https://schema.org/Text](https://schema.org/Text)- `buildingColour[string]`: Colore della facciata principale, espresso come nome colore CSS o codice esadecimale  . Model: [https://wiki.openstreetmap.org/wiki/Key:building:colour](https://wiki.openstreetmap.org/wiki/Key:building:colour)- `buildingHeight[number]`: Altezza totale dell'edificio in metri dal suolo al punto più alto  . Model: [https://wiki.openstreetmap.org/wiki/Key:height](https://wiki.openstreetmap.org/wiki/Key:height)- `buildingLevels[number]`: Numero di piani fuori terra dell'edificio  . Model: [https://wiki.openstreetmap.org/wiki/Key:building:levels](https://wiki.openstreetmap.org/wiki/Key:building:levels)- `buildingLevelsUnderground[number]`: Numero di piani interrati o seminterrati dell'edificio  . Model: [https://wiki.openstreetmap.org/wiki/Key:building:levels:underground](https://wiki.openstreetmap.org/wiki/Key:building:levels:underground)- `buildingMaterial[string]`: Materiale strutturale o di facciata principale dell'edificio  . Model: [https://wiki.openstreetmap.org/wiki/Key:building:material](https://wiki.openstreetmap.org/wiki/Key:building:material)- `buildingType[string]`: Il valore del tag building di OSM che classifica il tipo o la funzione dell'edificio. Enum:'annexe, apartments, barn, barracks, bungalow, cabin, cathedral, chapel, church, civic, clinic, commercial, conservatory, detached, dormitory, farm, farm_auxiliary, garage, garages, ger, government, grandstand, greenhouse, hospital, hotel, house, industrial, kiosk, mosque, office, public, residential, retail, roof, ruins, school, service, shed, sports_hall, stadium, supermarket, synagogue, temple, train_station, transportation, university, warehouse, yes'  . Model: [https://wiki.openstreetmap.org/wiki/Key:building](https://wiki.openstreetmap.org/wiki/Key:building)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità dati armonizzata  - `dateCreated[date-time]`: Timestamp di creazione dell'entità. Questo sarà solitamente assegnato dalla piattaforma di archiviazione  - `dateModified[date-time]`: Timestamp dell'ultima modifica dell'entità. Questo sarà solitamente allocato dalla piattaforma di archiviazione  - `description[string]`: Una descrizione di questo elemento  - `flats[number]`: Numero totale di unità abitative individuali all'interno dell'edificio  . Model: [https://wiki.openstreetmap.org/wiki/Key:building:flats](https://wiki.openstreetmap.org/wiki/Key:building:flats)- `id[*]`: Identificatore unico dell'entità  - `location[*]`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `minHeight[number]`: Altezza della base dell'edificio sopra il livello del suolo in metri, utilizzata per edifici in pendenza o strutture elevate  . Model: [https://wiki.openstreetmap.org/wiki/Key:min_height](https://wiki.openstreetmap.org/wiki/Key:min_height)- `name[string]`: Il nome di questo elemento  - `openingHours[string]`: Orari di apertura dell'edificio o della sua funzione principale nella sintassi opening_hours di OSM  . Model: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: Nome dell'entità che gestisce o amministra l'edificio  . Model: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: L'identificatore intero dell'elemento OpenStreetMap originale  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: Timestamp dell'ultima modifica dell'elemento OSM.  - `osmType[string]`: Il tipo dell'elemento originale di OpenStreetMap  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: Un elenco contenente una sequenza di caratteri codificata in JSON che fa riferimento agli ID unici del/i proprietario/i  - `roofColour[string]`: Colore del tetto, espresso come nome colore CSS o codice esadecimale  . Model: [https://wiki.openstreetmap.org/wiki/Key:roof:colour](https://wiki.openstreetmap.org/wiki/Key:roof:colour)- `roofMaterial[string]`: Materiale principale della superficie del tetto  . Model: [https://wiki.openstreetmap.org/wiki/Key:roof:material](https://wiki.openstreetmap.org/wiki/Key:roof:material)- `roofShape[string]`: Forma del tetto. Enum:'flat, gabled, hipped, half-hipped, pyramidal, gambrel, mansard, dome, skillion, round, saltbox, onion, cone'  . Model: [https://wiki.openstreetmap.org/wiki/Key:roof:shape](https://wiki.openstreetmap.org/wiki/Key:roof:shape)- `seeAlso[*]`: Elenco di URI che puntano a risorse aggiuntive su questo elemento.  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si raccomanda che sia il nome di dominio completo del fornitore della fonte, o l'URL dell'oggetto fonte  - `startDate[string]`: Anno o data di costruzione dell'edificio. Valore di data o anno in formato libero  . Model: [https://wiki.openstreetmap.org/wiki/Key:start_date](https://wiki.openstreetmap.org/wiki/Key:start_date)- `type[string]`: Tipo di entità NGSI. Deve essere OSMBuilding  - `wheelchair[string]`: Livello di accessibilità in sedia a rotelle dell'edificio  . Model: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+Proprietà richieste  
+- `buildingType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+<!-- /40-NotesYaml -->  
+<!-- 50-DataModelHeader -->  
+## Descrizione delle proprietà del modello di dati  
+Ordinato alfabeticamente (clicca per dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
 OSMBuilding:    
   description: A building or group of connected buildings from OpenStreetMap tagged with building=*. Represents the physical structure of a building, including its geometry, dimensions, materials, and functional classification. For specific functions within a building (shop, amenity, etc.) additional entities should be used.    
   properties:    
@@ -148,57 +148,56 @@ OSMBuilding:
         model: https://wiki.openstreetmap.org/wiki/Key:building:material    
         type: Property    
     buildingType:    
-      description: The OSM building tag value classifying the type or function of the building. Enum:'yes, residential, apartments, house, detached, bungalow, cabin, dormitory, hotel, commercial, office, industrial, warehouse, retail, supermarket, school, university, hospital, church, cathedral, mosque, synagogue, civic, government, public, transportation, train_station, stadium, garage, shed, greenhouse, service, ruins'    
+      description: The OSM building tag value classifying the type or function of the building. Enum:'annexe, apartments, barn, barracks, bungalow, cabin, cathedral, chapel, church, civic, clinic, commercial, conservatory, detached, dormitory, farm, farm_auxiliary, garage, garages, ger, government, grandstand, greenhouse, hospital, hotel, house, industrial, kiosk, mosque, office, public, residential, retail, roof, ruins, school, service, shed, sports_hall, stadium, supermarket, synagogue, temple, train_station, transportation, university, warehouse, yes'    
       enum:    
-        - 'yes'    
-        - residential    
+        - annexe    
         - apartments    
-        - house    
-        - detached    
+        - barn    
+        - barracks    
         - bungalow    
         - cabin    
+        - cathedral    
+        - chapel    
+        - church    
+        - civic    
+        - clinic    
+        - commercial    
+        - conservatory    
+        - detached    
         - dormitory    
-        - hotel    
-        - ger    
-        - barracks    
-        - annexe    
         - farm    
         - farm_auxiliary    
-        - barn    
-        - commercial    
-        - office    
-        - industrial    
-        - warehouse    
-        - retail    
-        - supermarket    
-        - kiosk    
-        - school    
-        - university    
-        - hospital    
-        - clinic    
-        - church    
-        - cathedral    
-        - mosque    
-        - synagogue    
-        - temple    
-        - chapel    
-        - civic    
-        - government    
-        - public    
-        - transportation    
-        - train_station    
-        - stadium    
-        - grandstand    
-        - sports_hall    
         - garage    
         - garages    
-        - shed    
+        - ger    
+        - government    
+        - grandstand    
         - greenhouse    
-        - conservatory    
-        - service    
-        - shed    
+        - hospital    
+        - hotel    
+        - house    
+        - industrial    
+        - kiosk    
+        - mosque    
+        - office    
+        - public    
+        - residential    
+        - retail    
         - roof    
         - ruins    
+        - school    
+        - service    
+        - shed    
+        - sports_hall    
+        - stadium    
+        - supermarket    
+        - synagogue    
+        - temple    
+        - train_station    
+        - transportation    
+        - university    
+        - warehouse    
+        - 'yes'    
       type: string    
       x-ngsi:    
         model: https://wiki.openstreetmap.org/wiki/Key:building    
@@ -597,22 +596,22 @@ OSMBuilding:
     - buildingType    
   type: object    
   x-derived-from: https://wiki.openstreetmap.org/wiki/Key:building    
-  x-disclaimer: Redistribution and use in source and binary forms...    
+  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program    
   x-license-url: https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMBuilding/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMBuilding/schema.json    
   x-model-tags: OSM OpenStreetMap Buildings    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Esempi di payload    
-#### OSMBuilding NGSI-v2 key-values Esempio    
-Ecco un esempio di OSMBuilding in formato JSON come valori-chiave. Questo è compatibile con NGSI-v2 quando si utilizza `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-<details><summary><strong>mostra/nascondi esempio</strong></summary>    
-```json  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload    
+#### Esempio di coppie chiave-valore OSMBuilding NGSI-v2  
+Ecco un esempio di OSMBuilding in formato JSON-LD come coppie chiave-valore. Questo è compatibile con NGSI-v2 quando si utilizza `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMBuilding:way:22234584",  
   "type": "OSMBuilding",  
@@ -675,10 +674,10 @@ Ecco un esempio di OSMBuilding in formato JSON come valori-chiave. Questo è com
 }  
 ```  
 </details>  
-#### OSMBuilding NGSI-v2 normalized Esempio    
-Ecco un esempio di OSMBuilding in formato JSON normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
-<details><summary><strong>mostra/nascondi esempio</strong></summary>    
-```json  
+#### Esempio normalizzato OSMBuilding NGSI-v2  
+Ecco un esempio di OSMBuilding in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMBuilding:way:22234584",  
   "type": "OSMBuilding",  
@@ -810,10 +809,10 @@ Ecco un esempio di OSMBuilding in formato JSON normalizzato. Questo è compatibi
 }  
 ```  
 </details>  
-#### OSMBuilding NGSI-LD key-values Esempio    
-Ecco un esempio di OSMBuilding in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si utilizza `options=keyValues` e restituisce i dati di contesto di una singola entità.  
-<details><summary><strong>mostra/nascondi esempio</strong></summary>    
-```json  
+#### Esempio di coppie chiave-valore OSMBuilding NGSI-LD  
+Ecco un esempio di OSMBuilding in formato JSON-LD come coppie chiave-valore. Questo è compatibile con NGSI-LD quando si utilizza `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMBuilding:way:22234584",  
   "type": "OSMBuilding",  
@@ -879,10 +878,10 @@ Ecco un esempio di OSMBuilding in formato JSON-LD come valori-chiave. Questo è 
 }  
 ```  
 </details>  
-#### OSMBuilding NGSI-LD normalized Esempio    
-Ecco un esempio di OSMBuilding in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
-<details><summary><strong>mostra/nascondi esempio</strong></summary>    
-```json  
+#### Esempio normalizzato OSMBuilding NGSI-LD  
+Ecco un esempio di OSMBuilding in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
 {  
     "id": "urn:ngsi-ld:OSMBuilding:way:22234584",  
     "type": "OSMBuilding",  
@@ -1014,12 +1013,12 @@ Ecco un esempio di OSMBuilding in formato JSON-LD normalizzato. Questo è compat
     ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedi [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di misura  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

@@ -1,12 +1,11 @@
 # OSMBuilding
 
-### List of code samples 
+### List of code samples
 
 <!-- 50-List of code -->
 
 <!-- [code entry](link) -->
 [code_for_using_dataModel.OpenStreetMap_OSMBuilding.py](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMBuilding/code/code_for_using_dataModel.OpenStreetMap_OSMBuilding.py)
-
 
 <!-- /50-List of code -->
 

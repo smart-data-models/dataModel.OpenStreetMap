@@ -409,17 +409,17 @@ OSMParkingArea:
       x-ngsi:
         type: Property
     parkingType:
-      description: Physical type or layout of the parking facility. Enum:'surface, multi-storey, underground, street_side, rooftop, sheds, carports, garage_boxes, lane'
+      description: Physical type or layout of the parking facility. Enum:'carports, garage_boxes, lane, multi-storey, rooftop, sheds, street_side, surface, underground'
       enum:
-        - surface
-        - multi-storey
-        - underground
-        - street_side
-        - rooftop
-        - sheds
         - carports
         - garage_boxes
         - lane
+        - multi-storey
+        - rooftop
+        - sheds
+        - street_side
+        - surface
+        - underground
       type: string
       x-ngsi:
         model: https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking
@@ -483,8 +483,8 @@ OSMParkingArea:
     - parkingType
   type: object
   x-derived-from: https://wiki.openstreetmap.org/wiki/Tag:amenity=parking
-  x-disclaimer: Redistribution and use in source and binary forms...
+  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program
   x-license-url: https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMParkingArea/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMParkingArea/schema.json
   x-model-tags: OSM OpenStreetMap Transportation Parking
-  x-version: 0.0.1
+  x-version: 0.0.2

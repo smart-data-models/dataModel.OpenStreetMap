@@ -1,98 +1,38 @@
-<!-- 10-Header -->  
- 
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
- 
-エンティティ: OSMBuilding
-===================<!-- /10-Header -->  
- 
-<!-- 15-License -->  
- 
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMBuilding/LICENSE.md)  
- 
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
- 
-<!-- 20-Description -->  
- 
-グローバルな説明: **OpenStreetMap で building=* とタグ付けされた建物または接続された建物のグループ。建物の物理構造、幾何学、寸法、材料、機能分類を表します。建物内の特定の機能 (店舗、施設など) については、追加のエンティティを使用する必要があります。**  
-バージョン: 0.0.1  
-<!-- /20-Description -->  
- 
-<!-- 30-PropertiesList -->  
- 
+エンティティ: OSMBuilding  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
+[オープンライセンス](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMBuilding/LICENSE.md)  
+[自動生成されたドキュメント](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバル記述: **OpenStreetMapでbuilding=*とタグ付けされた建物または連結された建物のグループ。その形状、寸法、材料、機能分類を含む建物の物理的構造を表します。建物内の特定の機能（店舗、設備など）には、追加のエンティティを使用する必要があります。**  
+version: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティの一覧  
+## プロパティリスト  
 
- 
-<sup><sub>[*] 属性に型がない場合は、複数の型または異なる形式/パターンを持つ可能性があるためです</sub></sup>  
-- `access[string]`: 建物への一般的なアクセス制限。モデル: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)  
-- `address[object]`: 建物の住所、schema.org の PostalAddress に従って構造化されています。   
-	- `addressCity[string]`: 市。OSM: addr:city    
+<sup><sub>[*] 属性に型がない場合、それは複数の型または異なる形式/パターンを持つ可能性があるためです。</sub></sup>  
+- `access[string]`: 建物への一般的なアクセス制限。  . Model: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: schema.org PostalAddressに従って構造化された建物の住所。  	- `addressCity[string]`: 都市。OSM: addr:city    
 	- `addressCountry[string]`: ISO 3166-1 alpha-2 国コード。OSM: addr:country    
-	- `houseNumber[string]`: 家または建物番号。OSM: addr:housenumber    
+	- `houseNumber[string]`: 建物または番地番号。OSM: addr:housenumber    
 	- `postalCode[string]`: 郵便番号。OSM: addr:postcode    
 	- `streetAddress[string]`: 通り名。OSM: addr:street    
-- `alternateName[string]`: このアイテムの別名   
-- `amenity[string]`: 建物の主なアメニティ機能 (例: 病院、学校)。モデル: [https://wiki.openstreetmap.org/wiki/Key:amenity](https://wiki.openstreetmap.org/wiki/Key:amenity)  
-- `areaServed[string]`: サービスまたは提供されたアイテムが提供される地理的なエリア。モデル: [https://schema.org/Text](https://schema.org/Text)  
-- `buildingColour[string]`: メインファサードの色、CSS カラー名またはヘックスコードで表されます。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:colour](https://wiki.openstreetmap.org/wiki/Key:building:colour)  
-- `buildingHeight[number]`: 建物の合計高さ、地面から最高点までのメートル単位。モデル: [https://wiki.openstreetmap.org/wiki/Key:height](https://wiki.openstreetmap.org/wiki/Key:height)  
-- `buildingLevels[number]`: 建物の地上階の数。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:levels](https://wiki.openstreetmap.org/wiki/Key:building:levels)  
-- `buildingLevelsUnderground[number]`: 建物の地下または地下階の数。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:levels:underground](https://wiki.openstreetmap.org/wiki/Key:building:levels:underground)  
-- `buildingMaterial[string]`: 建物の主な構造またはファサード材料。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:material](https://wiki.openstreetmap.org/wiki/Key:building:material)  
-- `buildingType[string]`: 建物の種類または機能を分類する OSM ビルディング タグの値。列挙: 'yes, residential, apartments, house, detached, bungalow, cabin, dormitory, hotel, commercial, office, industrial, warehouse, retail, supermarket, school, university, hospital, church, cathedral, mosque, synagogue, civic, government, public, transportation, train_station, stadium, garage, shed, greenhouse, service, ruins'。モデル: [https://wiki.openstreetmap.org/wiki/Key:building](https://wiki.openstreetmap.org/wiki/Key:building)  
-- `dataProvider[string]`: ハーモナイズされたデータ エンティティを提供するプロバイダを識別する文字シーケンス   
-- `dateCreated[date-time]`: エンティティの作成タイムスタンプ。このタイムスタンプは通常、ストレージ プラットフォームによって割り当てられます   
-- `dateModified[date-time]`: エンティティの最後の変更のタイムスタンプ。このタイムスタンプは通常、ストレージ プラットフォームによって割り当てられます   
-- `description[string]`: このアイテムの説明   
-- `flats[number]`: 建物内の個別の住居ユニットの合計数。モデル: [https://wiki.openstreetmap.org/wiki/Key:building:flats](https://wiki.openstreetmap.org/wiki/Key:building:flats)  
-- `id[*]`: エンティティの一意の識別子   
-- `location[*]`: アイテムへの Geojson リファレンス。ポイント、ラインストリング、ポリゴン、マルチポイント、マルチラインストリング、またはマルチポリゴンになります   
-- `minHeight[number]`: メートル単位の建物の基部の高さ、斜面または高架構造物の建物に使用されます。モデル: [https://wiki.openstreetmap.org/wiki/Key:min_height](https://wiki.openstreetmap.org/wiki/Key:min_height)  
-- `name[string]`: このアイテムの名前   
-- `openingHours[string]`: 建物またはその主な機能の開催時間、OSM の開催時間の構文で表されます。モデル: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)  
-- `operator[string]`: 建物を運営または管理するエンティティの名前。モデル: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)  
-- `osmId[number]`: 元の OpenStreetMap 要素の整数識別子。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)  
-- `osmLastModified[date-time]`: OSM 要素の最後の変更のタイムスタンプ。   
-- `osmType[string]`: 元の OpenStreetMap 要素の種類。モデル: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)  
-- `owner[array]`: 一意の ID を参照する JSON でエンコードされた文字シーケンスを含むリスト   
-- `roofColour[string]`: ルーフの色、CSS カラー名またはヘックスコードで表されます。モデル: [https://wiki.openstreetmap.org/wiki/Key:roof:colour](https://wiki.openstreetmap.org/wiki/Key:roof:colour)  
-- `roofMaterial[string]`: ルーフ表面の主な材料。モデル: [https://wiki.openstreetmap.org/wiki/Key:roof:material](https://wiki.openstreetmap.org/wiki/Key:roof:material)  
-- `roofShape[string]`: ルーフの形状。列挙: 'flat, gabled, hipped, half-hipped, pyramidal, gambrel, mansard, dome, skillion, round, saltbox, onion, cone'。モデル: [https://wiki.openstreetmap.org/wiki/Key:roof:shape](https://wiki.openstreetmap.org/wiki/Key:roof:shape)  
-- `seeAlso[*]`: このアイテムに関する追加のリソースを指す URI のリスト。   
-- `source[string]`: エンティティ データの元のソースを URL として提供する文字シーケンス。ソース プロバイダの完全なドメイン名またはソース オブジェクトの URL を使用することをお勧めします。   
-- `startDate[string]`: 建物が建設された年または日付。自由形式の日付または年値。モデル: [https://wiki.openstreetmap.org/wiki/Key:start_date](https://wiki.openstreetmap.org/wiki/Key:start_date)  
-- `type[string]`: NGSI エンティティの種類。OSMBuilding でなければなりません。   
-- `wheelchair[string]`: 建物の車椅子アクセスのレベル。モデル: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)  
-<!-- /30-PropertiesList -->  
- 
-<!-- 35-RequiredProperties -->  
- 
-必要なプロパティ  
-- `buildingType`   
-- `id`   
-- `location`   
-- `osmId`   
-- `osmType`   
-- `type`  
-<!-- /35-RequiredProperties -->  
- 
-<!-- 40-NotesYaml -->  
- 
-<!-- /40-NotesYaml -->  
- 
-<!-- 50-DataModelHeader -->  
- 
-## プロパティのデータ モデル説明  
- 
-アルファベット順に並べ替え (詳細をクリック)  
-<!-- /50-DataModelHeader -->  
- 
-<!-- 60-ModelYaml -->  
- 
-<details><summary><strong>フル YAML 詳細</strong></summary>    
- 
-```yaml  
+- `alternateName[string]`: このアイテムの別名  - `amenity[string]`: 建物の主要なアメニティ機能（例：病院、学校）。  . Model: [https://wiki.openstreetmap.org/wiki/Key:amenity](https://wiki.openstreetmap.org/wiki/Key:amenity)- `areaServed[string]`: サービスまたは提供されるアイテムが提供される地理的領域  . Model: [https://schema.org/Text](https://schema.org/Text)- `buildingColour[string]`: 主要なファサードの色。CSSの色名または16進コードで表現。  . Model: [https://wiki.openstreetmap.org/wiki/Key:building:colour](https://wiki.openstreetmap.org/wiki/Key:building:colour)- `buildingHeight[number]`: 建物の地面から最高点までの全高（メートル単位）。  . Model: [https://wiki.openstreetmap.org/wiki/Key:height](https://wiki.openstreetmap.org/wiki/Key:height)- `buildingLevels[number]`: 建物の地上階数。  . Model: [https://wiki.openstreetmap.org/wiki/Key:building:levels](https://wiki.openstreetmap.org/wiki/Key:building:levels)- `buildingLevelsUnderground[number]`: 建物の地下階数または地下室の階数。  . Model: [https://wiki.openstreetmap.org/wiki/Key:building:levels:underground](https://wiki.openstreetmap.org/wiki/Key:building:levels:underground)- `buildingMaterial[string]`: 建物の主要な構造またはファサードの材料。  . Model: [https://wiki.openstreetmap.org/wiki/Key:building:material](https://wiki.openstreetmap.org/wiki/Key:building:material)- `buildingType[string]`: 建物の種類または機能を分類するOSMのbuildingタグ値。Enum: 'annexe, apartments, barn, barracks, bungalow, cabin, cathedral, chapel, church, civic, clinic, commercial, conservatory, detached, dormitory, farm, farm_auxiliary, garage, garages, ger, government, grandstand, greenhouse, hospital, hotel, house, industrial, kiosk, mosque, office, public, residential, retail, roof, ruins, school, service, shed, sports_hall, stadium, supermarket, synagogue, temple, train_station, transportation, university, warehouse, yes'  . Model: [https://wiki.openstreetmap.org/wiki/Key:building](https://wiki.openstreetmap.org/wiki/Key:building)- `dataProvider[string]`: 統合されたデータエンティティのプロバイダーを識別する一連の文字  - `dateCreated[date-time]`: エンティティ作成日時。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。通常、ストレージプラットフォームによって割り当てられます。  - `description[string]`: このアイテムの説明  - `flats[number]`: 建物内の個別の住居ユニットの総数。  . Model: [https://wiki.openstreetmap.org/wiki/Key:building:flats](https://wiki.openstreetmap.org/wiki/Key:building:flats)- `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへのGeoJSON参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `minHeight[number]`: 斜面または高架構造物上の建物に使用される、地上レベルからの建物の基部の高さ（メートル単位）。  . Model: [https://wiki.openstreetmap.org/wiki/Key:min_height](https://wiki.openstreetmap.org/wiki/Key:min_height)- `name[string]`: このアイテムの名前  - `openingHours[string]`: 建物またはその主要な機能の開館時間（OSM opening_hours構文）。  . Model: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: 建物を運営または管理するエンティティの名前。  . Model: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: 元のOpenStreetMap要素の整数識別子  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM要素の最終更新日時。  - `osmType[string]`: 元のOpenStreetMap要素のタイプ。  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: 所有者の一意のIDを参照する、JSONエンコードされた文字のシーケンスを含むリスト  - `roofColour[string]`: 屋根の色。CSSの色名または16進コードで表現。  . Model: [https://wiki.openstreetmap.org/wiki/Key:roof:colour](https://wiki.openstreetmap.org/wiki/Key:roof:colour)- `roofMaterial[string]`: 屋根の表面の主要な材料。  . Model: [https://wiki.openstreetmap.org/wiki/Key:roof:material](https://wiki.openstreetmap.org/wiki/Key:roof:material)- `roofShape[string]`: 屋根の形状。Enum: 'flat, gabled, hipped, half-hipped, pyramidal, gambrel, mansard, dome, skillion, round, saltbox, onion, cone'  . Model: [https://wiki.openstreetmap.org/wiki/Key:roof:shape](https://wiki.openstreetmap.org/wiki/Key:roof:shape)- `seeAlso[*]`: このアイテムに関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLとして示す一連の文字。ソースプロバイダーの完全修飾ドメイン名、またはソースオブジェクトへのURLであることが推奨されます。  - `startDate[string]`: 建物が建設された年または日付。自由形式の日付または年の値。  . Model: [https://wiki.openstreetmap.org/wiki/Key:start_date](https://wiki.openstreetmap.org/wiki/Key:start_date)- `type[string]`: NGSIエンティティタイプ。OSMBuildingである必要があります。  - `wheelchair[string]`: 建物の車椅子アクセシビリティレベル。  . Model: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必須プロパティ  
+- `buildingType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+<!-- /40-NotesYaml -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順にソートされています（詳細はこちらをクリック）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
 OSMBuilding:    
   description: A building or group of connected buildings from OpenStreetMap tagged with building=*. Represents the physical structure of a building, including its geometry, dimensions, materials, and functional classification. For specific functions within a building (shop, amenity, etc.) additional entities should be used.    
   properties:    
@@ -208,57 +148,56 @@ OSMBuilding:
         model: https://wiki.openstreetmap.org/wiki/Key:building:material    
         type: Property    
     buildingType:    
-      description: The OSM building tag value classifying the type or function of the building. Enum:'yes, residential, apartments, house, detached, bungalow, cabin, dormitory, hotel, commercial, office, industrial, warehouse, retail, supermarket, school, university, hospital, church, cathedral, mosque, synagogue, civic, government, public, transportation, train_station, stadium, garage, shed, greenhouse, service, ruins'    
+      description: The OSM building tag value classifying the type or function of the building. Enum:'annexe, apartments, barn, barracks, bungalow, cabin, cathedral, chapel, church, civic, clinic, commercial, conservatory, detached, dormitory, farm, farm_auxiliary, garage, garages, ger, government, grandstand, greenhouse, hospital, hotel, house, industrial, kiosk, mosque, office, public, residential, retail, roof, ruins, school, service, shed, sports_hall, stadium, supermarket, synagogue, temple, train_station, transportation, university, warehouse, yes'    
       enum:    
-        - 'yes'    
-        - residential    
+        - annexe    
         - apartments    
-        - house    
-        - detached    
+        - barn    
+        - barracks    
         - bungalow    
         - cabin    
+        - cathedral    
+        - chapel    
+        - church    
+        - civic    
+        - clinic    
+        - commercial    
+        - conservatory    
+        - detached    
         - dormitory    
-        - hotel    
-        - ger    
-        - barracks    
-        - annexe    
         - farm    
         - farm_auxiliary    
-        - barn    
-        - commercial    
-        - office    
-        - industrial    
-        - warehouse    
-        - retail    
-        - supermarket    
-        - kiosk    
-        - school    
-        - university    
-        - hospital    
-        - clinic    
-        - church    
-        - cathedral    
-        - mosque    
-        - synagogue    
-        - temple    
-        - chapel    
-        - civic    
-        - government    
-        - public    
-        - transportation    
-        - train_station    
-        - stadium    
-        - grandstand    
-        - sports_hall    
         - garage    
         - garages    
-        - shed    
+        - ger    
+        - government    
+        - grandstand    
         - greenhouse    
-        - conservatory    
-        - service    
-        - shed    
+        - hospital    
+        - hotel    
+        - house    
+        - industrial    
+        - kiosk    
+        - mosque    
+        - office    
+        - public    
+        - residential    
+        - retail    
         - roof    
         - ruins    
+        - school    
+        - service    
+        - shed    
+        - sports_hall    
+        - stadium    
+        - supermarket    
+        - synagogue    
+        - temple    
+        - train_station    
+        - transportation    
+        - university    
+        - warehouse    
+        - 'yes'    
       type: string    
       x-ngsi:    
         model: https://wiki.openstreetmap.org/wiki/Key:building    
@@ -657,30 +596,22 @@ OSMBuilding:
     - buildingType    
   type: object    
   x-derived-from: https://wiki.openstreetmap.org/wiki/Key:building    
-  x-disclaimer: Redistribution and use in source and binary forms...    
+  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program    
   x-license-url: https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMBuilding/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMBuilding/schema.json    
   x-model-tags: OSM OpenStreetMap Buildings    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
- 
-<!-- /60-ModelYaml -->  
- 
-<!-- 70-MiddleNotes -->  
- 
-<!-- /70-MiddleNotes -->  
- 
-<!-- 80-Examples -->  
- 
-## ペイロードの例    
- 
-#### OSMBuilding NGSI-v2 キー値の例    
- 
-OSMBuilding の JSON 形式のキー値の例です。これは、`options=keyValues` を使用して個々のエンティティのコンテキスト データを返すときに NGSI-v2 と互換性があります。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
- 
-```json  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## 例のペイロード  
+#### OSMBuilding NGSI-v2 キーバリュー例  
+以下は、キーバリュー形式のJSON-LD形式のOSMBuildingの例です。これは、`options=keyValues`を使用する場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMBuilding:way:22234584",  
   "type": "OSMBuilding",  
@@ -743,13 +674,10 @@ OSMBuilding の JSON 形式のキー値の例です。これは、`options=keyVa
 }  
 ```  
 </details>  
- 
-#### OSMBuilding NGSI-v2 正規化された例    
- 
-OSMBuilding の JSON 形式の正規化された例です。これは、オプションを使用しないときに NGSI-v2 と互換性があり、個々のエンティティのコンテキスト データを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
- 
-```json  
+#### OSMBuilding NGSI-v2 正規化例  
+以下は、正規化されたJSON-LD形式のOSMBuildingの例です。これは、オプションを使用しない場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMBuilding:way:22234584",  
   "type": "OSMBuilding",  
@@ -881,13 +809,10 @@ OSMBuilding の JSON 形式の正規化された例です。これは、オプ�
 }  
 ```  
 </details>  
- 
-#### OSMBuilding NGSI-LD キー値の例    
- 
-OSMBuilding の JSON-LD 形式のキー値の例です。これは、`options=keyValues` を使用して個々のエンティティのコンテキスト データを返すときに NGSI-LD と互換性があります。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
- 
-```json  
+#### OSMBuilding NGSI-LD キーバリュー例  
+以下は、キーバリュー形式のJSON-LD形式のOSMBuildingの例です。これは、`options=keyValues`を使用する場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMBuilding:way:22234584",  
   "type": "OSMBuilding",  
@@ -953,13 +878,10 @@ OSMBuilding の JSON-LD 形式のキー値の例です。これは、`options=ke
 }  
 ```  
 </details>  
- 
-#### OSMBuilding NGSI-LD 正規化された例    
- 
-OSMBuilding の JSON-LD 形式の正規化された例です。これは、オプションを使用しないときに NGSI-LD と互換性があり、個々のエンティティのコンテキスト データを返します。  
-<details><summary><strong>例を表示/非表示</strong></summary>    
- 
-```json  
+#### OSMBuilding NGSI-LD 正規化例  
+以下は、正規化されたJSON-LD形式のOSMBuildingの例です。これは、オプションを使用しない場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
 {  
     "id": "urn:ngsi-ld:OSMBuilding:way:22234584",  
     "type": "OSMBuilding",  
@@ -1091,20 +1013,12 @@ OSMBuilding の JSON-LD 形式の正規化された例です。これは、オ�
     ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
- 
-<!-- 90-FooterNotes -->  
- 
-<!-- /90-FooterNotes -->  
- 
-<!-- 95-Units -->  
- 
-[FAQ 10](https://smartdatamodels.org/index.php/faqs/) を参照して、量の単位を処理する方法についての回答を得ることができます。  
-<!-- /95-Units -->  
- 
-<!-- 97-LastFooter -->  
- 
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+規模単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
- 
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
- 
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

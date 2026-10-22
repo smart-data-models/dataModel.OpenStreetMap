@@ -1,7 +1,7 @@
 /* (Beta) Export of data model OSMParkingArea of the subject dataModel.OpenStreetMap for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE OSMParkingArea_access_type AS ENUM ('yes', 'no', 'private', 'permissive', 'customers', 'destination');
 CREATE TYPE OSMParkingArea_osmType_type AS ENUM ('node', 'way', 'relation');
-CREATE TYPE OSMParkingArea_parkingType_type AS ENUM ('surface', 'multi-storey', 'underground', 'street_side', 'rooftop', 'sheds', 'carports', 'garage_boxes', 'lane');
+CREATE TYPE OSMParkingArea_parkingType_type AS ENUM ('carports', 'garage_boxes', 'lane', 'multi-storey', 'rooftop', 'sheds', 'street_side', 'surface', 'underground');
 CREATE TYPE OSMParkingArea_surface_type AS ENUM ('asphalt', 'concrete', 'gravel', 'dirt', 'paving_stones', 'cobblestone', 'unpaved', 'grass', 'compacted');
 CREATE TYPE OSMParkingArea_type AS ENUM ('OSMParkingArea');
 CREATE TYPE OSMParkingArea_wheelchair_type AS ENUM ('yes', 'no', 'limited');

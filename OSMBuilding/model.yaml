@@ -113,57 +113,56 @@ OSMBuilding:
         model: https://wiki.openstreetmap.org/wiki/Key:building:material
         type: Property
     buildingType:
-      description: The OSM building tag value classifying the type or function of the building. Enum:'yes, residential, apartments, house, detached, bungalow, cabin, dormitory, hotel, commercial, office, industrial, warehouse, retail, supermarket, school, university, hospital, church, cathedral, mosque, synagogue, civic, government, public, transportation, train_station, stadium, garage, shed, greenhouse, service, ruins'
+      description: The OSM building tag value classifying the type or function of the building. Enum:'annexe, apartments, barn, barracks, bungalow, cabin, cathedral, chapel, church, civic, clinic, commercial, conservatory, detached, dormitory, farm, farm_auxiliary, garage, garages, ger, government, grandstand, greenhouse, hospital, hotel, house, industrial, kiosk, mosque, office, public, residential, retail, roof, ruins, school, service, shed, sports_hall, stadium, supermarket, synagogue, temple, train_station, transportation, university, warehouse, yes'
       enum:
-        - 'yes'
-        - residential
+        - annexe
         - apartments
-        - house
-        - detached
+        - barn
+        - barracks
         - bungalow
         - cabin
+        - cathedral
+        - chapel
+        - church
+        - civic
+        - clinic
+        - commercial
+        - conservatory
+        - detached
         - dormitory
-        - hotel
-        - ger
-        - barracks
-        - annexe
         - farm
         - farm_auxiliary
-        - barn
-        - commercial
-        - office
-        - industrial
-        - warehouse
-        - retail
-        - supermarket
-        - kiosk
-        - school
-        - university
-        - hospital
-        - clinic
-        - church
-        - cathedral
-        - mosque
-        - synagogue
-        - temple
-        - chapel
-        - civic
-        - government
-        - public
-        - transportation
-        - train_station
-        - stadium
-        - grandstand
-        - sports_hall
         - garage
         - garages
-        - shed
+        - ger
+        - government
+        - grandstand
         - greenhouse
-        - conservatory
-        - service
-        - shed
+        - hospital
+        - hotel
+        - house
+        - industrial
+        - kiosk
+        - mosque
+        - office
+        - public
+        - residential
+        - retail
         - roof
         - ruins
+        - school
+        - service
+        - shed
+        - sports_hall
+        - stadium
+        - supermarket
+        - synagogue
+        - temple
+        - train_station
+        - transportation
+        - university
+        - warehouse
+        - 'yes'
       type: string
       x-ngsi:
         model: https://wiki.openstreetmap.org/wiki/Key:building
@@ -562,8 +561,8 @@ OSMBuilding:
     - buildingType
   type: object
   x-derived-from: https://wiki.openstreetmap.org/wiki/Key:building
-  x-disclaimer: Redistribution and use in source and binary forms...
+  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program
   x-license-url: https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMBuilding/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMBuilding/schema.json
   x-model-tags: OSM OpenStreetMap Buildings
-  x-version: 0.0.1
+  x-version: 0.0.2

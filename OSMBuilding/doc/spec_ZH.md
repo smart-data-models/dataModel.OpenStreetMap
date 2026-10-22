@@ -1,37 +1,37 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 实体：OSMBuilding  
-===================<!-- /10-Header -->  
+==============<!-- /10-Header -->  
 <!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMBuilding/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[开放许可证](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMBuilding/LICENSE.md)  
+[自动生成的文档](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-全局描述：**一个或一组连接的建筑物来自OpenStreetMap，标记为building=*. 表示建筑物的物理结构，包括其几何形状、尺寸、材料和功能分类。对于建筑物内的特定功能（商店、便利设施等），应使用其他实体。**  
-版本：0.0.1  
+全局描述：**一个或一组来自OpenStreetMap的建筑或连接的建筑，带有 building=* 标签。它代表建筑的物理结构，包括其几何形状、尺寸、材料和功能分类。对于建筑物内的特定功能（商店、设施等），应使用额外的实体。**  
+version: 0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## 属性列表  
 
-<sup><sub>[*] 如果属性中没有类型，则可能有多种类型或不同的格式/模式</sub></sup>  
-- `access[string]`：建筑物的通用访问限制。 模型：[https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`：建筑物的地址，按照schema.org PostalAddress结构。  	- `addressCity[string]`：城市。 OSM：addr：city    
-	- `addressCountry[string]`：ISO 3166-1 alpha-2国家代码。 OSM：addr：country    
-	- `houseNumber[string]`：房屋或建筑物编号。 OSM：addr：housenumber    
-	- `postalCode[string]`：邮政编码。 OSM：addr：postcode    
-	- `streetAddress[string]`：街道名称。 OSM：addr：street    
-- `alternateName[string]`：该项目的替代名称  - `amenity[string]`：建筑物的主要便利设施功能（例如医院、学校）。 模型：[https://wiki.openstreetmap.org/wiki/Key:amenity](https://wiki.openstreetmap.org/wiki/Key:amenity)- `areaServed[string]`：服务或提供的项目所提供的地理区域。 模型：[https://schema.org/Text](https://schema.org/Text)- `buildingColour[string]`：主立面的颜色，以CSS颜色名称或十六进制代码表示。 模型：[https://wiki.openstreetmap.org/wiki/Key:building:colour](https://wiki.openstreetmap.org/wiki/Key:building:colour)- `buildingHeight[number]`：建筑物从地面到最高点的总高度（米）。 模型：[https://wiki.openstreetmap.org/wiki/Key:height](https://wiki.openstreetmap.org/wiki/Key:height)- `buildingLevels[number]`：建筑物的上层楼层数。 模型：[https://wiki.openstreetmap.org/wiki/Key:building:levels](https://wiki.openstreetmap.org/wiki/Key:building:levels)- `buildingLevelsUnderground[number]`：建筑物的地下或地下室楼层数。 模型：[https://wiki.openstreetmap.org/wiki/Key:building:levels:underground](https://wiki.openstreetmap.org/wiki/Key:building:levels:underground)- `buildingMaterial[string]`：建筑物的主要结构或立面材料。 模型：[https://wiki.openstreetmap.org/wiki/Key:building:material](https://wiki.openstreetmap.org/wiki/Key:building:material)- `buildingType[string]`：OSM建筑标签值，用于分类建筑物的类型或功能。 枚举：'yes, residential, apartments, house, detached, bungalow, cabin, dormitory, hotel, commercial, office, industrial, warehouse, retail, supermarket, school, university, hospital, church, cathedral, mosque, synagogue, civic, government, public, transportation, train_station, stadium, garage, shed, greenhouse, service, ruins'。 模型：[https://wiki.openstreetmap.org/wiki/Key:building](https://wiki.openstreetmap.org/wiki/Key:building)- `dataProvider[string]`：一个序列字符，用于标识和谐数据实体的提供者  - `dateCreated[date-time]`：实体创建时间戳。 这通常由存储平台分配  - `dateModified[date-time]`：实体最后修改的时间戳。 这通常由存储平台分配  - `description[string]`：对该项目的描述  - `flats[number]`：建筑物内的单独住宅单位总数。 模型：[https://wiki.openstreetmap.org/wiki/Key:building:flats](https://wiki.openstreetmap.org/wiki/Key:building:flats)- `id[*]`：实体的唯一标识符  - `location[*]`：对该项目的Geojson引用。 它可以是Point、LineString、Polygon、MultiPoint、MultiLineString或MultiPolygon  - `minHeight[number]`：建筑物底部相对于地面水平的高度（米），用于坡地或高架结构。 模型：[https://wiki.openstreetmap.org/wiki/Key:min_height](https://wiki.openstreetmap.org/wiki/Key:min_height)- `name[string]`：该项目的名称  - `openingHours[string]`：建筑物或其主要功能的营业时间，以OSM opening_hours语法表示。 模型：[https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`：管理或运营建筑物的实体名称。 模型：[https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`：原始OpenStreetMap元素的整数标识符。 模型：[https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`：原始OpenStreetMap元素的最后修改时间戳。  - `osmType[string]`：原始OpenStreetMap元素的类型。 模型：[https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`：包含对所有者（们）的唯一标识符的JSON编码序列字符的列表  - `roofColour[string]`：屋顶的颜色，以CSS颜色名称或十六进制代码表示。 模型：[https://wiki.openstreetmap.org/wiki/Key:roof:colour](https://wiki.openstreetmap.org/wiki/Key:roof:colour)- `roofMaterial[string]`：屋顶表面的主要材料。 模型：[https://wiki.openstreetmap.org/wiki/Key:roof:material](https://wiki.openstreetmap.org/wiki/Key:roof:material)- `roofShape[string]`：屋顶的形状。 枚举：'flat, gabled, hipped, half-hipped, pyramidal, gambrel, mansard, dome, skillion, round, saltbox, onion, cone'。 模型：[https://wiki.openstreetmap.org/wiki/Key:roof:shape](https://wiki.openstreetmap.org/wiki/Key:roof:shape)- `seeAlso[*]`：指向该项目的其他资源的URI列表。  - `source[string]`：一个序列字符，用于给出实体数据的原始来源作为URL。 推荐使用完全合格的域名或源对象的URL  - `startDate[string]`：建筑物建造的年份或日期。 自由格式日期或年份值。 模型：[https://wiki.openstreetmap.org/wiki/Key:start_date](https://wiki.openstreetmap.org/wiki/Key:start_date)- `type[string]`：NGSI实体类型。 必须是OSMBuilding  - `wheelchair[string]`：建筑物的轮椅无障碍级别。 模型：[https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
+<sup><sub>[*] 如果属性中没有类型，则可能是因为它有多种类型或不同的格式/模式</sub></sup>  
+- `access[string]`: 建筑物的一般访问限制  . Model: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: 建筑物地址，结构遵循 schema.org PostalAddress。  	- `addressCity[string]`: 城市。OSM：addr:city    
+	- `addressCountry[string]`: ISO 3166-1 alpha-2 国家代码。OSM：addr:country    
+	- `houseNumber[string]`: 房屋或建筑物编号。OSM：addr:housenumber    
+	- `postalCode[string]`: 邮政编码。OSM：addr:postcode    
+	- `streetAddress[string]`: 街道名称。OSM：addr:street    
+- `alternateName[string]`: 此项目的替代名称  - `amenity[string]`: 建筑物的主要便利设施功能（例如医院、学校）  . Model: [https://wiki.openstreetmap.org/wiki/Key:amenity](https://wiki.openstreetmap.org/wiki/Key:amenity)- `areaServed[string]`: 提供服务或商品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `buildingColour[string]`: 主立面颜色，表示为CSS颜色名称或十六进制代码  . Model: [https://wiki.openstreetmap.org/wiki/Key:building:colour](https://wiki.openstreetmap.org/wiki/Key:building:colour)- `buildingHeight[number]`: 建筑物从地面到最高点的总高度（米）  . Model: [https://wiki.openstreetmap.org/wiki/Key:height](https://wiki.openstreetmap.org/wiki/Key:height)- `buildingLevels[number]`: 建筑物地上楼层数  . Model: [https://wiki.openstreetmap.org/wiki/Key:building:levels](https://wiki.openstreetmap.org/wiki/Key:building:levels)- `buildingLevelsUnderground[number]`: 建筑物地下或地下室楼层数  . Model: [https://wiki.openstreetmap.org/wiki/Key:building:levels:underground](https://wiki.openstreetmap.org/wiki/Key:building:levels:underground)- `buildingMaterial[string]`: 建筑物的主要结构或立面材料  . Model: [https://wiki.openstreetmap.org/wiki/Key:building:material](https://wiki.openstreetmap.org/wiki/Key:building:material)- `buildingType[string]`: 对建筑物类型或功能进行分类的OSM建筑物标签值。枚举值：'annexe, apartments, barn, barracks, bungalow, cabin, cathedral, chapel, church, civic, clinic, commercial, conservatory, detached, dormitory, farm, farm_auxiliary, garage, garages, ger, government, grandstand, greenhouse, hospital, hotel, house, industrial, kiosk, mosque, office, public, residential, retail, roof, ruins, school, service, shed, sports_hall, stadium, supermarket, synagogue, temple, train_station, transportation, university, warehouse, yes'  . Model: [https://wiki.openstreetmap.org/wiki/Key:building](https://wiki.openstreetmap.org/wiki/Key:building)- `dataProvider[string]`: 标识协调数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。这通常由存储平台分配。  - `dateModified[date-time]`: 实体上次修改的时间戳。这通常由存储平台分配  - `description[string]`: 此项目的描述  - `flats[number]`: 建筑物内独立住宅单元的总数  . Model: [https://wiki.openstreetmap.org/wiki/Key:building:flats](https://wiki.openstreetmap.org/wiki/Key:building:flats)- `id[*]`: 实体的唯一标识符  - `location[*]`: 项目的 Geojson 引用。它可以是 Point、LineString、Polygon、MultiPoint、MultiLineString 或 MultiPolygon  - `minHeight[number]`: 建筑物底部高出地面高度（米），用于坡地或高架结构上的建筑物  . Model: [https://wiki.openstreetmap.org/wiki/Key:min_height](https://wiki.openstreetmap.org/wiki/Key:min_height)- `name[string]`: 此项目的名称  - `openingHours[string]`: 建筑物或其主要功能的开放时间，采用OSM opening_hours 语法  . Model: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: 运营或管理该建筑物的实体的名称  . Model: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: 原始 OpenStreetMap 元素的整数标识符  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: OSM元素最后修改的时间戳。  - `osmType[string]`: 原始OpenStreetMap元素的类型  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: 一个包含 JSON 编码字符序列的列表，该序列引用所有者（一个或多个）的唯一 ID  - `roofColour[string]`: 屋顶颜色，表示为CSS颜色名称或十六进制代码  . Model: [https://wiki.openstreetmap.org/wiki/Key:roof:colour](https://wiki.openstreetmap.org/wiki/Key:roof:colour)- `roofMaterial[string]`: 屋顶表面的主要材料  . Model: [https://wiki.openstreetmap.org/wiki/Key:roof:material](https://wiki.openstreetmap.org/wiki/Key:roof:material)- `roofShape[string]`: 屋顶形状。枚举值：'flat, gabled, hipped, half-hipped, pyramidal, gambrel, mansard, dome, skillion, round, saltbox, onion, cone'  . Model: [https://wiki.openstreetmap.org/wiki/Key:roof:shape](https://wiki.openstreetmap.org/wiki/Key:roof:shape)- `seeAlso[*]`: 指向有关此项目的附加资源的 URI 列表。  - `source[string]`: 以 URL 形式提供实体数据原始来源的字符序列。建议使用来源提供者的完全限定域名，或指向来源对象的 URL  - `startDate[string]`: 建筑物建造的年份或日期。自由格式的日期或年份值  . Model: [https://wiki.openstreetmap.org/wiki/Key:start_date](https://wiki.openstreetmap.org/wiki/Key:start_date)- `type[string]`: NGSI实体类型。必须是OSMBuilding  - `wheelchair[string]`: 建筑物的轮椅可达性水平  . Model: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必需属性  
+必填属性  
 - `buildingType`  - `id`  - `location`  - `osmId`  - `osmType`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-NotesYaml -->  
 <!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## 属性的数据模型描述  
-按字母顺序排序（点击查看详细信息）  
+按字母顺序排序（点击查看详情）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
-<details><summary><strong>完整的YAML详细信息</strong></summary>    
+<details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 OSMBuilding:    
   description: A building or group of connected buildings from OpenStreetMap tagged with building=*. Represents the physical structure of a building, including its geometry, dimensions, materials, and functional classification. For specific functions within a building (shop, amenity, etc.) additional entities should be used.    
@@ -148,57 +148,56 @@ OSMBuilding:
         model: https://wiki.openstreetmap.org/wiki/Key:building:material    
         type: Property    
     buildingType:    
-      description: The OSM building tag value classifying the type or function of the building. Enum:'yes, residential, apartments, house, detached, bungalow, cabin, dormitory, hotel, commercial, office, industrial, warehouse, retail, supermarket, school, university, hospital, church, cathedral, mosque, synagogue, civic, government, public, transportation, train_station, stadium, garage, shed, greenhouse, service, ruins'    
+      description: The OSM building tag value classifying the type or function of the building. Enum:'annexe, apartments, barn, barracks, bungalow, cabin, cathedral, chapel, church, civic, clinic, commercial, conservatory, detached, dormitory, farm, farm_auxiliary, garage, garages, ger, government, grandstand, greenhouse, hospital, hotel, house, industrial, kiosk, mosque, office, public, residential, retail, roof, ruins, school, service, shed, sports_hall, stadium, supermarket, synagogue, temple, train_station, transportation, university, warehouse, yes'    
       enum:    
-        - 'yes'    
-        - residential    
+        - annexe    
         - apartments    
-        - house    
-        - detached    
+        - barn    
+        - barracks    
         - bungalow    
         - cabin    
+        - cathedral    
+        - chapel    
+        - church    
+        - civic    
+        - clinic    
+        - commercial    
+        - conservatory    
+        - detached    
         - dormitory    
-        - hotel    
-        - ger    
-        - barracks    
-        - annexe    
         - farm    
         - farm_auxiliary    
-        - barn    
-        - commercial    
-        - office    
-        - industrial    
-        - warehouse    
-        - retail    
-        - supermarket    
-        - kiosk    
-        - school    
-        - university    
-        - hospital    
-        - clinic    
-        - church    
-        - cathedral    
-        - mosque    
-        - synagogue    
-        - temple    
-        - chapel    
-        - civic    
-        - government    
-        - public    
-        - transportation    
-        - train_station    
-        - stadium    
-        - grandstand    
-        - sports_hall    
         - garage    
         - garages    
-        - shed    
+        - ger    
+        - government    
+        - grandstand    
         - greenhouse    
-        - conservatory    
-        - service    
-        - shed    
+        - hospital    
+        - hotel    
+        - house    
+        - industrial    
+        - kiosk    
+        - mosque    
+        - office    
+        - public    
+        - residential    
+        - retail    
         - roof    
         - ruins    
+        - school    
+        - service    
+        - shed    
+        - sports_hall    
+        - stadium    
+        - supermarket    
+        - synagogue    
+        - temple    
+        - train_station    
+        - transportation    
+        - university    
+        - warehouse    
+        - 'yes'    
       type: string    
       x-ngsi:    
         model: https://wiki.openstreetmap.org/wiki/Key:building    
@@ -597,21 +596,21 @@ OSMBuilding:
     - buildingType    
   type: object    
   x-derived-from: https://wiki.openstreetmap.org/wiki/Key:building    
-  x-disclaimer: Redistribution and use in source and binary forms...    
+  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program    
   x-license-url: https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMBuilding/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMBuilding/schema.json    
   x-model-tags: OSM OpenStreetMap Buildings    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## 示例有效载荷    
-#### OSMBuilding NGSI-v2 键值示例    
-这是一个OSMBuilding在JSON格式下的键值示例。 这与NGSI-v2兼容，当使用 `options=keyValues` 时，返回个别实体的上下文数据。  
-<details><summary><strong>显示/隐藏示例</strong></summary>    
+## 示例载荷    
+#### OSMBuilding NGSI-v2 键值示例  
+这里是一个OSMBuilding的JSON-LD键值格式示例。当使用 `options=keyValues` 时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMBuilding:way:22234584",  
@@ -675,9 +674,9 @@ OSMBuilding:
 }  
 ```  
 </details>  
-#### OSMBuilding NGSI-v2 规范化示例    
-这是一个OSMBuilding在JSON格式下的规范化示例。 这与NGSI-v2兼容，当不使用选项时，返回个别实体的上下文数据。  
-<details><summary><strong>显示/隐藏示例</strong></summary>    
+#### OSMBuilding NGSI-v2 规范化示例  
+这里是一个OSMBuilding的JSON-LD规范化格式示例。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMBuilding:way:22234584",  
@@ -810,9 +809,9 @@ OSMBuilding:
 }  
 ```  
 </details>  
-#### OSMBuilding NGSI-LD 键值示例    
-这是一个OSMBuilding在JSON-LD格式下的键值示例。 这与NGSI-LD兼容，当使用 `options=keyValues` 时，返回个别实体的上下文数据。  
-<details><summary><strong>显示/隐藏示例</strong></summary>    
+#### OSMBuilding NGSI-LD 键值示例  
+这里是一个OSMBuilding的JSON-LD键值格式示例。当使用 `options=keyValues` 时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:OSMBuilding:way:22234584",  
@@ -879,9 +878,9 @@ OSMBuilding:
 }  
 ```  
 </details>  
-#### OSMBuilding NGSI-LD 规范化示例    
-这是一个OSMBuilding在JSON-LD格式下的规范化示例。 这与NGSI-LD兼容，当不使用选项时，返回个别实体的上下文数据。  
-<details><summary><strong>显示/隐藏示例</strong></summary>    
+#### OSMBuilding NGSI-LD 规范化示例  
+这里是一个OSMBuilding的JSON-LD规范化格式示例。当不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:OSMBuilding:way:22234584",  
@@ -1018,8 +1017,8 @@ OSMBuilding:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/) 以获取有关如何处理数量单位的答案  
+请参阅 [常见问题 10](https://smartdatamodels.org/index.php/faqs/)，了解如何处理数量单位的答案  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  

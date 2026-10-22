@@ -1,41 +1,41 @@
-<!-- 10-Header -->  
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-Entité : OSMParkingArea  
-======================<!-- /10-Header -->  
-<!-- 15-License -->  
-[Open License](https://github.com/smart-data-models//dataModel.OpenStreetMap/blob/master/OSMParkingArea/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-<!-- /15-License -->  
-<!-- 20-Description -->  
-Description globale : **Une zone de stationnement ou une installation pour véhicules provenant d'OpenStreetMap taguée avec amenity=parking. Représente les parcs de stationnement en surface, les garages à étages, les installations souterraines et d'autres zones de stationnement organisées.**  
-version : 0.0.1  
-<!-- /20-Description -->  
-<!-- 30-PropertiesList -->  
+Entité : OSMParkingArea  
+=======================<!-- /10-Header -->  
+<!-- 15-License -->  
+[Licence ouverte](https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMParkingArea/LICENSE.md)  
+[document généré automatiquement](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Description globale : **Une zone ou installation de stationnement de véhicules provenant d'OpenStreetMap marquée avec amenity=parking. Représente les parkings de surface, les garages à étages, les installations souterraines et autres zones de stationnement organisées.**  
+version: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## Liste des propriétés  
+## Liste des propriétés  
 
-<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>  
-- `access[string]` : Restriction d'accès à l'installation de stationnement. Modèle : [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]` : L'adresse postale. Modèle : [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]` : Le pays. Par exemple, Espagne. Modèle : [https://schema.org/addressCountry](https://schema.org/addressCountry)  
-	- `addressLocality[string]` : La localité dans laquelle se trouve l'adresse postale, et qui se trouve dans la région. Modèle : [https://schema.org/addressLocality](https://schema.org/addressLocality)  
-	- `addressRegion[string]` : La région dans laquelle se trouve la localité, et qui se trouve dans le pays. Modèle : [https://schema.org/addressRegion](https://schema.org/addressRegion)  
-	- `district[string]` : Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local.    
-	- `postOfficeBoxNumber[string]` : Le numéro de boîte postale pour les adresses postales. Par exemple, 03578. Modèle : [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
-	- `postalCode[string]` : Le code postal. Par exemple, 24004. Modèle : [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
-	- `streetAddress[string]` : L'adresse postale. Modèle : [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-	- `streetNr[string]` : Numéro identifiant une propriété spécifique dans une rue publique.    
-- `alternateName[string]` : Un nom alternatif pour cet élément. - `areaServed[string]` : La zone géographique où un service ou un article offert est fourni. Modèle : [https://schema.org/Text](https://schema.org/Text)- `capacity[number]` : Nombre total de places de stationnement disponibles. Modèle : [https://wiki.openstreetmap.org/wiki/Key:capacity](https://wiki.openstreetmap.org/wiki/Key:capacity)- `capacityDisabled[number]` : Nombre de places de stationnement désignées pour les personnes handicapées. Modèle : [https://wiki.openstreetmap.org/wiki/Key:capacity:disabled](https://wiki.openstreetmap.org/wiki/Key:capacity:disabled)- `dataProvider[string]` : Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisée. - `dateCreated[date-time]` : Horodatage de création de l'entité. Ceci sera généralement attribué par la plateforme de stockage. - `dateModified[date-time]` : Horodatage de la dernière modification de l'entité. Ceci sera généralement attribué par la plateforme de stockage. - `description[string]` : Une description de cet élément. - `fee[boolean]` : Indique si un droit est facturé pour le stationnement. Modèle : [https://wiki.openstreetmap.org/wiki/Key:fee](https://wiki.openstreetmap.org/wiki/Key:fee)- `id[*]` : Identifiant unique de l'entité. - `lit[boolean]` : Indique si la zone de stationnement est éclairée la nuit. Modèle : [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]` : Référence Geojson à l'élément. Il peut s'agir de Point, LineString, Polygon, MultiPoint, MultiLineString ou MultiPolygon. - `maxStay[string]` : Durée maximale de stationnement autorisée (par exemple, '2h', '1 jour'). Modèle : [https://wiki.openstreetmap.org/wiki/Key:maxstay](https://wiki.openstreetmap.org/wiki/Key:maxstay)- `name[string]` : Le nom de cet élément. - `openingHours[string]` : Horaires d'ouverture de l'installation de stationnement selon la syntaxe des horaires d'ouverture OSM. Modèle : [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]` : Nom de l'entité exploitant ou gérant l'installation de stationnement. Modèle : [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]` : L'identifiant entier original de l'élément OpenStreetMap. Modèle : [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]` : Horodatage de la dernière modification de l'élément OSM. - `osmType[string]` : Le type de l'élément OpenStreetMap original. Modèle : [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]` : Une liste contenant une séquence de caractères encodée en JSON faisant référence aux identifiants uniques du ou des propriétaires. - `parkingType[string]` : Type physique ou disposition de l'installation de stationnement. Enumération : 'surface, multi-storey, underground, street_side, rooftop, sheds, carports, garage_boxes, lane'. Modèle : [https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking)- `seeAlso[*]` : Liste des URI pointant vers des ressources supplémentaires sur cet élément. - `source[string]` : Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source. - `surface[string]` : Matériau de surface de la zone de stationnement. Modèle : [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `type[string]` : Type d'entité NGSI. Il doit s'agir de OSMParkingArea. - `wheelchair[string]` : Disponibilité de places de stationnement accessibles aux fauteuils roulants. Modèle : [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
-<!-- 35-RequiredProperties -->  
-Propriétés requises  
-- `id` - `location` - `osmId` - `osmType` - `parkingType` - `type` <!-- /35-RequiredProperties -->  
-<!-- 40-NotesYaml -->  
-<!-- /40-NotesYaml -->  
-<!-- 50-DataModelHeader -->  
-## Description du modèle de données des propriétés  
-Trié par ordre alphabétique (cliquez pour plus de détails)  
-<!-- /50-DataModelHeader -->  
-<!-- 60-ModelYaml -->  
-<details><summary><strong>détails complets en yaml</strong></summary>    
-```yaml  
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>  
+- `access[string]`: Restriction d'accès pour l'installation de stationnement  . Model: [https://wiki.openstreetmap.org/wiki/Key:access](https://wiki.openstreetmap.org/wiki/Key:access)- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Le pays. Par exemple, l'Espagne  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localité dans laquelle se trouve l'adresse de la rue, et qui se trouve dans la région  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La région dans laquelle se trouve la localité, et qui se trouve dans le pays  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local    
+	- `postOfficeBoxNumber[string]`: Le numéro de boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numéro identifiant une propriété spécifique sur une rue publique    
+- `alternateName[string]`: Un nom alternatif pour cet article  - `areaServed[string]`: La zone géographique où un service ou un article proposé est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `capacity[number]`: Nombre total de places de stationnement disponibles  . Model: [https://wiki.openstreetmap.org/wiki/Key:capacity](https://wiki.openstreetmap.org/wiki/Key:capacity)- `capacityDisabled[number]`: Nombre de places de stationnement réservées aux personnes handicapées  . Model: [https://wiki.openstreetmap.org/wiki/Key:capacity:disabled](https://wiki.openstreetmap.org/wiki/Key:capacity:disabled)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[date-time]`: Horodatage de la dernière modification de l'entité. Ceci sera généralement alloué par la plateforme de stockage  - `description[string]`: Une description de cet article  - `fee[boolean]`: Indique si un frais de stationnement est appliqué  . Model: [https://wiki.openstreetmap.org/wiki/Key:fee](https://wiki.openstreetmap.org/wiki/Key:fee)- `id[*]`: Identifiant unique de l'entité  - `lit[boolean]`: Indique si la zone de stationnement est éclairée la nuit  . Model: [https://wiki.openstreetmap.org/wiki/Key:lit](https://wiki.openstreetmap.org/wiki/Key:lit)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir de Point, LineString, Polygon, MultiPoint, MultiLineString ou MultiPolygon  - `maxStay[string]`: Durée maximale de stationnement autorisée (ex: '2h', '1 jour')  . Model: [https://wiki.openstreetmap.org/wiki/Key:maxstay](https://wiki.openstreetmap.org/wiki/Key:maxstay)- `name[string]`: Le nom de cet article  - `openingHours[string]`: Heures d'ouverture de l'installation de stationnement selon la syntaxe opening_hours d'OSM  . Model: [https://wiki.openstreetmap.org/wiki/Key:opening_hours](https://wiki.openstreetmap.org/wiki/Key:opening_hours)- `operator[string]`: Nom de l'entité exploitant ou gérant l'installation de stationnement  . Model: [https://wiki.openstreetmap.org/wiki/Key:operator](https://wiki.openstreetmap.org/wiki/Key:operator)- `osmId[number]`: L'identifiant entier de l'élément OpenStreetMap original  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `osmLastModified[date-time]`: Horodatage de la dernière modification de l'élément OSM.  - `osmType[string]`: Le type de l'élément OpenStreetMap original  . Model: [https://wiki.openstreetmap.org/wiki/Elements](https://wiki.openstreetmap.org/wiki/Elements)- `owner[array]`: Une liste contenant une séquence de caractères encodée en JSON référençant les identifiants uniques du ou des propriétaires  - `parkingType[string]`: Type physique ou configuration de l'installation de stationnement. Enum : 'carports, garage_boxes, lane, multi-storey, rooftop, sheds, street_side, surface, underground'  . Model: [https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking](https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking)- `seeAlso[*]`: Liste d'URI pointant vers des ressources supplémentaires concernant cet article.  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source, ou l'URL de l'objet source  - `surface[string]`: Matériau de surface de la zone de stationnement  . Model: [https://wiki.openstreetmap.org/wiki/Key:surface](https://wiki.openstreetmap.org/wiki/Key:surface)- `type[string]`: Type d'entité NGSI. Il doit s'agir de OSMParkingArea  - `wheelchair[string]`: Disponibilité de places de stationnement accessibles en fauteuil roulant  . Model: [https://wiki.openstreetmap.org/wiki/Key:wheelchair](https://wiki.openstreetmap.org/wiki/Key:wheelchair)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+Propriétés requises  
+- `id`  - `location`  - `osmId`  - `osmType`  - `parkingType`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
+<!-- /40-NotesYaml -->  
+<!-- 50-DataModelHeader -->  
+## Description des propriétés du modèle de données  
+Trié par ordre alphabétique (cliquer pour les détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
 OSMParkingArea:    
   description: A vehicle parking area or facility from OpenStreetMap tagged with amenity=parking. Represents surface car parks, multi-storey garages, underground facilities, and other organised parking areas.    
   properties:    
@@ -447,17 +447,17 @@ OSMParkingArea:
       x-ngsi:    
         type: Property    
     parkingType:    
-      description: Physical type or layout of the parking facility. Enum:'surface, multi-storey, underground, street_side, rooftop, sheds, carports, garage_boxes, lane'    
+      description: Physical type or layout of the parking facility. Enum:'carports, garage_boxes, lane, multi-storey, rooftop, sheds, street_side, surface, underground'    
       enum:    
-        - surface    
-        - multi-storey    
-        - underground    
-        - street_side    
-        - rooftop    
-        - sheds    
         - carports    
         - garage_boxes    
         - lane    
+        - multi-storey    
+        - rooftop    
+        - sheds    
+        - street_side    
+        - surface    
+        - underground    
       type: string    
       x-ngsi:    
         model: https://wiki.openstreetmap.org/wiki/Tag:amenity%3Dparking    
@@ -521,22 +521,22 @@ OSMParkingArea:
     - parkingType    
   type: object    
   x-derived-from: https://wiki.openstreetmap.org/wiki/Tag:amenity=parking    
-  x-disclaimer: Redistribution and use in source and binary forms...    
+  x-disclaimer: Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program    
   x-license-url: https://github.com/smart-data-models/dataModel.OpenStreetMap/blob/master/OSMParkingArea/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.OpenStreetMap/OSMParkingArea/schema.json    
   x-model-tags: OSM OpenStreetMap Transportation Parking    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
-<!-- /60-ModelYaml -->  
-<!-- 70-MiddleNotes -->  
-<!-- /70-MiddleNotes -->  
-<!-- 80-Examples -->  
-## Exemples de charges utiles    
-#### Exemple de valeurs clés NGSI-v2 OSMParkingArea    
-Voici un exemple d'OSMParkingArea au format JSON sous forme de valeurs clés. Ceci est compatible avec NGSI-v2 lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
-<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
-```json  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Exemples de charges utiles  
+#### Exemple de paires clé-valeur NGSI-v2 OSMParkingArea    
+Voici un exemple d'OSMParkingArea au format JSON-LD sous forme de paires clé-valeur. Ceci est compatible avec NGSI-v2 lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMParkingArea:way:34517828",  
   "type": "OSMParkingArea",  
@@ -587,10 +587,10 @@ Voici un exemple d'OSMParkingArea au format JSON sous forme de valeurs clés. Ce
 }  
 ```  
 </details>  
-#### Exemple normalisé NGSI-v2 OSMParkingArea    
-Voici un exemple d'OSMParkingArea au format JSON sous forme normalisée. Ceci est compatible avec NGSI-v2 lors de la non-utilisation d'options et renvoie les données de contexte d'une entité individuelle.  
-<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
-```json  
+#### Exemple normalisé NGSI-v2 OSMParkingArea    
+Voici un exemple d'OSMParkingArea au format JSON-LD normalisé. Ceci est compatible avec NGSI-v2 lorsqu'aucune option n'est utilisée et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMParkingArea:way:34517828",  
   "type": "OSMParkingArea",  
@@ -689,10 +689,10 @@ Voici un exemple d'OSMParkingArea au format JSON sous forme normalisée. Ceci es
 }  
 ```  
 </details>  
-#### Exemple de valeurs clés NGSI-LD OSMParkingArea    
-Voici un exemple d'OSMParkingArea au format JSON-LD sous forme de valeurs clés. Ceci est compatible avec NGSI-LD lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
-<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
-```json  
+#### Exemple de paires clé-valeur NGSI-LD OSMParkingArea    
+Voici un exemple d'OSMParkingArea au format JSON-LD sous forme de paires clé-valeur. Ceci est compatible avec NGSI-LD lors de l'utilisation de `options=keyValues` et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
 {  
   "id": "urn:ngsi-ld:OSMParkingArea:way:34517828",  
   "type": "OSMParkingArea",  
@@ -746,10 +746,10 @@ Voici un exemple d'OSMParkingArea au format JSON-LD sous forme de valeurs clés.
 }  
 ```  
 </details>  
-#### Exemple normalisé NGSI-LD OSMParkingArea    
-Voici un exemple d'OSMParkingArea au format JSON-LD sous forme normalisée. Ceci est compatible avec NGSI-LD lors de la non-utilisation d'options et renvoie les données de contexte d'une entité individuelle.  
-<details><summary><strong>afficher/masquer l'exemple</strong></summary>    
-```json  
+#### Exemple normalisé NGSI-LD OSMParkingArea    
+Voici un exemple d'OSMParkingArea au format JSON-LD normalisé. Ceci est compatible avec NGSI-LD lorsqu'aucune option n'est utilisée et renvoie les données de contexte d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
+```json  
 {  
     "id": "urn:ngsi-ld:OSMParkingArea:way:34517828",  
     "type": "OSMParkingArea",  
@@ -853,12 +853,12 @@ Voici un exemple d'OSMParkingArea au format JSON-LD sous forme normalisée. Ceci
     ]  
 }  
 ```  
-</details><!-- /80-Examples -->  
-<!-- 90-FooterNotes -->  
-<!-- /90-FooterNotes -->  
-<!-- 95-Units -->  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
-<!-- /95-Units -->  
-<!-- 97-LastFooter -->  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir la [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la manière de gérer les unités de grandeur  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
 ---  
-[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
